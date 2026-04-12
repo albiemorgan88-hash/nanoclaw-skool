@@ -16,6 +16,8 @@ groups/*
 groups/main/*
 groups/global/*
 !groups/main/CLAUDE.md
+!groups/main/soul.md
+!groups/main/user.md
 !groups/global/CLAUDE.md
 
 # Secrets
