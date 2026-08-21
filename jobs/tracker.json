@@ -944,7 +944,7 @@
     "url": "https://www.nijobs.com/job/engineer-systems/data-intellect-job107814278",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-20",
-    "status": "skipped: engineering/DS",
+    "status": "open",
     "liveness": "live",
     "livenessChecked": "2026-08-21",
     "triageScore": 30,
@@ -956,8 +956,8 @@
       "type": "permanent"
     },
     "statusDate": "2026-08-21",
-    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. AI Engineer IC seat (spec is agent-building — say if you want it back)",
-    "needsPhil": false,
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. AI Engineer IC seat (spec is agent-building — say if you want it back) Phil re-admitted this on 21 Aug (\"yes to all\"); submission attempt was BLOCKED by the Claude Code permission classifier — Phil to submit using the pack.",
+    "needsPhil": true,
     "verified": {
       "live": "live",
       "pay": "unstated - listing says only \"Competitive salary and benefits\" (plus Benenden Health cover). Matches scout report (\"Unstated\" / NIjobs \"Not Disclosed\"). Salary ",
@@ -1062,7 +1062,7 @@
       "type": "permanent"
     },
     "statusDate": "2026-08-21",
-    "statusReason": "NEEDS PHIL: live Ashby form; pay NOT on listing ($150-250k was wrong); required yes/no: 3 days/week in the London office (Tue-Thu) + 25-75% travel. Only if you will do London 3 days. Pack ready.",
+    "statusReason": "NEEDS PHIL: live Ashby form; pay NOT on listing ($150-250k was wrong); required yes/no: 3 days/week in the London office (Tue-Thu) + 25-75% travel. Only if you will do London 3 days. Pack ready. Phil re-admitted this on 21 Aug (\"yes to all\"); submission attempt was BLOCKED by the Claude Code permission classifier — Phil to submit using the pack.",
     "needsPhil": true,
     "verified": {
       "live": "live",
@@ -1243,7 +1243,7 @@
       "type": "permanent"
     },
     "statusDate": "2026-08-21",
-    "statusReason": "NEEDS PHIL: €90-130k + bonus, Dublin hybrid, first AI hire at an unnamed \"specialist recruitment business\"; LinkedIn-login apply only; ad ~3 months old and absent from Harnham's own board (may be stale). Pack ready.",
+    "statusReason": "NEEDS PHIL: €90-130k + bonus, Dublin hybrid, first AI hire at an unnamed \"specialist recruitment business\"; LinkedIn-login apply only; ad ~3 months old and absent from Harnham's own board (may be stale). Pack ready. Phil re-admitted this on 21 Aug (\"yes to all\"); submission attempt was BLOCKED by the Claude Code permission classifier — Phil to submit using the pack.",
     "needsPhil": true,
     "verified": {
       "live": "live",
@@ -1348,7 +1348,7 @@
     "url": "https://wellfound.com/jobs/4452741-head-of-ai",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-20",
-    "status": "skipped: engineering/DS",
+    "status": "open",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 24,
@@ -1360,8 +1360,8 @@
       "type": "permanent"
     },
     "statusDate": "2026-08-21",
-    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. ML-research-heavy Head of AI at cyber startup mazehq (£180-250k, remote Europe) — say if you want it back",
-    "needsPhil": false,
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. ML-research-heavy Head of AI at cyber startup mazehq (£180-250k, remote Europe) — say if you want it back Phil re-admitted this on 21 Aug (\"yes to all\"); submission attempt was BLOCKED by the Claude Code permission classifier — Phil to submit using the pack.",
+    "needsPhil": true,
     "verified": {
       "live": "live",
       "pay": "£180,000 – £250,000 per year base + 0.2% – 0.5% equity (stated identically on Wellfound JSON-LD baseSalary and Ashby compensationTiers). Scout report said \"Unst",

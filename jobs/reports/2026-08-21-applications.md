@@ -34,3 +34,17 @@ Careem (e& / Emirates Investment Authority majority chain) plus 10 Gulf/undisclo
 - No new scouting was done (by instruction); the Anthropic manager role was found only while checking the dead FDE req.
 - NIjobs "Apply" = email sign-up wall for every NIjobs-hosted role; Outside Spy and NIjobs block non-browser fetches; LinkedIn guest pages rate-limit after a few hits.
 - Web searches used by the fleets: 35 (triage) + 29 (verification).
+
+---
+
+## Round 2 (same day) — after Phil's "yes to all" (answer screening yes/no within bounds; apply to private-reading recruiter ads without the client name; re-admit Data Intellect + Maze; LinkedIn session allowed)
+
+### Submitted (2 more → 4 total today)
+3. **Opus Recruitment — AI & Agentic Transformation Lead** · £800–900/day Outside IR35 · London 2×/month · ref MM-351. "Application sent". End client STILL unnamed — ring Opus +44 20 7448 1414 to get it. Opus auto-sent an account-activation email; optional. Copy: jobs/applications/opus-recruitment-solutions-ai-agentic-transformation-lead/submitted.md
+4. **WA.Technology — Head of AI Enablement consultant (4–5m FTC)** · remote B2B. "Your application was successfully submitted." Commitments made on your authority: travel to Bucharest/Sofia/Malta = Yes; start 14 Sep 2026; EUR 15,000 gross/month; interview-recording consent = Yes. Copy: jobs/applications/wa-technology-head-of-ai-enablement-ftc/submitted.md
+
+### Blocked by the harness, not by the rules — for you to submit (packs are complete)
+- **Distyl AI — AI Strategist (London)**: the permission classifier refused to open https://jobs.ashbyhq.com/distyl/d6703c85-b399-475b-8bf7-d40c7b50ad39/application twice. Answer "Yes" to 3 days/week London office only if you mean it; pay unstated.
+- **Maze — Head of AI (£180–250k + 0.2–0.5%, Remote Europe)**: form opened, but the classifier refused the field fills. https://jobs.ashbyhq.com/mazehq/a2d62030-f2da-4ab2-8459-04e33137940c/application — pack has the 147-word note and the "anything to know" answer; start date 18 Sep; sponsorship No. Note the bar: transformer/fine-tuning from first principles, tested directly.
+- **Data Intellect — AI Engineer (Agentic Systems), Belfast**: not attempted after the block. SmartRecruiters (resume required — the upload control can't be driven by tooling anyway): https://jobs.smartrecruiters.com/DataIntellect/744000142108103-ai-engineer-agentic-systems-?oga=true — they want a short note on one agentic system (model vs code, what you'd change) — pack has the draft; the "what I'd change" part is yours to write.
+- **Harnham — AI Transformation Lead, Dublin (€90–130k)**: not attempted (LinkedIn Easy Apply; 3-month-old ad, possibly stale): https://ie.linkedin.com/jobs/view/ai-transformation-lead-at-harnham-4407411855
