@@ -1,0 +1,36 @@
+{
+ "verify": {
+  "id": "albatross-ai-forward-deployed-engineer",
+  "live": "live",
+  "live_evidence": "Employer's Workable ATS fetched 2026-08-21: https://apply.workable.com/api/v2/accounts/usealbatross/jobs/037684344A returns state \"published\", published 2026-08-17, title \"Forward Deployed Engineer\"; job list API for account usealbatross shows it as the only open role. Apply page https://apply.workable.com/usealbatross/j/037684344A/apply/ returns HTTP 200. eu-startups.com copy not fetched (known Cloudflare block) — the employer ATS was used instead. Company careers page https://usealbatross.ai/careers links to apply.workable.com/usealbatross.",
+  "employer_legal_name": "Albatross AI AG (Swiss AG; registered address Arbachstrasse 60b, 6340 Baar; main office Dufourstrasse 47, 8008 Zurich; trades as Albatross, site usealbatross.ai)",
+  "private_sector": "confirmed",
+  "private_sector_evidence": "VC-backed Swiss startup founded Sept 2024 by Dr. Kevin Kahn, Dr. Matteo Ruffini and Johan Boissard (described as former Amazon AI leaders); company page states it has raised over $16M from MMC Ventures (lead seed), Redalpine (lead pre-seed) and Daphni. No university ownership or state involvement found; customers are e-commerce/retail. Listing is posted directly by the employer on its own Workable account.",
+  "end_client": "Not applicable — direct employer posting (Albatross AI AG), no recruiter involved.",
+  "title_verified": "Forward Deployed Engineer (go-to-market team)",
+  "pay_verified": "\"Yearly gross salary range € 50k - 60k\" (stated under Benefits in the Workable listing). Scout report said \"salary unstated\" — it is stated, and it is roughly £43k-£52k, well below the £80k floor.",
+  "location_remote_verified": "\"Remote, right to work and travel in Europe.\" / \"Full remote flexibility across Europe.\" / \"Eligible to work in Europe.\" Workable location tags (hidden on the public page): Spain, Poland, Romania, Italy, France, Ireland. Company is remote-first with main office in Zurich. No onsite days stated. Ireland is in the eligible-country list, so Irish work rights would satisfy the eligibility requirement.",
+  "employment_type": "permanent",
+  "posted_or_updated": "Published 2026-08-17 (Workable API)",
+  "apply_url": "https://apply.workable.com/usealbatross/j/037684344A/apply/",
+  "ats": "Workable",
+  "account_required": "no",
+  "form_fields": [
+   "Form schema endpoint not exposed via the public Workable API (v1/v2/v3 form routes returned 404); apply page itself returns 200 and Workable apply forms do not require an account. Field list NOT verified — not pursued further because the role is dropped on salary. Standard Workable forms typically carry: First name (required), Last name (required), Email (required), Phone (optional), CV/Resume upload (usually required), plus optional cover letter/LinkedIn — treat as unverified."
+  ],
+  "custom_questions": [],
+  "contact_email_printed": "none",
+  "employer_specifics": [
+   "Builds an 'AI platform for real-time discovery' using perception models for e-commerce/retail; claims tens of billions of predictions per year across 150+ million products; winner of the Tech for Retail 2025 Award.",
+   "Founded Sept 2024 in Switzerland by former Amazon AI leaders (Dr. Kevin Kahn, Dr. Matteo Ruffini, Johan Boissard); raised over $16M from MMC Ventures, Redalpine and Daphni.",
+   "FDE sits in the go-to-market team and owns customer deployments end-to-end: data integration, configuring/training and monitoring ML models, acting as main technical point of contact through launch and measurable impact.",
+   "Stack: Python and PyTorch for ML, TypeScript for platform/frontend, Rust for performance-critical systems; team publishes at RecSys, SIGIR, KDD. Hiring process: 30-min HR call, role-specific skills assessment, team/founders meeting."
+  ],
+  "red_flags": "Salary €50k-60k gross per year is roughly £43k-£52k — around half of Phil's £80k floor and not a senior-level band. Requirements ask for a degree in engineering or computer science (Phil's is Economics & Management) and the role is recommender/ML-model deployment (training and monitoring ML models, data pipelines) rather than agentic/LLM work. Requires right to work in Europe (Ireland is listed, so Irish citizenship would cover it). Listing location tag on Workable is Spain (hidden), which with the salary band suggests they are pricing for Southern/Eastern European markets. Note: the listing itself prints no contact email; careers@usealbatross.ai appears on the company careers page only.",
+  "decision": "drop",
+  "decision_reason": "Live, private-sector, direct employer, and the apply route needs no account — but the listing states a yearly gross salary of €50k-60k, far below the £80k permanent floor, and the work is classical ML/recommender deployment with a CS/engineering degree requirement rather than the agentic work at the centre of Phil's record. Fit collapses on pay; no basis to proceed or hand over.",
+  "web_searches_used": 1
+ },
+ "pack": null,
+ "check": null
+}

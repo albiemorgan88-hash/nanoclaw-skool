@@ -1,0 +1,34 @@
+{
+ "verify": {
+  "id": "armada-ai-solutions-architect",
+  "live": "dead",
+  "live_evidence": "Fetched https://www.workingnomads.com/jobs/ai-solutions-architect-armada (HTTP 200, 21 Aug 2026): page shows \"Posted 1 year ago\" and the banner \"The job listing has expired. Unfortunately, the hiring company is no longer accepting new applications.\" No apply link on the page. Cross-checked Armada's own Greenhouse board via https://boards-api.greenhouse.io/v1/boards/armada/jobs (59 open roles, 21 Aug 2026): no \"AI Solutions Architect\" posting exists. Ashby/Lever boards for \"armada\" return not found. The role is closed on both the aggregator and the employer ATS.",
+  "employer_legal_name": "Armada (Armada Systems, Inc., San Francisco HQ; Greenhouse board \"armada\"; India entity AEDGE AICC India Pvt Ltd)",
+  "private_sector": "confirmed",
+  "private_sector_evidence": "Privately held VC-backed US company: Greenhouse job copy states \"nearly $500 million in funding... backed by Founders Fund, Lux, BlackRock and Microsoft (M12)\". No sovereign or state majority owner identified. Note heavy public-sector/defence client exposure: board carries Public Sector, Federal, EU Defense and Saudi/UAE roles, and the copy says customers range \"from energy to defense\" and \"enterprises and governments\".",
+  "end_client": "n/a - direct employer ad (Armada), not a recruiter",
+  "title_verified": "AI Solutions Architect (expired WorkingNomads copy; not present on Armada's Greenhouse board)",
+  "pay_verified": "\"We offer a competitive base salary along with equity options\" - no figure. Matches scout report.",
+  "location_remote_verified": "\"This role is remote-based in the United Arab Emirates.\" Full-time, Senior Level. No eligible-country wording beyond UAE.",
+  "employment_type": "permanent",
+  "posted_or_updated": "WorkingNomads: \"Posted 1 year ago\" (c. Aug 2025); marked expired as of 21 Aug 2026",
+  "apply_url": "https://www.workingnomads.com/jobs/ai-solutions-architect-armada",
+  "ats": "board-hosted (expired); employer ATS is Greenhouse (job-boards.greenhouse.io/armada) but this role is not on it",
+  "account_required": "no",
+  "form_fields": [],
+  "custom_questions": [],
+  "contact_email_printed": "none",
+  "employer_specifics": [
+   "Armada positions itself as 'the hyperscaler for the edge': modular AI infrastructure from first deployment to AI factory, deployed in 60+ countries",
+   "Product stack named on the Greenhouse board: Atlas (control plane), Galleon modular edge data centres on the Armada Edge Platform, Leviathan AI Factory, Bridge GPU-as-a-Service",
+   "Nearly $500M raised from Founders Fund, Lux, BlackRock, Microsoft M12; partnerships with Microsoft, Dell, Palantir, NVIDIA, SpaceX, Skydio",
+   "UAE is Armada's 'operational anchor for the ME region'; customers span energy, defence, telecoms, industrial and government"
+  ],
+  "red_flags": "Listing is expired and roughly a year old - the scout report surfaced a stale aggregator page. Even when live, the role was a classical ML/MLOps architect spec (TensorFlow/PyTorch, SageMaker/Vertex, Airflow/Kafka, MLflow/Kubeflow, Java/Scala) with LLMs only as a 'preferred' item, so the fit was weaker than reported. UAE-remote with unstated pay, and Armada's customer base is defence/government-heavy. Nearest live adjacent role on the board is \"Senior Customer Solutions Engineer, Edge AI\" (UAE Remote, Greenhouse 5235725008, FDE-plus-TAM shape, updated 11 Aug 2026) - still UAE-based, pay unstated, hardware deployment-heavy.",
+  "decision": "drop",
+  "decision_reason": "Dead: WorkingNomads marks the listing expired and posted a year ago, and Armada's live Greenhouse board (59 roles) has no AI Solutions Architect. Secondary: the real spec was classical ML/MLOps-centred and UAE-remote with no salary, so the fit collapses even setting liveness aside.",
+  "web_searches_used": 0
+ },
+ "pack": null,
+ "check": null
+}

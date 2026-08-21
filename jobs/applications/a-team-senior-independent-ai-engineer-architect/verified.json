@@ -1,0 +1,228 @@
+{
+ "verify": {
+  "id": "a-team-senior-independent-ai-engineer-architect",
+  "live": "live",
+  "live_evidence": "Fetched https://weworkremotely.com/remote-jobs/a-team-senior-independent-ai-engineer-architect on 2026-08-21 via curl: HTTP 200, full listing body rendered, \"Posted 16 days ago\" (~5 Aug 2026), \"Apply before Sep 4th, 2026\", Job type Contract, Region \"Anywhere in the World\". JSON-LD in the page shows datePosted 2024-06-16 and validThrough 2026-09-04 — i.e. an evergreen listing originally posted June 2024 and repeatedly renewed. Employer-side funnel also fetched live: https://www.a.team/ai-jobs (HTTP 200, \"Apply to Join\" -> https://onboarding.a.team/builder, rendered in browser, sign-up form visible).",
+  "employer_legal_name": "ATeams Inc. (trading as A.Team; footer \"© 2026 ATeams Inc., All rights reserved.\"; New York | Tel Aviv)",
+  "private_sector": "confirmed",
+  "private_sector_evidence": "ATeams Inc. is a privately held, venture-backed US talent-network/AI-services company (New York and Tel Aviv offices per a.team footer). Clients named are private companies (Lyft, HCA, Unilever, Google X, D-ID, Sightful, Fortune 500 CPG/beverage). Not state-owned, not a university, not Gulf-linked. Note: individual missions could be for any client, but the paying entity for Phil would be ATeams Inc. (contracts, invoicing and payouts handled by A.Team per their FAQ).",
+  "end_client": "Not applicable — this is A.Team's own talent-network intake, not a recruiter ad for a specific client. No specific engagement is offered; after acceptance builders apply to individual \"missions\" on the platform.",
+  "title_verified": "Senior Independent AI Engineer / Architect (WWR listing title; body: \"A.Team is an invite-only network of senior AI engineers, ML engineers, and AI architects\")",
+  "pay_verified": "\"Typical rates: $120-$170/hr\" and \"You keep 100% of your rate\" (WWR listing). a.team/ai-jobs adds: \"You set your rate\", \"Each mission shows the client's range, and staying near it improves your odds\", paid twice monthly on Net-15, C2C and 1099 supported. Matches scout report; no guaranteed rate or guaranteed work.",
+  "location_remote_verified": "\"Remote | Americas, Europe, or Israel\" (listing header); \"Remote (almost all roles)\"; WWR region \"Anywhere in the World\". a.team FAQ: \"Is it remote? Yes, almost always. A few missions carry location requirements for data, compliance, or tax reasons.\" UK/Ireland not named explicitly but Europe is in scope. No onsite days stated.",
+  "employment_type": "network",
+  "posted_or_updated": "WWR: \"Posted 16 days ago\" (~2026-08-05), apply before 2026-09-04; underlying JSON-LD datePosted 2024-06-16 (evergreen, renewed), validThrough 2026-09-04.",
+  "apply_url": "https://onboarding.a.team/builder",
+  "ats": "own form (A.Team platform account sign-up; WWR \"Apply now\" -> http://a.team/ai-jobs?utm_source=wwr&utm_medium=post&utm_campaign=wwrai -> \"Apply to Join\" -> onboarding.a.team/builder). The URL printed in the listing body, build.a.team/AI-Builders, 302-redirects to the a.team homepage.",
+  "account_required": "yes",
+  "form_fields": [
+   "Email (required, text) — placeholder \"Enter email\"",
+   "First name (required, text) — placeholder \"Enter first name\"",
+   "Last name (required, text) — placeholder \"Enter last name\"",
+   "Password (required, password) — placeholder \"Enter password\"",
+   "Confirm password (required, password) — placeholder \"Repeat password\"",
+   "Consent text: \"By creating an A.Team account you agree to the Privacy Policy and Terms of Service.\" (implicit on Continue; links to platform.a.team/privacy-policy and platform.a.team/terms-of-service)",
+   "Button: Continue (creates the account; subsequent profile steps — LinkedIn/resume/portfolio/GitHub, rate — are behind the login and were not viewed)",
+   "Alternative: \"Already have an account? Log in\" -> https://platform.a.team/sign-in"
+  ],
+  "custom_questions": [
+   "None on the first screen. Listing says: \"Apply — Tell us what you've built. We'll take it from there.\" a.team/ai-jobs process: Step 1 \"Share your LinkedIn or resume. We look for AI systems you've shipped to production, the tools you've used, and the scale you've operated at.\" Step 2 \"Schedule your AI evaluation — A 30- to 45-minute session on your AI background and two to three projects where you made a real contribution: what you built, your approach, and your success metrics\" plus \"a coding challenge or case study depending on your role\"."
+  ],
+  "contact_email_printed": "none",
+  "employer_specifics": [
+   "A.Team (ATeams Inc., New York | Tel Aviv) now positions itself around \"production-ready agentic teammates, built by forward deployed engineers\" and sells \"A.Team Deployed\" senior FDEs who embed inside clients' environments — a direct match to Phil's build-and-run agent work.",
+   "Listing's recent work list: \"Agent architectures and orchestration systems\", \"Retrieval, evaluation, and reliability infrastructure\", \"Enterprise AI deployments\", \"AI-native products built from zero to one\"; explicitly \"Not another chatbot wrapper\" and not for \"Developers focused primarily on simple AI wrappers or templated implementations\".",
+   "Network claims: since 2020 builders have earned $200M+ with clients including Lyft, Google X, HCA, Unilever, Sightful, D-ID; 11,000+ vetted builders, <2% acceptance, avg engagement 18 months, missions typically 12-18 months part-time to full-time.",
+   "Welcomes \"Technical founder with deep AI experience\" and \"Fractional CTO\" profiles; builders set their own rate, keep 100%, paid twice monthly Net-15 with A.Team handling contracts and invoicing; agencies not generally accepted (join as an individual)."
+  ],
+  "red_flags": "1) Not a job: an invite-only network intake with <2% stated acceptance and no guaranteed engagement after vetting. 2) Evergreen WWR listing (JSON-LD datePosted June 2024, renewed through Sep 2026) — the \"Posted 16 days ago\" is a bump, not a new hiring need. 3) The apply URL printed in the listing (build.a.team/AI-Builders) is broken and redirects to the homepage. 4) Vetting includes a 30-45 min AI evaluation plus a coding challenge or case study; the profile expects LinkedIn/resume/GitHub evidence of production systems at scale — Phil's SME-scale deployments may read light against \"billions of transactions / 100M+ users\" rhetoric. 5) Payment terms are US-centric (C2C/1099 language); UK contracting terms not stated. 6) Application requires creating a password-protected A.Team account and accepting ToS — this cannot be done by the agent.",
+  "decision": "hand_to_phil",
+  "decision_reason": "Live, private-sector (ATeams Inc.), rate band $120-170/hr clears the £500/day floor, fully remote Europe-eligible, and A.Team's current FDE/agentic-teammates positioning fits Phil's production-agent record well. But the only route is account creation (email + password + ToS acceptance) on onboarding.a.team, followed by a profile with LinkedIn/resume upload and a scheduled live evaluation — all things only Phil can do. It is also a network funnel rather than a hiring decision, so set expectations: worth 15 minutes of Phil's time to sign up and paste the cover note into the profile, not a priority application.",
+  "web_searches_used": 0
+ },
+ "pack": {
+  "id": "a-team-senior-independent-ai-engineer-architect",
+  "cover_note": "Since March 2025 I have built and run production agent systems for paying SME clients through Blue Canvas AI, my Derry-based consultancy. Its core is Albie, a 24/7 autonomous multi-channel operator on the Anthropic Claude Agent SDK: WhatsApp, Telegram, Slack and Discord in; inbox handling, Apollo and Zoho campaigns, proposals, coding and scheduled tasks out, with persistent memory. My own company runs on it daily. A.Team's move to production-ready agentic teammates built by forward deployed engineers is the work I already do: scoping, building and operating agents inside a client's environment, not wrapping a chatbot. Six live engagements; The Wall Group's AI workflow integration lifted net profit 17% year on year and funded a new site. Stack: Python, TypeScript, SQLite, REST APIs, browser automation, RAG and eval design, including rubric-graded, mutation-tested evals. Eighteen years of commercial and deep-tech leadership before that. Northern Ireland based, remote, available within four weeks.",
+  "word_count": 149,
+  "employer_specific_hook": "A.Team's current positioning around \"production-ready agentic teammates, built by forward deployed engineers\" (A.Team Deployed), plus the listing's explicit \"Not another chatbot wrapper\" filter — source: verified WWR listing body and a.team/ai-jobs (employer_specifics items 1 and 2). Tied to Albie (Claude Agent SDK, 24/7 production operator) and the six live Blue Canvas engagements where Phil scopes, builds and runs agents inside client environments.",
+  "screening_answers": [
+   {
+    "question": "Years of experience",
+    "answer": "18 years of commercial and deep-tech leadership (Commercial Director, BD Director, NED, Senior Fund Manager roles); hands-on agentic-AI production delivery since March 2025 (about 18 months) as founder of Blue Canvas AI.",
+    "flag": ""
+   },
+   {
+    "question": "Notice period / availability",
+    "answer": "No notice period — founder of my own company. Available to start a mission within 2–4 weeks to hand over client work; missions of 12–18 months part-time to full-time are workable alongside the consultancy.",
+    "flag": "ASSUMPTION: 2–4 week handover window and part-time/full-time mission capacity inferred from pack defaults; Phil to confirm how many hours per week he will commit."
+   },
+   {
+    "question": "Salary / rate expectation (A.Team: \"You set your rate\")",
+    "answer": "USD 150–170 per hour (upper half of the listing's typical $120–170/hr band), set per mission against the client's posted range. Paid via A.Team's standard twice-monthly Net-15 terms.",
+    "flag": "ASSUMPTION: upper-half positioning per pack rules; $120/hr floor of the band still clears the £500/day minimum, so Phil may flex down within the band for a strong mission but never below it."
+   },
+   {
+    "question": "Right to work",
+    "answer": "Yes — UK and Ireland. No sponsorship required now or in future. Will contract as a UK-based independent (Europe region per A.Team's Americas/Europe/Israel scope).",
+    "flag": "NEEDS PHIL: A.Team's payout language is US-centric (C2C/1099); confirm with A.Team that a UK limited company/sole trader can invoice under their platform terms before committing."
+   },
+   {
+    "question": "Why this company",
+    "answer": "A.Team is now selling forward deployed engineers who embed inside clients to ship production-ready agentic teammates, and the listing explicitly screens out chatbot wrappers. That is the exact shape of my work since March 2025: building and operating autonomous agents (Albie on the Claude Agent SDK) inside paying SME clients' environments, with P&L outcomes like The Wall Group's +17% net profit. The network model — set your own rate, keep 100%, 12–18 month missions — fits a founder who wants senior delivery work without giving up his company.",
+    "flag": ""
+   },
+   {
+    "question": "Tell us what you've built (Step 1: share LinkedIn or resume — AI systems shipped to production, tools used, scale operated at)",
+    "answer": "Albie: a 24/7 autonomous multi-channel operator (WhatsApp, Telegram, Slack, Discord) on the Anthropic Claude Agent SDK handling inbox, Apollo/Zoho campaigns, proposals, coding and scheduled tasks with persistent memory; runs my own company daily and is production infrastructure, not a demo. Six live client agent engagements across construction, equestrian, property, hospitality and ecommerce; The Wall Group's AI workflow integration delivered +17% net profit YoY and funded a new site acquisition. RL evaluation environments for a HUD.ai vendor proposal (rubric-graded, mutation-tested eval tasks). Tools: Claude Agent SDK, Python, TypeScript, SQLite, REST APIs, browser automation, RAG, Expo/EAS, Shopify Admin API. Scale: SME production systems with 24/7 uptime — not enterprise 1000+ seat deployments. LinkedIn: https://www.linkedin.com/in/philpatterson1",
+    "flag": "NEEDS PHIL: upload CV/resume file, and decide whether to add a GitHub/portfolio link — pack allows LinkedIn only."
+   },
+   {
+    "question": "AI evaluation (Step 2: 30–45 min session on AI background and 2–3 projects — what you built, approach, success metrics — plus coding challenge or case study)",
+    "answer": "Proposed projects: (1) Albie — architecture, orchestration, tool use, memory, scheduled tasks; metric: runs Blue Canvas operations daily since 2025. (2) The Wall Group — AI workflow integration; metric: +17% net profit YoY, funded a new site. (3) HUD.ai RL eval environments — rubric-graded, mutation-tested eval task design. Coding challenge or case study to be completed live by Phil.",
+    "flag": "NEEDS PHIL: schedule the evaluation himself and sit the coding challenge/case study; only he can speak to implementation detail under live questioning."
+   },
+   {
+    "question": "Email (account sign-up)",
+    "answer": "philpatterson85@gmail.com",
+    "flag": ""
+   },
+   {
+    "question": "First name",
+    "answer": "Phil",
+    "flag": ""
+   },
+   {
+    "question": "Last name",
+    "answer": "Patterson",
+    "flag": ""
+   },
+   {
+    "question": "Password / Confirm password",
+    "answer": "Not answered — credential creation is Phil's to do.",
+    "flag": "NEEDS PHIL: create the password himself; the agent will not enter credentials."
+   },
+   {
+    "question": "Consent: \"By creating an A.Team account you agree to the Privacy Policy and Terms of Service\"",
+    "answer": "Not accepted on Phil's behalf.",
+    "flag": "NEEDS PHIL: read platform.a.team/terms-of-service before clicking Continue — check for exclusivity, non-compete, non-solicit or IP-assignment clauses that would conflict with Blue Canvas AI client work; if present, treat as hand-to-Phil decision."
+   },
+   {
+    "question": "LinkedIn URL (profile step, behind login)",
+    "answer": "https://www.linkedin.com/in/philpatterson1",
+    "flag": ""
+   },
+   {
+    "question": "Location / region",
+    "answer": "Derry/Londonderry, Northern Ireland, UK (Europe). Remote; open to travel and periodic onsite for missions; not open to relocation abroad.",
+    "flag": ""
+   },
+   {
+    "question": "Are you applying as an individual or an agency?",
+    "answer": "Individual. Blue Canvas AI is my own consultancy; I would join the network and take missions personally, as A.Team's FAQ requires.",
+    "flag": "ASSUMPTION: inferred from listing's \"agencies not generally accepted\" note; Phil to confirm he is comfortable contracting personally rather than through the company."
+   },
+   {
+    "question": "How did you hear about us?",
+    "answer": "We Work Remotely job board listing.",
+    "flag": ""
+   }
+  ],
+  "probe_line": "Scale and engineering pedigree: A.Team screens for \"the scale you've operated at\" and runs a live coding challenge — Phil's evidence is founder-built SME production systems (six clients, one named P&L outcome, Albie) with no formal software-engineering employment, against a network that talks in billions of transactions and 100M+ users.",
+  "email_body": ""
+ },
+ "check": {
+  "id": "a-team-senior-independent-ai-engineer-architect",
+  "verdict": "fixed",
+  "problems": [
+   "Cover note: \"Its core is Albie\" framed Albie as the core of the consultancy's client offering; allowed facts say Albie runs Phil's own company daily. Reworded to \"I built and operate Albie\" (150 words, in range).",
+   "Answer 'Tell us what you've built': \"SME production systems with 24/7 uptime\" generalised Albie's 24/7 operation into an uptime claim across all six client systems, which is not in the allowed facts. Reworded so 24/7 attaches to Albie only.",
+   "Internal note only (not outbound): probe_line cites a network that \"talks in billions of transactions and 100M+ users\" — not in the verified listing's employer_specifics; do not let that phrasing leak into any answer.",
+   "Verified clean: word count 149 original / 150 fixed; no banned openers, exclamation marks, flattery or 'passion'; employer-specific hook present (A.Team Deployed / forward deployed engineers, 'Not another chatbot wrapper'); salary USD 150-170/hr, band floor $120/hr ≈ £749/day, clears £500/day; no relocation yes; no restrictive-terms agreement; notice period flagged ASSUMPTION; password, consent, CV upload and evaluation flagged NEEDS PHIL; email_body empty because no contact email is printed."
+  ],
+  "cover_note_final": "Since March 2025 I have built and run production agent systems for paying SME clients through Blue Canvas AI, my Derry-based consultancy. I built and operate Albie, a 24/7 autonomous multi-channel operator on the Anthropic Claude Agent SDK: WhatsApp, Telegram, Slack and Discord in; inbox handling, Apollo and Zoho campaigns, proposals, coding and scheduled tasks out, with persistent memory. My own company runs on it daily. A.Team's move to production-ready agentic teammates built by forward deployed engineers is the work I already do: scoping, building and operating agents inside a client's environment, not wrapping a chatbot. Six live engagements; The Wall Group's AI workflow integration lifted net profit 17% year on year and funded a new site. Stack: Python, TypeScript, SQLite, REST APIs, browser automation, RAG and eval design, including rubric-graded, mutation-tested evals. Eighteen years of commercial and deep-tech leadership before that. Northern Ireland based, remote, available within four weeks.",
+  "word_count_final": 150,
+  "answers_final": [
+   {
+    "question": "Years of experience",
+    "answer": "18 years of commercial and deep-tech leadership (Commercial Director, BD Director, NED, Senior Fund Manager roles); hands-on agentic-AI production delivery since March 2025 (about 18 months) as founder of Blue Canvas AI.",
+    "flag": ""
+   },
+   {
+    "question": "Notice period / availability",
+    "answer": "No notice period — founder of my own company. Available to start a mission within 2–4 weeks to hand over client work; missions of 12–18 months part-time to full-time are workable alongside the consultancy.",
+    "flag": "ASSUMPTION: 2–4 week handover window and part-time/full-time mission capacity inferred from pack defaults; Phil to confirm how many hours per week he will commit."
+   },
+   {
+    "question": "Salary / rate expectation (A.Team: \"You set your rate\")",
+    "answer": "USD 150–170 per hour (upper half of the listing's typical $120–170/hr band), set per mission against the client's posted range. Paid via A.Team's standard twice-monthly Net-15 terms.",
+    "flag": "ASSUMPTION: upper-half positioning per pack rules; $120/hr floor of the band still clears the £500/day minimum, so Phil may flex down within the band for a strong mission but never below it."
+   },
+   {
+    "question": "Right to work",
+    "answer": "Yes — UK and Ireland. No sponsorship required now or in future. Will contract as a UK-based independent (Europe region per A.Team's Americas/Europe/Israel scope).",
+    "flag": "NEEDS PHIL: A.Team's payout language is US-centric (C2C/1099); confirm with A.Team that a UK limited company/sole trader can invoice under their platform terms before committing."
+   },
+   {
+    "question": "Why this company",
+    "answer": "A.Team is now selling forward deployed engineers who embed inside clients to ship production-ready agentic teammates, and the listing explicitly screens out chatbot wrappers. That is the exact shape of my work since March 2025: building and operating autonomous agents (Albie on the Claude Agent SDK) inside paying SME clients' environments, with P&L outcomes like The Wall Group's +17% net profit. The network model — set your own rate, keep 100%, 12–18 month missions — fits a founder who wants senior delivery work without giving up his company.",
+    "flag": ""
+   },
+   {
+    "question": "Tell us what you've built (Step 1: share LinkedIn or resume — AI systems shipped to production, tools used, scale operated at)",
+    "answer": "Albie: a 24/7 autonomous multi-channel operator (WhatsApp, Telegram, Slack, Discord) on the Anthropic Claude Agent SDK handling inbox, Apollo/Zoho campaigns, proposals, coding and scheduled tasks with persistent memory; runs my own company daily and is production infrastructure, not a demo. Six live client agent engagements across construction, equestrian, property, hospitality and ecommerce; The Wall Group's AI workflow integration delivered +17% net profit YoY and funded a new site acquisition. RL evaluation environments for a HUD.ai vendor proposal (rubric-graded, mutation-tested eval tasks). Tools: Claude Agent SDK, Python, TypeScript, SQLite, REST APIs, browser automation, RAG, Expo/EAS, Shopify Admin API. Scale: SME production systems, with Albie running 24/7 — not enterprise 1000+ seat deployments. LinkedIn: https://www.linkedin.com/in/philpatterson1",
+    "flag": "NEEDS PHIL: upload CV/resume file, and decide whether to add a GitHub/portfolio link — pack allows LinkedIn only."
+   },
+   {
+    "question": "AI evaluation (Step 2: 30–45 min session on AI background and 2–3 projects — what you built, approach, success metrics — plus coding challenge or case study)",
+    "answer": "Proposed projects: (1) Albie — architecture, orchestration, tool use, memory, scheduled tasks; metric: runs Blue Canvas operations daily since 2025. (2) The Wall Group — AI workflow integration; metric: +17% net profit YoY, funded a new site. (3) HUD.ai RL eval environments — rubric-graded, mutation-tested eval task design. Coding challenge or case study to be completed live by Phil.",
+    "flag": "NEEDS PHIL: schedule the evaluation himself and sit the coding challenge/case study; only he can speak to implementation detail under live questioning."
+   },
+   {
+    "question": "Email (account sign-up)",
+    "answer": "philpatterson85@gmail.com",
+    "flag": ""
+   },
+   {
+    "question": "First name",
+    "answer": "Phil",
+    "flag": ""
+   },
+   {
+    "question": "Last name",
+    "answer": "Patterson",
+    "flag": ""
+   },
+   {
+    "question": "Password / Confirm password",
+    "answer": "Not answered — credential creation is Phil's to do.",
+    "flag": "NEEDS PHIL: create the password himself; the agent will not enter credentials."
+   },
+   {
+    "question": "Consent: \"By creating an A.Team account you agree to the Privacy Policy and Terms of Service\"",
+    "answer": "Not accepted on Phil's behalf.",
+    "flag": "NEEDS PHIL: read platform.a.team/terms-of-service before clicking Continue — check for exclusivity, non-compete, non-solicit or IP-assignment clauses that would conflict with Blue Canvas AI client work; if present, treat as hand-to-Phil decision."
+   },
+   {
+    "question": "LinkedIn URL (profile step, behind login)",
+    "answer": "https://www.linkedin.com/in/philpatterson1",
+    "flag": ""
+   },
+   {
+    "question": "Location / region",
+    "answer": "Derry/Londonderry, Northern Ireland, UK (Europe). Remote; open to travel and periodic onsite for missions; not open to relocation abroad.",
+    "flag": ""
+   },
+   {
+    "question": "Are you applying as an individual or an agency?",
+    "answer": "Individual. Blue Canvas AI is my own consultancy; I would join the network and take missions personally, as A.Team's FAQ requires.",
+    "flag": "ASSUMPTION: inferred from listing's \"agencies not generally accepted\" note; Phil to confirm he is comfortable contracting personally rather than through the company."
+   },
+   {
+    "question": "How did you hear about us?",
+    "answer": "We Work Remotely job board listing.",
+    "flag": ""
+   }
+  ],
+  "email_body_final": ""
+ }
+}

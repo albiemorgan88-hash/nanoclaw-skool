@@ -1,0 +1,36 @@
+{
+ "verify": {
+  "id": "simudyne-forward-deployed-engineer",
+  "live": "dead",
+  "live_evidence": "Fetched today (2026-08-21): (1) https://jobs.techstars.com/companies/simudyne/jobs/70291384-forward-deployed-engineer-london-or-remote-uk-eu-us returns HTTP 200; embedded Getro JSON shows status \"active\", postedAt 2026-03-12T17:37Z, source \"career_page\", closedAt/deactivatedAt null, and gives the apply/source URL as https://simudyne.com/careers/forward-deployed-engineer/. (2) That employer source URL now returns HTTP 404 \"Page not found - Simudyne\". (3) https://simudyne.com/careers/ (HTTP 200) lists zero roles under \"Current job openings at Simudyne\" and instead invites speculative CVs to careers@simudyne.com. The Techstars copy is a stale syndicated aggregator entry (5+ months old) whose source posting has been removed by the employer, so I am treating the role as closed.",
+  "employer_legal_name": "Simudyne Ltd (Companies House registration no. 06291551; 125 Wood Street, London EC2V 7AW)",
+  "private_sector": "confirmed",
+  "private_sector_evidence": "Simudyne Ltd is a privately held, VC-backed London simulation-software company (founded 2016 by Justin Lyon; Barclays Techstars 2017, Mastercard Start Path 2018; Series A per Getro data; ~12 employees). Company site footer shows a private limited company registration. No state or university ownership. Note: clients include \"global banks, regulators, and exchanges\", so there is some regulator (public-body) client exposure, but the employer itself is private.",
+  "end_client": "Not applicable - direct employer (Simudyne Ltd), not a recruiter ad.",
+  "title_verified": "Forward Deployed Engineer (London or Remote - UK/EU/US)",
+  "pay_verified": "unstated - listing says only \"Competitive salary\" and \"Equity package\". Matches the scout report (\"Unstated\").",
+  "location_remote_verified": "\"Hybrid / Remote - London ideal but UK, EU, and US candidate welcome\"; \"Flexible hybrid working\"; \"Willingness to travel occasionally to client sites (10-20%)\". No onsite-day count stated. Eligible countries: UK, EU, US.",
+  "employment_type": "permanent",
+  "posted_or_updated": "Posted 2026-03-12 (Techstars/Getro postedAt). Employer source page removed (404) as of 2026-08-21; Simudyne careers index shows no open roles.",
+  "apply_url": "https://simudyne.com/careers/forward-deployed-engineer/ (employer page linked from the Techstars listing - now HTTP 404). Board listing: https://jobs.techstars.com/companies/simudyne/jobs/70291384-forward-deployed-engineer-london-or-remote-uk-eu-us",
+  "ats": "own form (employer career page, now removed) / board-hosted aggregator copy on Techstars (Getro)",
+  "account_required": "no",
+  "form_fields": [
+   "No application form reachable: the employer's apply page returns 404 and the Simudyne careers index lists no roles. Only route shown is the general speculative address careers@simudyne.com (send 'a short note and your CV')."
+  ],
+  "custom_questions": [],
+  "contact_email_printed": "none in the listing itself; careers@simudyne.com is printed on the employer's careers index page (https://simudyne.com/careers/) as the general speculative-application address",
+  "employer_specifics": [
+   "Simudyne builds an agent-based simulation platform (Java-based SDK; products branded Discover / Simulate / Reason, plus a public 'Model Garden' and patents) for financial institutions - clients include global banks, regulators and exchanges.",
+   "Founded 2016 by Justin Lyon; graduated Barclays Techstars (2017) and Mastercard Start Path (2018); small team (~12 per Getro) including PhDs; HQ 125 Wood Street, London EC2V.",
+   "The FDE role was about building and deploying custom Java simulation solutions on client sites end-to-end (requirements to production), integrating large-scale data into simulation and AI frameworks, with 10-20% client travel.",
+   "Listing explicitly requires MSc or above in CS/AI, strong Java, working Python, and 1-2 years post-university experience - i.e. a junior/early-career hire."
+  ],
+  "red_flags": "(1) Role appears closed: employer page 404, no roles on Simudyne careers index, and the Techstars copy is a 5-month-old aggregator entry. (2) Fit collapses on the actual text: it is a junior role (\"1-2 years relevant post-university experience\"), requires \"MSc or above with computer science or AI background\" and \"Strong proficiency in Java\" - Phil has none of these, and his 18-year profile is badly over-qualified for the level. (3) Agent-based modelling (discrete-event/ABM simulation) is not agentic AI; the scout's keyword match was flagged as risky in triage and the listing confirms it. (4) Pay unstated (\"Competitive salary\") on a junior permanent role at a ~12-person Series A company - very unlikely to meet the GBP 80k floor.",
+  "decision": "drop",
+  "decision_reason": "Dead on the employer side (source page 404, zero open roles on simudyne.com/careers; only the stale Techstars aggregator copy remains). Even if it were live, the listing is a junior Java engineering role (1-2 yrs post-university, MSc required) with unstated pay - a mismatch with Phil's profile and almost certainly below the GBP 80k floor. Not worth a speculative email to careers@simudyne.com for this role.",
+  "web_searches_used": 0
+ },
+ "pack": null,
+ "check": null
+}

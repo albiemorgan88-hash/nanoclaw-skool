@@ -1,0 +1,34 @@
+{
+ "verify": {
+  "id": "amigo-applied-ai-engineer-europe",
+  "live": "dead",
+  "live_evidence": "Fetched https://remoteok.com/remote-jobs/remote-applied-ai-engineer-europe-amigo-1131296 (HTTP 200, full text read 2026-08-21). Embedded JSON-LD: datePosted 2026-04-23, validThrough 2026-07-22 — expired a month ago. The page's only apply control (/l/1131296) 302-redirects back to the same RemoteOK listing page rather than to any employer form, RemoteOK's behaviour for closed jobs. Employer's own ATS (Ashby board https://api.ashbyhq.com/posting-api/job-board/amigo, 14 open roles, fetched today) and https://www.amigo.ai/careers both list only NYC/SF on-site roles — no Applied AI Engineer, no Europe/Amsterdam/remote role. The amigo.ai Applied AI Engineer posting surfaced by search (agent-engineer-e21088e2...) returns 404.",
+  "employer_legal_name": "Amigo (amigo.ai; LinkedIn company/youramigo-ai) — healthcare AI agent company, New York/San Francisco. Exact legal suffix (e.g. \"Amigo AI, Inc.\") not shown on the listing or careers page.",
+  "private_sector": "confirmed",
+  "private_sector_evidence": "Listing text: venture-backed startup \"fresh off our Series A backed by Tier 1 investors like Madrona, General Catalyst, and Optum Ventures\" ($17M total incl. $11M Series A led by Madrona per search). Privately held US company. Note exposure: customers are healthcare organisations and the listing says work is \"validated with leading academic medical institutions\" — public/academic clients, but the employer is private.",
+  "end_client": "Not applicable — direct employer ad, not a recruiter.",
+  "title_verified": "Applied AI Engineer, Europe (RemoteOK page title \"Remote Applied AI Engineer Europe at Amigo\")",
+  "pay_verified": "Not stated in the visible ad body. RemoteOK's JSON-LD metadata carries baseSalary USD 80,000–150,000/year (RemoteOK frequently auto-estimates this field). Differs from scout report (\"salary unstated\"): a range exists in metadata, roughly £63k–£118k, with the bottom below Phil's £80k floor. Amigo's own NYC/SF Applied AI Engineer posting (now 404) was $130K–$160K + equity per search snippet.",
+  "location_remote_verified": "RemoteOK \"#Location: Amsterdam\"; JSON-LD jobLocationType TELECOMMUTE, jobLocation addressCountry Netherlands, applicantLocationRequirements: Netherlands. Title says \"Europe\". No onsite-day or country-eligibility detail in the ad body; no mention of UK/Ireland. Every currently open Amigo role is NYC or SF \"On Site\".",
+  "employment_type": "permanent",
+  "posted_or_updated": "Posted 2026-04-23 (JSON-LD datePosted); validThrough 2026-07-22 (expired). Scout report's \"live on RemoteOK as of 2026-08-20\" was only an HTTP 200 on a stale page.",
+  "apply_url": "https://remoteok.com/remote-jobs/remote-applied-ai-engineer-europe-amigo-1131296 (no working form — apply link loops back to this page; no corresponding Ashby posting exists on https://jobs.ashbyhq.com/amigo)",
+  "ats": "Ashby (employer's ATS for all current roles) — but this role is not on it; board-hosted RemoteOK page is the only copy and is closed",
+  "account_required": "no",
+  "form_fields": [],
+  "custom_questions": [],
+  "contact_email_printed": "none",
+  "employer_specifics": [
+   "Amigo deploys AI agents for healthcare organisations across the patient journey: pre-visit intake, care navigation, post-visit care plans, patient monitoring",
+   "Series A backed by Madrona, General Catalyst and Optum Ventures; agents have handled 3M+ patient encounters and are 'on track to 10x this year'",
+   "Role is Python-centric: context graphs for reasoning-mode selection, agent personas/memory, bounded 'Operational Patient Domains' with escalation rules, verification loops, simulation-based and adversarial testing, evaluation suites that gate deployments against customer KPIs",
+   "Explicit 6-12 month rotation design into Applied AI leadership, Product Management, Sales Engineering or Software Engineering; current open roles are all NYC/SF on-site (Senior/Staff Forward Deployed Engineer $200K-$300K + equity)"
+  ],
+  "red_flags": "Listing expired 2026-07-22 and has no working apply route; Amigo's own careers page and Ashby board show no European or remote role of any kind — the Europe/Amsterdam opening appears to have been withdrawn. Metadata pay range starts at USD 80k (~£63k), below floor. Location metadata is Netherlands-specific, not UK/Ireland. Role is pitched as a junior-to-mid \"launchpad\" (2+ years' experience) rather than a senior/fractional position. Healthcare customer base includes academic medical institutions (client exposure only).",
+  "decision": "drop",
+  "decision_reason": "Dead listing: validThrough passed on 2026-07-22, the apply link redirects to itself, and the employer's live ATS (14 roles, all NYC/SF on-site) carries no Applied AI Engineer Europe. Even if revived, metadata pay (USD 80k–150k) dips below the £80k floor and the role is scoped as an early-career launchpad. Only viable alternative at Amigo is the Senior/Staff Forward Deployed Engineer track, which requires NYC/SF relocation — poor fit per brief.",
+  "web_searches_used": 1
+ },
+ "pack": null,
+ "check": null
+}

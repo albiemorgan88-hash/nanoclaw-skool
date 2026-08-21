@@ -1,0 +1,36 @@
+{
+ "verify": {
+  "id": "aistudio-forward-deployed-engineer",
+  "live": "live",
+  "live_evidence": "Fetched https://wellfound.com/jobs/4574563-forward-deployed-engineer on 2026-08-21 via curl (desktop UA): HTTP 200, full job content rendered, JSON-LD JobPosting datePosted 2026-08-11T17:27:26Z, page shows \"Posted: 1 week ago • Recruiter recently active\", company badge \"Actively Hiring\" / \"Top 1% of responders\", Apply Now button present. No closed/expired markers.",
+  "employer_legal_name": "AiStudio (trading name; company site aistudio.ae states \"Registered in DIFC, Dubai\"; exact registered entity name not shown on listing or site)",
+  "private_sector": "confirmed",
+  "private_sector_evidence": "Founder-owned AI consultancy (Managing Partners Sharad Mirani and Monish Pathare named on aistudio.ae), DIFC-registered in Dubai, clients are private equity firms, their portfolio companies, funds, insurers and lenders. No state ownership, university or government link indicated anywhere on the listing or company site. Note Gulf registration (DIFC) but no sovereign/state-linked ownership signal.",
+  "end_client": "Not a recruiter ad; AiStudio is the direct employer (Wellfound directApply: true). FDE would be embedded with AiStudio's PE-portfolio / financial-institution clients, unnamed.",
+  "title_verified": "Forward Deployed Engineer",
+  "pay_verified": "₹15L – ₹20L per year • No equity (JSON-LD baseSalary currency INR, 1,500,000–2,000,000/year; roughly £13k–£18k). DIFFERS from scout report, which said \"salary unstated\".",
+  "location_remote_verified": "Company location Dubai, UAE. Remote Work Policy: \"Remote only\"; \"Hires remotely in Everywhere\"; Visa Sponsorship: Not Available; Relocation: Allowed. JSON-LD jobLocationType TELECOMMUTE with applicantLocationRequirements = United Arab Emirates (contradicts the \"Everywhere\" label on the page). 2 years of experience.",
+  "employment_type": "permanent",
+  "posted_or_updated": "2026-08-11 (JSON-LD datePosted); page shows \"Posted: 1 week ago\" on 2026-08-21",
+  "apply_url": "https://wellfound.com/jobs/4574563-forward-deployed-engineer",
+  "ats": "board-hosted (Wellfound Apply Now, directApply)",
+  "account_required": "yes",
+  "form_fields": [
+   "Wellfound account login/sign-up required before the Apply Now form renders; form fields not visible without logging in (not attempted). Wellfound standard apply uses the candidate's Wellfound profile plus an optional note to the company."
+  ],
+  "custom_questions": [],
+  "contact_email_printed": "none",
+  "employer_specifics": [
+   "AiStudio is an AI consultancy that embeds engineers inside portfolio companies of private equity firms, building production systems (ML replacing manual processes, internal tools, data pipelines, automation) that target cost savings, automation and revenue.",
+   "Company site positions it as 'AI Partner for Financial Institutions' eliminating document-heavy workflows for funds, insurers and lenders; case studies claim an 80% reduction in reporting time across a $500MM+ private-market fund and a 7x faster model upgrade cycle for a lending model-lifecycle platform.",
+   "Founders: Sharad Mirani (Managing Partner, AI & Engineering; ex Tower Research, Optiver, Goldman Sachs) and Monish Pathare (Managing Partner, Business & Operations; ex Lightbox Ventures). Advisors include ex-Google DeepMind and L.E.K. alumni. Registered in DIFC, Dubai.",
+   "Role asks for: scoping and designing solutions for live business problems, building end-to-end production tools with modern stacks and AI APIs, working directly with non-technical client stakeholders, owning a workstream from architecture to deployment; only 2 years' experience required."
+  ],
+  "red_flags": "Pay is ₹15–20 lakh/year (about £13–18k) with no equity, i.e. an India-pay-scale remote role; roughly one-fifth of Phil's £80k floor. Full-time permanent, not contract. Visa sponsorship not available; JSON-LD restricts applicants to UAE even though the page says \"Everywhere\". Junior framing (2 years' experience) and a parallel intern posting from the same company. Applying requires a Wellfound account. The listing prints no contact email (founders' addresses appear on aistudio.ae, not in the ad).",
+  "decision": "drop",
+  "decision_reason": "Live and a genuine private-sector FDE role, but the stated salary band of ₹15L–₹20L per year (~£13–18k, no equity) is far below the £80k base floor, it is full-time permanent rather than contract, and applying needs a Wellfound login. The scout's \"salary unstated\" was wrong; the fit collapses on pay.",
+  "web_searches_used": 0
+ },
+ "pack": null,
+ "check": null
+}

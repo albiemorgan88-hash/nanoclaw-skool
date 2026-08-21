@@ -1,0 +1,36 @@
+{
+ "verify": {
+  "id": "version-1-ai-solutions-internal-adoption-lead",
+  "live": "dead",
+  "live_evidence": "Fetched 2026-08-21. (1) SmartRecruiters public Posting API https://api.smartrecruiters.com/v1/companies/Version1/postings/744000117619537 -> HTTP 200, \"active\": false, releasedDate 2026-03-31T14:24:21Z, refNumber REF6207K; its canonical postingUrl points to a different ID, 744000117900468 (same slug). (2) API for 744000117900468 -> HTTP 200, also \"active\": false, identical job ad. (3) Both listing pages https://jobs.smartrecruiters.com/Version1/744000117619537-ai-solutions-internal-adoption-lead and .../744000117900468-... return HTTP 200 but render a disabled button \"Sorry, this job has expired\" (id=\"st-apply\", disabled) and schema meta datePosted=2026-03-31, validThrough=2026-04-30T11:30:47Z. (4) Apply URL (?oga=true) redirects to oneclick-ui and returns HTTP 403. (5) Version 1 live-postings API (q=adoption, 18 results; q=AI, 28 results) does not contain this role. The scout's \"presumed_live\" was based solely on the HTTP 200 of an expired page.",
+  "employer_legal_name": "Version 1 (Version 1 Software Ltd / Version 1 Solutions Ltd group; posting company identifier \"Version1\")",
+  "private_sector": "confirmed",
+  "private_sector_evidence": "Private Irish IT services consultancy, majority-owned by Partners Group (private equity) since 2022; the ad itself describes a \"3300+ strong, €350/£300m revenue business\" with Microsoft/AWS/Oracle partnerships. Not state-owned, not a university, not Gulf-linked. Note heavy public-sector client exposure (UK central government, Irish public service, NHS-adjacent) - though this particular role was internal-facing (HR/Finance/Legal/Marketing support functions), not client delivery.",
+  "end_client": "Not applicable - direct employer posting on Version 1's own SmartRecruiters board; the role was internal to Version 1 (AI Centre of Excellence, department \"CTO Digital Advisory\").",
+  "title_verified": "AI Solutions & Internal Adoption Lead (REF6207K), department CTO Digital Advisory, Mid-Senior Level, Full-time",
+  "pay_verified": "unstated (no salary in the ad, no baseSalary schema field). Matches scout report's \"unstated\". Custom field \"Open to Contract & Permanent?\" = \"Permanent only\".",
+  "location_remote_verified": "Location field: \"London, Birmingham, Manchester, Newcastle upon Tyne, Edinburgh, Belfast\", country GB, remote=false, hybrid=false in the API; however custom field \"Associated V1 Office\" = \"Office - London\" (not Belfast). Benefits text says \"Flexible/remote working\" in general terms; no onsite-day count stated. Role manages an offshore direct report (\"AI Platform Specialist (IDC)\" - India Delivery Centre).",
+  "employment_type": "permanent",
+  "posted_or_updated": "Posted 2026-03-31; validThrough 2026-04-30; inactive as of 2026-08-21",
+  "apply_url": "https://jobs.smartrecruiters.com/Version1/744000117900468-ai-solutions-internal-adoption-lead?oga=true (apply button disabled - \"Sorry, this job has expired\")",
+  "ats": "SmartRecruiters",
+  "account_required": "no",
+  "form_fields": [
+   "Form not reachable - apply button disabled ('Sorry, this job has expired'); apply URL redirects to oneclick-ui and returns HTTP 403; posting configuration endpoint returns 404. SmartRecruiters forms normally need no account, but no fields could be enumerated for this expired posting."
+  ],
+  "custom_questions": [],
+  "contact_email_printed": "none",
+  "employer_specifics": [
+   "Role sat in Version 1's AI Centre of Excellence ('AI Native' ambition), reporting to the Head of AI CoE, created in a CoE restructure that consolidated the internal-builds remit of the former 'AI Platforms & Partner Technology' lead and the support-function remit of the 'AI Enablement & Adoption' lead",
+   "Mandate: own end-to-end delivery and adoption of AI into Version 1's own support functions (HR, Finance, Legal, Marketing), with efficiency KPIs reported to the DPO and quarterly to the ELT; manage one direct report, the AI Platform Specialist in the India Delivery Centre",
+   "Required stack was Microsoft-centric: Copilot Studio, M365 Copilot, Azure AI services; desirable: EU AI Act/AI governance, Lean/Six Sigma, low-code/citizen-developer programmes, ServiceNow/Jira Service Management",
+   "Company facts from the ad: 30 years in business, 3300+ staff, EUR350m/GBP300m revenue, 'UK & Ireland's premier AWS, Microsoft & Oracle partner', quarterly profit-share scheme"
+  ],
+  "red_flags": "Listing is expired (closed ~30 Apr 2026, four months before the scout report flagged it as new on 17 Aug 2026) - scout liveness check relied on HTTP 200 only. Even if reopened: salary unstated and Version 1 bands historically sit below the GBP80k floor; \"Associated V1 Office\" is London rather than Belfast; role is internal enablement with a Microsoft Copilot/Azure AI requirement and enterprise-support-function change-management emphasis, a weaker match for Phil's production-agent/commercial profile than the title suggests; permanent only (no contract option).",
+  "decision": "drop",
+  "decision_reason": "Dead listing: both SmartRecruiters posting IDs report active=false, the page shows a disabled \"Sorry, this job has expired\" apply button with validThrough 2026-04-30, and the role is absent from Version 1's live postings. No application route exists. Secondary: pay unstated and likely below the GBP80k floor, London-associated office, Microsoft-Copilot-centric internal role. If Phil wants Version 1 generally, the live board today has \"Senior Change & Transformation Consultant\" (744000144549435, posted 20 Aug) and \"Presales Consultant\" (744000144313693, posted 19 Aug), both UK multi-city incl. Belfast, but neither was verified here.",
+  "web_searches_used": 0
+ },
+ "pack": null,
+ "check": null
+}

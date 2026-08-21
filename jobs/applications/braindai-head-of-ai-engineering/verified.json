@@ -1,0 +1,36 @@
+{
+ "verify": {
+  "id": "braindai-head-of-ai-engineering",
+  "live": "live",
+  "live_evidence": "Fetched https://wellfound.com/jobs/3930372-head-of-ai-engineering today (2026-08-21) with desktop UA: HTTP 200, full listing rendered with \"Apply Now\" button, header \"Head of AI Engineering ₹20L – ₹50L • No equity | Remote (India) | 3 years of exp | Full Time | Posted: 5 months ago\". JSON-LD datePosted 2026-03-01T13:51:03Z, jobLocationType TELECOMMUTE, applicantLocationRequirements = Country: India. No closed/expired marker. Listing points applicants to a Notion page (https://braindio.notion.site/3163d76ce91a80b98c8ed12296a06b7a) which returned only a JS shell via WebFetch, so the apply form itself could not be read.",
+  "employer_legal_name": "BraindAI (trading name; website braind.io, Dublin HQ — legal entity name not shown on listing or site text fetched)",
+  "private_sector": "confirmed",
+  "private_sector_evidence": "Listing: \"BraindAI is an AI consulting and product company based in Dublin, Ireland, serving B2B clients across UK and Ireland in legal, finance, and enterprise verticals\"; \"Technical founder who understands engineering\". Company site braind.io: privately run AI transformation studio, offices Dublin/London/India, clients listed (CWSI, Tecknuovo, BIZQUIP, Johnston Shopfitters, JDM Products, Mercury Retail, MMPI), partners Enterprise Ireland/Anthropic/AWS/Microsoft. Enterprise Ireland appears as a support partner, not an owner. Site lists \"Middle East\" as an active market — commercial exposure only, no state-ownership link found. No university or public-body link.",
+  "end_client": "n/a — direct employer (BraindAI hiring for itself, not a recruiter ad)",
+  "title_verified": "Head of AI Engineering",
+  "pay_verified": "₹30-50 LPA stated in the job description body; Wellfound header shows ₹20L – ₹50L • No equity. That is roughly £26k–£44k per year. Differs sharply from the scout report, which said \"unstated; comparable Dublin Head-of-AI roles run €100–150k\" — the scout assumed a Dublin-paid role; it is actually an India-paid role.",
+  "location_remote_verified": "\"Location: Remote (India)\"; \"India-based, comfortable with remote async work\" listed as a requirement; Wellfound: \"Hires remotely in India\", \"Remote Work Policy: Remote only\", Company Location Dublin. Applicant location requirement in structured data = India. Not open to UK/Ireland-based applicants as written.",
+  "employment_type": "permanent",
+  "posted_or_updated": "Posted 2026-03-01 (Wellfound shows \"Posted: 5 months ago\"); no update/repost date shown",
+  "apply_url": "https://braindio.notion.site/3163d76ce91a80b98c8ed12296a06b7a",
+  "ats": "own form (Notion page linked from listing as \"Apply here\"); Wellfound \"Apply Now\" button also present but requires a Wellfound account",
+  "account_required": "unknown",
+  "form_fields": [
+   "Could not be read: the Notion apply page rendered only a JavaScript shell ('Notion') on fetch; no fields visible. Wellfound's own Apply Now route requires a Wellfound login."
+  ],
+  "custom_questions": [],
+  "contact_email_printed": "none",
+  "employer_specifics": [
+   "First Head of AI Engineering hire: own the entire AI stack and build a team of 5-6 AI engineers from scratch; split stated as 55% architecture/direction, 20% framework building, 15% hands-on critical paths, 10% research",
+   "Builds production RAG pipelines, multi-agent workflows and AI automation for B2B clients in legal, finance and enterprise verticals across UK and Ireland, shipping to enterprise users weekly",
+   "Stack named in listing: Claude/Anthropic APIs, LangGraph, FastAPI, vector databases, AWS, MCP, n8n; wants Claude Code or Cursor as daily drivers and experience setting up AI agent teams",
+   "Company site: four-stage model (FlowSYS discovery, Development, Flowgentic agent layer, Fractional Head of AI embedded 1-2 days/week); clients include CWSI, Tecknuovo, BIZQUIP, Johnston Shopfitters, Mercury Retail; partners Anthropic, AWS, Microsoft, Enterprise Ireland"
+  ],
+  "red_flags": "Role is explicitly India-based and India-paid (₹30-50 LPA ≈ £26-44k) despite the Wellfound title line showing \"Dublin • Remote\"; the scout report misread this as a Dublin remote role with a plausible €100-150k salary. Listing is 5+ months old (posted 1 Mar 2026) with no refresh signal. Asks for \"3-7 years shipping production AI/LLM systems\" as an engineer, which Phil's CV does not show as formal engineering employment. Apply route is an unreadable Notion page.",
+  "decision": "drop",
+  "decision_reason": "Listing is live and the employer is private, but the role is restricted to India-based applicants and pays ₹30-50 LPA (about £26-44k), far below the £80k base floor. The scout report's \"Dublin / Remote, plausibly clears £80k\" framing was wrong — the structured data and body text both say Remote (India), India-based required. Fit collapses on location eligibility and pay. Only residual angle, if Phil wants it, is a separate unsolicited pitch for BraindAI's own \"Fractional Head of AI\" service line (UK/Ireland on-site 1-2 days/week) — not this req.",
+  "web_searches_used": 0
+ },
+ "pack": null,
+ "check": null
+}

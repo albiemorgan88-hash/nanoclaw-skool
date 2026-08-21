@@ -1,0 +1,74 @@
+# Sr. Forward Deployed AI Engineer (Remote Eligible in the UK) — Smartsheet Inc. (Bellevue, WA, US parent; privately held since the Jan 2025 Blackstone/Vista Equity Partners take-private). UK employing entity almost certainly Smartsheet UK Limited (Companies House 09484059, active private limited company, formerly Helpa Ltd, London registered office c/o TMF Group) — the listing itself does not name the contracting entity.
+
+- Verified: 2026-08-21 · live: **live** · private sector: **confirmed** · decision: **hand_to_phil**
+- Why: Listing is live, the employer is confirmed private, and the Greenhouse form needs no account — but three things only Phil can decide before effort is spent: whether to apply against a stated 6–10+ years production-SWE / 3+ years production-AI requirement that his CV does not literally meet (the role is otherwise squarely agentic/MCP/FDE, fit reframing possible via the 'nontraditional paths' and technical-founder lines); whether he will accept 25–50% domestic and international travel; and which CV to upload (required file; pay unstated permanent, likely within band for a Sr FDE at a PE-owned US SaaS but unconfirmed). Not a drop: nothing hard-excludes it and it is the strongest-provenance agentic role in the batch.
+- Pay (as listed): unstated — no salary in content, Greenhouse pay_input_ranges null. Matches scout report ("salary unstated").
+- Location/remote: Greenhouse location "-REMOTE, UK-"; office "England, United Kingdom"; tagged #LI-Remote. No onsite days stated. Must be eligible to work in the UK on an ongoing basis (form asks "Are you legally authorized to work in the UK?"). Role requires domestic and international travel approximately 25–50% of the time. Scout's "syndicated across Dundee, Bolton, Chelmsford, Bournemouth" was just job-board city-stamping; the ATS says UK remote.
+- Type: permanent · posted/updated: First published 1 May 2026; last updated 27 Jul 2026 (Greenhouse API). Scout's "approximately 2 weeks ago" is wrong — the req has been open ~16 weeks.
+- End client: Not applicable — direct employer posting on Smartsheet's own Greenhouse board (Engineering - Developers department).
+- Apply: https://job-boards.greenhouse.io/smartsheet/jobs/7873872 (Greenhouse; account required: no)
+- Contact email printed in listing: none
+- Red flags: (1) Hard requirement: 6–10+ years production software engineering including 3+ years deploying AI/ML to production, plus a proven track record leading complex enterprise engagements (security reviews, systems 'organisations depend on') — Phil has no formal SWE employment history and ~17 months of production agent work at SME scale; a screener applying this literally will reject. (2) 25–50% domestic and international travel required — not disclosed in the scout report. (3) Salary unstated for a permanent role. (4) Req open since 1 May 2026 (~16 weeks), refreshed 27 Jul — may be hard to fill or slow-moving. (5) US-HQ'd; some US-hours overlap likely though not stated. (6) CV upload required (paste-as-text alternative exists). Positives: Smartsheet's own Greenhouse board, no account needed, explicitly welcomes 'nontraditional paths' and lists technical-founder background as a nice-to-have.
+- Liveness evidence: 21 Aug 2026: Greenhouse API https://boards-api.greenhouse.io/v1/boards/smartsheet/jobs/7873872?questions=true returned HTTP 200 with full content, questions and location; first_published 2026-05-01, updated_at 2026-07-27. Board page https://job-boards.greenhouse.io/smartsheet/jobs/7873872 returned HTTP 200 with title "Job Application for Sr. Forward Deployed AI Engineer (Remote Eligible in the UK) at Smartsheet" and no closed/no-longer-accepting notice.
+- Private-sector evidence: Smartsheet is a PE-owned private SaaS company (Blackstone + Vista take-private completed January 2025); smartsheet.com/about fetched today: HQ Bellevue, Washington, ~3,000 employees. Companies House record for Smartsheet UK Limited (09484059): Active, Private limited Company, SIC 62090. No public-sector, university or Gulf-state ownership. Note: the listing's "nice to have" mentions domain knowledge in healthcare, financial services or government — i.e. some customer exposure to public-sector clients, but the employer is private.
+
+## Form fields
+- First Name (required, text)
+- Last Name (required, text)
+- Preferred First Name (required, text)
+- Email (required, text)
+- Phone (required, text)
+- Resume/CV (required; file upload OR paste-as-text textarea 'resume_text')
+- Cover Letter (optional; file upload OR paste-as-text textarea)
+- Applicant Privacy Notice (required, single-select: 'I acknowledge receipt of the Applicant Privacy Notice.')
+- Do you know anyone who works at Smartsheet? (required, textarea)
+- How did you hear about us? (required, single-select: Ada Developer's Academy / Afrotech / Cinde Jobs / Edlyft / Employee Referral / Google / Handshake / Hired.com / Industry Event / Latinas in Tech / LinkedIn / Out in Tech / Other Job Board / Smartsheet Careers Site / Smartsheet Event / University Event / Women in Tech Regatta / Women Who Code / Other / Former Smartsheet Employee)
+- LinkedIn Profile (required, text)
+- AI familiarity rating (required, single-select 1-5: '1 - Not familiar at all' / '2 - Slightly familiar (e.g., have read about AI but no hands-on experience)' / '3 - Moderately familiar (e.g., used AI tools like ChatGPT, Gemini, Copilot, Midjourney, etc.)' / '4 - Very familiar (e.g., regularly incorporate AI tools personally and/or professionally into your work)' / '5 - Expert level (e.g., build or train AI models, work with ML frameworks, led organization wide AI enablement efforts)')
+- Are you legally authorized to work in the UK? (required, single-select: Yes / No)
+- Location (required, Greenhouse location autocomplete with hidden Latitude/Longitude)
+- US EEOC voluntary self-identification blocks (gender/race, veteran status, disability) — voluntary, US-compliance boilerplate; GDPR demographic-data consent applies
+
+## Custom questions
+- Do you know anyone who works at Smartsheet?
+- How did you hear about us?
+- LinkedIn Profile
+- In our pursuit of AI-driven advancements, how would you rate your overall familiarity with artificial intelligence (AI) concepts and tools?
+- Are you legally authorized to work in the UK?
+- Applicant Privacy Notice — I acknowledge receipt of the Applicant Privacy Notice.
+
+## Cover note (150 words · fact-check: fixed)
+
+Since March 2025 I have sold, scoped, built and run production agent systems for SMEs. The core is Albie, a 24/7 autonomous multi-channel operator on the Claude Agent SDK: WhatsApp, Telegram, Slack and Discord in; tool use, scheduled tasks, persistent memory and SQLite underneath; Python and TypeScript throughout. My company runs on it daily. Six client engagements are live across construction, equestrian, property, hospitality and ecommerce; The Wall Group lifted net profit 17% year on year from the workflows I integrated. Your Deployment Kits have to be followable by 200+ solutions consultants with no engineering background; my customers are construction and equestrian businesses, not engineering teams, and the systems work for them. I have designed rubric-graded, mutation-tested RL evaluation environments, and eighteen years of commercial leadership before this means I own the customer relationship, not just the build. Based in Derry with UK right to work; remote, travelling as required.
+
+Fact-check notes:
+- Cover note: 'handing over agent systems that SME owners run without me' is not in the allowed facts. The pack says Blue Canvas sells, scopes, builds and RUNS the systems; there is no fact about handing them over to owners who run them unaided. Same invented claim appears in employer_specific_hook ('hands over production agent systems to non-technical SME owners who run them without him') and in the 'Why this company' answer ('hand it over to people who are not engineers'). Rewritten to the grounded version: customers are construction/equestrian businesses, not engineering teams, and the systems work for them.
+- Cover note: 'the same stack backs six live client engagements' asserts all six engagements run on Albie / the Claude Agent SDK. The facts list six live engagements and Albie separately; no fact ties the six to that stack. Rewritten to state the six engagements without the stack claim. Same inference removed from the 'Years of experience' answer ('multi-agent systems on the Claude Agent SDK for six live client engagements').
+- Cover note: 'Since March 2025 I have built and run Albie' attaches the Blue Canvas founding date to Albie; no Albie start date is in the facts. Rewritten so March 2025 attaches to the Blue Canvas activity (sell, scope, build, run) and Albie is introduced as the core of it.
+- Word count: original 149 (in range); fixed version counted at exactly 150 with wc -w. No banned openers, no exclamation marks, no 'passion', British spelling intact. Employer-specific hook (Deployment Kits, 200+ solutions consultants, owning the customer relationship) retained. Salary, right-to-work, relocation, notice-period and NEEDS PHIL flags all compliant; email_body correctly empty as no contact email is printed.
+
+## Screening answers
+
+- **Years of experience** — 18 years of commercial and deep-tech leadership (Commercial Director, BD Director, NED, Senior Fund Manager); hands-on agentic-AI production delivery since March 2025 (around 18 months), building and running production agent systems for six live SME client engagements and for my own company, which runs daily on Albie, built on the Claude Agent SDK. I do not meet the stated 6-10+ years of production software engineering or 3+ years deploying AI/ML to production on paper; the production evidence is founder-built.  _[NEEDS PHIL: the listing's hard requirement is 6-10+ years production SWE incl. 3+ years production AI/ML. Phil must decide whether to apply against it; the answer above is honest and must not be inflated.]_
+- **Notice period / availability** — No notice period; I run my own company. I can start within 2-4 weeks to hand over client work.  _[ASSUMPTION: founder with no notice period and 2-4 week handover is the pack default, not confirmed by Phil for this role.]_
+- **Salary expectation** — No band is stated in the listing. For a permanent Sr. Forward Deployed AI Engineer role at a US SaaS company, my expectation is GBP 85,000-95,000 base plus the standard Smartsheet package; open to discussing the full range once the band is shared.  _[ASSUMPTION: listing states no salary (Greenhouse pay_input_ranges null). Figure sits above the GBP 80,000 floor; Phil may wish to push higher given 'Sr.' title and 25-50% travel.]_
+- **Right to work** — Yes. I have the right to work in the UK and Ireland and do not require sponsorship now or in the future.
+- **Why this company** — The role is the job I already do for SMEs, scaled to enterprise: sell, scope, build and run a customer's AI deployment from discovery to production, owning the relationship throughout. Smartsheet's Deployment Kits for 200+ solutions consultants, the client-specific MCP resource packs and the 'building a function, not filling a role' framing map directly onto running Blue Canvas and Albie on the Claude Agent SDK since March 2025.
+- **Do you know anyone who works at Smartsheet?** — No.  _[ASSUMPTION: no known Smartsheet contact in the allowed facts; Phil to confirm.]_
+- **How did you hear about us?** — Other Job Board  _[ASSUMPTION: role was surfaced by the job scout via syndicated job boards; 'Other Job Board' is the closest option. Use 'LinkedIn' if Phil first saw it there.]_
+- **LinkedIn Profile** — https://www.linkedin.com/in/philpatterson1
+- **In our pursuit of AI-driven advancements, how would you rate your overall familiarity with artificial intelligence (AI) concepts and tools?** — 5 - Expert level (build and operate production multi-agent systems on the Claude Agent SDK; design RL evaluation environments; run an AI consultancy)  _[ASSUMPTION: option 5's examples are 'build or train AI models, work with ML frameworks, led organization wide AI enablement efforts'. Phil builds/operates agent systems and designs evals rather than training models; 5 is defensible via the enablement clause, but Phil may prefer 4 if he wants to be strictly literal.]_
+- **Are you legally authorized to work in the UK?** — Yes
+- **Applicant Privacy Notice - I acknowledge receipt of the Applicant Privacy Notice.** — I acknowledge receipt of the Applicant Privacy Notice.  _[NEEDS PHIL: acknowledging a privacy notice is a consent/terms acceptance; Phil should read it and tick it himself.]_
+- **Preferred First Name** — Phil
+- **First Name / Last Name / Email / Phone** — Phil / Patterson / philpatterson85@gmail.com / +44 7828 699027
+- **Location (Greenhouse autocomplete)** — Derry/Londonderry, Northern Ireland, United Kingdom
+- **Resume/CV (required upload or paste-as-text)** — Upload Phil's current CV (PDF).  _[NEEDS PHIL: choose which CV version to upload; the file is required and is not in the allowed-facts pack.]_
+- **Cover Letter (optional upload or paste-as-text)** — Paste the cover note above into the paste-as-text field.
+- **Travel: role requires approximately 25-50% domestic and international travel** — Not asked on the form, but it is a stated requirement. Pack default is 'will travel'; 25-50% is well beyond periodic onsite.  _[NEEDS PHIL: confirm he will accept 25-50% domestic and international travel before applying.]_
+- **US EEOC voluntary self-identification (gender/race, veteran, disability)** — Decline to self-identify / leave blank.  _[NEEDS PHIL: voluntary personal data; Phil to decide whether to complete.]_
+
+## Probe line
+
+No formal software-engineering employment and roughly 17 months of production AI at SME scale against a stated requirement of 6-10+ years production SWE and 3+ years production AI/ML with enterprise security reviews; the build evidence is founder-built (Albie, six SME clients), not enterprise-grade, and a literal screener will reject on that line before the Deployment Kit argument is heard.
+

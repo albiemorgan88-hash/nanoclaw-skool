@@ -1,0 +1,188 @@
+{
+ "verify": {
+  "id": "forgd-applied-ai-architect",
+  "live": "live",
+  "live_evidence": "Fetched 21 Aug 2026: (1) Ashby posting API https://api.ashbyhq.com/posting-api/job-board/forgd-ai returns 4 open jobs incl. \"Applied AI Architect : United Kingdom\" id 87814487-e6a5-4e15-b6fa-b8490e80cd55, isListed=true, publishedAt 2026-06-11, location \"Remote - UK\", FullTime; (2) Ashby GraphQL for that posting returned the live application form (no deadline set); (3) talent.com copy (uk.talent.com/view?id=631968411186302626) still up, JSON-LD datePosted 2026-08-11 (aggregator re-index, feed=grabjobs) — the employer posting is actually ~10 weeks old, not 10 days. talent.com's apply redirect is an AWS WAF/DataDome challenge page, so the real route is the Ashby form.",
+  "employer_legal_name": "forgd, inc. (trades as \"forgd\", forgd.ai; Denver, Colorado HQ per US posting address). NOT the Web3 tokenomics firm at forgd.com — different company.",
+  "private_sector": "confirmed",
+  "private_sector_evidence": "Privately held US consultancy (forgd, inc.), Anthropic Preferred Partner in the Claude Partner Network services track; offers equity; clients are enterprises, PE firms/portfolio companies and charities/non-profits (\"Value For Good\" line). No state, university or Gulf ownership indicated anywhere on forgd.ai or the posting. Minor exposure: posting lists \"healthcare or other regulated industries\" as nice-to-have vertical experience, and the non-profit practice may touch charities — neither is a public-sector employer.",
+  "end_client": "n/a — direct employer posting (forgd, inc. hiring for its own delivery team on its own Ashby board)",
+  "title_verified": "Applied AI Architect : United Kingdom (Engineering dept/team). talent.com retitled it \"Remote Applied AI Architect: United Kingdom\".",
+  "pay_verified": "unstated — Ashby compensation fields empty, shouldDisplayCompensationOnJobPostings=false; listing says only \"Competitive salary, equity, and full benefits\". Matches scout report (unstated); the scout's \"~£73,750 market median\" was a guess, not from the listing.",
+  "location_remote_verified": "Remote - UK (Ashby workplaceType Remote, address country United Kingdom). Listing header: \"Remote (UK), 10–20% Travel\"; \"Fully remote across North American and European time zones\". Must have right to work in the UK without sponsorship now or in future. The Craigavon/Poole tags are talent.com programmatic geo-tags, not employer locations.",
+  "employment_type": "permanent",
+  "posted_or_updated": "Employer posting published 2026-06-11 (Ashby). talent.com re-indexed 2026-08-11. Still listed 2026-08-21, no application deadline.",
+  "apply_url": "https://jobs.ashbyhq.com/forgd-ai/87814487-e6a5-4e15-b6fa-b8490e80cd55/application",
+  "ats": "Ashby",
+  "account_required": "no",
+  "form_fields": [
+   "Name (required) — text",
+   "Email (required) — email",
+   "Resume (required) — file upload",
+   "LinkedIn Profile URL (required) — text",
+   "GitHub or portfolio URL (optional) — URL; helper text: \"Whatever best shows your work — GitHub, personal site, demos, a project you're proud of\"",
+   "Describe something you've built with Claude Code, agents, or LLM tooling — link if public. (optional) — long text"
+  ],
+  "custom_questions": [
+   "Describe something you've built with Claude Code, agents, or LLM tooling — link if public."
+  ],
+  "contact_email_printed": "none",
+  "employer_specifics": [
+   "forgd is an Anthropic Preferred Partner (Claude Partner Network, services track) and describes itself as partnering exclusively with Anthropic; architects collaborate directly with Anthropic's Applied AI team on joint engagements with early product access.",
+   "Delivery model: embed and co-build with customer engineering teams, starting with Claude Code adoption and SDLC redesign, then expanding to agentic applications on the Claude developer platform and agents in sales, customer service and finance ops.",
+   "Role builds concrete artifacts — evaluation frameworks, MCP servers, sub-agents, deployment configurations — and runs Claude Code Labs/workshops across Claude Code, Claude for Work and Cowork.",
+   "Published case study: Solifi (secured-finance fintech) — production workflows in 4 days, AI-native Claude adoption in 3 weeks, 70% reduction in database calls (quote from CTO Vinay Mehta). Three practice areas: Enterprise, Private Equity/portfolio companies, and 'Value For Good' (charities/non-profits). Founding-team stage, fully remote NA/EU time zones."
+  ],
+  "red_flags": "Pay undisclosed on a permanent role — £80k floor unconfirmed (US-HQ startup paying UK remote; 'competitive salary + equity'). Posting is ~10 weeks old (11 Jun) though still listed. Spec asks for 3–5 years in a customer-facing technical role or hands-on SWE plus 'software development experience in a high-scale startup or enterprise' — Phil's production-agent and consulting record covers the substance but not the conventional employment shape. 10–20% travel. Name collision with the Web3 'Forgd' (forgd.com) — make sure any research/cover note references forgd.ai.",
+  "decision": "hand_to_phil",
+  "decision_reason": "Live, private-sector, direct employer, fit is genuinely strong (Claude Code power user + agent delivery + consulting background is the spec verbatim) and the Ashby form needs no account — but Resume is a REQUIRED file upload, which Phil must attach himself, and pay is unstated on a permanent role so Phil should decide whether to proceed below a confirmed £80k floor. Everything else is ready: one optional long-text question (describe something built with Claude Code/agents — Albie + Blue Canvas engagements, link if public) and LinkedIn URL required.",
+  "web_searches_used": 1
+ },
+ "pack": {
+  "id": "forgd-applied-ai-architect",
+  "cover_note": "Since March 2025 I have been building and running Albie, a 24/7 autonomous operator on the Anthropic Claude Agent SDK: WhatsApp, Telegram, Slack and Discord, Apollo and Zoho campaigns, proposals, coding, scheduled tasks, persistent memory. My own company runs on it daily. Blue Canvas AI sells, scopes, builds and operates production agent systems for six SME clients; The Wall Group's net profit rose 17% year on year from the workflows we integrated, funding their acquisition of a new site.\n\nforgd's delivery model, embedding with customer engineering teams from Claude Code adoption through to agentic applications, MCP servers and evaluation frameworks, is the work I already do, including rubric-graded, mutation-tested eval environments designed for HUD.ai. Eighteen years of commercial and deep-tech leadership mean I scope and sell the engagement as well as build it.\n\nStack: Python, TypeScript, SQLite, REST APIs, browser automation. Based in Derry, remote, comfortable with 10–20% travel.",
+  "word_count": 149,
+  "employer_specific_hook": "forgd's embed-and-co-build delivery model (Claude Code adoption and SDLC redesign first, then agentic applications, MCP servers, sub-agents and evaluation frameworks on the Claude developer platform) — taken from the verified Ashby posting and employer_specifics; tied to Albie on the Claude Agent SDK and Phil's rubric-graded, mutation-tested eval environments for HUD.ai. The listing's \"Remote (UK), 10–20% Travel\" line is also referenced in the closing sentence. Note: this is forgd.ai (forgd, inc., Anthropic Preferred Partner), not the Web3 Forgd at forgd.com.",
+  "screening_answers": [
+   {
+    "question": "Years of experience",
+    "answer": "18 years of commercial and deep-tech leadership (Commercial Director, BD Director, fund manager, NED roles); hands-on agentic-AI production delivery since March 2025 (around 18 months) as founder of Blue Canvas AI, building and operating production agent systems on the Claude Agent SDK.",
+    "flag": ""
+   },
+   {
+    "question": "Notice period / availability",
+    "answer": "No notice period — I run my own company. I can start within 2–4 weeks to hand over live client work cleanly.",
+    "flag": "ASSUMPTION: pack_rules default; Phil to confirm the 2–4 week handover window against current Blue Canvas commitments."
+   },
+   {
+    "question": "Salary expectation",
+    "answer": "The listing states competitive salary, equity and full benefits without a band. My expectation is a base of £80,000 or above, plus the equity component, in line with a UK-remote Applied AI Architect role.",
+    "flag": "NEEDS PHIL: pay is undisclosed on a permanent role and the £80k floor is unconfirmed (US-HQ startup paying UK remote). Phil must decide whether to proceed before applying if forgd's UK band may sit below £80k. Never quote lower than £80,000 base."
+   },
+   {
+    "question": "Right to work",
+    "answer": "Yes — right to work in the UK and Ireland; no sponsorship required now or in the future.",
+    "flag": ""
+   },
+   {
+    "question": "Why this company",
+    "answer": "forgd partners exclusively with Anthropic and delivers by embedding with customer engineering teams, starting with Claude Code adoption and moving into agentic applications, MCP servers and evaluation frameworks. That is the exact shape of work I already do on the Claude Agent SDK for paying SME clients, and I want to do it at the scale forgd's enterprise and private-equity clients demand, alongside Anthropic's Applied AI team.",
+    "flag": ""
+   },
+   {
+    "question": "Describe something you've built with Claude Code, agents, or LLM tooling — link if public. (optional long text)",
+    "answer": "Albie: a 24/7 autonomous multi-channel operator built on the Anthropic Claude Agent SDK, running since 2025 as the operating layer of my own company, Blue Canvas AI. It handles WhatsApp, Telegram, Slack and Discord channels, the inbox, Apollo and Zoho outbound campaigns, proposal drafting, coding tasks, scheduled jobs and persistent memory, with tool use, multi-agent orchestration and RAG under the hood (Python, TypeScript, SQLite, REST APIs, browser automation). It is production infrastructure rather than a demo — my company runs on it daily. The same approach underpins six live client engagements across construction, equestrian, property, hospitality and ecommerce; at The Wall Group, the AI workflows we integrated lifted net profit 17% year on year and funded their acquisition of a new site. Separately, I designed rubric-graded, mutation-tested RL evaluation environments for a HUD.ai vendor proposal.",
+    "flag": "NEEDS PHIL: the question asks for a public link — confirm whether any public repo, write-up or demo of Albie or the Blue Canvas work can be shared; otherwise omit the link and keep the text as is. Do not name any client other than The Wall Group."
+   },
+   {
+    "question": "Name (required)",
+    "answer": "Phil Patterson",
+    "flag": ""
+   },
+   {
+    "question": "Email (required)",
+    "answer": "philpatterson85@gmail.com",
+    "flag": ""
+   },
+   {
+    "question": "Resume (required file upload)",
+    "answer": "Attach current CV (PDF).",
+    "flag": "NEEDS PHIL: required file upload — Phil must attach the CV himself; this is the reason the role is hand_to_phil."
+   },
+   {
+    "question": "LinkedIn Profile URL (required)",
+    "answer": "https://www.linkedin.com/in/philpatterson1",
+    "flag": ""
+   },
+   {
+    "question": "GitHub or portfolio URL (optional) — \"Whatever best shows your work\"",
+    "answer": "Leave blank unless Phil has a public GitHub, personal site or demo he wants to show.",
+    "flag": "NEEDS PHIL: pack_rules forbid portfolio links other than LinkedIn without Phil's confirmation — optional field, safe to leave empty."
+   },
+   {
+    "question": "Travel requirement (10–20%, stated in listing)",
+    "answer": "Yes — based in Derry/Londonderry, remote preferred, comfortable with 10–20% travel. Not open to relocation abroad.",
+    "flag": ""
+   }
+  ],
+  "probe_line": "No formal software-engineering employment and no \"high-scale startup or enterprise\" SWE record — the spec wants 3–5 years customer-facing technical or hands-on SWE, and Phil's build evidence is founder-built (Albie plus six SME clients), so expect a deep technical grilling on how Albie is architected, how he evaluates and hardens agents, and what changes when the customer is an enterprise or PE portfolio company rather than an SME.",
+  "email_body": ""
+ },
+ "check": {
+  "id": "forgd-applied-ai-architect",
+  "verdict": "fixed",
+  "problems": [
+   "Cover note: 'Since March 2025 I have been building and running Albie' dates Albie itself to March 2025 — pack_rules only date Blue Canvas AI's founding to March 2025; Albie has no start date in the allowed facts. Rewritten so March 2025 attaches to the company, not the tool.",
+   "Cover note: 'eval environments designed for HUD.ai' implies HUD.ai was a client. Allowed fact is a HUD.ai vendor proposal. Rewritten as 'for a HUD.ai vendor proposal'.",
+   "Cover note: forgd's delivery model 'is the work I already do' overclaims — Phil has not embedded with customer engineering teams, run Claude Code adoption/SDLC redesign or built MCP servers per the allowed facts. Softened to 'is territory I already work in: production agents and ... eval environments'.",
+   "Screening answer 'Why this company': 'That is the exact shape of work I already do' — same overclaim; softened to 'close to the work I already do'.",
+   "Screening answer 'Describe something you've built': attributes RAG to Albie 'under the hood' — RAG is an allowed skill but the facts do not state Albie uses it. Removed RAG from the Albie description (tool use and multi-agent orchestration retained, both in the allowed facts).",
+   "Word count re-verified after fixes: 148 (original 149). No banned openers, no exclamation marks, no 'passion', British spelling. Employer hook (embed-and-co-build delivery model, Claude Code adoption, MCP servers, evaluation frameworks, Anthropic Applied AI team, enterprise/PE practices) all traceable to employer_specifics. Salary >= £80k base, no relocation yes, notice flagged ASSUMPTION, CV/portfolio/link items flagged NEEDS PHIL, email_body correctly empty as no contact email printed."
+  ],
+  "cover_note_final": "Blue Canvas AI, my company since March 2025, runs daily on Albie: a 24/7 autonomous operator I built on the Anthropic Claude Agent SDK covering WhatsApp, Telegram, Slack and Discord, Apollo and Zoho campaigns, proposals, coding, scheduled tasks and persistent memory. We sell, scope, build and operate production agent systems for six SME clients; The Wall Group's net profit rose 17% year on year from the workflows we integrated, funding a new site acquisition.\n\nforgd's delivery model, embedding with customer engineering teams from Claude Code adoption through to agentic applications, MCP servers and evaluation frameworks, is territory I already work in: production agents and rubric-graded, mutation-tested eval environments for a HUD.ai vendor proposal. Eighteen years of commercial and deep-tech leadership mean I scope and sell the engagement as well as build it.\n\nStack: Python, TypeScript, SQLite, REST APIs, browser automation. Based in Derry, remote, comfortable with 10–20% travel.",
+  "word_count_final": 148,
+  "answers_final": [
+   {
+    "question": "Years of experience",
+    "answer": "18 years of commercial and deep-tech leadership (Commercial Director, BD Director, fund manager, NED roles); hands-on agentic-AI production delivery since March 2025 (around 18 months) as founder of Blue Canvas AI, building and operating production agent systems on the Claude Agent SDK.",
+    "flag": ""
+   },
+   {
+    "question": "Notice period / availability",
+    "answer": "No notice period — I run my own company. I can start within 2–4 weeks to hand over live client work cleanly.",
+    "flag": "ASSUMPTION: pack_rules default; Phil to confirm the 2–4 week handover window against current Blue Canvas commitments."
+   },
+   {
+    "question": "Salary expectation",
+    "answer": "The listing states competitive salary, equity and full benefits without a band. My expectation is a base of £80,000 or above, plus the equity component, in line with a UK-remote Applied AI Architect role.",
+    "flag": "NEEDS PHIL: pay is undisclosed on a permanent role and the £80k floor is unconfirmed (US-HQ startup paying UK remote). Phil must decide whether to proceed before applying if forgd's UK band may sit below £80k. Never quote lower than £80,000 base."
+   },
+   {
+    "question": "Right to work",
+    "answer": "Yes — right to work in the UK and Ireland; no sponsorship required now or in the future.",
+    "flag": ""
+   },
+   {
+    "question": "Why this company",
+    "answer": "forgd partners exclusively with Anthropic and delivers by embedding with customer engineering teams, starting with Claude Code adoption and moving into agentic applications, MCP servers and evaluation frameworks. That is close to the work I already do on the Claude Agent SDK for paying SME clients, and I want to do it at the scale forgd's enterprise and private-equity clients demand, alongside Anthropic's Applied AI team.",
+    "flag": ""
+   },
+   {
+    "question": "Describe something you've built with Claude Code, agents, or LLM tooling — link if public. (optional long text)",
+    "answer": "Albie: a 24/7 autonomous multi-channel operator built on the Anthropic Claude Agent SDK, running since 2025 as the operating layer of my own company, Blue Canvas AI. It handles WhatsApp, Telegram, Slack and Discord channels, the inbox, Apollo and Zoho outbound campaigns, proposal drafting, coding tasks, scheduled jobs and persistent memory, with tool use and multi-agent orchestration under the hood (Python, TypeScript, SQLite, REST APIs, browser automation). It is production infrastructure rather than a demo — my company runs on it daily. The same approach underpins six live client engagements across construction, equestrian, property, hospitality and ecommerce; at The Wall Group, the AI workflows we integrated lifted net profit 17% year on year and funded their acquisition of a new site. Separately, I designed rubric-graded, mutation-tested RL evaluation environments for a HUD.ai vendor proposal.",
+    "flag": "NEEDS PHIL: the question asks for a public link — confirm whether any public repo, write-up or demo of Albie or the Blue Canvas work can be shared; otherwise omit the link and keep the text as is. Do not name any client other than The Wall Group."
+   },
+   {
+    "question": "Name (required)",
+    "answer": "Phil Patterson",
+    "flag": ""
+   },
+   {
+    "question": "Email (required)",
+    "answer": "philpatterson85@gmail.com",
+    "flag": ""
+   },
+   {
+    "question": "Resume (required file upload)",
+    "answer": "Attach current CV (PDF).",
+    "flag": "NEEDS PHIL: required file upload — Phil must attach the CV himself; this is the reason the role is hand_to_phil."
+   },
+   {
+    "question": "LinkedIn Profile URL (required)",
+    "answer": "https://www.linkedin.com/in/philpatterson1",
+    "flag": ""
+   },
+   {
+    "question": "GitHub or portfolio URL (optional) — \"Whatever best shows your work\"",
+    "answer": "Leave blank unless Phil has a public GitHub, personal site or demo he wants to show.",
+    "flag": "NEEDS PHIL: pack_rules forbid portfolio links other than LinkedIn without Phil's confirmation — optional field, safe to leave empty."
+   },
+   {
+    "question": "Travel requirement (10–20%, stated in listing)",
+    "answer": "Yes — based in Derry/Londonderry, remote preferred, comfortable with 10–20% travel. Not open to relocation abroad.",
+    "flag": ""
+   }
+  ],
+  "email_body_final": ""
+ }
+}

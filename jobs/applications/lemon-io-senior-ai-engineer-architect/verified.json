@@ -1,0 +1,238 @@
+{
+ "verify": {
+  "id": "lemon-io-senior-ai-engineer-architect",
+  "live": "live",
+  "live_evidence": "curl of https://weworkremotely.com/remote-jobs/lemon-io-senior-ai-engineer-4 on 2026-08-21 returned HTTP 200 with full ad body; page shows \"Posted 16 days ago\", JSON-LD datePosted 2026-08-05, validThrough / \"Apply before Sep 4th, 2026\". WWR \"Apply now\" links to https://lemon.io/for-developers/ (utm_campaign=supply_en_ai_engineer_agent/architect_jul_2026_job_ad), which is up and routes to the live application form at https://me.lemon.io/escape-the-matrix (HTTP 200, 8-step form rendered).",
+  "employer_legal_name": "Coding Ninjas Inc. d/b/a Lemon.io (Delaware-governed terms; postal address 340 S Lemon Ave #7065, Walnut, CA 91789, USA)",
+  "private_sector": "confirmed",
+  "private_sector_evidence": "Lemon.io terms of use name the operator as Coding Ninjas Inc. d/b/a Lemon.io, a US private company; about page says \"Ten years in. Profitable. Independent.\" (founded 2015). It is a freelance developer marketplace placing engineers with private funded startups (case studies: SkyFi aerospace, Adherium healthtech). No public-sector, university or Gulf-state ownership indicated.",
+  "end_client": "Not applicable as a single end client: this is a marketplace/network intake, not a job. Lemon.io vets you once and then matches you to startup clients (\"hand-picked startups in the US and Europe\"). Example live AI projects on lemon.io/for-developers/ai-engineer-jobs/ are anonymised (e.g. \"Senior AI Engineer on GPT-4 funnel anomaly detection\", \"Full-Stack AI Developer on an invoice-to-pay platform\", London hours). No placement is guaranteed.",
+  "title_verified": "Senior AI Engineer (WWR title). Ad body: \"Senior AI Engineer/Architect\", covering three tracks: AI Engineer, AI Agent Architect, AI Automation Architect.",
+  "pay_verified": "Unstated in the listing: \"The rate depends on your skills and experience. We've already paid out over $11M to our engineers.\" JSON-LD baseSalary is 0/0. The scout report's \"~$135k (≈£106k)\" does NOT appear anywhere in the listing. Lemon.io's own AI Engineer rate page (updated Jul 2026) states Senior $35–$94/hr (median $55), Strong Senior $50–$105/hr (median $81), \"AI Engineering + Agentic systems\" premium $60–$95/hr; UK senior benchmark $30–$77/hr. The application form asks you to name your own min/max $/hr and states \"there is no commission, so you get what you mention.\" Phil's £500/day floor ≈ $80–85/hr, i.e. at the top of Lemon's published senior band.",
+  "location_remote_verified": "Fully remote contract placements via marketplace. WWR geolock list explicitly includes United Kingdom and Ireland (plus most of Europe, Americas, selected APAC/Africa). Ad: \"Choose a schedule that works best for you. It's possible to communicate async or minimally overlap within team working hours.\" Individual projects specify client time zones (EST, London, CET, Toronto seen).",
+  "employment_type": "network",
+  "posted_or_updated": "Posted 2026-08-05 (WWR JSON-LD); closes 2026-09-04",
+  "apply_url": "https://me.lemon.io/escape-the-matrix",
+  "ats": "own form (Lemon.io Next.js application + account registration at me.lemon.io)",
+  "account_required": "yes",
+  "form_fields": [
+   "Step 1 – Project type (required, radio): Full-time 40 hours/week / Part-time 20-35 hours/week / None – just checking around",
+   "Step 2 – Rate range (required): Minimum rate ($/hour) and Maximum rate ($/hour), positive integers, max >= min (defaults 20/25); note: 'there is no commission, so you get what you mention'",
+   "Step 3 – Main Specialization (required, dropdown from Lemon's specialization list, with 'Other' + custom text) and Seniority (required, dropdown)",
+   "Step 4 – Commercial experience start (required, year/date picker: 'Recall when you received money for your first project')",
+   "Step 5 – Core technologies (required, multi-select from Lemon skills list; includes 'AI agent orchestration', 'AI agent development', 'AI telemetry', 'Anthropic', 'AI system design')",
+   "Step 6 – Experience highlights: LinkedIn URL (optional, validated), Link to CV (optional), Upload CV (file upload) — at least one of LinkedIn / CV link / CV upload required to continue",
+   "Step 7 – English level (required, radio self-assessment; 'we'll assess your actual English level on the first screening steps')",
+   "Step 8 – Registration (creates a Lemon.io account): First name (required), Last name (required), Email (required), Country of residence (required, dropdown), Phone (optional, international picker), 'By registering, I agree to the Terms of use and Privacy policy' (required checkbox)"
+  ],
+  "custom_questions": [
+   "What kind of project are you looking for?",
+   "What is your hourly rate range?",
+   "What is your main Specialization?",
+   "When did your commercial experience start?",
+   "Choose your main technologies",
+   "Add your experience highlights",
+   "Ready to pass an interview in english?",
+   "Submit your application to lemonverse"
+  ],
+  "contact_email_printed": "none",
+  "employer_specifics": [
+   "Marketplace founded 2015, self-described 'Profitable. Independent.', 1,500+ vetted developers from 75+ countries, 9,000+ contracts, 1.2% acceptance rate, ~13 days to first offer, average contract 9+ months",
+   "AI Agent Architect track requirements: 3+ yrs Python, 3+ yrs LLM, multi-agent systems architecture, AI agent orchestration and AI telemetry 'a must'; AI Automation Architect track names Claude Cowork, Make.com/n8n/Zapier, SQL, webhooks",
+   "Vetting pipeline: CV/LinkedIn review + AI-assistant screening call + role-specific technical task (~37% pass), recruiter interview (~17%), live technical interview with a senior community engineer that explicitly assesses how you use AI (~7%), then listing (~1%)",
+   "Published AI rates: senior $35–$94/hr, strong senior $50–$105/hr, agentic-systems stack premium $60–$95/hr; engineers set their own rate and Lemon states no commission is deducted from it"
+  ],
+  "red_flags": "Not a job: it is a talent-network intake with multi-stage vetting and no guaranteed placement. Salary figure in the scout report (~$135k) is fabricated from snippets; the listing states no pay and Lemon's own data puts most senior AI contracts below Phil's £500/day floor (only the top of the agentic band reaches it). Application requires creating a Lemon.io account, a CV upload or LinkedIn/CV link, and acceptance of Lemon's terms — none of which can be done on Phil's behalf. The generic ad is mass-posted (Lemon.io has 119 WWR postings) and the requirements lean on formal years-of-commercial-Python/LLM experience, which Phil's CV does not evidence as employment history.",
+  "decision": "hand_to_phil",
+  "decision_reason": "Live, private-sector, UK-eligible and fully remote contract — matches Phil's preference — but it is a marketplace funnel rather than a role, pay is unstated and Lemon's published rates mostly sit under his £500/day floor, and the form requires account registration plus a CV upload/LinkedIn link and terms acceptance that only Phil can do. Worth a low-effort self-registration only if he is happy to name a $85+/hr rate and sit through a 4-stage vetting process for unguaranteed placements; otherwise not worth the time.",
+  "web_searches_used": 0
+ },
+ "pack": {
+  "id": "lemon-io-senior-ai-engineer-architect",
+  "cover_note": "Albie is the production system I built and run on the Anthropic Claude Agent SDK: a 24/7 autonomous multi-channel operator across WhatsApp, Telegram, Slack and Discord handling inbox, Apollo and Zoho campaigns, proposals, coding and scheduled tasks with persistent memory. My own company runs on it daily. Lemon.io's AI Agent Architect track names multi-agent architecture, agent orchestration and AI telemetry as a must; that is the stack I operate in Python and TypeScript with SQLite, REST APIs and browser automation, plus RAG and rubric-graded, mutation-tested eval design for HUD.ai. Through Blue Canvas AI I have shipped agent systems to six paying SME clients since March 2025, including The Wall Group, whose net profit rose 17% year on year from AI workflow integration. Your live technical interview assesses how candidates use AI; my record is in client P&L. Based in Derry, Northern Ireland, fully remote, available within two to four weeks.",
+  "word_count": 150,
+  "employer_specific_hook": "Lemon.io's AI Agent Architect track requirements (multi-agent systems architecture, AI agent orchestration and AI telemetry listed as \"a must\") and its live technical interview that explicitly assesses how candidates use AI. Source: the WWR ad body at weworkremotely.com/remote-jobs/lemon-io-senior-ai-engineer-4 and Lemon.io's published vetting pipeline on lemon.io/for-developers/, both in the verified listing's employer_specifics. Tied to Albie (Claude Agent SDK multi-channel operator in production) and the Wall Group +17% outcome.",
+  "screening_answers": [
+   {
+    "question": "Years of experience",
+    "answer": "18 years commercial and deep-tech leadership (BD Director, Commercial Director, fund management, NED). Hands-on agentic-AI production delivery since March 2025, roughly 18 months, as founder of Blue Canvas AI, building and operating Claude Agent SDK systems for six paying SME clients.",
+    "flag": "ASSUMPTION: Lemon's AI Agent Architect track asks for 3+ years Python and 3+ years LLM; Phil's allowed facts support ~18 months of production agentic-AI work, so do not inflate. Phil should decide whether to position under AI Engineer rather than Architect."
+   },
+   {
+    "question": "Notice period / availability",
+    "answer": "No notice period; I run my own company. I can start within two to four weeks to hand over client work cleanly.",
+    "flag": "ASSUMPTION: founder with no employer notice period; 2-4 week handover window is the pack default, not confirmed by Phil."
+   },
+   {
+    "question": "Salary expectation",
+    "answer": "Contract rate in USD per hour, as the form requires: minimum $85/hr, maximum $105/hr. That sits within Lemon.io's published strong-senior band ($50-$105/hr) and at the top of its AI Engineering + Agentic systems premium ($60-$95/hr). Not negotiable below $85/hr.",
+    "flag": "ASSUMPTION: £500/day floor converted to ~$80-85/hr at an 8-hour day and current exchange rate; listing states no pay, so the band quoted is Lemon's own published rate page (Jul 2026)."
+   },
+   {
+    "question": "Right to work",
+    "answer": "Yes. UK and Ireland right to work. No sponsorship required now or in future.",
+    "flag": ""
+   },
+   {
+    "question": "Why this company",
+    "answer": "Lemon.io is one of the few channels explicitly matching AI Agent Architects to funded US and European startups on fully remote, long-running contracts (average 9+ months), and its vetting includes a live technical interview on how you actually use AI. I have been shipping autonomous agents into production for paying SMEs since March 2025; a network that vets for that and lets engineers set their own rate with no commission deducted is the right shape for me.",
+    "flag": ""
+   },
+   {
+    "question": "What kind of project are you looking for? (Step 1, required radio: Full-time 40 hours/week / Part-time 20-35 hours/week / None)",
+    "answer": "Full-time 40 hours/week",
+    "flag": "NEEDS PHIL: personal preference. Part-time 20-35 hours/week may be the honest choice given six live Blue Canvas engagements; only Phil can decide."
+   },
+   {
+    "question": "What is your hourly rate range? (Step 2, required: minimum and maximum $/hour, no commission deducted)",
+    "answer": "Minimum: 85. Maximum: 105.",
+    "flag": "ASSUMPTION: derived from the £500/day floor; Phil may choose to push the maximum higher since Lemon states the engineer receives the full quoted rate."
+   },
+   {
+    "question": "What is your main Specialization? (Step 3, required dropdown + Other)",
+    "answer": "AI Engineer (or AI Agent Architect if offered as a distinct option; otherwise 'Other: AI Agent Architect / Agentic systems').",
+    "flag": "ASSUMPTION: exact dropdown labels not visible in the verified listing; pick the closest AI agent / LLM engineering option."
+   },
+   {
+    "question": "Seniority (Step 3, required dropdown)",
+    "answer": "Senior",
+    "flag": "ASSUMPTION: 'Senior' chosen over 'Strong Senior' / 'Lead' because Phil's formal engineering history is founder-built rather than employment-based; Phil may overrule."
+   },
+   {
+    "question": "When did your commercial experience start? (Step 4, required year/date: 'Recall when you received money for your first project')",
+    "answer": "For paid agentic-AI engineering work: March 2025 (Blue Canvas AI founded, first paying client engagements). Commercial career overall spans 18 years prior to that.",
+    "flag": "NEEDS PHIL: the field expects a single date. Pack rules give '18 years' but not the exact start year of the commercial career, and the honest answer for paid software/AI delivery is 2025. Phil must choose which date to enter; entering a 2008-era date would imply 18 years of paid engineering, which is not true."
+   },
+   {
+    "question": "Choose your main technologies (Step 5, required multi-select)",
+    "answer": "AI agent orchestration, AI agent development, AI system design, Anthropic (Claude Agent SDK), Python, TypeScript, SQLite, REST APIs, RAG, browser automation, prompt engineering, LLM evaluation design. Also Expo/EAS and Shopify Admin API if listed.",
+    "flag": "NEEDS PHIL: do not tick 'AI telemetry' unless Phil confirms he has shipped observability/telemetry tooling; the allowed facts do not evidence it."
+   },
+   {
+    "question": "Add your experience highlights (Step 6: LinkedIn URL / CV link / CV upload; at least one required)",
+    "answer": "LinkedIn: https://www.linkedin.com/in/philpatterson1",
+    "flag": "NEEDS PHIL: CV upload must be done by Phil personally; LinkedIn alone satisfies the form minimum."
+   },
+   {
+    "question": "Ready to pass an interview in English? (Step 7, required self-assessment)",
+    "answer": "Native / C2. Northern Ireland born, entire career conducted in English.",
+    "flag": "ASSUMPTION: native-speaker status inferred from Derry base and UK career; pack rules do not state it explicitly."
+   },
+   {
+    "question": "Submit your application to lemonverse (Step 8, registration: first name, last name, email, country, phone, Terms of use + Privacy policy checkbox)",
+    "answer": "First name: Phil. Last name: Patterson. Email: philpatterson85@gmail.com. Country of residence: United Kingdom. Phone: +44 7828 699027.",
+    "flag": "NEEDS PHIL: account creation and acceptance of Lemon.io's Terms of use (Delaware-governed, Coding Ninjas Inc.) can only be done by Phil. Check the terms for exclusivity, non-compete or IP-assignment clauses before ticking; pack rules forbid agreeing to those on his behalf."
+   },
+   {
+    "question": "Location / relocation",
+    "answer": "Derry/Londonderry, Northern Ireland. Fully remote; can overlap with US Eastern or European client hours. Open to occasional travel. Not open to relocation.",
+    "flag": ""
+   },
+   {
+    "question": "How did you hear about us",
+    "answer": "We Work Remotely job board listing (Senior AI Engineer, posted 5 August 2026).",
+    "flag": ""
+   }
+  ],
+  "probe_line": "No formal engineering employment and well short of the 3+ years commercial Python/LLM the Architect track demands: Lemon's CV review, role-specific coding task and live technical interview with a senior community engineer will test whether founder-built Albie evidence survives a senior-engineer bar, and the pay conversation will test whether an $85+/hr ask holds against a median senior rate of $55/hr.",
+  "email_body": ""
+ },
+ "check": {
+  "id": "lemon-io-senior-ai-engineer-architect",
+  "verdict": "fixed",
+  "problems": [
+   "Cover note claimed 'AI telemetry' as part of the stack Phil operates; not in allowed facts and contradicted by the pack's own technologies flag. Removed.",
+   "Cover note said 'eval design for HUD.ai', implying HUD.ai was a client; the allowed fact is a HUD.ai vendor proposal. Reworded to 'from my HUD.ai vendor proposal'.",
+   "Cover note said 'six paying SME clients'; allowed fact is 'six live client engagements'. Reworded to match.",
+   "'Why this company' asserted Lemon.io is 'one of the few channels' and places with 'funded US and European startups'; neither appears in employer_specifics. Replaced with listing-supported facts (9+ month average contracts, EST/London/CET/Toronto client time zones, live technical interview, no commission).",
+   "English-readiness answer asserted 'Northern Ireland born' and 'entire career conducted in English'; neither is in the allowed facts. Trimmed to a flagged native-level statement.",
+   "'How did you hear about us' cited a posting date of 5 August 2026 that does not appear in the verified listing. Removed.",
+   "Location answer's claim of overlapping US Eastern or European hours was unflagged; added ASSUMPTION flag. Word count of original was 150 (within spec); corrected note recounted at 150."
+  ],
+  "cover_note_final": "Albie is the production system I built and run on the Anthropic Claude Agent SDK: a 24/7 autonomous multi-channel operator across WhatsApp, Telegram, Slack and Discord handling inbox, Apollo and Zoho campaigns, proposals, coding and scheduled tasks with persistent memory. My company runs on it daily. Lemon.io's AI Agent Architect track names multi-agent systems architecture and agent orchestration as a must; that is the stack I operate in Python and TypeScript with SQLite, REST APIs and browser automation, plus RAG and rubric-graded, mutation-tested eval design from my HUD.ai vendor proposal. Through Blue Canvas AI I have shipped agent systems across six live SME client engagements since March 2025, including The Wall Group, whose net profit rose 17% year-on-year from AI workflow integration. Your live technical interview assesses how candidates use AI; my record is in client P&L. Based in Derry, Northern Ireland, fully remote, available within two to four weeks.",
+  "word_count_final": 150,
+  "answers_final": [
+   {
+    "question": "Years of experience",
+    "answer": "18 years commercial and deep-tech leadership (BD Director, Commercial Director, fund management, NED). Hands-on agentic-AI production delivery since March 2025, roughly 18 months, as founder of Blue Canvas AI, building and operating Claude Agent SDK systems across six live SME client engagements.",
+    "flag": "ASSUMPTION: Lemon's AI Agent Architect track asks for 3+ years Python and 3+ years LLM; Phil's allowed facts support ~18 months of production agentic-AI work, so do not inflate. Phil should decide whether to position under AI Engineer rather than Architect."
+   },
+   {
+    "question": "Notice period / availability",
+    "answer": "No notice period; I run my own company. I can start within two to four weeks to hand over client work cleanly.",
+    "flag": "ASSUMPTION: founder with no employer notice period; 2-4 week handover window is the pack default, not confirmed by Phil."
+   },
+   {
+    "question": "Salary expectation",
+    "answer": "Contract rate in USD per hour, as the form requires: minimum $85/hr, maximum $105/hr. That sits within Lemon.io's published strong-senior band ($50-$105/hr) and at the top of its AI Engineering + Agentic systems premium ($60-$95/hr). Not negotiable below $85/hr.",
+    "flag": "ASSUMPTION: £500/day floor converted to ~$80-85/hr at an 8-hour day and current exchange rate; listing states no pay, so the band quoted is Lemon's own published rate page (Jul 2026)."
+   },
+   {
+    "question": "Right to work",
+    "answer": "Yes. UK and Ireland right to work. No sponsorship required now or in future.",
+    "flag": ""
+   },
+   {
+    "question": "Why this company",
+    "answer": "Lemon.io places AI Agent Architects on fully remote contracts averaging 9+ months with clients across EST, London, CET and Toronto time zones, and its vetting includes a live technical interview on how you actually use AI. I have been shipping autonomous agents into production for SMEs since March 2025; a network that vets for that and lets engineers set their own rate with no commission deducted is the right shape for me.",
+    "flag": ""
+   },
+   {
+    "question": "What kind of project are you looking for? (Step 1, required radio: Full-time 40 hours/week / Part-time 20-35 hours/week / None)",
+    "answer": "Full-time 40 hours/week",
+    "flag": "NEEDS PHIL: personal preference. Part-time 20-35 hours/week may be the honest choice given six live Blue Canvas engagements; only Phil can decide."
+   },
+   {
+    "question": "What is your hourly rate range? (Step 2, required: minimum and maximum $/hour, no commission deducted)",
+    "answer": "Minimum: 85. Maximum: 105.",
+    "flag": "ASSUMPTION: derived from the £500/day floor; Phil may choose to push the maximum higher since Lemon states the engineer receives the full quoted rate."
+   },
+   {
+    "question": "What is your main Specialization? (Step 3, required dropdown + Other)",
+    "answer": "AI Engineer (or AI Agent Architect if offered as a distinct option; otherwise 'Other: AI Agent Architect / Agentic systems').",
+    "flag": "ASSUMPTION: exact dropdown labels not visible in the verified listing; pick the closest AI agent / LLM engineering option."
+   },
+   {
+    "question": "Seniority (Step 3, required dropdown)",
+    "answer": "Senior",
+    "flag": "ASSUMPTION: 'Senior' chosen over 'Strong Senior' / 'Lead' because Phil's formal engineering history is founder-built rather than employment-based; Phil may overrule."
+   },
+   {
+    "question": "When did your commercial experience start? (Step 4, required year/date: 'Recall when you received money for your first project')",
+    "answer": "For paid agentic-AI engineering work: March 2025 (Blue Canvas AI founded, first paying client engagements). Commercial career overall spans 18 years prior to that.",
+    "flag": "NEEDS PHIL: the field expects a single date. Pack rules give '18 years' but not the exact start year of the commercial career, and the honest answer for paid software/AI delivery is 2025. Phil must choose which date to enter; entering a 2008-era date would imply 18 years of paid engineering, which is not true."
+   },
+   {
+    "question": "Choose your main technologies (Step 5, required multi-select)",
+    "answer": "AI agent orchestration, AI agent development, multi-agent systems, Anthropic (Claude Agent SDK), Python, TypeScript, SQLite, REST APIs, RAG, browser automation, prompt engineering, LLM evaluation design. Also Expo/EAS and Shopify Admin API if listed.",
+    "flag": "NEEDS PHIL: do not tick 'AI telemetry' unless Phil confirms he has shipped observability/telemetry tooling; the allowed facts do not evidence it."
+   },
+   {
+    "question": "Add your experience highlights (Step 6: LinkedIn URL / CV link / CV upload; at least one required)",
+    "answer": "LinkedIn: https://www.linkedin.com/in/philpatterson1",
+    "flag": "NEEDS PHIL: CV upload must be done by Phil personally; LinkedIn alone satisfies the form minimum."
+   },
+   {
+    "question": "Ready to pass an interview in English? (Step 7, required self-assessment)",
+    "answer": "Yes. Native-level English; ready to interview in English.",
+    "flag": "ASSUMPTION: native-speaker status inferred from Derry base and UK career; pack rules do not state it explicitly."
+   },
+   {
+    "question": "Submit your application to lemonverse (Step 8, registration: first name, last name, email, country, phone, Terms of use + Privacy policy checkbox)",
+    "answer": "First name: Phil. Last name: Patterson. Email: philpatterson85@gmail.com. Country of residence: United Kingdom. Phone: +44 7828 699027.",
+    "flag": "NEEDS PHIL: account creation and acceptance of Lemon.io's Terms of use (Delaware-governed, Coding Ninjas Inc.) can only be done by Phil. Check the terms for exclusivity, non-compete or IP-assignment clauses before ticking; pack rules forbid agreeing to those on his behalf."
+   },
+   {
+    "question": "Location / relocation",
+    "answer": "Derry/Londonderry, Northern Ireland. Fully remote; can overlap with US Eastern or European client hours. Open to occasional travel. Not open to relocation.",
+    "flag": "ASSUMPTION: willingness to overlap US Eastern or European hours is a pack inference from 'remote preferred; will travel', not confirmed by Phil."
+   },
+   {
+    "question": "How did you hear about us",
+    "answer": "We Work Remotely job board listing (Senior AI Engineer).",
+    "flag": ""
+   }
+  ],
+  "email_body_final": ""
+ }
+}

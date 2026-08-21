@@ -348,7 +348,7 @@
     "url": "https://weworkremotely.com/remote-jobs/a-team-senior-independent-ai-engineer-architect",
     "firstSeen": "2026-08-10",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: engineering/DS",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 80,
@@ -358,6 +358,18 @@
       "pref": 5,
       "disclosure": "marketplace_network",
       "type": "network"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. engineer network, account required",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "\"Typical rates: $120-$170/hr\" and \"You keep 100% of your rate\" (WWR listing). a.team/ai-jobs adds: \"You set your rate\", \"Each mission shows the client's range, ",
+      "location": "\"Remote | Americas, Europe, or Israel\" (listing header); \"Remote (almost all roles)\"; WWR region \"Anywhere in the World\". a.team FAQ: \"Is it remote? Yes, almost",
+      "applyUrl": "https://onboarding.a.team/builder",
+      "ats": "own form (A.Team platform account sign-up; WWR \"Apply now\" -",
+      "accountRequired": "yes",
+      "packFile": "jobs/applications/a-team-senior-independent-ai-engineer-architect/pack.md"
     }
   },
   {
@@ -388,7 +400,10 @@
       "pref": 2,
       "disclosure": "named",
       "type": "permanent"
-    }
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "UNVERIFIED this run — outside the shortlist (low triage score: Dubai/Abu Dhabi presence or consultant-grade pay); liveness not checked beyond HTTP status. Still open in the tracker, honestly unswept.",
+    "needsPhil": false
   },
   {
     "id": "accenture-uk-ireland-forward-deployed-engineer-manager",
@@ -397,7 +412,7 @@
     "url": "https://uk.linkedin.com/jobs/view/forward-deployed-engineer-manager-palantir-at-accenture-uk-ireland-4453238897",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: engineering/DS",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 12,
@@ -407,7 +422,10 @@
       "pref": 2,
       "disclosure": "named",
       "type": "permanent"
-    }
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. Palantir FDE manager (engineering); LinkedIn-sourced, not verified.",
+    "needsPhil": false
   },
   {
     "id": "adepta-partners-limited-data-scientist",
@@ -416,7 +434,7 @@
     "url": "https://www.nijobs.com/job/data-scientist-ai-ml-new/adepta-partners-limited-job107728393",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: engineering/DS",
     "liveness": "unverified",
     "livenessChecked": "2026-08-21",
     "triageScore": 27,
@@ -426,6 +444,18 @@
       "pref": 3,
       "disclosure": "recruiter_undisclosed",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. data scientist; pay undisclosed",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "unstated — listing shows \"£ Not Disclosed\" (mirror: \"Salary: On Application\"). DIFFERS from scout report: the £80,000-£85,000 figure belongs to a different ad (",
+      "location": "Belfast, County Antrim; \"Location: Belfast Hybrid / Flexible\" — no onsite-day count stated; eligible countries not stated (UK role, addressCountry GB).",
+      "applyUrl": "https://www.nijobs.com/job/data-scientist-ai-ml-new/adepta-partners-limited-job107728393 (Apply button -> https://www.nijobs.com/job/b80a60d8-401a-42a6-8d80-a775746307fd/application/authentication?locale=en_IE)",
+      "ats": "board-hosted (NIjobs harmonised apply; directApply=true, no ",
+      "accountRequired": "yes",
+      "packFile": "jobs/applications/adepta-partners-limited-data-scientist/pack.md"
     }
   },
   {
@@ -435,7 +465,7 @@
     "url": "https://aimpoint-digital.breezy.hr/p/fa7df72d90d8-lead-forward-deployed-engineer-databricks-2026-us-uk",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: engineering/DS",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 24,
@@ -445,6 +475,18 @@
       "pref": 4,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. Databricks/Spark lead engineer",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "unstated — Breezy salary field is set to \"hidden\"; no salary or band anywhere in the listing. Matches the scout report.",
+      "location": "\"We are actively seeking candidates for full-time, remote work within the US or UK. Atlanta and London based applicants will have the opportunity to work in our",
+      "applyUrl": "https://aimpoint-digital.breezy.hr/p/fa7df72d90d8-lead-forward-deployed-engineer-databricks-2026-us-uk/apply",
+      "ats": "Breezy",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/aimpoint-digital-lead-forward-deployed-engineer-databricks-2026-us/pack.md"
     }
   },
   {
@@ -464,7 +506,10 @@
       "pref": 2,
       "disclosure": "named",
       "type": "unknown"
-    }
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "UNVERIFIED this run — outside the shortlist (low triage score: Dubai/Abu Dhabi presence or consultant-grade pay); liveness not checked beyond HTTP status. Still open in the tracker, honestly unswept.",
+    "needsPhil": false
   },
   {
     "id": "aistudio-forward-deployed-engineer",
@@ -473,7 +518,7 @@
     "url": "https://wellfound.com/jobs/4574563-forward-deployed-engineer",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: below floor",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 24,
@@ -483,6 +528,18 @@
       "pref": 3,
       "disclosure": "named",
       "type": "unknown"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "₹15-20L",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "₹15L – ₹20L per year • No equity (JSON-LD baseSalary currency INR, 1,500,000–2,000,000/year; roughly £13k–£18k). DIFFERS from scout report, which said \"salary u",
+      "location": "Company location Dubai, UAE. Remote Work Policy: \"Remote only\"; \"Hires remotely in Everywhere\"; Visa Sponsorship: Not Available; Relocation: Allowed. JSON-LD jo",
+      "applyUrl": "https://wellfound.com/jobs/4574563-forward-deployed-engineer",
+      "ats": "board-hosted (Wellfound Apply Now, directApply)",
+      "accountRequired": "yes",
+      "packFile": "jobs/applications/aistudio-forward-deployed-engineer/pack.md"
     }
   },
   {
@@ -492,7 +549,7 @@
     "url": "https://www.eu-startups.com/job/forward-deployed-engineer",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: below floor",
     "liveness": "unverified",
     "livenessChecked": "2026-08-21",
     "triageScore": 32,
@@ -502,6 +559,18 @@
       "pref": 4,
       "disclosure": "named",
       "type": "unknown"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "€50-60k",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "\"Yearly gross salary range € 50k - 60k\" (stated under Benefits in the Workable listing). Scout report said \"salary unstated\" — it is stated, and it is roughly £",
+      "location": "\"Remote, right to work and travel in Europe.\" / \"Full remote flexibility across Europe.\" / \"Eligible to work in Europe.\" Workable location tags (hidden on the p",
+      "applyUrl": "https://apply.workable.com/usealbatross/j/037684344A/apply/",
+      "ats": "Workable",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/albatross-ai-forward-deployed-engineer/pack.md"
     }
   },
   {
@@ -511,7 +580,7 @@
     "url": "https://remoteok.com/remote-jobs/remote-applied-ai-engineer-europe-amigo-1131296",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "closed",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 32,
@@ -521,6 +590,18 @@
       "pref": 4,
       "disclosure": "named",
       "type": "unknown"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 21 Aug: validThrough 22 Jul passed; not on employer ATS",
+    "needsPhil": false,
+    "verified": {
+      "live": "dead",
+      "pay": "Not stated in the visible ad body. RemoteOK's JSON-LD metadata carries baseSalary USD 80,000–150,000/year (RemoteOK frequently auto-estimates this field). Diffe",
+      "location": "RemoteOK \"#Location: Amsterdam\"; JSON-LD jobLocationType TELECOMMUTE, jobLocation addressCountry Netherlands, applicantLocationRequirements: Netherlands. Title ",
+      "applyUrl": "https://remoteok.com/remote-jobs/remote-applied-ai-engineer-europe-amigo-1131296 (no working form — apply link loops back to this page; no corresponding Ashby posting exists on https://jobs.ashbyhq.com/amigo)",
+      "ats": "Ashby (employer's ATS for all current roles) — but this role",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/amigo-applied-ai-engineer-europe/pack.md"
     }
   },
   {
@@ -541,7 +622,7 @@
     "url": "https://www.workingnomads.com/jobs/ai-solutions-architect-armada",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "closed",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 12,
@@ -551,6 +632,18 @@
       "pref": 2,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 21 Aug: expired a year ago; not on Greenhouse board",
+    "needsPhil": false,
+    "verified": {
+      "live": "dead",
+      "pay": "\"We offer a competitive base salary along with equity options\" - no figure. Matches scout report.",
+      "location": "\"This role is remote-based in the United Arab Emirates.\" Full-time, Senior Level. No eligible-country wording beyond UAE.",
+      "applyUrl": "https://www.workingnomads.com/jobs/ai-solutions-architect-armada",
+      "ats": "board-hosted (expired); employer ATS is Greenhouse (job-boar",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/armada-ai-solutions-architect/pack.md"
     }
   },
   {
@@ -560,7 +653,7 @@
     "url": "https://www.welcometothejungle.com/en/companies/assemblyai/jobs/senior-forward-deployed-engineer_london_gzpqbxbv",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: engineering/DS",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 16,
@@ -570,6 +663,18 @@
       "pref": 2,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. Sr FDE engineer (SQL/Python/React), £100-150k OTE",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "\"Salary range: £100,000 - £150,000 OTE\" followed by \"The expected base compensation for this role is listed above\" (contradictory: labelled OTE but called base)",
+      "location": "Greenhouse location \"London, England\"; office tag \"Remote - United Kingdom\"; body text: \"the flexibility of being fully remote\". Form question: \"Are you local t",
+      "applyUrl": "https://job-boards.greenhouse.io/assemblyai/jobs/4715911005",
+      "ats": "Greenhouse",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/assemblyai-senior-forward-deployed-engineer/pack.md"
     }
   },
   {
@@ -645,7 +750,7 @@
     "url": "https://wellfound.com/jobs/3930372-head-of-ai-engineering",
     "firstSeen": "2026-08-10",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: location/pay",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 32,
@@ -655,6 +760,18 @@
       "pref": 4,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "India-only, ₹30-50 LPA",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "₹30-50 LPA stated in the job description body; Wellfound header shows ₹20L – ₹50L • No equity. That is roughly £26k–£44k per year. Differs sharply from the scou",
+      "location": "\"Location: Remote (India)\"; \"India-based, comfortable with remote async work\" listed as a requirement; Wellfound: \"Hires remotely in India\", \"Remote Work Policy",
+      "applyUrl": "https://braindio.notion.site/3163d76ce91a80b98c8ed12296a06b7a",
+      "ats": "own form (Notion page linked from listing as \"Apply here\"); ",
+      "accountRequired": "unknown",
+      "packFile": "jobs/applications/braindai-head-of-ai-engineering/pack.md"
     }
   },
   {
@@ -708,7 +825,7 @@
     "url": "https://revpath.dealhub.io/jobs/481024411-ai-gtm-leader-uk-europe-must-have-technical-experience-also-basic-ps180-ps200k-plus-bonus-and-benefits-multinational-it-services-company",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open",
+    "status": "closed",
     "liveness": "live",
     "livenessChecked": "2026-08-21",
     "triageScore": 30,
@@ -718,6 +835,18 @@
       "pref": 2,
       "disclosure": "recruiter_undisclosed",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 21 Aug: LinkedIn/BeBee routes expired (RevPath mirror still renders)",
+    "needsPhil": false,
+    "verified": {
+      "live": "dead",
+      "pay": "£180,000–£200,000 basic + bonus and benefits (title only; body text has no salary). Matches scout report.",
+      "location": "London Area, GB; Full-time. No remote/hybrid policy, onsite days, or country eligibility stated anywhere in the ad. UK & Europe remit.",
+      "applyUrl": "https://revpath.dealhub.io/jobs/481024411/apply (redirects to expired LinkedIn job 4423231887)",
+      "ats": "board-hosted (RevPath/DealHub mirror of a LinkedIn job post;",
+      "accountRequired": "yes",
+      "packFile": "jobs/applications/forte-ict-ai-vp-gtm-leader-uk-europe/pack.md"
     }
   },
   {
@@ -815,7 +944,7 @@
     "url": "https://www.nijobs.com/job/engineer-systems/data-intellect-job107814278",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: engineering/DS",
     "liveness": "live",
     "livenessChecked": "2026-08-21",
     "triageScore": 30,
@@ -825,6 +954,18 @@
       "pref": 3,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. AI Engineer IC seat (spec is agent-building — say if you want it back)",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "unstated - listing says only \"Competitive salary and benefits\" (plus Benenden Health cover). Matches scout report (\"Unstated\" / NIjobs \"Not Disclosed\"). Salary ",
+      "location": "Belfast, Northern Ireland, UK. SmartRecruiters location flags: remote:false, hybrid:true; listing text says \"A modern, flexible working environment\" and \"Work a",
+      "applyUrl": "https://jobs.smartrecruiters.com/DataIntellect/744000142108103-ai-engineer-agentic-systems-?oga=true",
+      "ats": "SmartRecruiters",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/data-intellect-ai-engineer-agentic-systems/pack.md"
     }
   },
   {
@@ -834,7 +975,7 @@
     "url": "https://boards.greenhouse.io/databricks/jobs/8656207002",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: engineering/DS",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 12,
@@ -844,6 +985,18 @@
       "pref": 2,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. Spark-gated Sr FDE",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "unstated — no salary text in the listing and Greenhouse pay_input_ranges is null. Matches scout report.",
+      "location": "Location: London, United Kingdom (single office listed). The listing does NOT state hybrid or remote anywhere — the scout's \"(hybrid)\" is unverified. It does st",
+      "applyUrl": "https://www.databricks.com/company/careers/professional-services-operations/sr-forward-deployed-engineer---architect---full-stack-8656207002?gh_jid=8656207002 (embedded Greenhouse form; raw embed: https://job-boards.greenhouse.io/embed/job_app?for=databricks&token=8656207002)",
+      "ats": "Greenhouse",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/databricks-sr-forward-deployed-engineer-architect-full-stack/pack.md"
     }
   },
   {
@@ -853,7 +1006,7 @@
     "url": "https://datarobot.wd1.myworkdayjobs.com/datarobot_external_careers/job/remote-dubai/director--ai-engineering---international_r-102602/apply",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open",
+    "status": "skipped: engineering/DS",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 6,
@@ -863,7 +1016,10 @@
       "pref": 1,
       "disclosure": "named",
       "type": "permanent"
-    }
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. Director of AI Engineering (engineering leadership); not verified.",
+    "needsPhil": false
   },
   {
     "id": "deloitte-touche-ai-data-director-middle-east",
@@ -882,7 +1038,10 @@
       "pref": 0,
       "disclosure": "named",
       "type": "permanent"
-    }
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "UNVERIFIED this run — outside the shortlist (low triage score: Dubai/Abu Dhabi presence or consultant-grade pay); liveness not checked beyond HTTP status. Still open in the tracker, honestly unswept.",
+    "needsPhil": false
   },
   {
     "id": "distyl-ai-ai-strategist-first-london-hire",
@@ -901,6 +1060,18 @@
       "pref": 2,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "NEEDS PHIL: live Ashby form; pay NOT on listing ($150-250k was wrong); required yes/no: 3 days/week in the London office (Tue-Thu) + 25-75% travel. Only if you will do London 3 days. Pack ready.",
+    "needsPhil": true,
+    "verified": {
+      "live": "live",
+      "pay": "unstated — listing says only \"Competitive salary, meaningful equity, and a comprehensive benefits package\"; Ashby compensation fields empty (shouldDisplayCompen",
+      "location": "London, UK — Hybrid (#LI-Hybrid). Application form asks, as a required Yes/No: \"Once our office is opened, are you able to work from our London office three day",
+      "applyUrl": "https://jobs.ashbyhq.com/distyl/d6703c85-b399-475b-8bf7-d40c7b50ad39/application",
+      "ats": "Ashby",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/distyl-ai-ai-strategist-first-london-hire/pack.md"
     }
   },
   {
@@ -932,7 +1103,7 @@
     "url": "https://www.workatastartup.com/jobs/92688",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: engineering/DS",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 24,
@@ -942,6 +1113,18 @@
       "pref": 2,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. FDE engineer, 4 days/week London onsite",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "Ashby (employer ATS) shows no compensation — shouldDisplayCompensationOnJobPostings=false, no tiers; description says only \"Competitive salary, commission, and ",
+      "location": "London, UK — Ashby workplaceType \"OnSite\", isRemote=false, address 12 Macklin Street, London WC2B 5NF. Description: \"Strong in-person culture — most of the team",
+      "applyUrl": "https://jobs.ashbyhq.com/encord/2b1c10d4-cde7-422b-9f52-2739865d95cb/application",
+      "ats": "Ashby",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/encord-forward-deployed-engineer-london/pack.md"
     }
   },
   {
@@ -951,7 +1134,7 @@
     "url": "https://uk.talent.com/view?id=631968411186302626",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-17",
-    "status": "open",
+    "status": "applied",
     "liveness": "live",
     "livenessChecked": "2026-08-21",
     "triageScore": 40,
@@ -961,6 +1144,20 @@
       "pref": 4,
       "disclosure": "named",
       "type": "unknown"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Submitted 21 Aug via Ashby (no account). See jobs/applications/forgd-applied-ai-architect/submitted.md. Pay unstated; remote UK; Anthropic partner.",
+    "needsPhil": false,
+    "appliedDate": "2026-08-21",
+    "submittedCopy": "jobs/applications/forgd-applied-ai-architect/submitted.md",
+    "verified": {
+      "live": "live",
+      "pay": "unstated — Ashby compensation fields empty, shouldDisplayCompensationOnJobPostings=false; listing says only \"Competitive salary, equity, and full benefits\". Mat",
+      "location": "Remote - UK (Ashby workplaceType Remote, address country United Kingdom). Listing header: \"Remote (UK), 10–20% Travel\"; \"Fully remote across North American and ",
+      "applyUrl": "https://jobs.ashbyhq.com/forgd-ai/87814487-e6a5-4e15-b6fa-b8490e80cd55/application",
+      "ats": "Ashby",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/forgd-applied-ai-architect/pack.md"
     }
   },
   {
@@ -992,7 +1189,7 @@
     "url": "https://weworkremotely.com/remote-jobs/gitlab-ai-engineer",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: location/pay",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 32,
@@ -1002,6 +1199,18 @@
       "pref": 4,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "only live req is Bangalore-only",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "WWR copy prints \"United States Salary Range $108,400 — $129,600 USD\" and states explicitly the range \"is currently for residents of the United States only\" (app",
+      "location": "WWR board tag says \"Anywhere in the World\" but that is a board misclassification. The actual Greenhouse requisition is \"Remote, Bangalore\" (office: India) and t",
+      "applyUrl": "https://job-boards.greenhouse.io/gitlab/jobs/8556658002",
+      "ats": "Greenhouse",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/gitlab-ai-engineer/pack.md"
     }
   },
   {
@@ -1032,6 +1241,18 @@
       "pref": 2,
       "disclosure": "recruiter_undisclosed",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "NEEDS PHIL: €90-130k + bonus, Dublin hybrid, first AI hire at an unnamed \"specialist recruitment business\"; LinkedIn-login apply only; ad ~3 months old and absent from Harnham's own board (may be stale). Pack ready.",
+    "needsPhil": true,
+    "verified": {
+      "live": "live",
+      "pay": "Description: \"Salary: €90,000 – €130,000 (flexible for the right person)\" + bonus (header line \"€90,000 – €130,000 + bonus\"). LinkedIn structured pay block: \"Ba",
+      "location": "Dublin city centre, Ireland. \"Working model: Hybrid, with flexibility and open discussion\" — onsite days not specified. \"Sponsorship: Available for the right ca",
+      "applyUrl": "https://ie.linkedin.com/jobs/view/ai-transformation-lead-at-harnham-4407411855",
+      "ats": "board-hosted (LinkedIn apply; no external apply URL on the p",
+      "accountRequired": "yes",
+      "packFile": "jobs/applications/harnham-ai-transformation-lead/pack.md"
     }
   },
   {
@@ -1084,7 +1305,10 @@
       "pref": 0,
       "disclosure": "named",
       "type": "permanent"
-    }
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "UNVERIFIED this run — outside the shortlist (low triage score: Dubai/Abu Dhabi presence or consultant-grade pay); liveness not checked beyond HTTP status. Still open in the tracker, honestly unswept.",
+    "needsPhil": false
   },
   {
     "id": "lemon-io-senior-ai-engineer-architect",
@@ -1093,7 +1317,7 @@
     "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-ai-engineer-4",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: engineering/DS",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 60,
@@ -1103,6 +1327,18 @@
       "pref": 5,
       "disclosure": "marketplace_network",
       "type": "network"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. engineer network, account required",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "Unstated in the listing: \"The rate depends on your skills and experience. We've already paid out over $11M to our engineers.\" JSON-LD baseSalary is 0/0. The sco",
+      "location": "Fully remote contract placements via marketplace. WWR geolock list explicitly includes United Kingdom and Ireland (plus most of Europe, Americas, selected APAC/",
+      "applyUrl": "https://me.lemon.io/escape-the-matrix",
+      "ats": "own form (Lemon.io Next.js application + account registratio",
+      "accountRequired": "yes",
+      "packFile": "jobs/applications/lemon-io-senior-ai-engineer-architect/pack.md"
     }
   },
   {
@@ -1112,7 +1348,7 @@
     "url": "https://wellfound.com/jobs/4452741-head-of-ai",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: engineering/DS",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 24,
@@ -1122,6 +1358,18 @@
       "pref": 4,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. ML-research-heavy Head of AI at cyber startup mazehq (£180-250k, remote Europe) — say if you want it back",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "£180,000 – £250,000 per year base + 0.2% – 0.5% equity (stated identically on Wellfound JSON-LD baseSalary and Ashby compensationTiers). Scout report said \"Unst",
+      "location": "Ashby (employer source): \"Remote (Europe)\", workplaceType Remote. Wellfound copy: \"Remote (Everywhere) / Hires remotely in Everywhere\"; \"Visa Sponsorship Not Av",
+      "applyUrl": "https://jobs.ashbyhq.com/mazehq/a2d62030-f2da-4ab2-8459-04e33137940c/application",
+      "ats": "Ashby",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/maze-head-of-ai/pack.md"
     }
   },
   {
@@ -1131,7 +1379,7 @@
     "url": "https://www.nijobs.com/job/technology-consultant-data-ai/mcs-group-job107658628",
     "firstSeen": "2026-08-10",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: fit",
     "liveness": "unverified",
     "livenessChecked": "2026-08-21",
     "triageScore": 18,
@@ -1141,6 +1389,18 @@
       "pref": 3,
       "disclosure": "recruiter_undisclosed",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "enterprise data architecture/governance consultant, not Phil's discipline; pay undisclosed",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "\"Negotiable\" (header) / \"Salary: Competitive + Bonus + Excellent Benefits\" (body). No figure. Matches scout report (unstated).",
+      "location": "\"Location: Northern Ireland, UK (Hybrid)\"; location tag Belfast; \"Hybrid working\" listed as a benefit; onsite days not stated; no eligible-country or visa state",
+      "applyUrl": "https://www.mcsgroup.jobs/job/data-architect-9677/",
+      "ats": "own form (Vennture/Venn site form posting to /api/form/jobap",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/mcs-group-technology-consultant-data-ai/pack.md"
     }
   },
   {
@@ -1160,6 +1420,18 @@
       "pref": 3,
       "disclosure": "recruiter_undisclosed",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "NEEDS PHIL (borderline): £70-80k WFH Belfast, FS client unnamed, 2 months old, NIjobs login wall. Only worth a call to Rachael Walker at MCS if they will go to £80k+.",
+    "needsPhil": true,
+    "verified": {
+      "live": "dead",
+      "pay": "£70,000 - £80,000 per annum (stated on the listing). Differs from scout report, which said \"Competitive\"/unstated and \"plausibly £80k+\". Top of band merely touc",
+      "location": "Belfast, County Antrim; \"Work from home\" benefit; JSON-LD jobLocationType TELECOMMUTE, employmentType \"REMOTE_WORKING\", applicantLocationRequirements country GB",
+      "applyUrl": "https://www.nijobs.com/job/workflow-specialist/mcs-group-job107482831",
+      "ats": "board-hosted (NIjobs harmonised apply, redirects to /job/e3e",
+      "accountRequired": "yes",
+      "packFile": "jobs/applications/mcs-group-principal-ai-workflow-specialist/pack.md"
     }
   },
   {
@@ -1169,7 +1441,7 @@
     "url": "https://job-boards.greenhouse.io/nearform/jobs/7619129003",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open",
+    "status": "skipped: engineering/DS",
     "liveness": "live",
     "livenessChecked": "2026-08-21",
     "triageScore": 15,
@@ -1179,6 +1451,18 @@
       "pref": 3,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. 8+ yr senior engineer, coding test, band from £75k",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "\"Our salary range starts from £75,000 + bonus & benefits and will be discussed during the initial interview based on your experience.\" No upper bound stated — t",
+      "location": "\"Full-time, permanent opportunity for candidates based in the UK.\" Remote + Travel: \"requires some travel to client sites within Europe, with travel expenses co",
+      "applyUrl": "https://job-boards.greenhouse.io/nearform/jobs/7619129003",
+      "ats": "Greenhouse",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/nearform-forward-deployed-engineer-uk-remote-travel/pack.md"
     }
   },
   {
@@ -1188,7 +1472,7 @@
     "url": "https://www.glassdoor.com/job-listing/forward-deployed-engineer-nice-JV_KO0,25_KE26,30.htm?jl=1010112529056",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: engineering/DS",
     "liveness": "unverified",
     "livenessChecked": "2026-08-21",
     "triageScore": 32,
@@ -1198,6 +1482,18 @@
       "pref": 4,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. \"highly technical full-stack engineer\"",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "unstated — no salary text in the listing and Greenhouse pay_input_ranges is null. Matches scout report ('salary unstated').",
+      "location": "'United Kingdom - Remote' (Greenhouse office and location fields). No onsite days, hub-office, travel or right-to-work/eligible-country statement anywhere in th",
+      "applyUrl": "https://job-boards.eu.greenhouse.io/nice/jobs/4930718101",
+      "ats": "Greenhouse",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/nice-ai-forward-deployed-engineer/pack.md"
     }
   },
   {
@@ -1262,7 +1558,7 @@
     "url": "https://www.nijobs.com/job/data-ai-lead-healthcare/ocho-job107742907",
     "firstSeen": "2026-08-10",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: fit",
     "liveness": "unverified",
     "livenessChecked": "2026-08-21",
     "triageScore": 27,
@@ -1272,6 +1568,18 @@
       "pref": 3,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "must-have: large-scale healthcare/public-sector data programmes (NHS-facing); client not named in ad",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "Kainos posting: unstated (no salary on Phenom page or Workday JSON). Ocho/NIjobs ad: '£80,000 - £100,000 per annum'. DIFFERS from scout report, which claimed £8",
+      "location": "Kainos posting: primary location 'Homeworker - UK' with additional locations Belfast (4-6 Upper Crescent, BT7 1NT), Birmingham and London; described as 'a high-",
+      "applyUrl": "https://kainos.wd3.myworkdayjobs.com/Kainos/job/Homeworker---UK/Principal-Healthcare-Data-Consultant_JR_15663/apply",
+      "ats": "Workday (Kainos direct; careers site front-end is Phenom Peo",
+      "accountRequired": "yes",
+      "packFile": "jobs/applications/ocho-kainos-data-ai-lead-healthcare/pack.md"
     }
   },
   {
@@ -1281,7 +1589,7 @@
     "url": "https://www.nijobs.com/job/senior-ai-engineer/ocho-job107629051",
     "firstSeen": "2026-08-10",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: below floor",
     "liveness": "unverified",
     "livenessChecked": "2026-08-21",
     "triageScore": 36,
@@ -1291,7 +1599,10 @@
       "pref": 3,
       "disclosure": "recruiter_undisclosed",
       "type": "permanent"
-    }
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "NIjobs shows £50-75k (report said £100-110k)",
+    "needsPhil": false
   },
   {
     "id": "openai-forward-deployed-engineer-abu-dhabi",
@@ -1310,7 +1621,10 @@
       "pref": 0,
       "disclosure": "named",
       "type": "permanent"
-    }
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "UNVERIFIED this run — outside the shortlist (low triage score: Dubai/Abu Dhabi presence or consultant-grade pay); liveness not checked beyond HTTP status. Still open in the tracker, honestly unswept.",
+    "needsPhil": false
   },
   {
     "id": "optimal-group-ai-architect",
@@ -1351,6 +1665,18 @@
       "pref": 4,
       "disclosure": "recruiter_undisclosed",
       "type": "contract"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "NEEDS PHIL: live (Opus ref MM-351, £800-900/day Outside IR35, London 2x/month, expires 24 Aug). End client unnamed — phone Opus +44 20 7448 1414, get the client name, then submit on the Opus page with CV. Pack ready.",
+    "needsPhil": true,
+    "verified": {
+      "live": "live",
+      "pay": "£800.00 - £900.00 per day (listing sidebar and JSON-LD baseSalary GBP 800–900/day; body text says only \"Competitive day rate\"). Outside IR35. Matches scout repo",
+      "location": "Body: \"London (2x per month)\" / \"London (twice monthly)\" — otherwise remote implied but the word \"remote\" is not used. Site location field: Barking, England, Un",
+      "applyUrl": "https://opusrecruitmentsolutions.com/job-search/229/ai-agentic-transformation-lead/it/barking/job",
+      "ats": "own form (Opus website, Laravel/Livewire/Filament apply widg",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/opus-recruitment-solutions-ai-agentic-transformation-lead/pack.md"
     }
   },
   {
@@ -1382,7 +1708,7 @@
     "url": "https://uk.linkedin.com/jobs/view/ai-solutions-architect-at-qad-4447219998",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "applied",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 24,
@@ -1392,6 +1718,20 @@
       "pref": 4,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Submitted 21 Aug via SmartRecruiters (no account, CV not attachable). £90-110k + bonus, UK remote. See jobs/applications/qad-ai-solutions-architect/submitted.md.",
+    "needsPhil": false,
+    "appliedDate": "2026-08-21",
+    "submittedCopy": "jobs/applications/qad-ai-solutions-architect/submitted.md",
+    "verified": {
+      "live": "live",
+      "pay": "\"Base Salary Range: £90,000 – £110,000 GBP annually, bonus eligible.\" Placement varies by experience/location/internal equity. DIFFERS from scout report, which ",
+      "location": "London, England, United Kingdom; SmartRecruiters flags remote:true, hybrid:false; internal location \"United Kingdom - Virtual Office\". Listing: \"This role is ba",
+      "applyUrl": "https://jobs.smartrecruiters.com/QADInc/744000140775359-ai-solutions-architect?oga=true",
+      "ats": "SmartRecruiters",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/qad-ai-solutions-architect/pack.md"
     }
   },
   {
@@ -1433,7 +1773,10 @@
       "pref": 0,
       "disclosure": "named",
       "type": "permanent"
-    }
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "UNVERIFIED this run — outside the shortlist (low triage score: Dubai/Abu Dhabi presence or consultant-grade pay); liveness not checked beyond HTTP status. Still open in the tracker, honestly unswept.",
+    "needsPhil": false
   },
   {
     "id": "servicenow-forward-deployed-solution-architect-applied-ai",
@@ -1453,7 +1796,7 @@
     "url": "https://jobs.techstars.com/companies/simudyne/jobs/70291384-forward-deployed-engineer-london-or-remote-uk-eu-us",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open",
+    "status": "closed",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 24,
@@ -1463,6 +1806,18 @@
       "pref": 4,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 21 Aug: employer page 404, zero open roles",
+    "needsPhil": false,
+    "verified": {
+      "live": "dead",
+      "pay": "unstated - listing says only \"Competitive salary\" and \"Equity package\". Matches the scout report (\"Unstated\").",
+      "location": "\"Hybrid / Remote - London ideal but UK, EU, and US candidate welcome\"; \"Flexible hybrid working\"; \"Willingness to travel occasionally to client sites (10-20%)\".",
+      "applyUrl": "https://simudyne.com/careers/forward-deployed-engineer/ (employer page linked from the Techstars listing - now HTTP 404). Board listing: https://jobs.techstars.com/companies/simudyne/jobs/70291384-forward-deployed-engineer-london-or-remote-uk-eu-us",
+      "ats": "own form (employer career page, now removed) / board-hosted ",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/simudyne-forward-deployed-engineer/pack.md"
     }
   },
   {
@@ -1472,7 +1827,7 @@
     "url": "https://job-boards.greenhouse.io/smartsheet/jobs/7873872",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: engineering/DS",
     "liveness": "live",
     "livenessChecked": "2026-08-21",
     "triageScore": 32,
@@ -1482,6 +1837,18 @@
       "pref": 4,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. Sr FDE, 6-10+ yrs production SWE",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "unstated — no salary in content, Greenhouse pay_input_ranges null. Matches scout report (\"salary unstated\").",
+      "location": "Greenhouse location \"-REMOTE, UK-\"; office \"England, United Kingdom\"; tagged #LI-Remote. No onsite days stated. Must be eligible to work in the UK on an ongoing",
+      "applyUrl": "https://job-boards.greenhouse.io/smartsheet/jobs/7873872",
+      "ats": "Greenhouse",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/smartsheet-sr-forward-deployed-ai-engineer/pack.md"
     }
   },
   {
@@ -1491,7 +1858,7 @@
     "url": "https://www.remoteitjobs.app/job/techtorch-forward-deployed-ai-engineer",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: engineering/DS",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 40,
@@ -1501,6 +1868,18 @@
       "pref": 4,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. must-haves are data engineering",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "unstated — Ashby compensation fields empty (compensationTierSummary null, shouldDisplayCompensationOnJobPostings false). Matches scout. NOTE: the application fo",
+      "location": "Ashby location field \"EU + UK\"; workplaceType/isRemote not set; description body says \"Data Practice | Remote (Poland) | Senior\" (appears to be a relabelled cop",
+      "applyUrl": "https://jobs.ashbyhq.com/techtorch/878eaa7b-6ec8-42f4-974e-fde68db3582d/application",
+      "ats": "Ashby",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/techtorch-forward-deployed-ai-engineer/pack.md"
     }
   },
   {
@@ -1510,7 +1889,7 @@
     "url": "https://weworkremotely.com/remote-jobs/toptal-senior-full-stack-ai-engineer",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: engineering/DS",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 60,
@@ -1520,6 +1899,18 @@
       "pref": 5,
       "disclosure": "marketplace_network",
       "type": "network"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. engineer network; real poster is staffing agency Walter",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "unstated (matches scout report). No rate or salary on WWR or Workable. Given Walter's cost-arbitrage model, a £500+/day rate is implausible.",
+      "location": "WWR says \"Region: Anywhere in the World\", Job type: Contract. Workable (the actual ATS) says workplace: remote, locations: Canada, United States, Brazil, Colomb",
+      "applyUrl": "https://apply.workable.com/walter-careers/j/78D12B0E7E/apply/",
+      "ats": "Workable (account walter-careers)",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/toptal-senior-full-stack-ai-engineer/pack.md"
     }
   },
   {
@@ -1529,7 +1920,7 @@
     "url": "https://weworkremotely.com/remote-jobs/toptal-ai-engineers",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: engineering/DS",
     "liveness": "unverified",
     "livenessChecked": "2026-08-21",
     "triageScore": 60,
@@ -1539,7 +1930,10 @@
       "pref": 5,
       "disclosure": "marketplace_network",
       "type": "network"
-    }
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. engineer network",
+    "needsPhil": false
   },
   {
     "id": "valtech-data-consulting-director-data-ai-mena",
@@ -1570,7 +1964,7 @@
     "url": "https://jobs.smartrecruiters.com/Version1/744000117619537-ai-solutions-internal-adoption-lead",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open",
+    "status": "closed",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 24,
@@ -1580,6 +1974,18 @@
       "pref": 3,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 21 Aug: SmartRecruiters active:false, expired 30 Apr",
+    "needsPhil": false,
+    "verified": {
+      "live": "dead",
+      "pay": "unstated (no salary in the ad, no baseSalary schema field). Matches scout report's \"unstated\". Custom field \"Open to Contract & Permanent?\" = \"Permanent only\".",
+      "location": "Location field: \"London, Birmingham, Manchester, Newcastle upon Tyne, Edinburgh, Belfast\", country GB, remote=false, hybrid=false in the API; however custom fie",
+      "applyUrl": "https://jobs.smartrecruiters.com/Version1/744000117900468-ai-solutions-internal-adoption-lead?oga=true (apply button disabled - \"Sorry, this job has expired\")",
+      "ats": "SmartRecruiters",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/version-1-ai-solutions-internal-adoption-lead/pack.md"
     }
   },
   {
@@ -1589,7 +1995,7 @@
     "url": "https://jobs.smartrecruiters.com/Version1/744000103250685-pre-sales-ai-architect",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open",
+    "status": "closed",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 24,
@@ -1599,6 +2005,18 @@
       "pref": 3,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 21 Aug: SmartRecruiters active:false, expired 23 Jun",
+    "needsPhil": false,
+    "verified": {
+      "live": "dead",
+      "pay": "unstated (matches scout report). Benefits listed: quarterly profit share, pension, private healthcare, life assurance.",
+      "location": "Location field: \"London, Birmingham, Manchester, Newcastle upon Tyne, Edinburgh, Belfast\", United Kingdom; custom field \"Associated V1 Office: Office - All (ROI",
+      "applyUrl": "https://jobs.smartrecruiters.com/Version1/744000103250685-pre-sales-ai-architect?oga=true (disabled - \"Sorry, this job has expired\")",
+      "ats": "SmartRecruiters",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/version-1-pre-sales-ai-architect/pack.md"
     }
   },
   {
@@ -1662,6 +2080,18 @@
       "pref": 5,
       "disclosure": "named",
       "type": "ftc"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "NEEDS PHIL: live Ashby form, fully remote 4-5m B2B contract; pay NOT on listing (scout's $190-295/hr unsupported). Form forces yes/no on international travel (Malta/Bucharest/Sofia), a gross-monthly EUR salary figure, start date and interview-recording consent — your calls. Pack ready.",
+    "needsPhil": true,
+    "verified": {
+      "live": "live",
+      "pay": "unstated. Ashby compensation fields are null (shouldDisplayCompensationOnJobPostings=false), the description contains no rate, and the WTTJ mirror shows \"Salary",
+      "location": "Primary location Malta (Pieta); secondary locations Bucharest (Romania), London (UK), Sofia (Bulgaria), Lisbon (Portugal). Listing text: \"As a consultant you wi",
+      "applyUrl": "https://jobs.ashbyhq.com/WA.Technology/3df55a67-4575-44c9-ac2b-08de0d821e44/application",
+      "ats": "Ashby",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/wa-technology-head-of-ai-enablement-ftc/pack.md"
     }
   },
   {
@@ -1682,7 +2112,7 @@
     "url": "https://www.welcometothejungle.com/en/companies/workato/jobs/forward-deployed-engineer_london_rymjphj2",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "skipped: engineering/DS",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
     "triageScore": 16,
@@ -1692,6 +2122,18 @@
       "pref": 2,
       "disclosure": "named",
       "type": "permanent"
+    },
+    "statusDate": "2026-08-21",
+    "statusReason": "Phil 21 Aug: no data-scientist / heavy-engineering roles. FDE engineer, London, integration-platform screeners",
+    "needsPhil": false,
+    "verified": {
+      "live": "live",
+      "pay": "unstated — no salary in the Greenhouse JSON (pay_input_ranges null), in the body text, or on WTTJ (\"Salary: Not specified\"). The form asks \"What is your expecte",
+      "location": "London, United Kingdom (Greenhouse office: London, United Kingdom). No remote/hybrid/onsite-days statement anywhere in the listing; WTTJ FAQ explicitly says no ",
+      "applyUrl": "https://job-boards.greenhouse.io/embed/job_app?for=workato&token=8526787002",
+      "ats": "Greenhouse",
+      "accountRequired": "no",
+      "packFile": "jobs/applications/workato-forward-deployed-engineer/pack.md"
     }
   },
   {
@@ -1715,5 +2157,17 @@
     "status": "closed",
     "statusDate": "2026-08-21",
     "statusReason": "Listing dead on 2026-08-21: LinkedIn expired_jd_redirect"
+  },
+  {
+    "id": "anthropic-manager-forward-deployed-engineering-london",
+    "title": "Manager, Forward Deployed Engineering",
+    "company": "Anthropic",
+    "url": "https://job-boards.greenhouse.io/anthropic/jobs/5385634008",
+    "firstSeen": "2026-08-21",
+    "lastSeen": "2026-08-21",
+    "status": "open",
+    "statusDate": "2026-08-21",
+    "statusReason": "NEW 21 Aug (replacement for the dead Anthropic FDE req): Manager, Forward Deployed Engineering, London, £255-325k, 25% in-office. Form asks outright \"Have you directly managed engineers embedded with customers from prototype to production?\" — honest answer is No, so left for your call. https://job-boards.greenhouse.io/anthropic/jobs/5385634008",
+    "needsPhil": true
   }
 ]

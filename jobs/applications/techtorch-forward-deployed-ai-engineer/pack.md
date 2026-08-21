@@ -1,0 +1,31 @@
+# Forward Deployed AI Engineer (Ashby title has a trailing space; Department/Team: Data; description subtitle reads "Data Practice | Remote (Poland) | Senior" on the Ashby page, "Remote (EU & UK)" on the remoteitjobs copy) — TechTorch (techtorch.io; legal suffix not shown on site — scout notes private US startup, Woodside CA, founded 2021)
+
+- Verified: 2026-08-21 · live: **live** · private sector: **confirmed** · decision: **drop**
+- Why: Listing is live and private-sector, but the actual job text collapses the fit: every Must Have is production data-engineering (dimensional modelling, dbt, SCD, Snowflake/Databricks, FastAPI + Next.js full-stack, AWS/Azure CI/CD) — explicitly the stack Phil does not have — with agentic AI relegated to Nice to Have. Combined with unstated pay, a form asking for an hourly USD rate (contractor signal, Poland-positioned copy) and no salary evidence of reaching the £80k / £500-day floor, the scout's fit 5 was a snippet misread and the application is not worth the effort.
+- Pay (as listed): unstated — Ashby compensation fields empty (compensationTierSummary null, shouldDisplayCompensationOnJobPostings false). Matches scout. NOTE: the application form asks "What are your hourly rate expectations (in USD)?" and "What is your preferred type of employment?", which signals an hourly/contractor engagement rather than a salaried permanent role.
+- Location/remote: Ashby location field "EU + UK"; workplaceType/isRemote not set; description body says "Data Practice | Remote (Poland) | Senior" (appears to be a relabelled copy of the Poland posting) and under What We Offer: "Fully remote — work from anywhere, globally" with "semi-annual team offsites" in person at least twice a year. No onsite days. Eligible countries not explicitly stated beyond the EU + UK label.
+- Type: unknown · posted/updated: Employer posting published 2026-08-10 (Ashby publishedAt); remoteitjobs aggregator copy dated 2026-08-19, valid through 2026-09-18. Scout's "posted 2026-08-19" was the aggregator date, not the employer's.
+- End client: Not applicable — direct employer posting on TechTorch's own Ashby board; the role is client-delivery into PE-backed portfolio companies (unnamed, as expected for a consultancy).
+- Apply: https://jobs.ashbyhq.com/techtorch/878eaa7b-6ec8-42f4-974e-fde68db3582d/application (Ashby; account required: no)
+- Contact email printed in listing: none
+- Red flags: (1) Role is misreported by the scout: it is a data-engineering-first position. Must-haves are dimensional modelling, EDW schema design, production ETL/ELT, slowly changing dimensions, dbt, advanced SQL plus Snowflake/Databricks in depth, FastAPI, Next.js, PostgreSQL, AWS/Azure CI/CD — i.e. the classical data stack the brief says is NOT on Phil's CV. Agentic AI (LangGraph, RAG) is listed only under Nice to Have. (2) Application form asks for hourly rate in USD and preferred employment type — points to an hourly contractor arrangement, and the description body still says "Remote (Poland)", suggesting Polish-market rate expectations. (3) Pay unstated; listed as FullTime but structure unclear. (4) Resume upload is required (Phil would need to attach the CV himself). (5) "Forward Deployed AI Engineer" title and the "Senior" label do not change the fact that the filter is production data-engineering depth, not agent-building.
+- Liveness evidence: Fetched 2026-08-21: Ashby board API https://api.ashbyhq.com/posting-api/job-board/techtorch (HTTP 200) lists "Forward Deployed AI Engineer" id 878eaa7b-6ec8-42f4-974e-fde68db3582d, isListed=true, publishedAt 2026-08-10; Ashby GraphQL ApiJobPosting returned the posting and its application form (HTTP 200, isConfidential=false). Board copy https://www.remoteitjobs.app/job/techtorch-forward-deployed-ai-engineer HTTP 200, datePosted 2026-08-19, validThrough 2026-09-18, full description rendered.
+- Private-sector evidence: techtorch.io (fetched today): private consultancy providing "AI-powered revenue operations and digital transformation" to private-equity portfolio companies; names Bain Capital, Thoma Bravo, EQT, HG Capital, Montagu as partners; "150+ portfolio company transformations". No state, university or Gulf-government ownership indicated. Client base is private PE portfolio companies, not public sector.
+
+## Form fields
+- Name and Surname (required) — text
+- Email (required) — email
+- Resume (required) — file upload
+- Phone number (please include country code) (required) — phone
+- When would you be available to start? (required) — date
+- Location (required) — location picker
+- What are your hourly rate expectations (in USD)? (required) — text
+- What is your preferred type of employment? (required) — free text (no dropdown options exposed)
+- Please share your Linkedin Profile (required) — text
+
+## Custom questions
+- When would you be available to start?
+- What are your hourly rate expectations (in USD)?
+- What is your preferred type of employment?
+- Please share your Linkedin Profile
+

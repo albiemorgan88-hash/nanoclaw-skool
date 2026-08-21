@@ -1,0 +1,37 @@
+{
+ "verify": {
+  "id": "version-1-pre-sales-ai-architect",
+  "live": "dead",
+  "live_evidence": "Fetched 2026-08-21. SmartRecruiters public API https://api.smartrecruiters.com/v1/companies/Version1/postings/744000103250685 returns HTTP 200 but \"active\": false, releasedDate 2026-01-13. The listing page https://jobs.smartrecruiters.com/Version1/744000103250685-pre-sales-ai-architect returns HTTP 200 (which is why the scout marked it presumed_live) but renders the apply button disabled with the text \"Sorry, this job has expired\" and schema.org validThrough 2026-06-23. The posting is absent from Version 1's 173 active SmartRecruiters postings (paged through all). The only active \"Pre Sales Architect\" (744000130163300, London, released 2026-06-04) is a managed-services/ITIL/ServiceNow solution-owner role, not an AI role.",
+  "employer_legal_name": "Version 1 (Version 1 Software Ltd / Version 1 group, Dublin-HQ technology services consultancy, majority-owned by Partners Group)",
+  "private_sector": "confirmed",
+  "private_sector_evidence": "Private consultancy (listing: 3,300+ staff, €350m/£300m revenue, AWS/Microsoft/Oracle partner); Partners Group-owned. Role explicitly serves public-sector tenders (\"public sector, utilities, finance, health\" and \"procurement tenders\") - public-sector client exposure, but the employer is private.",
+  "end_client": "n/a - direct employer listing (Version 1 hiring for itself)",
+  "title_verified": "Pre Sales AI Architect (ref REF5299L), Department \"Business Support\", Mid-Senior Level, Full-time",
+  "pay_verified": "unstated (matches scout report). Benefits listed: quarterly profit share, pension, private healthcare, life assurance.",
+  "location_remote_verified": "Location field: \"London, Birmingham, Manchester, Newcastle upon Tyne, Edinburgh, Belfast\", United Kingdom; custom field \"Associated V1 Office: Office - All (ROI/UK)\". API flags remote=false, hybrid=false; benefits text says \"Flexible/remote working\". No onsite-day count stated. Scout's \"Belfast (candidate's choice among UK offices)\" is a fair reading.",
+  "employment_type": "permanent",
+  "posted_or_updated": "Released 2026-01-13; validThrough 2026-06-23; expired (active:false) as of 2026-08-21",
+  "apply_url": "https://jobs.smartrecruiters.com/Version1/744000103250685-pre-sales-ai-architect?oga=true (disabled - \"Sorry, this job has expired\")",
+  "ats": "SmartRecruiters",
+  "account_required": "no",
+  "form_fields": [
+   "Apply form not reachable: apply button disabled (\"Sorry, this job has expired\"); the oneclick-ui apply endpoint returned HTTP 403 to a scripted fetch. Standard SmartRecruiters form would be First name (required), Last name (required), Email (required), Phone (optional), CV upload (usually required), LinkedIn/web profile (optional) - unverified for this posting."
+  ],
+  "custom_questions": [],
+  "contact_email_printed": "hugh.campbell@version1.com",
+  "employer_specifics": [
+   "Role owns the technical response for AI RFPs/RFIs and procurement tenders, and scopes AI delivery (phases, resource profiles, estimates, risks) before handing to delivery teams.",
+   "Version 1: 28+ years in technology services, 3,300+ staff, ~€350m/£300m revenue, positioned as the UK & Ireland's premier AWS, Microsoft and Oracle partner (also Red Hat, OutSystems, Snowflake).",
+   "Listing asks for GenAI/LLM/RAG/vector-search fluency plus classical-ML tooling (Azure ML, SageMaker, Vertex AI, Databricks, LangChain, Hugging Face) and HLD/architecture artefacts - a visible gap against Phil's agent-first stack.",
+   "Named recruiter contact printed in the ad: Hugh Campbell (hugh.campbell@version1.com), tag #LI-HC1.",
+   "Target sectors named: public sector, utilities, finance, health - heavy public-sector tender exposure."
+  ],
+  "red_flags": "Listing expired (released Jan 2026, validThrough 23 Jun 2026; API active:false) - scout's HTTP-200 liveness check was a false positive. Salary unstated. Requirements lean on bid-writing track record and classical ML/MLOps platforms (Databricks, SageMaker, Azure ML) that are not on Phil's CV. Department is \"Business Support\", not an AI practice.",
+  "decision": "drop",
+  "decision_reason": "Dead listing: SmartRecruiters API reports active:false, page shows \"Sorry, this job has expired\", validThrough 2026-06-23, and it is not among Version 1's 173 live postings. Nothing to apply to. Optional follow-up for Phil (not an application): the printed recruiter contact hugh.campbell@version1.com could be used for a speculative approach about future AI pre-sales roles, but only on Phil's explicit instruction. The currently live \"Pre Sales Architect\" (744000130163300) is a managed-services/ITIL role and not a fit.",
+  "web_searches_used": 0
+ },
+ "pack": null,
+ "check": null
+}

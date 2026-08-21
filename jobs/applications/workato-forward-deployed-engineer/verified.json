@@ -1,0 +1,346 @@
+{
+ "verify": {
+  "id": "workato-forward-deployed-engineer",
+  "live": "live",
+  "live_evidence": "Fetched today (2026-08-21): (1) Greenhouse public API https://boards-api.greenhouse.io/v1/boards/workato/jobs/8526787002?questions=true returned HTTP 200 with full content, title \"Forward Deployed Engineer\", location \"London, United Kingdom\", first_published 2026-05-05, updated_at 2026-08-06; the job also appears in the live board list (155 open jobs). (2) Hosted form https://job-boards.greenhouse.io/embed/job_app?for=workato&token=8526787002 returned 200. (3) Employer page https://www.workato.com/careers/forward-deployed-engineer-8526787002 returned 200 with the job title. (4) WTTJ board copy returned 200, JobPosting datePosted 2026-05-29, shown as \"3 months ago\", Apply button points to workato.com/careers?gh_jid=8526787002.",
+  "employer_legal_name": "Workato, Inc. (US parent, Mountain View CA); UK contracting entity is almost certainly WORKATO (UK) LIMITED, Companies House no. 13852940, 50 Broadway, London SW1H 0DB (found on Companies House; not stated in the listing)",
+  "private_sector": "confirmed",
+  "private_sector_evidence": "Listing's own \"About Workato\" describes a private enterprise iPaaS/agentic-AI software vendor (Forbes Cloud 100 \"top 100 private cloud companies\", Business Insider \"enterprise startup\", Deloitte Fast 500). Greenhouse board is Workato's own (department \"AI Business Unit\", cost centre \"2405 Forward Deployed Engineering\"). UK subsidiary is a private limited company on Companies House. No state, university or Gulf-government ownership indicated.",
+  "end_client": "n/a — direct employer posting on Workato's own Greenhouse board, not a recruiter ad",
+  "title_verified": "Forward Deployed Engineer (Greenhouse job 8526787002, REQ ID 2750, department AI Business Unit). Scout's \"(Agentic AI)\" suffix is not in the title; the body is about agentic AI solutions on the Workato Agentic AI platform.",
+  "pay_verified": "unstated — no salary in the Greenhouse JSON (pay_input_ranges null), in the body text, or on WTTJ (\"Salary: Not specified\"). The form asks \"What is your expected compensation?\" as a required field. Matches the scout report.",
+  "location_remote_verified": "London, United Kingdom (Greenhouse office: London, United Kingdom). No remote/hybrid/onsite-days statement anywhere in the listing; WTTJ FAQ explicitly says no remote information provided. Benefits section says only \"Flexible Working Arrangements\". Form requires \"Are you authorized to work in the UK for any employer?\" and \"Will you now or in the future require visa sponsorship?\" — UK eligibility is the stated scope. Workato's London office is at 50 Broadway SW1H 0DB (Companies House).",
+  "employment_type": "permanent",
+  "posted_or_updated": "first_published 2026-05-05 (Greenhouse); updated_at 2026-08-06; WTTJ datePosted 2026-05-29. Open roughly 3.5 months.",
+  "apply_url": "https://job-boards.greenhouse.io/embed/job_app?for=workato&token=8526787002",
+  "ats": "Greenhouse",
+  "account_required": "no",
+  "form_fields": [
+   "First Name (required, text)",
+   "Last Name (required, text)",
+   "Email (required, text)",
+   "Phone (required, text)",
+   "Resume/CV (required, file upload OR paste-as-text textarea)",
+   "Cover Letter (optional, file upload OR paste-as-text textarea)",
+   "LinkedIn Profile (required, text)",
+   "Are you authorized to work in the UK for any employer? (required, single select: Yes / No)",
+   "Will you now or in the future require visa sponsorship? (required, single select: Yes / No)",
+   "Have you integrated or worked with any of the SaaS applications? If yes, with which one? (required, textarea)",
+   "How many years of experience do you have implementing integration and automation projects (including APIs, middleware, automation platforms, or integration architecture)? (required, textarea)",
+   "What is your level of experience working with APIs (REST, SOAP/XML) and JSON data structures? (required, textarea)",
+   "Which integration or automation platforms have you used professionally? (required, textarea)",
+   "Do you have hands-on experience with the Workato platform? If yes, how long have you worked with it? (required, textarea)",
+   "Do you have experience building AI-driven solutions such as AI agents, LLM-based workflows, or Retrieval-Augmented Generation (RAG)? If yes, briefly describe your experience and platforms/tools used to build the solution. (required, textarea)",
+   "Why do you think you will be successful in this role? (required, textarea)",
+   "Which programming languages have you used in production? (required, textarea)",
+   "What is your expected compensation? (required, text)",
+   "Demographic (EMEA) - I identify my ethnicity as (select all that apply) (marked required in API, multi-select: Central Europe, East Europe, North Europe, South Europe, West Europe, Middle Eastern/North Africa, Sub-Saharan African, Central Asia, East Asia, South Asia, Southeast Asia, North American, Latin American, Oceania, Indigenous Group, Other, I don't wish to answer)",
+   "Demographic - I identify my gender as (single select: Female, Male, Other, I don't wish to answer)",
+   "Demographic - My pronouns are (single select: He/Him, She/Her, They/Them, Other, I don't wish to answer)",
+   "Demographic - Would you like to make us aware of any disability that would impact your application process? (single select: Yes, No, I don't wish to answer)",
+   "GDPR: no explicit consent checkbox required (requires_consent false)"
+  ],
+  "custom_questions": [
+   "Are you authorized to work in the UK for any employer?",
+   "Will you now or in the future require visa sponsorship?",
+   "Have you integrated or worked with any of the SaaS applications? If yes, with which one?",
+   "How many years of experience do you have implementing integration and automation projects (including APIs, middleware, automation platforms, or integration architecture)?",
+   "What is your level of experience working with APIs (REST, SOAP/XML) and JSON data structures?",
+   "Which integration or automation platforms have you used professionally?",
+   "Do you have hands-on experience with the Workato platform? If yes, how long have you worked with it?",
+   "Do you have experience building AI-driven solutions such as AI agents, LLM-based workflows, or Retrieval-Augmented Generation (RAG)? If yes, briefly describe your experience and platforms/tools used to build the solution.",
+   "Why do you think you will be successful in this role?",
+   "Which programming languages have you used in production?",
+   "What is your expected compensation?"
+  ],
+  "contact_email_printed": "none",
+  "employer_specifics": [
+   "Role sits in Workato's 'AI Business Unit', cost centre 'Forward Deployed Engineering'; the job is to design, build and deploy agentic AI solutions for customers on the Workato Agentic AI platform, including RAG pipelines, memory management and behaviour-planning for LLM agents that author and execute workflows",
+   "Workato positions itself as 'enterprise infrastructure for the agentic era', a leader in Enterprise MCP, and says it is trusted by 50% of the Fortune 500",
+   "The posting explicitly asks for proven AI engineering experience with agent-based systems plus integration-project experience (APIs, middleware, iPaaS); Workato platform experience is only 'nice to have' but is a direct screening question",
+   "Workato cites Forbes Cloud 100, Deloitte Tech Fast 500 and Quartz '#1 best company for remote workers' in the listing; London office is 50 Broadway, SW1H 0DB"
+  ],
+  "red_flags": "(1) Hard requirement \"BTech/BE or higher technical education in Computer Science, AI, ML or related field\" — Phil holds a B.Sc. Economics & Management, so he does not meet the stated degree requirement. (2) \"Knowledge of implementing integration projects is essential\" with enterprise middleware vocabulary (SOA, ESB, BPM, SOAP/XML, TIBCO/Boomi/MuleSoft) and a required screening question on which integration/automation platforms he has used professionally plus a direct \"hands-on Workato experience?\" question — he has none of these platforms on the CV. (3) London-located with no remote/hybrid policy stated anywhere; FDE roles normally involve customer-site travel — from Derry this needs clarifying before applying. (4) Salary unstated; form demands an expected-compensation figure. (5) Open since 5 May 2026 (3.5 months) — may be slow to fill or evergreen. (6) Demographic EMEA questions flagged required in the API (each has an \"I don't wish to answer\" option).",
+  "decision": "hand_to_phil",
+  "decision_reason": "Live, private-sector, direct-employer Greenhouse posting with no login needed, and the agentic-AI FDE mandate is a real fit for Phil's production-agent record. But it cannot be submitted without Phil: the form requires a CV upload (or pasted CV text), a stated expected-compensation figure, UK work-authorisation/visa answers, and honest answers to screening questions where he is weak (no CS/AI degree, no Workato/MuleSoft/Boomi/TIBCO, integration-platform years). Remote policy for a London-based role is unstated and must be clarified before any effort, and pay is unstated. Only Phil can decide whether to apply despite the degree and platform gaps and what compensation to quote.",
+  "web_searches_used": 0
+ },
+ "pack": {
+  "id": "workato-forward-deployed-engineer",
+  "cover_note": "Since March 2025 I have built and run production agent systems for paying SME clients through Blue Canvas AI, the Derry consultancy I founded. The core is Albie: a 24/7 autonomous multi-channel operator on the Anthropic Claude Agent SDK handling inbox, Apollo and Zoho campaigns, proposals, coding and scheduled tasks with persistent memory. My company runs on it daily. Your Forward Deployed Engineering mandate, agents on the Workato Agentic AI platform with RAG pipelines, memory management and behaviour-planning that author and execute workflows, is the problem I solve in production, at SME scale rather than Fortune 500. Stack: Python, TypeScript, SQLite, REST APIs, browser automation, RAG, eval design, including rubric-graded, mutation-tested RL environments proposed to HUD.ai. Six live engagements; one, The Wall Group, grew net profit 17% year on year from the workflows I integrated. I am in Derry, remote preferred, and will travel to London and customer sites.",
+  "word_count": 149,
+  "employer_specific_hook": "The Forward Deployed Engineering mandate inside Workato's AI Business Unit: designing, building and deploying agentic AI solutions on the Workato Agentic AI platform, specifically RAG pipelines, memory management and behaviour-planning for LLM agents that author and execute workflows, plus the \"trusted by 50% of the Fortune 500\" positioning. Tied to Albie (persistent memory, scheduled tasks, tool use, executing real workflows in production on the Claude Agent SDK) with the honest scale caveat (SME, not Fortune 500). Source: verified Greenhouse listing 8526787002 body text (employer_specifics items 1 and 2).",
+  "screening_answers": [
+   {
+    "question": "Years of experience",
+    "answer": "18 years in commercial and deep-tech leadership roles (Commercial Director, BD Director, NED, Senior Fund Manager). Hands-on agentic-AI production delivery since March 2025, roughly 18 months, as founder of Blue Canvas AI, building and operating live agent systems for six client engagements.",
+    "flag": ""
+   },
+   {
+    "question": "Notice period / availability",
+    "answer": "No notice period. I run my own company, so I can start within 2 to 4 weeks to hand over client work cleanly.",
+    "flag": "ASSUMPTION: 2-4 week start window is the pack-rules default; Phil to confirm against current client commitments (Platform Pilates, retainers)."
+   },
+   {
+    "question": "Salary expectation",
+    "answer": "Base of no less than £80,000, with the full package (base, bonus, equity) to be discussed against Workato's London band for this role.",
+    "flag": "NEEDS PHIL: listing states no salary and the form forces a figure into a required free-text field. £80,000 is the pack-rules floor, not a market read on a London FDE role at a Forbes Cloud 100 vendor; Phil to set the actual number to type in."
+   },
+   {
+    "question": "Right to work",
+    "answer": "Yes. Full right to work in the UK and Ireland. No sponsorship required now or in the future.",
+    "flag": ""
+   },
+   {
+    "question": "Why this company",
+    "answer": "Workato is building the agent layer on top of an integration platform that already sits inside half the Fortune 500, and this role is the one that takes those agents into customers' hands rather than into a roadmap slide. I have been doing exactly that for SMEs since March 2025: selling, scoping, building and running agent systems with RAG, persistent memory and scheduled execution on the Claude Agent SDK, with client P&L to show for it. I want to do it at the scale Workato's customer base offers.",
+    "flag": ""
+   },
+   {
+    "question": "Are you authorized to work in the UK for any employer?",
+    "answer": "Yes",
+    "flag": ""
+   },
+   {
+    "question": "Will you now or in the future require visa sponsorship?",
+    "answer": "No",
+    "flag": ""
+   },
+   {
+    "question": "Have you integrated or worked with any of the SaaS applications? If yes, with which one?",
+    "answer": "Yes. Apollo and Zoho (outbound campaign automation driven by my agent system, Albie), Shopify Admin API (ecommerce client engagement), and Slack, Discord, Telegram and WhatsApp as live agent channels. Albie also runs scheduled tasks and inbox handling across these in production daily.",
+    "flag": "ASSUMPTION: interprets 'the SaaS applications' as any SaaS tools rather than a specific list Workato has in mind; only tools on the allowed-facts list are named."
+   },
+   {
+    "question": "How many years of experience do you have implementing integration and automation projects (including APIs, middleware, automation platforms, or integration architecture)?",
+    "answer": "Roughly 18 months hands-on, since March 2025, building and running production automation and agent systems for six client engagements: REST API integrations (Shopify Admin API, Apollo, Zoho, messaging platforms), SQLite-backed state, browser automation where no API exists, and scheduled multi-step workflows. This has been custom-built on the Claude Agent SDK, Python and TypeScript rather than on enterprise middleware (ESB/iPaaS), and I would say that plainly rather than stretch it.",
+    "flag": ""
+   },
+   {
+    "question": "What is your level of experience working with APIs (REST, SOAP/XML) and JSON data structures?",
+    "answer": "REST and JSON: daily, in production. My agent system consumes and writes to the Shopify Admin API, Apollo, Zoho and the Slack/Discord/Telegram/WhatsApp APIs, and the whole stack is built on the Anthropic API through the Claude Agent SDK, so tool schemas, JSON payloads and error handling are routine work. SOAP/XML: no production experience to cite.",
+    "flag": "NEEDS PHIL: confirm there is genuinely no SOAP/XML work from the 18-year record worth naming; the allowed facts list none, so the answer says none."
+   },
+   {
+    "question": "Which integration or automation platforms have you used professionally?",
+    "answer": "None of the iPaaS products named in the posting (Workato, MuleSoft, Boomi, TIBCO). My production automation is custom-built: the Anthropic Claude Agent SDK as the orchestration layer, Python and TypeScript services, SQLite, REST API integrations and browser automation. I would be learning Workato's recipe and connector model on the job, and I would rather say that than list platforms I have not shipped on.",
+    "flag": "NEEDS PHIL: confirm whether he has used Zapier, Make, n8n or similar professionally. Not on the allowed-facts list, so not claimed. This is the weakest required answer on the form."
+   },
+   {
+    "question": "Do you have hands-on experience with the Workato platform? If yes, how long have you worked with it?",
+    "answer": "No.",
+    "flag": "NEEDS PHIL: confirm. If he has touched a Workato trial or sandbox, state that with the duration; otherwise a flat 'No' is the honest answer to a direct required question."
+   },
+   {
+    "question": "Do you have experience building AI-driven solutions such as AI agents, LLM-based workflows, or Retrieval-Augmented Generation (RAG)? If yes, briefly describe your experience and platforms/tools used to build the solution.",
+    "answer": "Yes. I built and operate Albie, a 24/7 autonomous multi-channel operator (WhatsApp, Telegram, Slack, Discord) on the Anthropic Claude Agent SDK. It handles inbox triage, Apollo and Zoho campaigns, proposal drafting, coding tasks and scheduled jobs, with persistent memory and tool use across REST APIs and browser automation. My own company runs on it daily; it is production infrastructure, not a demo. Through Blue Canvas AI I have six live client engagements (construction, equestrian, property, hospitality, ecommerce) running agent workflows; one, The Wall Group, grew net profit 17% year on year from the AI workflow integration. I also designed RL evaluation environments for a HUD.ai vendor proposal: rubric-graded, mutation-tested eval tasks. Tools: Claude Agent SDK, Python, TypeScript, SQLite, RAG, REST APIs, browser automation, Shopify Admin API.",
+    "flag": ""
+   },
+   {
+    "question": "Why do you think you will be successful in this role?",
+    "answer": "Because a forward deployed engineer has to do the whole loop, and I already do it. I sell the engagement, scope it against the client's P&L, build the agent system, deploy it into their operation and keep it running. Since March 2025 that has produced six live engagements and a measurable outcome: The Wall Group's net profit up 17% year on year from the workflows I integrated, which funded their acquisition of a new site. The systems are real production infrastructure with persistent memory, scheduled execution and tool use on the Claude Agent SDK, which is the shape of what Workato's Agentic AI platform is asking customers to adopt. Behind that sit 18 years of commercial and board-level work, so I am comfortable in front of a customer's leadership, not only their engineers. The gap is Workato platform depth and enterprise middleware vocabulary, and I learn platforms fast because I have to ship on them.",
+    "flag": ""
+   },
+   {
+    "question": "Which programming languages have you used in production?",
+    "answer": "Python and TypeScript, with SQL via SQLite for persistent state. Production context: the Claude Agent SDK orchestration layer, REST API integrations, browser automation, and Expo/EAS mobile builds.",
+    "flag": ""
+   },
+   {
+    "question": "What is your expected compensation?",
+    "answer": "£80,000 base minimum; full package (base, bonus, equity) to be discussed against Workato's London band for this role.",
+    "flag": "NEEDS PHIL: required free-text field with no band to anchor to. £80,000 is the floor; Phil to decide the actual figure to quote."
+   },
+   {
+    "question": "LinkedIn Profile",
+    "answer": "https://www.linkedin.com/in/philpatterson1",
+    "flag": ""
+   },
+   {
+    "question": "Resume/CV (required upload or paste)",
+    "answer": "Upload Phil's current CV PDF, or paste its text.",
+    "flag": "NEEDS PHIL: CV file must be supplied and uploaded by Phil."
+   },
+   {
+    "question": "Cover Letter (optional upload or paste)",
+    "answer": "Paste the cover note above into the text option.",
+    "flag": ""
+   },
+   {
+    "question": "Email / Phone",
+    "answer": "philpatterson85@gmail.com / +44 7828 699027",
+    "flag": ""
+   },
+   {
+    "question": "Location and working arrangement (not on the form; role is listed London with no remote or hybrid policy stated)",
+    "answer": "Based in Derry/Londonderry, Northern Ireland. Remote preferred, with regular travel to the London office and to customer sites as the engagement needs. Not open to relocation abroad.",
+    "flag": "NEEDS PHIL: remote policy is unstated anywhere in the listing and FDE work normally means customer-site travel. Clarify with Workato (or decide the travel tolerance) before investing in this application."
+   },
+   {
+    "question": "Demographic (EMEA) - I identify my ethnicity as",
+    "answer": "I don't wish to answer",
+    "flag": "NEEDS PHIL: personal preference; marked required in the API but every option includes 'I don't wish to answer'."
+   },
+   {
+    "question": "Demographic - I identify my gender as",
+    "answer": "I don't wish to answer",
+    "flag": "NEEDS PHIL: personal preference."
+   },
+   {
+    "question": "Demographic - My pronouns are",
+    "answer": "I don't wish to answer",
+    "flag": "NEEDS PHIL: personal preference."
+   },
+   {
+    "question": "Demographic - Would you like to make us aware of any disability that would impact your application process?",
+    "answer": "No",
+    "flag": "NEEDS PHIL: personal; default 'No' only if accurate."
+   }
+  ],
+  "probe_line": "Zero iPaaS or enterprise middleware background (no Workato, MuleSoft, Boomi or TIBCO, no SOAP/XML, no ESB/BPM vocabulary) and a B.Sc. Economics against a stated BTech/BE-or-higher CS/AI degree requirement; his agent evidence is founder-built at SME scale on the Claude Agent SDK, not enterprise integration delivery, and three required screening questions force him to say so in writing.",
+  "email_body": ""
+ },
+ "check": {
+  "id": "workato-forward-deployed-engineer",
+  "verdict": "fixed",
+  "problems": [
+   "Answer 'Which integration or automation platforms have you used professionally?' claimed the posting names MuleSoft, Boomi and TIBCO; those names are not in the verified listing or employer_specifics. Removed, replaced with 'Workato or any other iPaaS or enterprise middleware product'.",
+   "Same answer referenced Workato's 'recipe and connector model'; product vocabulary not in employer_specifics. Replaced with 'the Workato platform'.",
+   "Same answer and the integration-years answer ended with meta-hedging clauses ('I would say that plainly rather than stretch it', 'I would rather say that than list platforms I have not shipped on'). Tone rule is zero hedging; clauses removed, the honest 'None'/'custom-built' substance kept.",
+   "APIs answer said 'My agent system consumes and writes to the Shopify Admin API'. Allowed facts list Shopify Admin API as Phil's skill, not as part of Albie. Reworded to 'My production work'.",
+   "SaaS answer tied Shopify Admin API to 'ecommerce client engagement'; facts list Shopify Admin API and an ecommerce client separately, the link is not stated. Parenthetical removed; also tightened 'across these' so inbox handling is not implied to span every named channel.",
+   "Cover note: clean. 149 words counted, no banned openers, no exclamation marks, no flattery, British spelling, names the Workato Agentic AI platform / FDE mandate / RAG-memory-behaviour-planning / Fortune 500 from employer_specifics, all personal facts on the allowed list, ends with plain location/availability line.",
+   "Salary answers at £80,000 floor (not below), relocation abroad refused, notice period flagged ASSUMPTION, demographics/CV/SOAP/platform/Workato questions flagged NEEDS PHIL, no restrictive terms agreed, email_body empty because contact_email_printed is none. All compliant."
+  ],
+  "cover_note_final": "Since March 2025 I have built and run production agent systems for paying SME clients through Blue Canvas AI, the Derry consultancy I founded. The core is Albie: a 24/7 autonomous multi-channel operator on the Anthropic Claude Agent SDK handling inbox, Apollo and Zoho campaigns, proposals, coding and scheduled tasks with persistent memory. My company runs on it daily. Your Forward Deployed Engineering mandate, agents on the Workato Agentic AI platform with RAG pipelines, memory management and behaviour-planning that author and execute workflows, is the problem I solve in production, at SME scale rather than Fortune 500. Stack: Python, TypeScript, SQLite, REST APIs, browser automation, RAG, eval design, including rubric-graded, mutation-tested RL environments proposed to HUD.ai. Six live engagements; one, The Wall Group, grew net profit 17% year on year from the workflows I integrated. I am in Derry, remote preferred, and will travel to London and customer sites.",
+  "word_count_final": 149,
+  "answers_final": [
+   {
+    "question": "Years of experience",
+    "answer": "18 years in commercial and deep-tech leadership roles (Commercial Director, BD Director, NED, Senior Fund Manager). Hands-on agentic-AI production delivery since March 2025, roughly 18 months, as founder of Blue Canvas AI, building and operating live agent systems for six client engagements.",
+    "flag": ""
+   },
+   {
+    "question": "Notice period / availability",
+    "answer": "No notice period. I run my own company, so I can start within 2 to 4 weeks to hand over client work cleanly.",
+    "flag": "ASSUMPTION: 2-4 week start window is the pack-rules default; Phil to confirm against current client commitments (Platform Pilates, retainers)."
+   },
+   {
+    "question": "Salary expectation",
+    "answer": "Base of no less than £80,000, with the full package (base, bonus, equity) to be discussed against Workato's London band for this role.",
+    "flag": "NEEDS PHIL: listing states no salary and the form forces a figure into a required free-text field. £80,000 is the pack-rules floor, not a market read on a London FDE role at a Forbes Cloud 100 vendor; Phil to set the actual number to type in."
+   },
+   {
+    "question": "Right to work",
+    "answer": "Yes. Full right to work in the UK and Ireland. No sponsorship required now or in the future.",
+    "flag": ""
+   },
+   {
+    "question": "Why this company",
+    "answer": "Workato is building the agent layer on top of an integration platform that already sits inside half the Fortune 500, and this role is the one that takes those agents into customers' hands rather than into a roadmap slide. I have been doing exactly that for SMEs since March 2025: selling, scoping, building and running agent systems with RAG, persistent memory and scheduled execution on the Claude Agent SDK, with client P&L to show for it. I want to do it at the scale Workato's customer base offers.",
+    "flag": ""
+   },
+   {
+    "question": "Are you authorized to work in the UK for any employer?",
+    "answer": "Yes",
+    "flag": ""
+   },
+   {
+    "question": "Will you now or in the future require visa sponsorship?",
+    "answer": "No",
+    "flag": ""
+   },
+   {
+    "question": "Have you integrated or worked with any of the SaaS applications? If yes, with which one?",
+    "answer": "Yes. Apollo and Zoho (outbound campaign automation driven by my agent system, Albie), the Shopify Admin API, and Slack, Discord, Telegram and WhatsApp as live agent channels. Albie also runs scheduled tasks and inbox handling in production daily.",
+    "flag": "ASSUMPTION: interprets 'the SaaS applications' as any SaaS tools rather than a specific list Workato has in mind; only tools on the allowed-facts list are named."
+   },
+   {
+    "question": "How many years of experience do you have implementing integration and automation projects (including APIs, middleware, automation platforms, or integration architecture)?",
+    "answer": "Roughly 18 months hands-on, since March 2025, building and running production automation and agent systems for six client engagements: REST API integrations (Shopify Admin API, Apollo, Zoho, messaging platforms), SQLite-backed state, browser automation where no API exists, and scheduled multi-step workflows. This has been custom-built on the Claude Agent SDK, Python and TypeScript rather than on enterprise middleware (ESB/iPaaS).",
+    "flag": ""
+   },
+   {
+    "question": "What is your level of experience working with APIs (REST, SOAP/XML) and JSON data structures?",
+    "answer": "REST and JSON: daily, in production. My production work consumes and writes to the Shopify Admin API, Apollo, Zoho and the Slack/Discord/Telegram/WhatsApp APIs, and the whole agent stack is built on the Anthropic API through the Claude Agent SDK, so tool schemas, JSON payloads and error handling are routine work. SOAP/XML: no production experience to cite.",
+    "flag": "NEEDS PHIL: confirm there is genuinely no SOAP/XML work from the 18-year record worth naming; the allowed facts list none, so the answer says none."
+   },
+   {
+    "question": "Which integration or automation platforms have you used professionally?",
+    "answer": "None. I have not shipped on Workato or any other iPaaS or enterprise middleware product. My production automation is custom-built: the Anthropic Claude Agent SDK as the orchestration layer, Python and TypeScript services, SQLite, REST API integrations and browser automation. I would be learning the Workato platform on the job.",
+    "flag": "NEEDS PHIL: confirm whether he has used Zapier, Make, n8n or similar professionally. Not on the allowed-facts list, so not claimed. This is the weakest required answer on the form."
+   },
+   {
+    "question": "Do you have hands-on experience with the Workato platform? If yes, how long have you worked with it?",
+    "answer": "No.",
+    "flag": "NEEDS PHIL: confirm. If he has touched a Workato trial or sandbox, state that with the duration; otherwise a flat 'No' is the honest answer to a direct required question."
+   },
+   {
+    "question": "Do you have experience building AI-driven solutions such as AI agents, LLM-based workflows, or Retrieval-Augmented Generation (RAG)? If yes, briefly describe your experience and platforms/tools used to build the solution.",
+    "answer": "Yes. I built and operate Albie, a 24/7 autonomous multi-channel operator (WhatsApp, Telegram, Slack, Discord) on the Anthropic Claude Agent SDK. It handles inbox triage, Apollo and Zoho campaigns, proposal drafting, coding tasks and scheduled jobs, with persistent memory and tool use across REST APIs and browser automation. My own company runs on it daily; it is production infrastructure, not a demo. Through Blue Canvas AI I have six live client engagements (construction, equestrian, property, hospitality, ecommerce) running agent workflows; one, The Wall Group, grew net profit 17% year on year from the AI workflow integration. I also designed RL evaluation environments for a HUD.ai vendor proposal: rubric-graded, mutation-tested eval tasks. Tools: Claude Agent SDK, Python, TypeScript, SQLite, RAG, REST APIs, browser automation, Shopify Admin API.",
+    "flag": ""
+   },
+   {
+    "question": "Why do you think you will be successful in this role?",
+    "answer": "Because a forward deployed engineer has to do the whole loop, and I already do it. I sell the engagement, scope it against the client's P&L, build the agent system, deploy it into their operation and keep it running. Since March 2025 that has produced six live engagements and a measurable outcome: The Wall Group's net profit up 17% year on year from the workflows I integrated, which funded their acquisition of a new site. The systems are real production infrastructure with persistent memory, scheduled execution and tool use on the Claude Agent SDK, which is the shape of what Workato's Agentic AI platform is asking customers to adopt. Behind that sit 18 years of commercial and board-level work, so I am comfortable in front of a customer's leadership, not only their engineers. The gap is Workato platform depth and enterprise middleware vocabulary, and I learn platforms fast because I have to ship on them.",
+    "flag": ""
+   },
+   {
+    "question": "Which programming languages have you used in production?",
+    "answer": "Python and TypeScript, with SQL via SQLite for persistent state. Production context: the Claude Agent SDK orchestration layer, REST API integrations, browser automation, and Expo/EAS mobile builds.",
+    "flag": ""
+   },
+   {
+    "question": "What is your expected compensation?",
+    "answer": "£80,000 base minimum; full package (base, bonus, equity) to be discussed against Workato's London band for this role.",
+    "flag": "NEEDS PHIL: required free-text field with no band to anchor to. £80,000 is the floor; Phil to decide the actual figure to quote."
+   },
+   {
+    "question": "LinkedIn Profile",
+    "answer": "https://www.linkedin.com/in/philpatterson1",
+    "flag": ""
+   },
+   {
+    "question": "Resume/CV (required upload or paste)",
+    "answer": "Upload Phil's current CV PDF, or paste its text.",
+    "flag": "NEEDS PHIL: CV file must be supplied and uploaded by Phil."
+   },
+   {
+    "question": "Cover Letter (optional upload or paste)",
+    "answer": "Paste the cover note above into the text option.",
+    "flag": ""
+   },
+   {
+    "question": "Email / Phone",
+    "answer": "philpatterson85@gmail.com / +44 7828 699027",
+    "flag": ""
+   },
+   {
+    "question": "Location and working arrangement (not on the form; role is listed London with no remote or hybrid policy stated)",
+    "answer": "Based in Derry/Londonderry, Northern Ireland. Remote preferred, with regular travel to the London office and to customer sites as the engagement needs. Not open to relocation abroad.",
+    "flag": "NEEDS PHIL: remote policy is unstated anywhere in the listing and FDE work normally means customer-site travel. Clarify with Workato (or decide the travel tolerance) before investing in this application."
+   },
+   {
+    "question": "Demographic (EMEA) - I identify my ethnicity as",
+    "answer": "I don't wish to answer",
+    "flag": "NEEDS PHIL: personal preference; marked required in the API but every option includes 'I don't wish to answer'."
+   },
+   {
+    "question": "Demographic - I identify my gender as",
+    "answer": "I don't wish to answer",
+    "flag": "NEEDS PHIL: personal preference."
+   },
+   {
+    "question": "Demographic - My pronouns are",
+    "answer": "I don't wish to answer",
+    "flag": "NEEDS PHIL: personal preference."
+   },
+   {
+    "question": "Demographic - Would you like to make us aware of any disability that would impact your application process?",
+    "answer": "No",
+    "flag": "NEEDS PHIL: personal; default 'No' only if accurate."
+   }
+  ],
+  "email_body_final": ""
+ }
+}

@@ -1,0 +1,256 @@
+{
+ "verify": {
+  "id": "ocho-kainos-data-ai-lead-healthcare",
+  "live": "live",
+  "live_evidence": "Two sources seen today (2026-08-21). (1) Recruiter ad: https://www.nijobs.com/job/data-ai-lead-healthcare/ocho-job107742907 loaded in a real browser — 'Data & AI Lead (Healthcare)', Ocho, Belfast, Permanent, 'Published: 4 weeks ago', £80,000-£100,000 per annum, full description visible, Apply button active. (2) Employer's own posting: Kainos Phenom careers page https://careers.kainos.com/gb/en/job/KAINGBJR15663EXTERNALENGB/Data-AI-Lead-Healthcare (HTTP 200; reqStatus 'Open', jobUpdatedDate 2026-08-11, postedDate 2026-04-01) and the Workday cxs JSON for JR_15663 (title 'Data & AI Lead - Healthcare', startDate 2026-04-01, endDate null, 'Posted 30+ Days Ago'). Both show the role as open. Note the req was first created 2025-06-26 (recruitmentStartDate 2025-06-24, targetHireDate 2025-09-30) and reposted 2025-12-08 and 2026-04-01 — open ~14 months.",
+  "employer_legal_name": "Kainos Software Limited (Workday hiringOrganization field; part of Kainos Group plc, LSE-listed, Belfast HQ). Recruiter on the NIjobs ad: Ocho (Ocho People, Belfast).",
+  "private_sector": "confirmed",
+  "private_sector_evidence": "Kainos Software Limited is a private company, subsidiary of Kainos Group plc (LSE-listed, not state-owned). Brief explicitly keeps private consultancies such as Kainos. Heavy public-sector CLIENT exposure: the listing names NHS England, UKHSA, NHSBSA, DHSC, devolved administrations, ICSs and clinical research bodies as the client base, and a mandatory requirement is 'proven experience delivering or assuring large-scale Data or AI programmes within the public sector or healthcare domain'.",
+  "end_client": "Kainos — established with high confidence but NOT named by the recruiter. The Ocho ad says only 'a leading digital consultancy'. Its copy is a near line-for-line paraphrase of the Kainos JR_15663 posting (£100m healthcare business -> 'large scale healthcare transformation programmes'; 'reusable healthcare accelerators and offerings'; Secure Data Environments; GenAI/LLM in healthcare; discovery workshops; pre-sales + Lead Data Architect blend), and the Kainos posting lists Belfast as a location. Justin Donaldson (Ocho) is the named recruiter contact.",
+  "title_verified": "Kainos: 'Data & AI Lead - Healthcare' (req JR_15663; internal job profile 'Principal Data and AI Consultant (P)', job family Data Consulting, management level Principal). Ocho/NIjobs: 'Data & AI Lead (Healthcare)'.",
+  "pay_verified": "Kainos posting: unstated (no salary on Phenom page or Workday JSON). Ocho/NIjobs ad: '£80,000 - £100,000 per annum'. DIFFERS from scout report, which claimed £80,000-£120,000 — top of band is £100k, not £120k. Floor of band sits exactly on Phil's £80k minimum.",
+  "location_remote_verified": "Kainos posting: primary location 'Homeworker - UK' with additional locations Belfast (4-6 Upper Crescent, BT7 1NT), Birmingham and London; described as 'a high-impact, hybrid role' that is client-facing (national healthcare bodies). Full time, 40 hours per week. Ocho ad: 'Belfast (Hybrid working)'; 'UK work authorisation required (no sponsorship available)'. Onsite day count not stated by either. Eligible country: UK.",
+  "employment_type": "permanent",
+  "posted_or_updated": "Kainos: created 2025-06-26, reposted 2025-12-08 and 2026-04-01, last updated 2026-08-11, status Open. Ocho/NIjobs: 'Published: 4 weeks ago' (approx. 24 Jul 2026).",
+  "apply_url": "https://kainos.wd3.myworkdayjobs.com/Kainos/job/Homeworker---UK/Principal-Healthcare-Data-Consultant_JR_15663/apply",
+  "ats": "Workday (Kainos direct; careers site front-end is Phenom People). Recruiter route is board-hosted on NIjobs.",
+  "account_required": "yes",
+  "form_fields": [
+   "KAINOS WORKDAY (direct): landing offers 'Autofill with Resume' / 'Apply Manually' / 'Use My Last Application'; 'Apply Manually' goes to step 1 of 6 = Create Account: Email Address (required, text)",
+   "Password (required; must contain upper, lower, numeric, special, min 8 chars)",
+   "Verify New Password (required)",
+   "Consent checkbox: 'Yes, I have read and consent to the terms and conditions.' (GDPR/Privacy Policy)",
+   "Steps 2-6 (standard Workday: My Information, My Experience incl. CV upload, Application Questions, Voluntary Disclosures, Review) are behind the account wall and could not be enumerated; Phenom metadata shows hasPrimaryQuestionnaire = yes, so there ARE screening questions",
+   "NIJOBS/OCHO route: Apply button -> /application/authentication page: Email address (email) -> 'Continue with email' -> NIjobs account sign-up/sign-in required before the application form"
+  ],
+  "custom_questions": [],
+  "contact_email_printed": "none",
+  "employer_specifics": [
+   "Role sits in Kainos' Data and AI Practice and supports pre-sales across Kainos' £100m Healthcare business, working directly with the Healthcare CTO, account leads and delivery leaders.",
+   "Named client base: NHS England, UKHSA, DHSC, NHSBSA, devolved administrations, ICSs and clinical research bodies; Kainos healthcare work includes Secure Data Environments (SDEs), data platforms, 'digital front doors' and health protection systems for infectious-disease response.",
+   "The job explicitly asks for someone to create reusable healthcare Data & AI accelerators/offerings, define go-to-market propositions with marketing/sales, and represent Kainos at industry events — the commercial/GTM half of the role matches Phil's record.",
+   "Desirable requirements include 'understanding of the practical application of GenAI and large language models in Healthcare' and 'experience developing go-to-market offerings, accelerators or reusable assets'.",
+   "Hiring entity is Kainos Software Limited; Kainos has been delivering for healthcare, public sector and commercial clients for 30+ years; locations offered: Homeworker UK, Belfast, Birmingham, London."
+  ],
+  "red_flags": "(1) Fit gap is material: mandatory requirements include 'strong technical design expertise in core data architecture disciplines (data modelling, data analysis, metadata management, data transformation, data migration and governance)', acting as 'Lead Data Architect within delivery programmes', 'highly proficient in at least three mainstream data technologies', and 'proven experience delivering or assuring large-scale Data or AI programmes within the public sector or healthcare domain' — none of this is on Phil's CV (brief: no classical data stack, no enterprise data architecture). Realistic fit is 2, not 3. (2) Scout misreported pay: recruiter band is £80k-£100k, not £80k-£120k; Kainos itself states no salary; floor of band = Phil's floor. (3) Req has been open since June 2025 with a target hire date of Sept 2025, reposted three times — hard-to-fill or kept open indefinitely. (4) Recruiter never names Kainos; applying via Ocho would put a recruiter between Phil and Kainos — go direct via Workday instead. (5) Day-to-day clients are NHS/UKHSA/DHSC public bodies (employer is private, so allowed, but exposure is near-total). (6) Both apply routes require account creation (Workday Create Account / NIjobs sign-up), so no hands-off application is possible.",
+  "decision": "hand_to_phil",
+  "decision_reason": "Live, private-sector employer (Kainos Software Limited), end client effectively established, pay band touches the £80k floor, and Homeworker-UK/Belfast is workable — so not a drop. But it cannot be 'proceed': both routes require Phil to create an account (Workday Create Account with password; NIjobs sign-up), the Workday questionnaire is invisible without logging in, and the role's mandatory Lead Data Architect requirements (data modelling, metadata, migration, 3+ mainstream data technologies, large-scale public-sector data programme delivery) are a genuine gap only Phil can judge. Recommendation if he goes ahead: apply direct on Kainos Workday (not via Ocho), lead with the pre-sales/GTM/GenAI-accelerator half of the role, and expect to be assessed on data architecture depth; salary top is £100k per the recruiter, Kainos states none.",
+  "web_searches_used": 1
+ },
+ "pack": {
+  "id": "ocho-kainos-data-ai-lead-healthcare",
+  "cover_note": "Since March 2025 I have sold, scoped, built and run production agent systems for six paying SME clients through Blue Canvas AI. One of them, The Wall Group, lifted net profit 17% year on year from AI workflow integration and used it to fund a new site. Before that, 18 years of commercial and deep-tech leadership: $1.2M raised at Tonomy Foundation, a carbon-capture pipeline up 117% in year one at MOF Technologies. This Data & AI Lead sits in the pre-sales engine of Kainos' £100m Healthcare business and is asked to turn GenAI and LLM capability into reusable accelerators and go-to-market propositions. That is my daily work: Albie, my 24/7 multi-channel operator on the Claude Agent SDK, runs my own company and is the productised asset I sell from. I am based in Derry with UK and Irish right to work, and can work from Belfast or remotely with travel.",
+  "word_count": 150,
+  "employer_specific_hook": "The role sits in Kainos' Data and AI Practice supporting pre-sales across its £100m Healthcare business, with an explicit mandate to build reusable healthcare Data & AI accelerators/GTM offerings and a desirable requirement for practical GenAI/LLM application in healthcare (source: Kainos Workday posting JR_15663 'Data & AI Lead - Healthcare', careers.kainos.com, verified 2026-08-21; paraphrased in the Ocho/NIjobs ad). Tied to Phil's Wall Group +17% net profit outcome and Albie as a productised Claude Agent SDK asset he sells from.",
+  "screening_answers": [
+   {
+    "question": "Years of experience",
+    "answer": "18 years of commercial and deep-tech leadership (Commercial Director, BD Director, NED, Senior Fund Manager roles). Hands-on agentic-AI production delivery since March 2025 (around 18 months) as founder of Blue Canvas AI, with six live client engagements.",
+    "flag": ""
+   },
+   {
+    "question": "Notice period / availability",
+    "answer": "No notice period: I run my own company. I can start within 2-4 weeks to hand over client work cleanly.",
+    "flag": "ASSUMPTION: pack_rules default; Phil to confirm the 2-4 week handover window."
+   },
+   {
+    "question": "Salary expectation",
+    "answer": "£90,000-£100,000 base, in line with the upper half of the £80,000-£100,000 band advertised on the recruiter (Ocho/NIjobs) listing. The Kainos posting itself states no salary.",
+    "flag": "ASSUMPTION: upper half of the recruiter band per pack_rules; Kainos' Workday posting publishes no figure, so the band may not be what Kainos states directly. Never go below £80,000."
+   },
+   {
+    "question": "Right to work in the UK / sponsorship required",
+    "answer": "Yes, full right to work in the UK and Ireland. No sponsorship required now or in future. (Listing states no sponsorship available, which is fine.)",
+    "flag": ""
+   },
+   {
+    "question": "Why Kainos / why this role",
+    "answer": "The role is the commercial half of healthcare Data and AI: pre-sales across a £100m Healthcare business, building reusable accelerators and go-to-market propositions with the Healthcare CTO and account leads. That is what I have done for paying SME clients since March 2025 with production agent systems, and the GenAI/LLM-in-healthcare requirement matches where my build record sits.",
+    "flag": ""
+   },
+   {
+    "question": "Workday account - Email address",
+    "answer": "philpatterson85@gmail.com",
+    "flag": "NEEDS PHIL: account creation must be done by Phil himself (both Workday direct and NIjobs routes require it). Check first whether he already has a Kainos Workday account ('Use My Last Application' option shown), in which case sign in rather than create."
+   },
+   {
+    "question": "Workday account - Password / Verify New Password",
+    "answer": "Not to be supplied by the assistant.",
+    "flag": "NEEDS PHIL: credential entry is Phil-only."
+   },
+   {
+    "question": "Consent checkbox - 'I have read and consent to the terms and conditions' (GDPR/Privacy Policy)",
+    "answer": "Standard privacy consent for processing application data; no non-compete, exclusivity or IP terms visible at this step.",
+    "flag": "NEEDS PHIL: accepting terms is Phil's decision; read the linked policy before ticking."
+   },
+   {
+    "question": "My Information - Country / Address / Phone",
+    "answer": "Phil Patterson, Derry/Londonderry, Northern Ireland, United Kingdom. Phone +44 7828 699027. Email philpatterson85@gmail.com.",
+    "flag": "NEEDS PHIL: full postal address not in the allowed facts."
+   },
+   {
+    "question": "How did you hear about us? (standard Workday field)",
+    "answer": "Job board listing (NIjobs, via Ocho recruiter ad) and the Kainos careers site.",
+    "flag": "ASSUMPTION: field presence inferred; steps 2-6 are behind the account wall."
+   },
+   {
+    "question": "Have you previously worked for Kainos?",
+    "answer": "No.",
+    "flag": "ASSUMPTION: standard Workday question, not verified on this form."
+   },
+   {
+    "question": "Do you know anyone who works at Kainos / referral?",
+    "answer": "No.",
+    "flag": "ASSUMPTION: Phil to correct if he has a Kainos contact worth naming."
+   },
+   {
+    "question": "Preferred work location (Homeworker UK / Belfast / Birmingham / London)",
+    "answer": "Homeworker - UK, with hybrid attendance at the Belfast office (4-6 Upper Crescent) and travel to client sites as needed. Based in Derry/Londonderry.",
+    "flag": ""
+   },
+   {
+    "question": "Willing to relocate?",
+    "answer": "No relocation. Remote from Derry/Londonderry with hybrid Belfast attendance and travel.",
+    "flag": ""
+   },
+   {
+    "question": "CV / Resume upload",
+    "answer": "Upload Phil's current CV. LinkedIn: https://www.linkedin.com/in/philpatterson1",
+    "flag": "NEEDS PHIL: CV file to attach; assistant has no file."
+   },
+   {
+    "question": "Application Questions step (Phenom metadata: hasPrimaryQuestionnaire = yes; contents not visible)",
+    "answer": "Unknown until logged in. Expect questions on the mandatory requirements: Lead Data Architect experience, three mainstream data technologies, large-scale public-sector/healthcare data programme delivery, security clearance eligibility. Answer honestly: the agentic/LLM build record is SME-scale and founder-built; no classical enterprise data-architecture programme to cite.",
+    "flag": "NEEDS PHIL: questionnaire hidden behind account wall; any clearance, certification or 'list your three data technologies' question cannot be answered from the allowed facts."
+   },
+   {
+    "question": "Voluntary Disclosures (diversity, disability, etc.)",
+    "answer": "Personal - Phil's choice; 'prefer not to say' is acceptable.",
+    "flag": "NEEDS PHIL: personal data."
+   },
+   {
+    "question": "References",
+    "answer": "Available on request.",
+    "flag": "NEEDS PHIL: referee names/contacts not in the allowed facts."
+   },
+   {
+    "question": "Apply route (Ocho/NIjobs vs Kainos direct)",
+    "answer": "Apply direct via Kainos Workday (JR_15663), not via the Ocho/NIjobs ad, to avoid placing a recruiter between Phil and Kainos. Recruiter contact named on the ad: Justin Donaldson, Ocho.",
+    "flag": "ASSUMPTION: recommendation, not a form field; Phil may prefer to speak to Ocho first to confirm the band and hybrid expectations."
+   }
+  ],
+  "probe_line": "Lead Data Architect depth: the mandatory requirements are data modelling, metadata management, data migration and governance, proficiency in at least three mainstream data technologies, and delivering or assuring large-scale public-sector/NHS data programmes; Phil's record is founder-built agentic/LLM systems at SME scale with no classical enterprise data-architecture programme to cite, so expect to be pressed hard on that gap regardless of the pre-sales/GTM strength.",
+  "email_body": ""
+ },
+ "check": {
+  "id": "ocho-kainos-data-ai-lead-healthcare",
+  "verdict": "fixed",
+  "problems": [
+   "Cover note: 'Albie ... is the productised asset I sell from' is not in the allowed facts (allowed: Albie runs his own company daily; production infrastructure, not a demo). Rewritten to the allowed wording; note now 149 words (original counted 150 by wc, so the fix had to stay inside the cap).",
+   "Cover note: 'That is my daily work' claimed turning GenAI into healthcare accelerators/GTM propositions is his daily work; softened to 'That is my work now' anchored on the allowed Albie fact.",
+   "Screening answer 'Why Kainos': 'the GenAI/LLM-in-healthcare requirement matches where my build record sits' implied a healthcare build record; Phil's six clients are construction, equestrian, property, hospitality, ecommerce. Removed the healthcare implication.",
+   "Screening answer 'Apply route': recruiter name 'Justin Donaldson, Ocho' is not in the verified listing data supplied to the reviewer; kept as internal guidance only with the flag amended to say it is unverified. Not outbound text.",
+   "Screening answer 'Application Questions step' cites mandatory requirements (Lead Data Architect, three data technologies, clearance) that are not in the supplied employer_specifics; left in place because it is internal guidance flagged NEEDS PHIL and works against Phil rather than inflating him, but Phil should confirm against the posting before relying on it."
+  ],
+  "cover_note_final": "Since March 2025 I have sold, scoped, built and run production agent systems for six paying SME clients through Blue Canvas AI. One of them, The Wall Group, lifted net profit 17% year on year from AI workflow integration and used it to fund a new site. Before that, 18 years of commercial and deep-tech leadership: $1.2M raised at Tonomy Foundation, a carbon-capture pipeline up 117% in year one at MOF Technologies. This Data & AI Lead sits in the pre-sales engine of Kainos' £100m Healthcare business and is asked to turn GenAI and LLM capability into reusable accelerators and go-to-market propositions. That is my work now: Albie, my 24/7 multi-channel operator on the Claude Agent SDK, runs my own company and is production infrastructure, not a demo. I am based in Derry with UK and Irish right to work, and can work from Belfast or remotely with travel.",
+  "word_count_final": 149,
+  "answers_final": [
+   {
+    "question": "Years of experience",
+    "answer": "18 years of commercial and deep-tech leadership (Commercial Director, BD Director, NED, Senior Fund Manager roles). Hands-on agentic-AI production delivery since March 2025 (around 18 months) as founder of Blue Canvas AI, with six live client engagements.",
+    "flag": ""
+   },
+   {
+    "question": "Notice period / availability",
+    "answer": "No notice period: I run my own company. I can start within 2-4 weeks to hand over client work cleanly.",
+    "flag": "ASSUMPTION: pack_rules default; Phil to confirm the 2-4 week handover window."
+   },
+   {
+    "question": "Salary expectation",
+    "answer": "£90,000-£100,000 base, in line with the upper half of the £80,000-£100,000 band advertised on the recruiter (Ocho/NIjobs) listing. The Kainos posting itself states no salary.",
+    "flag": "ASSUMPTION: upper half of the recruiter band per pack_rules; Kainos' Workday posting publishes no figure, so the band may not be what Kainos states directly. Never go below £80,000."
+   },
+   {
+    "question": "Right to work in the UK / sponsorship required",
+    "answer": "Yes, full right to work in the UK and Ireland. No sponsorship required now or in future. (Listing states no sponsorship available, which is fine.)",
+    "flag": ""
+   },
+   {
+    "question": "Why Kainos / why this role",
+    "answer": "The role is the commercial half of healthcare Data and AI: pre-sales across a £100m Healthcare business, building reusable accelerators and go-to-market propositions with the Healthcare CTO and account leads. Selling, scoping and building production agent systems for paying SME clients is what I have done since March 2025, and the practical GenAI/LLM requirement matches where my build record sits.",
+    "flag": ""
+   },
+   {
+    "question": "Workday account - Email address",
+    "answer": "philpatterson85@gmail.com",
+    "flag": "NEEDS PHIL: account creation must be done by Phil himself (both Workday direct and NIjobs routes require it). Check first whether he already has a Kainos Workday account ('Use My Last Application' option shown), in which case sign in rather than create."
+   },
+   {
+    "question": "Workday account - Password / Verify New Password",
+    "answer": "Not to be supplied by the assistant.",
+    "flag": "NEEDS PHIL: credential entry is Phil-only."
+   },
+   {
+    "question": "Consent checkbox - 'I have read and consent to the terms and conditions' (GDPR/Privacy Policy)",
+    "answer": "Standard privacy consent for processing application data; no non-compete, exclusivity or IP terms visible at this step.",
+    "flag": "NEEDS PHIL: accepting terms is Phil's decision; read the linked policy before ticking."
+   },
+   {
+    "question": "My Information - Country / Address / Phone",
+    "answer": "Phil Patterson, Derry/Londonderry, Northern Ireland, United Kingdom. Phone +44 7828 699027. Email philpatterson85@gmail.com.",
+    "flag": "NEEDS PHIL: full postal address not in the allowed facts."
+   },
+   {
+    "question": "How did you hear about us? (standard Workday field)",
+    "answer": "Job board listing (NIjobs, via Ocho recruiter ad) and the Kainos careers site.",
+    "flag": "ASSUMPTION: field presence inferred; steps 2-6 are behind the account wall."
+   },
+   {
+    "question": "Have you previously worked for Kainos?",
+    "answer": "No.",
+    "flag": "ASSUMPTION: standard Workday question, not verified on this form."
+   },
+   {
+    "question": "Do you know anyone who works at Kainos / referral?",
+    "answer": "No.",
+    "flag": "ASSUMPTION: Phil to correct if he has a Kainos contact worth naming."
+   },
+   {
+    "question": "Preferred work location (Homeworker UK / Belfast / Birmingham / London)",
+    "answer": "Homeworker - UK, with hybrid attendance at the Belfast office (4-6 Upper Crescent) and travel to client sites as needed. Based in Derry/Londonderry.",
+    "flag": ""
+   },
+   {
+    "question": "Willing to relocate?",
+    "answer": "No relocation. Remote from Derry/Londonderry with hybrid Belfast attendance and travel.",
+    "flag": ""
+   },
+   {
+    "question": "CV / Resume upload",
+    "answer": "Upload Phil's current CV. LinkedIn: https://www.linkedin.com/in/philpatterson1",
+    "flag": "NEEDS PHIL: CV file to attach; assistant has no file."
+   },
+   {
+    "question": "Application Questions step (Phenom metadata: hasPrimaryQuestionnaire = yes; contents not visible)",
+    "answer": "Unknown until logged in. Expect questions on the mandatory requirements: Lead Data Architect experience, three mainstream data technologies, large-scale public-sector/healthcare data programme delivery, security clearance eligibility. Answer honestly: the agentic/LLM build record is SME-scale and founder-built; no classical enterprise data-architecture programme to cite.",
+    "flag": "NEEDS PHIL: questionnaire hidden behind account wall; any clearance, certification or 'list your three data technologies' question cannot be answered from the allowed facts. The mandatory-requirement list above was not in the verified listing summary supplied to the reviewer; confirm against the posting."
+   },
+   {
+    "question": "Voluntary Disclosures (diversity, disability, etc.)",
+    "answer": "Personal - Phil's choice; 'prefer not to say' is acceptable.",
+    "flag": "NEEDS PHIL: personal data."
+   },
+   {
+    "question": "References",
+    "answer": "Available on request.",
+    "flag": "NEEDS PHIL: referee names/contacts not in the allowed facts."
+   },
+   {
+    "question": "Apply route (Ocho/NIjobs vs Kainos direct)",
+    "answer": "Apply direct via Kainos Workday (JR_15663), not via the Ocho/NIjobs ad, to avoid placing a recruiter between Phil and Kainos. Recruiter contact named on the ad: Justin Donaldson, Ocho.",
+    "flag": "ASSUMPTION: recommendation, not a form field; recruiter name not in the verified listing data seen by the reviewer, treat as unverified. Phil may prefer to speak to Ocho first to confirm the band and hybrid expectations."
+   }
+  ],
+  "email_body_final": ""
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "verify": {
+  "id": "forte-ict-ai-vp-gtm-leader-uk-europe",
+  "live": "dead",
+  "live_evidence": "21 Aug 2026: the RevPath mirror (revpath.dealhub.io/jobs/481024411-...) still renders the ad text (JSON-LD datePosted 2026-06-01, validThrough 2026-10-20, shown as \"2m ago\"), but its only apply route /jobs/481024411/apply 302s to uk.linkedin.com/jobs/view/...-at-forte-ict-4423231887 which LinkedIn 301s to /jobs/regional-quality-assurance-manager-jobs?trk=expired_jd_redirect (posting expired). The sibling RevPath copy 478713735 (\"AI VP GTM Leader ... Incredible Package\", datePosted 2026-05-28) redirects to LinkedIn job 4419063073 which is also expired (trk=expired_jd_redirect). The BeBee copy returns 404 \"Job expired\". Forte ICT's own site (forteict.com) has no jobs/vacancies page (404). No live application route exists anywhere.",
+  "employer_legal_name": "FORTE ICT (recruitment consultancy, London W1T / Dubai offices) advertising for an unnamed \"multinational IT services company\"",
+  "private_sector": "uncertain",
+  "private_sector_evidence": "Forte ICT is a private specialist recruitment agency (confirmed from forteict.com \"About Us\"), but the paying employer would be the undisclosed end client described only as a \"multinational IT services company\" with an \"AI Lab\" and \"AI practice\". Almost certainly private, but cannot be confirmed until named; per brief, recruiter_undisclosed => uncertain.",
+  "end_client": "not established. Ad text only says \"multinational IT services company\"; role sits in its \"AI practice\" alongside \"AI Lab solutions\" and \"AI Solutions Leaders\" teams; UK & Europe remit. Three web searches (exact-title, recruiter+title, distinctive-phrase) surfaced only the RevPath/BeBee mirrors of Forte ICT's own LinkedIn posts, no employer-side posting.",
+  "title_verified": "AI GTM Leader UK & Europe (Must have technical experience also) Basic £180-£200K, Plus Bonus and Benefits) Multinational IT Services Company — body text headed \"Ai VP GTM Leader\"",
+  "pay_verified": "£180,000–£200,000 basic + bonus and benefits (title only; body text has no salary). Matches scout report.",
+  "location_remote_verified": "London Area, GB; Full-time. No remote/hybrid policy, onsite days, or country eligibility stated anywhere in the ad. UK & Europe remit.",
+  "employment_type": "permanent",
+  "posted_or_updated": "RevPath JSON-LD datePosted 2026-06-01 (sibling copy 2026-05-28); source LinkedIn posts 4423231887 and 4419063073 now expired",
+  "apply_url": "https://revpath.dealhub.io/jobs/481024411/apply (redirects to expired LinkedIn job 4423231887)",
+  "ats": "board-hosted (RevPath/DealHub mirror of a LinkedIn job post; LinkedIn apply, now expired)",
+  "account_required": "yes",
+  "form_fields": [],
+  "custom_questions": [],
+  "contact_email_printed": "none",
+  "employer_specifics": [
+   "Role defines and shapes the end client's AI service offerings from market analysis, competitive intelligence and client needs",
+   "Partners with sales, 'AI Lab solutions' and delivery teams to qualify and close AI deals; mentors presales/AI Solutions Leaders",
+   "Owns strategic partnerships with technology vendors (cloud providers) and other consulting firms across UK & Europe",
+   "Forte ICT itself is a specialist ICT/FinTech recruitment consultancy with London (57 Rathbone Place) and Dubai offices; printed site contact info@forteict.com is the agency's, not in the ad"
+  ],
+  "red_flags": "Apply route dead (both LinkedIn source posts expired; BeBee copy expired) despite RevPath still displaying the ad. End client never named. London Area full-time with no remote statement (Phil prefers remote/contract). Requires 15+ years senior GTM in technology/consulting with team leadership of presales/solutions teams; Phil's record is founder-led SME sales, not multinational IT-services practice leadership, so fit is a stretch even if revived. Recruiter has a Dubai office (not itself an exclusion since the agency is not the employer).",
+  "decision": "drop",
+  "decision_reason": "Dead: every application route (LinkedIn 4423231887 and duplicate 4419063073) returns LinkedIn's expired_jd_redirect and the BeBee copy is 404 \"Job expired\"; only a stale RevPath aggregator mirror remains. End client also unestablished after 3 searches, and the role is London-based permanent with no remote policy. If Phil wants to chase it anyway, the only avenue is a speculative email to Forte ICT (info@forteict.com from their website, not printed in the ad), which is not an application.",
+  "web_searches_used": 3
+ },
+ "pack": null,
+ "check": null
+}

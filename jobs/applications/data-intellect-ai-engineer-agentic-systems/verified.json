@@ -1,0 +1,307 @@
+{
+ "verify": {
+  "id": "data-intellect-ai-engineer-agentic-systems",
+  "live": "live",
+  "live_evidence": "Fetched 21 Aug 2026: SmartRecruiters public Posting API https://api.smartrecruiters.com/v1/companies/DataIntellect/postings/744000142108103 returns active:true, refNumber REF228I, releasedDate 2026-08-07, custom field \"Closing Date (DD/MM/YYYY)\" = 01/10/2026. Also listed on dataintellect.com/join-us/open-positions/ (job page /join-us/job/?smid=744000142108103, HTTP 200) and the SmartRecruiters apply page loaded with a live Easy Apply form in the browser. NIjobs copy (browser-read earlier today) is a syndication of this posting.",
+  "employer_legal_name": "Data Intellect Services Limited (trading as Data Intellect; formerly AquaQ Analytics Ltd), Company Number NI607087, Unit 5, 9-15 Queen Street, Belfast BT1 6EA",
+  "private_sector": "confirmed",
+  "private_sector_evidence": "Private NI-registered limited company (NI607087) per the company site footer; founded 2011 as AquaQ Analytics, private-equity investment from Sovereign Capital Partners agreed April 2021 (sovereigncapital.co.uk/our-investments/data-intellect, Irish News May 2021), rebranded Data Intellect 2023. Clients are Tier 1 banks and hedge funds; no state or university ownership. Listing mentions applying fintech expertise to \"smart energy and healthcare\" - minor possible public-sector client exposure, employer itself is private.",
+  "end_client": "Not applicable - direct employer posting (Data Intellect is the hiring company; role is client-facing consultancy work for Tier 1 banks and hedge funds, clients not named).",
+  "title_verified": "AI Engineer (Agentic Systems) - ref REF228I, department Software Engineering, experience level Mid-Senior Level",
+  "pay_verified": "unstated - listing says only \"Competitive salary and benefits\" (plus Benenden Health cover). Matches scout report (\"Unstated\" / NIjobs \"Not Disclosed\"). Salary floor of £80k NOT confirmed - must be checked at first contact.",
+  "location_remote_verified": "Belfast, Northern Ireland, UK. SmartRecruiters location flags: remote:false, hybrid:true; listing text says \"A modern, flexible working environment\" and \"Work alongside a supportive team and across our global offices\". No onsite-day count stated. Some work runs on local models inside client networks, implying occasional client-site presence. Eligible countries not stated (UK posting, country field = United Kingdom).",
+  "employment_type": "permanent",
+  "posted_or_updated": "Released 2026-08-07 (SmartRecruiters releasedDate); closing date 01/10/2026",
+  "apply_url": "https://jobs.smartrecruiters.com/DataIntellect/744000142108103-ai-engineer-agentic-systems-?oga=true",
+  "ats": "SmartRecruiters",
+  "account_required": "no",
+  "form_fields": [
+   "Easy Apply autocomplete: CV file upload to parse (optional, 10MB limit) OR 'Apply With Indeed' (optional)",
+   "First name (required, text)",
+   "Last name (required, text)",
+   "Email (required, email)",
+   "Confirm your email (required, email)",
+   "City (optional, text)",
+   "Phone number with country/region code selector (optional, tel)",
+   "Experience - 'Add' entries (optional, repeatable)",
+   "Education - 'Add' entries (optional, repeatable)",
+   "LinkedIn (optional, URL text)",
+   "Facebook (optional, URL text)",
+   "X (fka Twitter) (optional, URL text)",
+   "Website (optional, URL text)",
+   "Resume (required, file upload)",
+   "Message to the Hiring Team - 'Let the company know about your interest working there' (optional, textarea)",
+   "Next button -> a second step may hold employer screening questions; not reachable without entering personal data, so not enumerated"
+  ],
+  "custom_questions": [
+   "(No screening questions visible on step 1 of the form. The listing itself asks, verbatim: \"Upload your CV along with a short note covering one agentic system you have built. Tell us what it did, what the model was doing versus what your code was doing and what you would change if you started again. A link to a repo, a demo or a write-up is worth more to us than a cover letter.\")"
+  ],
+  "contact_email_printed": "none",
+  "employer_specifics": [
+   "Belfast-HQ data and technology consultancy (founded 2011 as AquaQ Analytics, rebranded 2023, ~260 staff, offices in London, New York, Toronto, Singapore, Hong Kong) whose core business is capital-markets data engineering, kdb+/KDB-X and trade surveillance (Plasma / KX Surveillance) for Tier 1 banks and hedge funds",
+   "Role is explicitly about shipping LLM-backed agents to production: tool use, MCP servers, retrieval, orchestration between specialist agents, evaluation and guardrails - and making calls between cloud model APIs and locally hosted models because client data often cannot leave the building",
+   "They want demonstrable agent-building experience plus fluent daily use of AI-assisted coding tools (Claude Code, Cursor, Copilot named); 'Claude Certified Architect' listed as desirable and they will fund it",
+   "Mandate includes turning a vague client problem into a scoped PoC then something maintainable, building reusable accelerators, and 'direct involvement in shaping our AI practice rather than slotting into someone else's' - senior stakeholder exposure from early on",
+   "Application instruction: CV plus a short note on one agentic system you built (what the model did vs what your code did, what you'd change) - a repo/demo/write-up link is valued over a cover letter"
+  ],
+  "red_flags": "Salary undisclosed on a permanent Belfast-hybrid IC engineer role - £80k floor unverified and NI consultancy bands for mid-senior engineers may sit below it. Essential criteria include software-engineering fundamentals (testing, code review, CI/CD) and desirable kdb+/Java/financial-services background - expect technical screening on engineering depth, which is not on Phil's formal CV. Hybrid Belfast with no stated onsite cadence; client-site work inside bank networks possible. Listing mentions healthcare/smart-energy as adjacent verticals (possible public-sector client exposure, employer is private).",
+  "decision": "hand_to_phil",
+  "decision_reason": "Live, private, direct-employer, and one of the strongest fit matches (production agents, MCP, evals, Claude Code named). Needs Phil because: (1) SmartRecruiters form requires a CV file upload, and the employer specifically asks for a bespoke short note on one agentic system (model vs code, what you'd change) plus a repo/demo/write-up link - Albie is the obvious subject and Phil should author/approve that write-up and choose what to link; (2) salary is unstated on a permanent role, so the £80k floor must be confirmed (ask at first contact or via a recruiter/LinkedIn approach); (3) a possible second form step with screening questions cannot be seen without entering personal data. Closing date 01/10/2026 - no rush, but the posting is two weeks old.",
+  "web_searches_used": 1
+ },
+ "pack": {
+  "id": "data-intellect-ai-engineer-agentic-systems",
+  "cover_note": "Albie is the agentic system I would write up for you: a 24/7 autonomous multi-channel operator on the Anthropic Claude Agent SDK, across WhatsApp, Telegram, Slack and Discord, handling inbox, Apollo and Zoho campaigns, proposals, coding and scheduled tasks with persistent memory. My own company runs on it daily, so the line between what the model decides and what the code enforces is something I have lived with in production. Your mandate is shipping LLM-backed agents for Tier 1 banks and hedge funds, where client data often cannot leave the building and the cloud-versus-local-model call comes early. That is the scoping discipline I apply at Blue Canvas across six live engagements, including The Wall Group's 17% net profit uplift. I also designed rubric-graded, mutation-tested RL evaluation tasks for HUD.ai, which maps onto your evaluation and guardrails work. I am in Derry, Belfast hybrid works, and I can start within weeks.",
+  "word_count": 150,
+  "employer_specific_hook": "The role's stated mandate to ship LLM-backed agents to production for Tier 1 banks and hedge funds, making the call between cloud model APIs and locally hosted models because client data often cannot leave the building, plus the explicit evaluation-and-guardrails remit. Source: verified SmartRecruiters posting REF228I (employer_specifics items 1 and 2), tied to Albie on the Claude Agent SDK and the HUD.ai rubric-graded, mutation-tested eval design.",
+  "screening_answers": [
+   {
+    "question": "Years of experience",
+    "answer": "18 years of commercial and deep-tech leadership (Commercial Director, BD Director, Senior Fund Manager, NED). Hands-on agentic-AI production delivery since March 2025, roughly 18 months, as founder of Blue Canvas AI, building and operating production agent systems on the Claude Agent SDK.",
+    "flag": ""
+   },
+   {
+    "question": "Notice period / availability",
+    "answer": "No notice period: I run my own company. I can start within two to four weeks to hand over live client work cleanly.",
+    "flag": "ASSUMPTION: 2-4 week handover window is the pack default, not confirmed by Phil for this role."
+   },
+   {
+    "question": "Salary expectation",
+    "answer": "The listing states only 'competitive salary and benefits', so I would want to understand the band. My expectation for a permanent mid-senior agentic-AI engineering role is a base of £80,000 or above, with the benefits package on top.",
+    "flag": "ASSUMPTION: listing band undisclosed; £80,000 is Phil's floor. NI consultancy bands for mid-senior ICs may sit below it, so confirm salary at first contact before investing in the bespoke write-up."
+   },
+   {
+    "question": "Right to work",
+    "answer": "Yes. Full right to work in the UK and Ireland. No sponsorship required now or in future.",
+    "flag": ""
+   },
+   {
+    "question": "Why this company",
+    "answer": "Data Intellect is hiring to put LLM-backed agents into production for Tier 1 banks and hedge funds, with the cloud-versus-local-model decision forced by data that cannot leave client networks, and is explicitly building a new AI practice rather than slotting people into an existing one. I already run production agents on the Claude Agent SDK for paying clients and have designed rubric-graded evals, so the work matches what I do, at a larger client scale and with capital-markets data constraints I have not yet worked under.",
+    "flag": ""
+   },
+   {
+    "question": "Listing instruction (verbatim): 'Upload your CV along with a short note covering one agentic system you have built. Tell us what it did, what the model was doing versus what your code was doing and what you would change if you started again. A link to a repo, a demo or a write-up is worth more to us than a cover letter.'",
+    "answer": "Subject: Albie. What it did: 24/7 autonomous multi-channel operator on the Anthropic Claude Agent SDK across WhatsApp, Telegram, Slack and Discord, handling inbox, Apollo and Zoho campaigns, proposals, coding, scheduled tasks and persistent memory; Blue Canvas runs on it daily. Model versus code: to be written by Phil in his own words (the listing rewards specificity here - which decisions are delegated to the model, which boundaries, routing, scheduling, memory and permission controls are enforced in code, and why). What I would change: to be written by Phil. Link: to be chosen by Phil (repo, demo or write-up).",
+    "flag": "NEEDS PHIL: author or approve the model-vs-code split, the 'what I would change' retrospective, and choose what to link (repo, demo or write-up). The cover note above is the 'Message to the Hiring Team' placeholder only; this note is the document the employer actually weighs."
+   },
+   {
+    "question": "First name",
+    "answer": "Phil",
+    "flag": ""
+   },
+   {
+    "question": "Last name",
+    "answer": "Patterson",
+    "flag": ""
+   },
+   {
+    "question": "Email / Confirm your email",
+    "answer": "philpatterson85@gmail.com",
+    "flag": ""
+   },
+   {
+    "question": "City",
+    "answer": "Derry/Londonderry",
+    "flag": ""
+   },
+   {
+    "question": "Phone number (with country code)",
+    "answer": "+44 7828 699027",
+    "flag": ""
+   },
+   {
+    "question": "Experience entries (repeatable 'Add')",
+    "answer": "1) Founder, Blue Canvas AI, Derry, Mar 2025 - present: agentic-AI consultancy; sells, scopes, builds and runs production agent systems for SMEs; six live client engagements; built and operates Albie on the Claude Agent SDK. 2) Commercial Director, Tonomy Foundation (Web3 / decentralised identity; raised $1.2M token and equity). 3) BD Director, Skipshift (Web3 P2P payments; built global team of 8; $0 to $5K daily volume in 90 days). 4) BD Director, MOF Technologies (carbon capture; pipeline +117% year 1; doubled revenue). 5) NED, FarmVet (£5M exit). 6) Senior Fund Manager, E-Synergy (£10M VC fund; £10M+ transactions executed).",
+    "flag": "NEEDS PHIL: start/end dates for roles 2-6 are not in the allowed facts; take them from his CV or let the CV-parse autocomplete fill them."
+   },
+   {
+    "question": "Education entries (repeatable 'Add')",
+    "answer": "B.Sc. Economics & Management, Queen's University Belfast.",
+    "flag": "NEEDS PHIL: graduation year / dates not in allowed facts."
+   },
+   {
+    "question": "LinkedIn",
+    "answer": "https://www.linkedin.com/in/philpatterson1",
+    "flag": ""
+   },
+   {
+    "question": "Facebook",
+    "answer": "Leave blank.",
+    "flag": ""
+   },
+   {
+    "question": "X (fka Twitter)",
+    "answer": "Leave blank.",
+    "flag": ""
+   },
+   {
+    "question": "Website",
+    "answer": "Leave blank unless Phil wants to add the Blue Canvas site.",
+    "flag": "NEEDS PHIL: no website URL is in the allowed facts; decide whether to add the company site."
+   },
+   {
+    "question": "Resume (required file upload) / Easy Apply CV parse",
+    "answer": "Upload Phil's current CV (PDF, under 10MB). Use the file upload rather than 'Apply With Indeed'.",
+    "flag": "NEEDS PHIL: supply the CV file; the form cannot be submitted without it."
+   },
+   {
+    "question": "Message to the Hiring Team ('Let the company know about your interest working there', optional textarea)",
+    "answer": "Paste the cover note above, then add one line pointing to the attached agentic-system note and link once Phil has written them.",
+    "flag": ""
+   },
+   {
+    "question": "Second form step - possible employer screening questions after 'Next'",
+    "answer": "Not visible without entering personal data. Expect questions on right to work (yes, UK and Ireland, no sponsorship), hybrid Belfast availability (yes, Derry-based, Belfast hybrid and client-site travel workable), salary (see above) and possibly kdb+/Java/financial-services exposure (answer honestly: none formal).",
+    "flag": "NEEDS PHIL: review step 2 live before submitting; if it forces a non-compete, IP assignment or exclusivity clause, stop and hand to Phil."
+   },
+   {
+    "question": "Hybrid Belfast working / location",
+    "answer": "Based in Derry/Londonderry. Belfast hybrid is workable and I will travel to client sites as needed. Remote preferred where the work allows. Not open to relocation abroad.",
+    "flag": ""
+   },
+   {
+    "question": "Claude Certified Architect (listed as desirable, employer will fund)",
+    "answer": "I do not hold it or any other certification. I would take it if funded.",
+    "flag": "ASSUMPTION: willingness to take the funded certification is inferred, not confirmed by Phil."
+   },
+   {
+    "question": "How did you hear about us",
+    "answer": "Data Intellect careers page / NIjobs listing.",
+    "flag": ""
+   }
+  ],
+  "probe_line": "No formal software-engineering employment: the essential criteria (testing, code review, CI/CD) and the desirable kdb+/Java/financial-services depth will be probed against founder-built evidence only, so the Albie write-up has to carry the engineering case on its own, and the salary floor is unverified.",
+  "email_body": ""
+ },
+ "check": {
+  "id": "data-intellect-ai-engineer-agentic-systems",
+  "verdict": "fixed",
+  "problems": [
+   "Cover note: 'designed rubric-graded, mutation-tested RL evaluation tasks for HUD.ai' implies a delivered client engagement; allowed fact is a HUD.ai vendor PROPOSAL. Rewritten to 'in a vendor proposal to HUD.ai' and trimmed elsewhere to hold 150 words.",
+   "Why-this-company answer: 'explicitly building a new AI practice' is not in employer_specifics; the listing says 'shaping our AI practice rather than slotting into someone else's'. Reworded to match the verified text.",
+   "Second-form-step answer: 'financial-services exposure (answer honestly: none formal)' is inaccurate the other way - Senior Fund Manager at E-Synergy (£10M VC fund) is formal financial-services experience, though not capital markets/banking. Corrected so the honest answer is accurate in both directions.",
+   "All other answers, contact details, salary floor (£80,000), relocation stance, notice-period ASSUMPTION flag, NEEDS PHIL flags and empty email_body (no printed contact address) checked and pass."
+  ],
+  "cover_note_final": "Albie is the agentic system I would write up: a 24/7 autonomous multi-channel operator on the Anthropic Claude Agent SDK, across WhatsApp, Telegram, Slack and Discord, handling inbox, Apollo and Zoho campaigns, proposals, coding and scheduled tasks with persistent memory. My own company runs on it daily, so the line between what the model decides and what the code enforces is something I have lived with in production. Your mandate is shipping LLM-backed agents for Tier 1 banks and hedge funds, where client data often cannot leave the building and the cloud-versus-local-model call comes early. That is the scoping discipline I apply at Blue Canvas across six live engagements, including The Wall Group's 17% net profit uplift. I designed rubric-graded, mutation-tested RL evaluation tasks in a vendor proposal to HUD.ai, which matches your evaluation and guardrails remit. I am in Derry, Belfast hybrid works, and I can start within weeks.",
+  "word_count_final": 150,
+  "answers_final": [
+   {
+    "question": "Years of experience",
+    "answer": "18 years of commercial and deep-tech leadership (Commercial Director, BD Director, Senior Fund Manager, NED). Hands-on agentic-AI production delivery since March 2025, roughly 18 months, as founder of Blue Canvas AI, building and operating production agent systems on the Claude Agent SDK.",
+    "flag": ""
+   },
+   {
+    "question": "Notice period / availability",
+    "answer": "No notice period: I run my own company. I can start within two to four weeks to hand over live client work cleanly.",
+    "flag": "ASSUMPTION: 2-4 week handover window is the pack default, not confirmed by Phil for this role."
+   },
+   {
+    "question": "Salary expectation",
+    "answer": "The listing states only 'competitive salary and benefits', so I would want to understand the band. My expectation for a permanent mid-senior agentic-AI engineering role is a base of £80,000 or above, with the benefits package on top.",
+    "flag": "ASSUMPTION: listing band undisclosed; £80,000 is Phil's floor. NI consultancy bands for mid-senior ICs may sit below it, so confirm salary at first contact before investing in the bespoke write-up."
+   },
+   {
+    "question": "Right to work",
+    "answer": "Yes. Full right to work in the UK and Ireland. No sponsorship required now or in future.",
+    "flag": ""
+   },
+   {
+    "question": "Why this company",
+    "answer": "Data Intellect is hiring to put LLM-backed agents into production for Tier 1 banks and hedge funds, with the cloud-versus-local-model decision forced by data that cannot leave client networks, and the role explicitly offers direct involvement in shaping its AI practice rather than slotting into someone else's. I already run production agents on the Claude Agent SDK for paying clients and have designed rubric-graded evals, so the work matches what I do, at a larger client scale and with capital-markets data constraints I have not yet worked under.",
+    "flag": ""
+   },
+   {
+    "question": "Listing instruction (verbatim): 'Upload your CV along with a short note covering one agentic system you have built. Tell us what it did, what the model was doing versus what your code was doing and what you would change if you started again. A link to a repo, a demo or a write-up is worth more to us than a cover letter.'",
+    "answer": "Subject: Albie. What it did: 24/7 autonomous multi-channel operator on the Anthropic Claude Agent SDK across WhatsApp, Telegram, Slack and Discord, handling inbox, Apollo and Zoho campaigns, proposals, coding, scheduled tasks and persistent memory; Blue Canvas runs on it daily. Model versus code: to be written by Phil in his own words (the listing rewards specificity here - which decisions are delegated to the model, which boundaries, routing, scheduling, memory and permission controls are enforced in code, and why). What I would change: to be written by Phil. Link: to be chosen by Phil (repo, demo or write-up).",
+    "flag": "NEEDS PHIL: author or approve the model-vs-code split, the 'what I would change' retrospective, and choose what to link (repo, demo or write-up). The cover note above is the 'Message to the Hiring Team' placeholder only; this note is the document the employer actually weighs."
+   },
+   {
+    "question": "First name",
+    "answer": "Phil",
+    "flag": ""
+   },
+   {
+    "question": "Last name",
+    "answer": "Patterson",
+    "flag": ""
+   },
+   {
+    "question": "Email / Confirm your email",
+    "answer": "philpatterson85@gmail.com",
+    "flag": ""
+   },
+   {
+    "question": "City",
+    "answer": "Derry/Londonderry",
+    "flag": ""
+   },
+   {
+    "question": "Phone number (with country code)",
+    "answer": "+44 7828 699027",
+    "flag": ""
+   },
+   {
+    "question": "Experience entries (repeatable 'Add')",
+    "answer": "1) Founder, Blue Canvas AI, Derry, Mar 2025 - present: agentic-AI consultancy; sells, scopes, builds and runs production agent systems for SMEs; six live client engagements; built and operates Albie on the Claude Agent SDK. 2) Commercial Director, Tonomy Foundation (Web3 / decentralised identity; raised $1.2M token and equity). 3) BD Director, Skipshift (Web3 P2P payments; built global team of 8; $0 to $5K daily volume in 90 days). 4) BD Director, MOF Technologies (carbon capture; pipeline +117% year 1; doubled revenue). 5) NED, FarmVet (£5M exit). 6) Senior Fund Manager, E-Synergy (£10M VC fund; £10M+ transactions executed).",
+    "flag": "NEEDS PHIL: start/end dates for roles 2-6 are not in the allowed facts; take them from his CV or let the CV-parse autocomplete fill them."
+   },
+   {
+    "question": "Education entries (repeatable 'Add')",
+    "answer": "B.Sc. Economics & Management, Queen's University Belfast.",
+    "flag": "NEEDS PHIL: graduation year / dates not in allowed facts."
+   },
+   {
+    "question": "LinkedIn",
+    "answer": "https://www.linkedin.com/in/philpatterson1",
+    "flag": ""
+   },
+   {
+    "question": "Facebook",
+    "answer": "Leave blank.",
+    "flag": ""
+   },
+   {
+    "question": "X (fka Twitter)",
+    "answer": "Leave blank.",
+    "flag": ""
+   },
+   {
+    "question": "Website",
+    "answer": "Leave blank unless Phil wants to add the Blue Canvas site.",
+    "flag": "NEEDS PHIL: no website URL is in the allowed facts; decide whether to add the company site."
+   },
+   {
+    "question": "Resume (required file upload) / Easy Apply CV parse",
+    "answer": "Upload Phil's current CV (PDF, under 10MB). Use the file upload rather than 'Apply With Indeed'.",
+    "flag": "NEEDS PHIL: supply the CV file; the form cannot be submitted without it."
+   },
+   {
+    "question": "Message to the Hiring Team ('Let the company know about your interest working there', optional textarea)",
+    "answer": "Paste the cover note above, then add one line pointing to the attached agentic-system note and link once Phil has written them.",
+    "flag": ""
+   },
+   {
+    "question": "Second form step - possible employer screening questions after 'Next'",
+    "answer": "Not visible without entering personal data. Expect questions on right to work (yes, UK and Ireland, no sponsorship), hybrid Belfast availability (yes, Derry-based, Belfast hybrid and client-site travel workable), salary (see above) and possibly kdb+/Java/financial-services exposure (answer honestly: no kdb+ or Java; financial services limited to VC fund management at E-Synergy, no capital-markets or banking work).",
+    "flag": "NEEDS PHIL: review step 2 live before submitting; if it forces a non-compete, IP assignment or exclusivity clause, stop and hand to Phil."
+   },
+   {
+    "question": "Hybrid Belfast working / location",
+    "answer": "Based in Derry/Londonderry. Belfast hybrid is workable and I will travel to client sites as needed. Remote preferred where the work allows. Not open to relocation abroad.",
+    "flag": ""
+   },
+   {
+    "question": "Claude Certified Architect (listed as desirable, employer will fund)",
+    "answer": "I do not hold it or any other certification. I would take it if funded.",
+    "flag": "ASSUMPTION: willingness to take the funded certification is inferred, not confirmed by Phil."
+   },
+   {
+    "question": "How did you hear about us",
+    "answer": "Data Intellect careers page / NIjobs listing.",
+    "flag": ""
+   }
+  ],
+  "email_body_final": ""
+ }
+}
