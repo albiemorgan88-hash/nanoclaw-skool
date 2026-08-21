@@ -46,7 +46,7 @@
   },
   {
     "id": "deerfoot-managing-consultant-senior-manager-data-ai-architecture",
-    "title": "Managing Consultant / Senior Manager \u2014 Data & AI Architecture",
+    "title": "Managing Consultant / Senior Manager — Data & AI Architecture",
     "company": "client of Deerfoot Recruitment Solutions",
     "url": "https://www.totaljobs.com/job/managing-consultant-senior-manager-data-ai-architecture/deerfoot-recruitment-solutions-job107623415",
     "firstSeen": "2026-08-13",
@@ -64,7 +64,7 @@
   },
   {
     "id": "viqu-it-senior-solution-architect-ai-automation",
-    "title": "Senior Solution Architect \u2013 AI & Automation",
+    "title": "Senior Solution Architect – AI & Automation",
     "company": "client of VIQU IT",
     "url": "https://www.exec-appointments.com/job/1984178/senior-solution-architect-ai-and-automation/",
     "firstSeen": "2026-08-10",
@@ -82,7 +82,7 @@
   },
   {
     "id": "ey-director-sales-presales-ai-transformation",
-    "title": "Director \u2013 Sales & Pre-Sales Leader, AI Transformation (UK & Ireland)",
+    "title": "Director – Sales & Pre-Sales Leader, AI Transformation (UK & Ireland)",
     "company": "EY",
     "url": "https://huntukvisasponsors.com/job/director-sales-pre-sales-leader-ai-transformation-uk-ireland-permanent-at-ey-oje5qzpok1lg",
     "firstSeen": "2026-08-10",
@@ -100,7 +100,7 @@
   },
   {
     "id": "ey-dublin-fs-technology-consulting-ai-architecture-engineering-lead",
-    "title": "FS Technology Consulting \u2013 AI Architecture & Engineering Lead \u2013 Senior Manager",
+    "title": "FS Technology Consulting – AI Architecture & Engineering Lead – Senior Manager",
     "company": "EY (Dublin)",
     "url": "https://careers.ey.com/ey/job/Dublin-2-FS-Technology-Consulting-AI-and-Data-AI-Architecture-%26-Engineering-Lead-Senior-Manager-Dublin/1414296533/",
     "firstSeen": "2026-08-13",
@@ -127,7 +127,7 @@
   },
   {
     "id": "gofractional-fractional-cto-physical-ai-robotics",
-    "title": "Fractional CTO \u2014 Physical AI & Robotics",
+    "title": "Fractional CTO — Physical AI & Robotics",
     "company": "GoFractional",
     "url": "https://www.gofractional.com/jobs",
     "firstSeen": "2026-08-07",
@@ -136,7 +136,7 @@
   },
   {
     "id": "infosys-consulting-agentic-ai-architect-senior-consultant",
-    "title": "Agentic AI Architect \u2013 Senior Consultant",
+    "title": "Agentic AI Architect – Senior Consultant",
     "company": "Infosys Consulting (Europe)",
     "url": "https://builtinlondon.uk/job/agentic-ai-architect-senior-consultant/6362585",
     "firstSeen": "2026-08-13",
@@ -217,7 +217,7 @@
   },
   {
     "id": "remoteworker-uk-ai-consultant-databricks-azureml-genai",
-    "title": "AI Consultant \u2014 Remote (Databricks, AzureML, GenAI, 15% bonus)",
+    "title": "AI Consultant — Remote (Databricks, AzureML, GenAI, 15% bonus)",
     "company": "RemoteWorker UK",
     "url": "https://uk.linkedin.com/jobs/view/ai-consultant-remote-databricks-azureml-genai-15%25-bonus-at-remoteworker-uk-3887257814",
     "firstSeen": "2026-08-07",
@@ -226,7 +226,7 @@
   },
   {
     "id": "remoteworker-uk-ai-consultant-developer-3-month",
-    "title": "AI Consultant/Developer \u2014 Remote (3-month contract)",
+    "title": "AI Consultant/Developer — Remote (3-month contract)",
     "company": "RemoteWorker UK",
     "url": "https://uk.linkedin.com/jobs/view/ai-consultant-developer-remote-at-remoteworker-uk-3841843652",
     "firstSeen": "2026-08-07",
@@ -253,7 +253,7 @@
   },
   {
     "id": "toptal-ai-platform-engineer-aws-bedrock-agentcore",
-    "title": "AI/Platform Engineer \u2014 AWS Bedrock Agentcore",
+    "title": "AI/Platform Engineer — AWS Bedrock Agentcore",
     "company": "Toptal",
     "url": "https://weworkremotely.com/remote-jobs/toptal-ai-platform-engineer-aws-bedrock-agentcore",
     "firstSeen": "2026-08-13",
@@ -280,7 +280,7 @@
   },
   {
     "id": "unnamed-senior-ai-consultant-remote-75k",
-    "title": "Senior AI Consultant \u2014 Remote",
+    "title": "Senior AI Consultant — Remote",
     "company": "Unnamed employer (via artificialintelligencejobs.co.uk)",
     "url": "https://artificialintelligencejobs.co.uk/view-job/senior-ai-consultant-remote-ps75000-15-bonus-221360692",
     "firstSeen": "2026-08-07",
@@ -348,7 +348,17 @@
     "url": "https://weworkremotely.com/remote-jobs/a-team-senior-independent-ai-engineer-architect",
     "firstSeen": "2026-08-10",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 80,
+    "triage": {
+      "fit": 4,
+      "pay": 4,
+      "pref": 5,
+      "disclosure": "marketplace_network",
+      "type": "network"
+    }
   },
   {
     "id": "accenture-senior-managing-engineer-forward-deployed",
@@ -357,7 +367,9 @@
     "url": "https://www.accenture.com/gb-en/careers/jobdetails?id=R00327797_en",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Accenture jobdetails redirects to empty job search"
   },
   {
     "id": "accenture-uk-ireland-ai-transformation-process-excellence-consultant",
@@ -366,7 +378,17 @@
     "url": "https://uk.linkedin.com/jobs/view/ai-transformation-process-excellence-consultant-at-accenture-uk-ireland-4449309533",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 12,
+    "triage": {
+      "fit": 3,
+      "pay": 2,
+      "pref": 2,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "accenture-uk-ireland-forward-deployed-engineer-manager",
@@ -375,7 +397,17 @@
     "url": "https://uk.linkedin.com/jobs/view/forward-deployed-engineer-manager-palantir-at-accenture-uk-ireland-4453238897",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 12,
+    "triage": {
+      "fit": 3,
+      "pay": 2,
+      "pref": 2,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "adepta-partners-limited-data-scientist",
@@ -384,7 +416,17 @@
     "url": "https://www.nijobs.com/job/data-scientist-ai-ml-new/adepta-partners-limited-job107728393",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "unverified",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 27,
+    "triage": {
+      "fit": 3,
+      "pay": 3,
+      "pref": 3,
+      "disclosure": "recruiter_undisclosed",
+      "type": "permanent"
+    }
   },
   {
     "id": "aimpoint-digital-lead-forward-deployed-engineer-databricks-2026-us",
@@ -393,7 +435,17 @@
     "url": "https://aimpoint-digital.breezy.hr/p/fa7df72d90d8-lead-forward-deployed-engineer-databricks-2026-us-uk",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 24,
+    "triage": {
+      "fit": 3,
+      "pay": 2,
+      "pref": 4,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "aion-ai-consultant-solution-architect",
@@ -402,7 +454,17 @@
     "url": "https://www.jobilize.com/job/gb-england-london-ai-consultant-solution-architect-aion-hiring-now",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open"
+    "status": "open",
+    "liveness": "unverified",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 16,
+    "triage": {
+      "fit": 4,
+      "pay": 2,
+      "pref": 2,
+      "disclosure": "named",
+      "type": "unknown"
+    }
   },
   {
     "id": "aistudio-forward-deployed-engineer",
@@ -411,7 +473,17 @@
     "url": "https://wellfound.com/jobs/4574563-forward-deployed-engineer",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 24,
+    "triage": {
+      "fit": 4,
+      "pay": 2,
+      "pref": 3,
+      "disclosure": "named",
+      "type": "unknown"
+    }
   },
   {
     "id": "albatross-ai-forward-deployed-engineer",
@@ -420,7 +492,17 @@
     "url": "https://www.eu-startups.com/job/forward-deployed-engineer",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "unverified",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 32,
+    "triage": {
+      "fit": 4,
+      "pay": 2,
+      "pref": 4,
+      "disclosure": "named",
+      "type": "unknown"
+    }
   },
   {
     "id": "amigo-applied-ai-engineer-europe",
@@ -429,7 +511,17 @@
     "url": "https://remoteok.com/remote-jobs/remote-applied-ai-engineer-europe-amigo-1131296",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 32,
+    "triage": {
+      "fit": 4,
+      "pay": 2,
+      "pref": 4,
+      "disclosure": "named",
+      "type": "unknown"
+    }
   },
   {
     "id": "anthropic-forward-deployed-engineer-applied-ai",
@@ -438,7 +530,9 @@
     "url": "https://job-boards.greenhouse.io/anthropic/jobs/5115327008",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Greenhouse req 5115327008 removed (board redirects with ?error=true); no FDE role in London on Anthropic board API. Replacements exist: Manager, Forward Deployed Engineering London 5385634008 (£255-325k, needs 2+yrs managing embedded engineers), Applied AI Architect Industries London 5390765008 (nee"
   },
   {
     "id": "armada-ai-solutions-architect",
@@ -447,7 +541,17 @@
     "url": "https://www.workingnomads.com/jobs/ai-solutions-architect-armada",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 12,
+    "triage": {
+      "fit": 3,
+      "pay": 2,
+      "pref": 2,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "assemblyai-senior-forward-deployed-engineer",
@@ -456,7 +560,17 @@
     "url": "https://www.welcometothejungle.com/en/companies/assemblyai/jobs/senior-forward-deployed-engineer_london_gzpqbxbv",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 16,
+    "triage": {
+      "fit": 4,
+      "pay": 2,
+      "pref": 2,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "atlassian-senior-forward-deployed-engineer-ai",
@@ -465,7 +579,9 @@
     "url": "https://join.atlassian.com/atlassian-talent-community/jobs/22903?lang=en-us",
     "firstSeen": "2026-08-10",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: HTTP 404"
   },
   {
     "id": "atlassian-principal-forward-deployed-engineer-ai",
@@ -474,7 +590,9 @@
     "url": "https://join.atlassian.com/atlassian-talent-community/jobs/22811?lang=en-us",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: HTTP 404 (curl + WebFetch)"
   },
   {
     "id": "atlassian-senior-forward-deployed-engineering-manager-ai",
@@ -483,7 +601,9 @@
     "url": "https://join.atlassian.com/atlassian-talent-community/jobs/22983?lang=en-us",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: HTTP 404"
   },
   {
     "id": "aveni-head-of-implementation-enablement",
@@ -492,7 +612,9 @@
     "url": "https://uk.linkedin.com/jobs/view/head-of-implementation-enablement-at-aveni-4446981517",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: LinkedIn expired_jd_redirect"
   },
   {
     "id": "barclays-generative-ai-transformation-lead",
@@ -501,7 +623,9 @@
     "url": "https://uk.linkedin.com/jobs/view/generative-ai-transformation-lead-at-barclays-4447334415",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: LinkedIn expired_jd_redirect"
   },
   {
     "id": "headofai-fractional-head-of-ai-belfast-marketing-agency",
@@ -510,7 +634,9 @@
     "url": "https://uk.linkedin.com/jobs/view/fractional-head-of-ai-%E2%80%93-full-service-marketing-agency-at-head-of-ai-4364302096",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: LinkedIn expired_jd_redirect"
   },
   {
     "id": "braindai-head-of-ai-engineering",
@@ -519,7 +645,17 @@
     "url": "https://wellfound.com/jobs/3930372-head-of-ai-engineering",
     "firstSeen": "2026-08-10",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 32,
+    "triage": {
+      "fit": 4,
+      "pay": 2,
+      "pref": 4,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "camunda-ai-forward-deployed-engineer-emea",
@@ -528,7 +664,9 @@
     "url": "https://jobs.ashbyhq.com/camunda/42b8007d-8299-4793-9581-2b3868ba0754",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Ashby API: req 42b8007d gone; only FDE req now is Americas-only (Brazil/US/Canada)"
   },
   {
     "id": "careem-vice-president-data-ai",
@@ -537,7 +675,9 @@
     "url": "https://startup.jobs/vice-president-of-data-ai-careem-3778668",
     "firstSeen": "2026-08-10",
     "lastSeen": "2026-08-10",
-    "status": "open"
+    "status": "skipped: public sector",
+    "statusDate": "2026-08-21",
+    "statusReason": "EXCLUDED: Careem's super-app business (Careem Technologies) is majority-owned (c. 50.03%) by e& (Etisalat), which is itself majority-owned (c. 60%) by the UAE's Emirates Investment Authority — a sovereign fund. That is majority state ownership via a majority-state-owned parent. The only non-state part of Care"
   },
   {
     "id": "charterhouse-head-of-ai-automation-private-capital-investor",
@@ -546,7 +686,9 @@
     "url": "https://www.charterhouseme.ae/job/head-of-ai-and-automation-53744",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-13",
-    "status": "open"
+    "status": "skipped: public sector",
+    "statusDate": "2026-08-21",
+    "statusReason": "UNCERTAIN (doubt => drop): Recruiter describes the client only as a Dubai 'private capital investor'. In the UAE that label is routinely used by ruling-family and government-linked holding companies as well as genuine family offices, so private-sector status cannot be established from the listing."
   },
   {
     "id": "diktucom-ai-director-consulting-group-abu-dhabi",
@@ -555,7 +697,9 @@
     "url": "https://drjobs.ae/jobs/artificial-intelligence-ai-director-for-a-consulting-group-uae-abu-dhabi-diktucom-MRR01WB101DLCON",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-13",
-    "status": "open"
+    "status": "skipped: public sector",
+    "statusDate": "2026-08-21",
+    "statusReason": "UNCERTAIN (doubt => drop): Recruiter listing on an aggregator (drjobs.ae) for an unnamed Abu Dhabi 'consulting group'. Many Abu Dhabi consultancies are government-owned or sovereign-fund portfolio companies, and DIKTUCOM/drjobs listings are low-quality and often recycled, so private-sector status cannot be established."
   },
   {
     "id": "forte-ict-ai-vp-gtm-leader-uk-europe",
@@ -564,7 +708,17 @@
     "url": "https://revpath.dealhub.io/jobs/481024411-ai-gtm-leader-uk-europe-must-have-technical-experience-also-basic-ps180-ps200k-plus-bonus-and-benefits-multinational-it-services-company",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open"
+    "status": "open",
+    "liveness": "live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 30,
+    "triage": {
+      "fit": 3,
+      "pay": 5,
+      "pref": 2,
+      "disclosure": "recruiter_undisclosed",
+      "type": "permanent"
+    }
   },
   {
     "id": "gulftalent-ai-solutions-architect-global-corporation",
@@ -573,7 +727,9 @@
     "url": "https://www.gulftalent.com/uae/jobs/ai-solutions-architect-617407",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-13",
-    "status": "open"
+    "status": "skipped: public sector",
+    "statusDate": "2026-08-21",
+    "statusReason": "UNCERTAIN (doubt => drop): Unnamed 'Global Corporation' hiring in Dubai. Many of Dubai's largest corporations are majority state-owned or government-linked (Emirates Group, DP World, Dubai Holding, TECOM, ENOC, etc.), so with no name there is no basis to confirm private ownership. Doubt => uncertain."
   },
   {
     "id": "kershaw-leonard-head-of-ai-and-automation",
@@ -582,7 +738,9 @@
     "url": "https://www.gulftalent.com/uae/jobs/head-of-ai-and-automation-592177",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open"
+    "status": "skipped: public sector",
+    "statusDate": "2026-08-21",
+    "statusReason": "UNCERTAIN (doubt => drop): Recruiter describes the end client as a privately-owned international trading/export company with government agencies among its customers, not its owners. Consistent with a UAE family trading group (private). Ownership must still be confirmed once the client is named. | check: Kershaw Leonard is a private Dubai agency, but the only evidence that the end client is private is the recruiter's adjective 'privately-owned'. A UAE international trading/export company whose custome"
   },
   {
     "id": "quality-contracts-ai-architect-genai-agentic-systems-12-month",
@@ -591,7 +749,9 @@
     "url": "https://qualitycontracts.co.uk/contract-jobs/ai-architect-genai-agentic-systems-contract-12-months-1-000-1-200-day-in-london-area-united-kingdom-1774226149",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Quality Contracts: \"no longer available\""
   },
   {
     "id": "client-server-ai-adoption-lead-asset-manager",
@@ -600,7 +760,9 @@
     "url": "https://uk.linkedin.com/jobs/view/ai-adoption-lead-asset-manager-at-client-server-4416635001",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: LinkedIn expired_jd_redirect"
   },
   {
     "id": "commercial-bank-of-dubai-head-of-ai-enablement",
@@ -609,7 +771,9 @@
     "url": "https://www.glassdoor.com/job-listing/head-of-ai-enablement-commercial-bank-of-dubai",
     "firstSeen": "2026-08-10",
     "lastSeen": "2026-08-10",
-    "status": "open"
+    "status": "skipped: public sector",
+    "statusDate": "2026-08-21",
+    "statusReason": "UNCERTAIN (doubt => drop): DFM-listed bank. Largest shareholder Investment Corporation of Dubai (Dubai government fund) holds 20%; remaining major holders are private groups (Al-Futtaim 17.5%, Orient Insurance 8.8%, AW Rostamani 7.7%, Ghobash 6.4%) and free float. Government stake is a minority, not majority, so it does not m | check: Not majority state-owned (ICD 20%, rest Al-Futtaim/Orient/Rostamani/Ghobash and free float), but the Dubai government's sovereign fund Investment Corporation of Dubai is the anchor and largest shareho"
   },
   {
     "id": "commercial-bank-of-dubai-ai-platforms-adoption-lead",
@@ -618,7 +782,9 @@
     "url": "",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: no URL in tracker"
   },
   {
     "id": "confluence-technologies-ai-transformation-lead",
@@ -627,7 +793,9 @@
     "url": "https://uk.linkedin.com/jobs/view/ai-transformation-lead-at-confluence-4413409555",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: LinkedIn expired_jd_redirect"
   },
   {
     "id": "conquer-ai-artificial-intelligence-engineer",
@@ -636,7 +804,9 @@
     "url": "https://contracts.outsidespy.co.uk/job/345664/artificial-intelligence-engineer-at-conquer-ai-united-kingdom-contract-rate/",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Outside Spy 404 on exact URL"
   },
   {
     "id": "data-intellect-ai-engineer-agentic-systems",
@@ -645,7 +815,17 @@
     "url": "https://www.nijobs.com/job/engineer-systems/data-intellect-job107814278",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 30,
+    "triage": {
+      "fit": 5,
+      "pay": 2,
+      "pref": 3,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "databricks-sr-forward-deployed-engineer-architect-full-stack",
@@ -654,16 +834,36 @@
     "url": "https://boards.greenhouse.io/databricks/jobs/8656207002",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 12,
+    "triage": {
+      "fit": 3,
+      "pay": 2,
+      "pref": 2,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "datarobot-director-ai-engineering-international",
-    "title": "Director, AI Engineering \u2013 International",
+    "title": "Director, AI Engineering – International",
     "company": "DataRobot",
     "url": "https://datarobot.wd1.myworkdayjobs.com/datarobot_external_careers/job/remote-dubai/director--ai-engineering---international_r-102602/apply",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 6,
+    "triage": {
+      "fit": 3,
+      "pay": 2,
+      "pref": 1,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "deloitte-touche-ai-data-director-middle-east",
@@ -672,16 +872,36 @@
     "url": "https://www.gulftalent.com/uae/jobs/ai-data-director-405821",
     "firstSeen": "2026-08-10",
     "lastSeen": "2026-08-10",
-    "status": "open"
+    "status": "open",
+    "liveness": "unverified",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 0,
+    "triage": {
+      "fit": 3,
+      "pay": 2,
+      "pref": 0,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "distyl-ai-ai-strategist-first-london-hire",
-    "title": "AI Strategist (Lead Level) \u2014 first London hire",
+    "title": "AI Strategist (Lead Level) — first London hire",
     "company": "Distyl AI",
     "url": "https://builtinlondon.uk/job/ai-strategist/9537795",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 32,
+    "triage": {
+      "fit": 4,
+      "pay": 4,
+      "pref": 2,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "edison-smart-senior-ai-engineer-outside-ir35",
@@ -690,7 +910,9 @@
     "url": "https://contracts.outsidespy.co.uk/job/348421/senior-ai-engineer-llm-agentic-ai-outside-ir35-at-edison-smart-london-area-600-700-per-day/",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Outside Spy: \"Sorry, that job is no longer available\" (browser)"
   },
   {
     "id": "employer-not-named-in-the-aggregator-snippet-ai-deployment",
@@ -699,7 +921,9 @@
     "url": "https://www.engineeringjobs.co.uk/forward-deployed-ai-engineer-jobs",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "skipped: public sector",
+    "statusDate": "2026-08-21",
+    "statusReason": "UNCERTAIN (doubt => drop): No employer identified and the URL is an aggregator category index, not a job listing; the private-sector status of the employer cannot be established from anything available."
   },
   {
     "id": "encord-forward-deployed-engineer-london",
@@ -708,7 +932,17 @@
     "url": "https://www.workatastartup.com/jobs/92688",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 24,
+    "triage": {
+      "fit": 3,
+      "pay": 4,
+      "pref": 2,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "forgd-applied-ai-architect",
@@ -717,25 +951,39 @@
     "url": "https://uk.talent.com/view?id=631968411186302626",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-17",
-    "status": "open"
+    "status": "open",
+    "liveness": "live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 40,
+    "triage": {
+      "fit": 5,
+      "pay": 2,
+      "pref": 4,
+      "disclosure": "named",
+      "type": "unknown"
+    }
   },
   {
     "id": "futurus-financial-recruitment-ltd-agentic-systems-engineer-architect-london",
-    "title": "Agentic Systems Engineer / Architect \u2014 London (Contract)",
+    "title": "Agentic Systems Engineer / Architect — London (Contract)",
     "company": "Futurus Financial Recruitment Ltd",
     "url": "https://contracts.outsidespy.co.uk/job/342309/agentic-systems-engineer-architect-london-contract-at-futurus-financial-recruitment-ltd-london-area-contract-rate/",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Outside Spy 404 on exact URL"
   },
   {
     "id": "gartner-senior-director-analyst-analytics-ai-governance",
-    "title": "Senior Director Analyst \u2014 Analytics & AI Governance",
+    "title": "Senior Director Analyst — Analytics & AI Governance",
     "company": "Gartner",
     "url": "https://jobs.gartner.com/jobs/job/110437-sr-director-analyst-analytics-ai-governance-remote-uk-or-ireland/",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Gartner 404"
   },
   {
     "id": "gitlab-ai-engineer",
@@ -744,7 +992,17 @@
     "url": "https://weworkremotely.com/remote-jobs/gitlab-ai-engineer",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 32,
+    "triage": {
+      "fit": 4,
+      "pay": 2,
+      "pref": 4,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "harnham-interim-ai-strategy-director",
@@ -753,7 +1011,9 @@
     "url": "https://www.reed.co.uk/jobs/director-of-ai-strategy/57101940",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Reed 404"
   },
   {
     "id": "harnham-ai-transformation-lead",
@@ -762,7 +1022,17 @@
     "url": "https://ie.linkedin.com/jobs/view/ai-transformation-lead-at-harnham-4407411855",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 16,
+    "triage": {
+      "fit": 4,
+      "pay": 2,
+      "pref": 2,
+      "disclosure": "recruiter_undisclosed",
+      "type": "permanent"
+    }
   },
   {
     "id": "human-intelligence-fractional-cto-ai-strategy",
@@ -771,16 +1041,20 @@
     "url": "https://wellfound.com/jobs/3767779-fractional-cto-ai-strategy-remote-contractor",
     "firstSeen": "2026-08-07",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Wellfound 410"
   },
   {
     "id": "intec-select-ai-engineer-llm-agentic-systems",
-    "title": "AI Engineer \u2014 LLM & Agentic Systems",
+    "title": "AI Engineer — LLM & Agentic Systems",
     "company": "Intec Select",
     "url": "https://contracts.outsidespy.co.uk/job/348801/ai-engineer-llm-agentic-systems-at-intec-select-london-area-500-675-per-day/",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Outside Spy 404 on exact URL"
   },
   {
     "id": "jobgether-head-of-ai",
@@ -789,7 +1063,9 @@
     "url": "https://jobs.lever.co/jobgether/45575f20-2e4f-498c-b42f-53ceeac76563",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Lever 404"
   },
   {
     "id": "kore-ai-forward-deployed-engineer-dubai",
@@ -798,7 +1074,17 @@
     "url": "https://www.remotedxb.com/job/forward-deployed-engineer-koreai--149991",
     "firstSeen": "2026-08-10",
     "lastSeen": "2026-08-10",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 0,
+    "triage": {
+      "fit": 4,
+      "pay": 2,
+      "pref": 0,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "lemon-io-senior-ai-engineer-architect",
@@ -807,7 +1093,17 @@
     "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-ai-engineer-4",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 60,
+    "triage": {
+      "fit": 4,
+      "pay": 3,
+      "pref": 5,
+      "disclosure": "marketplace_network",
+      "type": "network"
+    }
   },
   {
     "id": "maze-head-of-ai",
@@ -816,16 +1112,36 @@
     "url": "https://wellfound.com/jobs/4452741-head-of-ai",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 24,
+    "triage": {
+      "fit": 3,
+      "pay": 2,
+      "pref": 4,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "mcs-group-technology-consultant-data-ai",
-    "title": "Technology Consultant \u2013 Data/AI (Manager / Senior Manager)",
+    "title": "Technology Consultant – Data/AI (Manager / Senior Manager)",
     "company": "MCS Group",
     "url": "https://www.nijobs.com/job/technology-consultant-data-ai/mcs-group-job107658628",
     "firstSeen": "2026-08-10",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "unverified",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 18,
+    "triage": {
+      "fit": 3,
+      "pay": 2,
+      "pref": 3,
+      "disclosure": "recruiter_undisclosed",
+      "type": "permanent"
+    }
   },
   {
     "id": "mcs-group-principal-ai-workflow-specialist",
@@ -834,7 +1150,17 @@
     "url": "https://www.nijobs.com/job/workflow-specialist/mcs-group-job107482831",
     "firstSeen": "2026-08-10",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "unverified",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 24,
+    "triage": {
+      "fit": 4,
+      "pay": 2,
+      "pref": 3,
+      "disclosure": "recruiter_undisclosed",
+      "type": "permanent"
+    }
   },
   {
     "id": "nearform-forward-deployed-engineer-uk-remote-travel",
@@ -843,7 +1169,17 @@
     "url": "https://job-boards.greenhouse.io/nearform/jobs/7619129003",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open"
+    "status": "open",
+    "liveness": "live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 15,
+    "triage": {
+      "fit": 5,
+      "pay": 1,
+      "pref": 3,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "nice-ai-forward-deployed-engineer",
@@ -852,16 +1188,28 @@
     "url": "https://www.glassdoor.com/job-listing/forward-deployed-engineer-nice-JV_KO0,25_KE26,30.htm?jl=1010112529056",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "unverified",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 32,
+    "triage": {
+      "fit": 4,
+      "pay": 2,
+      "pref": 4,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "not-named-in-listing-ai-enterprise-architect-london-inside",
-    "title": "AI Enterprise Architect \u2014 London (hybrid), Inside IR35",
+    "title": "AI Enterprise Architect — London (hybrid), Inside IR35",
     "company": "Not named in listing (advertised via JobServe)",
     "url": "https://www.jobserve.com/gb/en/search-jobs-in-London,-London,-United-Kingdom/AI-ENTERPRISE-ARCHITECT-LONDON-HYBRID-INSIDE-IR35-00978ED30C66775A3C/",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "skipped: public sector",
+    "statusDate": "2026-08-21",
+    "statusReason": "UNCERTAIN (doubt => drop): JobServe listings are agency posts for undisclosed clients; no sector stated. Inside IR35 plus 'enterprise architect' raises the odds of a public-sector or heavily regulated end client, so the client must be confirmed private before any application. | check: Neither the advertising agency nor the end client is identifiable from the listing, so the brief's recruiter_undisclosed route (establish the end client via the recruiter before applying) has no start"
   },
   {
     "id": "not-named-in-snippet-ai-innovation-consultant",
@@ -870,25 +1218,31 @@
     "url": "https://syncni.com/job/15228/ai-innovation-consultant-belfast-northern-ireland",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Sync NI: employer is Version 1, closing date 11 Jun 2026 passed"
   },
   {
     "id": "not-named-advertised-via-outside-ir35-tech-jobs-client-b",
     "title": "AI Architect (remote, FTSE250 client)",
-    "company": "Not named \u2014 advertised via Outside IR35 Tech Jobs, client described as a leading FTSE250 organisation",
+    "company": "Not named — advertised via Outside IR35 Tech Jobs, client described as a leading FTSE250 organisation",
     "url": "https://outsideir35.org.uk/jobs/ai-architect/LHNpajchD2",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: outsideir35.org.uk AI Architect (Xpertise, FTSE250 client): \"no longer accepting applications\", posted 30 Mar 2026"
   },
   {
     "id": "not-named-advertised-via-outside-ir35-tech-jobs-client",
     "title": "Artificial Intelligence Engineer (fully remote, LLM pilot delivery)",
-    "company": "Not named \u2014 advertised via Outside IR35 Tech Jobs, client described as a tech consultancy",
+    "company": "Not named — advertised via Outside IR35 Tech Jobs, client described as a tech consultancy",
     "url": "https://outsideir35.org.uk/jobs/artificial-intelligence-engineer/MbX1QT3hSv",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: outsideir35.org.uk AI Engineer £600/day: HTTP 404"
   },
   {
     "id": "ocho-ai-ml-engineer-cloud-cost-automation-saas",
@@ -897,7 +1251,9 @@
     "url": "https://www.ochopeople.com/jobs/635003-AI-ML-Engineer-/",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Ocho People 404"
   },
   {
     "id": "ocho-kainos-data-ai-lead-healthcare",
@@ -906,7 +1262,17 @@
     "url": "https://www.nijobs.com/job/data-ai-lead-healthcare/ocho-job107742907",
     "firstSeen": "2026-08-10",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "unverified",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 27,
+    "triage": {
+      "fit": 3,
+      "pay": 3,
+      "pref": 3,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "ocho-senior-ai-engineer-belfast",
@@ -915,7 +1281,17 @@
     "url": "https://www.nijobs.com/job/senior-ai-engineer/ocho-job107629051",
     "firstSeen": "2026-08-10",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "unverified",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 36,
+    "triage": {
+      "fit": 4,
+      "pay": 3,
+      "pref": 3,
+      "disclosure": "recruiter_undisclosed",
+      "type": "permanent"
+    }
   },
   {
     "id": "openai-forward-deployed-engineer-abu-dhabi",
@@ -924,7 +1300,17 @@
     "url": "https://openai.com/careers/forward-deployed-engineer-uae-abu-dhabi-uae/",
     "firstSeen": "2026-08-10",
     "lastSeen": "2026-08-10",
-    "status": "open"
+    "status": "open",
+    "liveness": "unverified",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 0,
+    "triage": {
+      "fit": 4,
+      "pay": 2,
+      "pref": 0,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "optimal-group-ai-architect",
@@ -933,7 +1319,9 @@
     "url": "https://www.bayt.com/en/uae/jobs/ai-architect-74428867/",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-13",
-    "status": "open"
+    "status": "skipped: public sector",
+    "statusDate": "2026-08-21",
+    "statusReason": "UNCERTAIN (doubt => drop): Ownership could not be established: two searches found only the Workable/Bayt ad (hints at a property/construction/facilities-management business) and no company profile, shareholder information or website. Nothing surfaced linking it to the UAE state, but a small UAE group with opaque ownership can"
   },
   {
     "id": "opus-recruitment-solutions-interim-head-of-ai",
@@ -942,7 +1330,9 @@
     "url": "https://www.opusrecruitmentsolutions.com/search-jobs/35029877-interim-head-of-ai-outside-ir35-contract-6-month-contract-job-united-kingdom-london",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Opus site 404 \"OOPS! NOTHING WAS FOUND\""
   },
   {
     "id": "opus-recruitment-solutions-ai-agentic-transformation-lead",
@@ -951,7 +1341,17 @@
     "url": "https://contracts.outsidespy.co.uk/job/354603/ai-agentic-transformation-lead-at-opus-recruitment-solutions-greater-london-800-to-900-per-day/",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 100,
+    "triage": {
+      "fit": 5,
+      "pay": 5,
+      "pref": 4,
+      "disclosure": "recruiter_undisclosed",
+      "type": "contract"
+    }
   },
   {
     "id": "opus-recruitment-solutions-agentic-ai-engineer",
@@ -960,7 +1360,9 @@
     "url": "https://contracts.outsidespy.co.uk/job/350403/agentic-ai-engineer-at-opus-recruitment-solutions-greater-london-500-to-600-per-day/",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Outside Spy 404 on exact URL"
   },
   {
     "id": "puregym-ai-enablement-lead",
@@ -969,7 +1371,9 @@
     "url": "https://uk.linkedin.com/jobs/view/ai-enablement-lead-at-puregym-4431231180",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: LinkedIn expired_jd_redirect"
   },
   {
     "id": "qad-ai-solutions-architect",
@@ -978,7 +1382,17 @@
     "url": "https://uk.linkedin.com/jobs/view/ai-solutions-architect-at-qad-4447219998",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 24,
+    "triage": {
+      "fit": 3,
+      "pay": 2,
+      "pref": 4,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "red-hat-emea-ai-architect",
@@ -987,7 +1401,9 @@
     "url": "https://remotive.com/remote/jobs/artificial-intelligence/emea-ai-architect-5127832",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Remotive 410"
   },
   {
     "id": "russell-tobin-agentic-ai-engineer",
@@ -996,7 +1412,9 @@
     "url": "https://contracts.outsidespy.co.uk/job/347901/agentic-ai-engineer-at-russell-tobin-london-area-contract-rate/",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Outside Spy 404 on exact URL"
   },
   {
     "id": "sap-ai-architect",
@@ -1005,16 +1423,28 @@
     "url": "https://www.bayt.com/en/uae/jobs/ai-architect-74398999/",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open"
+    "status": "open",
+    "liveness": "unverified",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 0,
+    "triage": {
+      "fit": 3,
+      "pay": 2,
+      "pref": 0,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "servicenow-forward-deployed-solution-architect-applied-ai",
-    "title": "Forward Deployed Solution Architect \u2013 Applied AI (FDE)",
+    "title": "Forward Deployed Solution Architect – Applied AI (FDE)",
     "company": "ServiceNow",
     "url": "https://remotive.com/remote/jobs/artificial-intelligence/forward-deployed-solution-architect-applied-ai-fde-5266875",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: Remotive 404"
   },
   {
     "id": "simudyne-forward-deployed-engineer",
@@ -1023,7 +1453,17 @@
     "url": "https://jobs.techstars.com/companies/simudyne/jobs/70291384-forward-deployed-engineer-london-or-remote-uk-eu-us",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 24,
+    "triage": {
+      "fit": 3,
+      "pay": 2,
+      "pref": 4,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "smartsheet-sr-forward-deployed-ai-engineer",
@@ -1032,7 +1472,17 @@
     "url": "https://job-boards.greenhouse.io/smartsheet/jobs/7873872",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 32,
+    "triage": {
+      "fit": 4,
+      "pay": 2,
+      "pref": 4,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "techtorch-forward-deployed-ai-engineer",
@@ -1041,7 +1491,17 @@
     "url": "https://www.remoteitjobs.app/job/techtorch-forward-deployed-ai-engineer",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 40,
+    "triage": {
+      "fit": 5,
+      "pay": 2,
+      "pref": 4,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "toptal-senior-full-stack-ai-engineer",
@@ -1050,7 +1510,17 @@
     "url": "https://weworkremotely.com/remote-jobs/toptal-senior-full-stack-ai-engineer",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 60,
+    "triage": {
+      "fit": 4,
+      "pay": 3,
+      "pref": 5,
+      "disclosure": "marketplace_network",
+      "type": "network"
+    }
   },
   {
     "id": "toptal-ai-engineers",
@@ -1059,16 +1529,28 @@
     "url": "https://weworkremotely.com/remote-jobs/toptal-ai-engineers",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "unverified",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 60,
+    "triage": {
+      "fit": 4,
+      "pay": 3,
+      "pref": 5,
+      "disclosure": "marketplace_network",
+      "type": "network"
+    }
   },
   {
     "id": "valtech-data-consulting-director-data-ai-mena",
-    "title": "Data Consulting Director \u2013 Data & AI (MENA)",
+    "title": "Data Consulting Director – Data & AI (MENA)",
     "company": "Valtech",
     "url": "https://careers.valtech.com/jobs/5636652-data-consulting-director-data-ai-mena",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: careers.valtech.com DNS does not resolve"
   },
   {
     "id": "vanrath-site-lead-ai",
@@ -1077,7 +1559,9 @@
     "url": "https://artificialintelligencejobs.co.uk/view-job/site-lead-ai-830e73ed1320",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: artificialintelligencejobs.co.uk 404"
   },
   {
     "id": "version-1-ai-solutions-internal-adoption-lead",
@@ -1086,7 +1570,17 @@
     "url": "https://jobs.smartrecruiters.com/Version1/744000117619537-ai-solutions-internal-adoption-lead",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 24,
+    "triage": {
+      "fit": 4,
+      "pay": 2,
+      "pref": 3,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "version-1-pre-sales-ai-architect",
@@ -1095,7 +1589,17 @@
     "url": "https://jobs.smartrecruiters.com/Version1/744000103250685-pre-sales-ai-architect",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 24,
+    "triage": {
+      "fit": 4,
+      "pay": 2,
+      "pref": 3,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "gulftalent-data-and-ai-consultant-dubai",
@@ -1104,25 +1608,31 @@
     "url": "https://www.gulftalent.com/uae/jobs/data-and-ai-consultant-497096",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-13",
-    "status": "open"
+    "status": "skipped: public sector",
+    "statusDate": "2026-08-21",
+    "statusReason": "UNCERTAIN (doubt => drop): Employer is not named anywhere in the captured data; Dubai data/AI consulting roles are frequently with government-linked entities or state-owned consultancies, so private-sector status cannot be established without opening the listing."
   },
   {
     "id": "mcs-group-ai-engineer-agentic-systems-6-12-month",
-    "title": "AI Engineer (Agentic Systems), 6\u201312 month contract",
+    "title": "AI Engineer (Agentic Systems), 6–12 month contract",
     "company": "via MCS Group",
     "url": "https://www.mcsgroup.jobs/job/ai-engineer-agentic-systems/",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: mcsgroup.jobs 410"
   },
   {
     "id": "mcs-group-senior-ai-engineer-greenfield-data-ai-platform",
-    "title": "Senior AI Engineer \u2014 Greenfield Data & AI Platform",
+    "title": "Senior AI Engineer — Greenfield Data & AI Platform",
     "company": "via MCS Group",
     "url": "https://www.itjobswatch.co.uk/jv/MCS-Group-Your-Specialist-Recruitment-Consultancy/Senior-AI-Engineer-Greenfield-project-Job-Belfast-UK-4v6kee",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: itjobswatch 404"
   },
   {
     "id": "sowelo-interim-head-of-ai-enablement-dubai-fintech",
@@ -1131,16 +1641,28 @@
     "url": "https://soweloconsulting.applytojob.com/apply/UtimAfIiQU/Head-Of-AI-Enablement-Remote",
     "firstSeen": "2026-08-13",
     "lastSeen": "2026-08-13",
-    "status": "open"
+    "status": "skipped: public sector",
+    "statusDate": "2026-08-21",
+    "statusReason": "UNCERTAIN (doubt => drop): Sowelo Consulting is a private Polish/international recruitment agency; the end client is described as a Dubai fintech with a global engineering org, which points at a private company. Dubai origin means state-linked ownership must be ruled out before applying. | check: Sowelo Consulting is a private Polish recruitment agency, but the end client is only described as a Dubai fintech with a global engineering organisation. Several Dubai fintechs fitting that descriptio"
   },
   {
     "id": "wa-technology-head-of-ai-enablement-ftc",
-    "title": "Head of AI Enablement (4\u20135 month FTC)",
+    "title": "Head of AI Enablement (4–5 month FTC)",
     "company": "WA.Technology",
     "url": "https://jobs.ashbyhq.com/WA.Technology/3df55a67-4575-44c9-ac2b-08de0d821e44",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open"
+    "status": "open",
+    "liveness": "live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 100,
+    "triage": {
+      "fit": 4,
+      "pay": 5,
+      "pref": 5,
+      "disclosure": "named",
+      "type": "ftc"
+    }
   },
   {
     "id": "we-are-agentic-ai-transformation-consultant",
@@ -1149,7 +1671,9 @@
     "url": "https://uk.linkedin.com/jobs/view/ai-transformation-consultant-at-we-are-agentic-4446282924",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: LinkedIn expired_jd_redirect"
   },
   {
     "id": "workato-forward-deployed-engineer",
@@ -1158,7 +1682,17 @@
     "url": "https://www.welcometothejungle.com/en/companies/workato/jobs/forward-deployed-engineer_london_rymjphj2",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "open",
+    "liveness": "presumed_live",
+    "livenessChecked": "2026-08-21",
+    "triageScore": 16,
+    "triage": {
+      "fit": 4,
+      "pay": 2,
+      "pref": 2,
+      "disclosure": "named",
+      "type": "permanent"
+    }
   },
   {
     "id": "writer-strategic-ai-transformation-lead",
@@ -1167,7 +1701,9 @@
     "url": "https://uk.linkedin.com/jobs/view/strategic-ai-transformation-lead-uk-at-writer-4402595084",
     "firstSeen": "2026-08-10",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: LinkedIn expired_jd_redirect"
   },
   {
     "id": "writer-enterprise-ai-transformation-lead",
@@ -1176,6 +1712,8 @@
     "url": "https://uk.linkedin.com/jobs/view/enterprise-ai-transformation-lead-uk-at-writer-4392987460",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open"
+    "status": "closed",
+    "statusDate": "2026-08-21",
+    "statusReason": "Listing dead on 2026-08-21: LinkedIn expired_jd_redirect"
   }
 ]
