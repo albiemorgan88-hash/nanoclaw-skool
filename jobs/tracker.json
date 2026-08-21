@@ -1655,7 +1655,7 @@
     "url": "https://contracts.outsidespy.co.uk/job/354603/ai-agentic-transformation-lead-at-opus-recruitment-solutions-greater-london-800-to-900-per-day/",
     "firstSeen": "2026-08-20",
     "lastSeen": "2026-08-20",
-    "status": "open",
+    "status": "applied",
     "liveness": "live",
     "livenessChecked": "2026-08-21",
     "triageScore": 100,
@@ -1667,8 +1667,8 @@
       "type": "contract"
     },
     "statusDate": "2026-08-21",
-    "statusReason": "NEEDS PHIL: live (Opus ref MM-351, £800-900/day Outside IR35, London 2x/month, expires 24 Aug). End client unnamed — phone Opus +44 20 7448 1414, get the client name, then submit on the Opus page with CV. Pack ready.",
-    "needsPhil": true,
+    "statusReason": "Submitted 21 Aug via Opus apply modal on Phil's \"yes to all\" (recruiter ad, end client still unnamed — chase Opus +44 20 7448 1414, ref MM-351). Confirmation \"Application sent\". See submitted.md.",
+    "needsPhil": false,
     "verified": {
       "live": "live",
       "pay": "£800.00 - £900.00 per day (listing sidebar and JSON-LD baseSalary GBP 800–900/day; body text says only \"Competitive day rate\"). Outside IR35. Matches scout repo",
@@ -1677,7 +1677,9 @@
       "ats": "own form (Opus website, Laravel/Livewire/Filament apply widg",
       "accountRequired": "no",
       "packFile": "jobs/applications/opus-recruitment-solutions-ai-agentic-transformation-lead/pack.md"
-    }
+    },
+    "appliedDate": "2026-08-21",
+    "submittedCopy": "jobs/applications/opus-recruitment-solutions-ai-agentic-transformation-lead/submitted.md"
   },
   {
     "id": "opus-recruitment-solutions-agentic-ai-engineer",
@@ -2070,7 +2072,7 @@
     "url": "https://jobs.ashbyhq.com/WA.Technology/3df55a67-4575-44c9-ac2b-08de0d821e44",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open",
+    "status": "applied",
     "liveness": "live",
     "livenessChecked": "2026-08-21",
     "triageScore": 100,
@@ -2082,8 +2084,8 @@
       "type": "ftc"
     },
     "statusDate": "2026-08-21",
-    "statusReason": "NEEDS PHIL: live Ashby form, fully remote 4-5m B2B contract; pay NOT on listing (scout's $190-295/hr unsupported). Form forces yes/no on international travel (Malta/Bucharest/Sofia), a gross-monthly EUR salary figure, start date and interview-recording consent — your calls. Pack ready.",
-    "needsPhil": true,
+    "statusReason": "Submitted 21 Aug via Ashby on Phil's \"yes to all\" (travel yes, start 14 Sep, EUR 15,000/month, recording consent yes). Confirmation \"successfully submitted\". See submitted.md.",
+    "needsPhil": false,
     "verified": {
       "live": "live",
       "pay": "unstated. Ashby compensation fields are null (shouldDisplayCompensationOnJobPostings=false), the description contains no rate, and the WTTJ mirror shows \"Salary",
@@ -2092,7 +2094,9 @@
       "ats": "Ashby",
       "accountRequired": "no",
       "packFile": "jobs/applications/wa-technology-head-of-ai-enablement-ftc/pack.md"
-    }
+    },
+    "appliedDate": "2026-08-21",
+    "submittedCopy": "jobs/applications/wa-technology-head-of-ai-enablement-ftc/submitted.md"
   },
   {
     "id": "we-are-agentic-ai-transformation-consultant",
