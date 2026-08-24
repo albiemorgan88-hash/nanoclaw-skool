@@ -41,7 +41,7 @@
     "company": "BCG X",
     "url": "https://careers.bcg.com/global/en/job/55953/Forward-Deployed-AI-Engineer-United-Arab-Emirates-BCG-X",
     "firstSeen": "2026-08-10",
-    "lastSeen": "2026-08-13",
+    "lastSeen": "2026-08-24",
     "status": "dropped"
   },
   {
@@ -293,7 +293,7 @@
     "company": "Version 1",
     "url": "https://jobs.smartrecruiters.com/Version1/744000133377271-ai-solution-architect",
     "firstSeen": "2026-08-10",
-    "lastSeen": "2026-08-13",
+    "lastSeen": "2026-08-24",
     "status": "dropped"
   },
   {
@@ -347,7 +347,7 @@
     "company": "A.Team",
     "url": "https://weworkremotely.com/remote-jobs/a-team-senior-independent-ai-engineer-architect",
     "firstSeen": "2026-08-10",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-24",
     "status": "skipped: engineering/DS",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
@@ -496,7 +496,7 @@
     "url": "https://www.jobilize.com/job/gb-england-london-ai-consultant-solution-architect-aion-hiring-now",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open",
+    "status": "dropped",
     "liveness": "unverified",
     "livenessChecked": "2026-08-21",
     "triageScore": 16,
@@ -517,7 +517,7 @@
     "company": "AiStudio",
     "url": "https://wellfound.com/jobs/4574563-forward-deployed-engineer",
     "firstSeen": "2026-08-20",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-24",
     "status": "skipped: below floor",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
@@ -610,7 +610,7 @@
     "company": "Anthropic",
     "url": "https://job-boards.greenhouse.io/anthropic/jobs/5115327008",
     "firstSeen": "2026-08-20",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-24",
     "status": "closed",
     "statusDate": "2026-08-21",
     "statusReason": "Listing dead on 2026-08-21: Greenhouse req 5115327008 removed (board redirects with ?error=true); no FDE role in London on Anthropic board API. Replacements exist: Manager, Forward Deployed Engineering London 5385634008 (£255-325k, needs 2+yrs managing embedded engineers), Applied AI Architect Industries London 5390765008 (nee"
@@ -683,7 +683,7 @@
     "company": "Atlassian",
     "url": "https://join.atlassian.com/atlassian-talent-community/jobs/22903?lang=en-us",
     "firstSeen": "2026-08-10",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-24",
     "status": "closed",
     "statusDate": "2026-08-21",
     "statusReason": "Listing dead on 2026-08-21: HTTP 404"
@@ -705,7 +705,7 @@
     "company": "Atlassian",
     "url": "https://join.atlassian.com/atlassian-talent-community/jobs/22983?lang=en-us",
     "firstSeen": "2026-08-20",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-24",
     "status": "closed",
     "statusDate": "2026-08-21",
     "statusReason": "Listing dead on 2026-08-21: HTTP 404"
@@ -749,7 +749,7 @@
     "company": "BraindAI",
     "url": "https://wellfound.com/jobs/3930372-head-of-ai-engineering",
     "firstSeen": "2026-08-10",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-24",
     "status": "skipped: location/pay",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
@@ -1005,7 +1005,7 @@
     "company": "DataRobot",
     "url": "https://datarobot.wd1.myworkdayjobs.com/datarobot_external_careers/job/remote-dubai/director--ai-engineering---international_r-102602/apply",
     "firstSeen": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastSeen": "2026-08-24",
     "status": "skipped: engineering/DS",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
@@ -1102,7 +1102,7 @@
     "company": "Encord (YC W21)",
     "url": "https://www.workatastartup.com/jobs/92688",
     "firstSeen": "2026-08-20",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-24",
     "status": "skipped: engineering/DS",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
@@ -1219,7 +1219,7 @@
     "company": "Harnham (client: global maritime and logistics business)",
     "url": "https://www.reed.co.uk/jobs/director-of-ai-strategy/57101940",
     "firstSeen": "2026-08-20",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-24",
     "status": "closed",
     "statusDate": "2026-08-21",
     "statusReason": "Listing dead on 2026-08-21: Reed 404"
@@ -1283,7 +1283,7 @@
     "company": "Jobgether (posting on behalf of a venture-backed technology company)",
     "url": "https://jobs.lever.co/jobgether/45575f20-2e4f-498c-b42f-53ceeac76563",
     "firstSeen": "2026-08-20",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-24",
     "status": "closed",
     "statusDate": "2026-08-21",
     "statusReason": "Listing dead on 2026-08-21: Lever 404"
@@ -1347,7 +1347,7 @@
     "company": "Maze",
     "url": "https://wellfound.com/jobs/4452741-head-of-ai",
     "firstSeen": "2026-08-13",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-24",
     "status": "open",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
@@ -1524,7 +1524,7 @@
     "company": "Not named — advertised via Outside IR35 Tech Jobs, client described as a leading FTSE250 organisation",
     "url": "https://outsideir35.org.uk/jobs/ai-architect/LHNpajchD2",
     "firstSeen": "2026-08-20",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-24",
     "status": "closed",
     "statusDate": "2026-08-21",
     "statusReason": "Listing dead on 2026-08-21: outsideir35.org.uk AI Architect (Xpertise, FTSE250 client): \"no longer accepting applications\", posted 30 Mar 2026"
@@ -1535,7 +1535,7 @@
     "company": "Not named — advertised via Outside IR35 Tech Jobs, client described as a tech consultancy",
     "url": "https://outsideir35.org.uk/jobs/artificial-intelligence-engineer/MbX1QT3hSv",
     "firstSeen": "2026-08-20",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-24",
     "status": "closed",
     "statusDate": "2026-08-21",
     "statusReason": "Listing dead on 2026-08-21: outsideir35.org.uk AI Engineer £600/day: HTTP 404"
@@ -1610,7 +1610,7 @@
     "company": "OpenAI",
     "url": "https://openai.com/careers/forward-deployed-engineer-uae-abu-dhabi-uae/",
     "firstSeen": "2026-08-10",
-    "lastSeen": "2026-08-10",
+    "lastSeen": "2026-08-24",
     "status": "open",
     "liveness": "unverified",
     "livenessChecked": "2026-08-21",
@@ -1709,7 +1709,7 @@
     "company": "QAD",
     "url": "https://uk.linkedin.com/jobs/view/ai-solutions-architect-at-qad-4447219998",
     "firstSeen": "2026-08-20",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-24",
     "status": "applied",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
@@ -1765,7 +1765,7 @@
     "url": "https://www.bayt.com/en/uae/jobs/ai-architect-74398999/",
     "firstSeen": "2026-08-17",
     "lastSeen": "2026-08-17",
-    "status": "open",
+    "status": "dropped",
     "liveness": "unverified",
     "livenessChecked": "2026-08-21",
     "triageScore": 0,
@@ -1954,7 +1954,7 @@
     "company": "VANRATH (recruiting for an AI company in the sports industry)",
     "url": "https://artificialintelligencejobs.co.uk/view-job/site-lead-ai-830e73ed1320",
     "firstSeen": "2026-08-20",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-24",
     "status": "closed",
     "statusDate": "2026-08-21",
     "statusReason": "Listing dead on 2026-08-21: artificialintelligencejobs.co.uk 404"
@@ -2038,7 +2038,7 @@
     "company": "via MCS Group",
     "url": "https://www.mcsgroup.jobs/job/ai-engineer-agentic-systems/",
     "firstSeen": "2026-08-17",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-24",
     "status": "closed",
     "statusDate": "2026-08-21",
     "statusReason": "Listing dead on 2026-08-21: mcsgroup.jobs 410"
@@ -2049,7 +2049,7 @@
     "company": "via MCS Group",
     "url": "https://www.itjobswatch.co.uk/jv/MCS-Group-Your-Specialist-Recruitment-Consultancy/Senior-AI-Engineer-Greenfield-project-Job-Belfast-UK-4v6kee",
     "firstSeen": "2026-08-17",
-    "lastSeen": "2026-08-17",
+    "lastSeen": "2026-08-24",
     "status": "closed",
     "statusDate": "2026-08-21",
     "statusReason": "Listing dead on 2026-08-21: itjobswatch 404"
@@ -2115,7 +2115,7 @@
     "company": "Workato",
     "url": "https://www.welcometothejungle.com/en/companies/workato/jobs/forward-deployed-engineer_london_rymjphj2",
     "firstSeen": "2026-08-20",
-    "lastSeen": "2026-08-20",
+    "lastSeen": "2026-08-24",
     "status": "skipped: engineering/DS",
     "liveness": "presumed_live",
     "livenessChecked": "2026-08-21",
@@ -2168,10 +2168,847 @@
     "company": "Anthropic",
     "url": "https://job-boards.greenhouse.io/anthropic/jobs/5385634008",
     "firstSeen": "2026-08-21",
-    "lastSeen": "2026-08-21",
+    "lastSeen": "2026-08-24",
     "status": "open",
     "statusDate": "2026-08-21",
     "statusReason": "NEW 21 Aug (replacement for the dead Anthropic FDE req): Manager, Forward Deployed Engineering, London, £255-325k, 25% in-office. Form asks outright \"Have you directly managed engineers embedded with customers from prototype to production?\" — honest answer is No, so left for your call. https://job-boards.greenhouse.io/anthropic/jobs/5385634008",
     "needsPhil": true
+  },
+  {
+    "id": "cohere-solutions-architect-uae",
+    "title": "Solutions Architect - UAE",
+    "company": "Cohere",
+    "url": "https://builtin.com/job/solutions-architect/6415186",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-listing-snippet-ai-forward-deployed-engineer-relocation-to-abu-dhabi",
+    "title": "AI Forward Deployed Engineer (relocation to Abu Dhabi)",
+    "company": "Not named in listing snippet",
+    "url": "https://builtin.com/job/ai-forward-deployment-engineer/6647088",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "commercial-bank-of-dubai-head-of-ai",
+    "title": "Head of AI",
+    "company": "Commercial Bank of Dubai",
+    "url": "https://www.founditgulf.com/job/head-of-ai-commercial-bank-of-dubai-dubai-55667591",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "deloitte-touche-m-e-ai-data-science-manager",
+    "title": "AI & Data Science Manager",
+    "company": "Deloitte & Touche (M.E.)",
+    "url": "https://www.gulftalent.com/uae/jobs/ai-data-science-manager-433946",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "unnamed-uae-financial-institution-via-discovered-mena-vp-of-data-science-genai-relocate-to-uae-tax-free",
+    "title": "VP of Data Science - GenAI (relocate to UAE, tax free)",
+    "company": "Unnamed UAE financial institution (via Discovered MENA)",
+    "url": "https://www.itjobswatch.co.uk/jv/Discovered-MENA/VP-of-Data-Science-GenAI-relocate-to-UAE-tax-free-London-Area-Job-London-UK-3vtkqt?jr=8n4-33o-1lh",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "head-of-ai-posting-entity-named-as-such-on-linkedin-true-client-not-disclosed-in-snippet-fractional-chief-ai-officer-head-of-ai-hubspot-crm-experience-required",
+    "title": "Fractional Chief AI Officer / Head of AI (HubSpot CRM experience required)",
+    "company": "Head of AI (posting entity named as such on LinkedIn; true client not disclosed in snippet)",
+    "url": "https://uk.linkedin.com/jobs/view/fractional-chief-ai-officer-head-of-ai-hubspot-crm-experience-required-at-head-of-ai-4378805892",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "head-of-ai-headofai-ai-fractional-head-of-ai-full-service-marketing-agency-client-engagement",
+    "title": "Fractional Head of AI — Full Service Marketing Agency (client engagement)",
+    "company": "Head of AI (headofai.ai)",
+    "url": "https://talents.studysmarter.co.uk/companies/head-of-ai/belfast/fractional-head-of-ai-full-service-marketing-agency-29028017/",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "mcs-group-recruiter-client-is-a-data-ai-consulting-team-serving-large-enterprises-technology-consultant-data-ai",
+    "title": "Technology Consultant - Data/AI",
+    "company": "MCS Group (recruiter; client is a Data & AI consulting team serving large enterprises)",
+    "url": "https://www.mcsgroup.jobs/job/data-architect-9677/",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "undisclosed-client-via-go-fractional-interim-head-of-ai-enablement",
+    "title": "Interim Head of AI Enablement",
+    "company": "undisclosed client via Go Fractional",
+    "url": "https://www.gofractional.com/jobs/remote",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "undisclosed-via-go-fractional-fractional-cto-ai-strategy-council",
+    "title": "Fractional CTO / AI Strategy Council",
+    "company": "undisclosed via Go Fractional",
+    "url": "https://www.gofractional.com/job/workable-fractional-cto-ai-strategy-council-remote-contractor-9729",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "multiverse-staff-ai-engineer-ai-transformation",
+    "title": "Staff AI Engineer — AI Transformation",
+    "company": "Multiverse",
+    "url": "https://www.welcometothejungle.com/en/companies/multiverse-1/jobs/staff-ai-engineer-ai-transformation_london_htkeo3ld",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "forter-senior-ai-engineer",
+    "title": "Senior AI Engineer",
+    "company": "Forter",
+    "url": "https://www.welcometothejungle.com/en/companies/forter/jobs/senior-ai-engineer_london_rwc5nxws",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "forter-applied-ai-engineer",
+    "title": "Applied AI Engineer",
+    "company": "Forter",
+    "url": "https://www.welcometothejungle.com/en/companies/forter/jobs/applied-ai-engineer_london_z4cqcavj",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "arva-ai-forward-deployed-engineer",
+    "title": "Forward Deployed Engineer",
+    "company": "Arva AI",
+    "url": "https://www.workatastartup.com/jobs/89530",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "ocho-ai-centre-of-excellence-of-an-unnamed-global-technology-company-senior-ai-engineer",
+    "title": "Senior AI Engineer",
+    "company": "Ocho (AI Centre of Excellence of an unnamed global technology company)",
+    "url": "https://haystackapp.io/jobs/47a1f045-2e36-43cc-8c2b-52ddea8c28f0",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "version-1-ai-solution-architect-remote-enterprise-ai-design",
+    "title": "AI Solution Architect (remote, enterprise AI design)",
+    "company": "Version 1",
+    "url": "https://www.jobijoba.co.uk/detail/92/3fa47a1f39e7217cac823fbd936e0bc8",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "remitly-senior-ai-native-software-engineer",
+    "title": "Senior AI Native Software Engineer",
+    "company": "Remitly",
+    "url": "https://www.welcometothejungle.com/en/companies/remitly/jobs/senior-ai-native-software-engineer_london_2xroio5r",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "cohere-forward-deployed-engineer-agentic-platform-uk-europe",
+    "title": "Forward Deployed Engineer, Agentic Platform (UK/Europe)",
+    "company": "Cohere",
+    "url": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-agentic-platform-uk-europe-at-cohere-4413844238",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "we-source-talent-recruiter-end-client-not-named-forward-deployed-engineer-remote-up-to-145k",
+    "title": "Forward Deployed Engineer — Remote — up to £145k",
+    "company": "We Source Talent (recruiter; end client not named)",
+    "url": "https://uk.linkedin.com/jobs/view/%F0%9F%9A%80forward-deployed-engineer-remote-up-to-%C2%A3145k%F0%9F%94%A5-at-we-source-talent-4400825360",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "we-source-talent-recruiter-end-client-not-named-forward-deployed-engineer-up-to-145k",
+    "title": "Forward Deployed Engineer — up to £145k",
+    "company": "We Source Talent (recruiter; end client not named)",
+    "url": "https://uk.linkedin.com/jobs/view/forward-deployed-engineer-up-to-%C2%A3145k%F0%9F%94%A5-at-we-source-talent-4405109744",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "databricks-sr-forward-deployed-engineer",
+    "title": "Sr. Forward Deployed Engineer",
+    "company": "Databricks",
+    "url": "https://uk.linkedin.com/jobs/view/sr-forward-deployed-engineer-at-databricks-4381603728",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "google-forward-deployed-engineer-ii-genai-google-cloud",
+    "title": "Forward Deployed Engineer II, GenAI, Google Cloud",
+    "company": "Google",
+    "url": "https://uk.linkedin.com/jobs/view/forward-deployed-engineer-ii-genai-google-cloud-at-google-4424570215",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "citi-public-cloud-forward-deployed-engineer-vp",
+    "title": "Public Cloud — Forward Deployed Engineer (VP)",
+    "company": "Citi",
+    "url": "https://uk.linkedin.com/jobs/view/public-cloud-forward-deployed-engineer-vp-at-citi-4365919569",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "fin-staff-forward-deployed-engineer",
+    "title": "Staff Forward Deployed Engineer",
+    "company": "Fin",
+    "url": "https://uk.linkedin.com/jobs/view/staff-forward-deployed-engineer-at-fin-4343078751",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "jack-jill-recruiter-end-client-is-an-unnamed-enterprise-ai-startup-founding-forward-deployed-engineer-well-funded-enterprise-ai-startup",
+    "title": "Founding Forward Deployed Engineer (well-funded enterprise AI startup)",
+    "company": "Jack & Jill (recruiter; end client is an unnamed enterprise AI startup)",
+    "url": "https://www.linkedin.com/jobs/view/founding-forward-deployed-engineer-at-well-funded-enterprise-ai-startup-at-jack-jill-4428739812",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "stealth-ai-startup-employer-not-named-in-listing-forward-deployed-engineer",
+    "title": "Forward Deployed Engineer",
+    "company": "Stealth AI Startup (employer not named in listing)",
+    "url": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-stealth-ai-startup-4450921968",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "clera-forward-deployed-engineer",
+    "title": "Forward Deployed Engineer",
+    "company": "Clera",
+    "url": "https://www.linkedin.com/jobs/view/4452167053/",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "thecorporate-recruiter-end-client-is-a-govtech-ai-startup-ai-forward-deployed-engineer-govtech-ai-startup",
+    "title": "AI Forward Deployed Engineer — GovTech AI Startup",
+    "company": "TheCorporate (recruiter; end client is a GovTech AI startup)",
+    "url": "https://www.linkedin.com/jobs/view/ai-forward-deployed-engineer-%E2%80%93-govtech-ai-startup-at-thecorporate-4453242223",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "lumora-solutions-forward-deployed-engineer",
+    "title": "Forward Deployed Engineer",
+    "company": "Lumora Solutions",
+    "url": "https://uk.linkedin.com/jobs/view/forward-deployed-engineer-at-lumora-solutions-4410981991",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "understanding-recruitment-recruiter-end-client-not-named-forward-deployed-engineer-ai",
+    "title": "Forward Deployed Engineer (AI)",
+    "company": "Understanding Recruitment (recruiter; end client not named)",
+    "url": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-ai-at-understanding-recruitment-4359829975",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "ic-resources-recruiter-end-client-not-named-forward-deployed-engineer",
+    "title": "Forward Deployed Engineer",
+    "company": "IC Resources (recruiter; end client not named)",
+    "url": "https://uk.linkedin.com/jobs/view/forward-deployed-engineer-at-ic-resources-4366335856",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "strider-technologies-forward-deployed-engineer",
+    "title": "Forward Deployed Engineer",
+    "company": "Strider Technologies",
+    "url": "https://uk.linkedin.com/jobs/view/forward-deployed-engineer-at-strider-technologies-4313116878",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "experis-uk-recruiter-end-client-not-named-ai-forward-deployed-engineer",
+    "title": "AI Forward Deployed Engineer",
+    "company": "Experis UK (recruiter; end client not named)",
+    "url": "https://uk.linkedin.com/jobs/view/ai-forward-deployed-engineer-at-experis-uk-4413878476",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "alois-uk-recruiter-end-client-not-named-forward-deployed-engineer",
+    "title": "Forward Deployed Engineer",
+    "company": "ALOIS UK (recruiter; end client not named)",
+    "url": "https://uk.linkedin.com/jobs/view/forward-deployed-engineer-at-alois-uk-4399276673",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "hired-job-aggregator-not-the-end-employer-forward-deployed-engineer-remote",
+    "title": "Forward Deployed Engineer (Remote)",
+    "company": "Hired (job aggregator, not the end employer)",
+    "url": "https://uk.linkedin.com/jobs/view/forward-deployed-engineer-remote-at-hired-4447760911",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "hire-feed-job-aggregator-not-the-end-employer-forward-deployed-engineer-remote",
+    "title": "Forward Deployed Engineer (Remote)",
+    "company": "Hire Feed (job aggregator, not the end employer)",
+    "url": "https://www.linkedin.com/jobs/view/forward-deployed-engineer-remote-at-hire-feed-4456462124",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "mastercard-ai-consultant-principal-ai-engineer",
+    "title": "AI Consultant (Principal AI Engineer)",
+    "company": "Mastercard",
+    "url": "https://uk.linkedin.com/jobs/view/ai-consultant-principal-ai-engineer-at-mastercard-4375563979",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "ember-software-recruiter-end-client-not-named-ai-ml-engineer-contract-remote-600-per-day-outside-ir35",
+    "title": "AI/ML Engineer (Contract) — Remote — £600 per day — Outside IR35",
+    "company": "Ember Software (recruiter; end client not named)",
+    "url": "https://uk.linkedin.com/jobs/view/ai-ml-engineer-contract-%E2%80%93-remote-%E2%80%93-%C2%A3600-per-day-%E2%80%93-outside-ir35-at-ember-software-4334288560",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "mcs-group-specialist-recruitment-consultancy-end-client-not-named-ai-solutions-architect",
+    "title": "AI Solutions Architect",
+    "company": "MCS Group (specialist recruitment consultancy; end client not named)",
+    "url": "https://ie.linkedin.com/jobs/view/ai-solutions-architect-at-mcs-group-your-specialist-recruitment-consultancy-4188871748",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "openai-forward-deployed-engineer-dublin",
+    "title": "Forward Deployed Engineer — Dublin",
+    "company": "OpenAI",
+    "url": "https://ie.linkedin.com/jobs/view/forward-deployed-engineer-dublin-at-openai-4134066297",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "smartsheet-senior-forward-deployed-ai-engineer-remote-eligible-in-the-uk",
+    "title": "Senior Forward Deployed AI Engineer (Remote Eligible in the UK)",
+    "company": "Smartsheet",
+    "url": "https://himalayas.app/companies/smartsheet/jobs/senior-forward-deployed-ai-engineer-remote-eligible-in-the-uk",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "cytora-ai-engineer",
+    "title": "AI Engineer",
+    "company": "Cytora",
+    "url": "https://himalayas.app/companies/cytora/jobs/ai-engineer",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "gradient-labs-ai-engineer",
+    "title": "AI Engineer",
+    "company": "Gradient Labs",
+    "url": "https://himalayas.app/companies/gradient-labs/jobs/ai-engineer-1742811202",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "live-nation-entertainment-lead-data-ai-platform-engineer-remote-united-kingdom",
+    "title": "Lead Data & AI Platform Engineer (Remote, United Kingdom)",
+    "company": "Live Nation Entertainment",
+    "url": "https://himalayas.app/companies/live-nation-entertainment/jobs/lead-data-ai-platform-engineer-remote-united-kingdom",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "firy-head-of-ai",
+    "title": "Head of AI",
+    "company": "FIRY",
+    "url": "https://remotive.com/remote/jobs/artificial-intelligence/head-of-ai-5076476",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "collaboration-ai-senior-ai-engineer-agentic-systems-data-pipelines",
+    "title": "Senior AI Engineer — Agentic Systems & Data Pipelines",
+    "company": "Collaboration.Ai",
+    "url": "https://weworkremotely.com/remote-jobs/collaboration-ai-senior-ai-engineer-agentic-systems-data-pipelines",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "databricks-solutions-architect",
+    "title": "Solutions Architect",
+    "company": "Databricks",
+    "url": "https://weworkremotely.com/remote-jobs/databricks-solutions-architect",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-advertised-via-outside-ir35-tech-jobs-ai-engineer-agentic-architectures-multi-agent-workflows",
+    "title": "AI Engineer (agentic architectures / multi-agent workflows)",
+    "company": "Not named in snippet — advertised via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/ai-engineer/tYunWnFPB8",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-advertised-via-outside-ir35-tech-jobs-agentic-rag-engineer",
+    "title": "Agentic RAG Engineer",
+    "company": "Not named in snippet — advertised via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/agentic-rag-engineer/GO1EN5lGSi",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-fintech-firm-via-outside-ir35-tech-jobs-agentic-ai-specialist",
+    "title": "Agentic AI Specialist",
+    "company": "Not named in snippet — fintech firm, via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/agentic-ai-specialist/nmVGsjXFU5",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-large-enterprise-via-outside-ir35-tech-jobs-ai-consultant-microsoft-copilot-adoption-governance",
+    "title": "AI Consultant (Microsoft Copilot adoption & governance)",
+    "company": "Not named in snippet — large enterprise, via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/ai-consultant/MIKxtsjqZB",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-advertised-via-outside-ir35-tech-jobs-ai-engineer-llm-agentic-systems",
+    "title": "AI Engineer (LLM & Agentic Systems)",
+    "company": "Not named in snippet — advertised via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/ai-engineer/jXgUJkctZ6",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-advertised-via-outside-ir35-tech-jobs-ai-engineer-llm-agentic-systems-possible-duplicate-posting",
+    "title": "AI Engineer (LLM & Agentic Systems) — possible duplicate posting",
+    "company": "Not named in snippet — advertised via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/ai-engineer/5ZCETOYb7W",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "smartsourcing-ltd-recruiter-named-in-snippet-ai-solutions-architect",
+    "title": "AI Solutions Architect",
+    "company": "SmartSourcing Ltd (recruiter named in snippet)",
+    "url": "https://www.jobserve.com/gb/en/search-jobs-in-London,-London,-United-Kingdom/AI-SOLUTIONS-ARCHITECT-LONDON-700-PER-DAY-NEG-ACC1E98ECC8C30662D/",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-wealth-management-organisation-via-outside-ir35-tech-jobs-head-of-data-data-platform-underpinning-ai-initiatives",
+    "title": "Head of Data (data platform underpinning AI initiatives)",
+    "company": "Not named in snippet — wealth management organisation, via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/head-of-data/923qQWqcGC",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-advertised-via-outside-ir35-tech-jobs-artificial-intelligence-engineer-10-week-genai-project",
+    "title": "Artificial Intelligence Engineer (10-week GenAI project)",
+    "company": "Not named in snippet — advertised via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/artificial-intelligence-engineer/0aIfbxCTad",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-advertised-via-outside-ir35-tech-jobs-ai-engineer",
+    "title": "AI Engineer",
+    "company": "Not named in snippet — advertised via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/ai-engineer/95UQ0Wo7HG",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-advertised-via-outside-ir35-tech-jobs-artificial-intelligence-engineer",
+    "title": "Artificial Intelligence Engineer",
+    "company": "Not named in snippet — advertised via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/artificial-intelligence-engineer/Bzb1kxhfyO",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-advertised-via-outside-ir35-tech-jobs-ai-engineer-6-month-llm-engagement",
+    "title": "AI Engineer (6-month LLM engagement)",
+    "company": "Not named in snippet — advertised via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/al-engineer/CZ7fHmoT51",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-advertised-via-outside-ir35-tech-jobs-ai-specialist-enterprise-azure-ai-technical-leader",
+    "title": "AI Specialist (enterprise Azure AI, technical leader)",
+    "company": "Not named in snippet — advertised via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/ai-specialist/FAnL5dBJZS",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-advertised-via-outside-ir35-tech-jobs-agentic-systems-engineer",
+    "title": "Agentic Systems Engineer",
+    "company": "Not named in snippet — advertised via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/agentic-systems-engineer/wGSeKrLKhX",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-advertised-via-outside-ir35-tech-jobs-ai-founding-architect",
+    "title": "AI Founding Architect",
+    "company": "Not named in snippet — advertised via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/ai-founding-architect/9F73nRen6u",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-advertised-via-outside-ir35-tech-jobs-principal-solutions-architect-aws-llm-architecture",
+    "title": "Principal Solutions Architect (AWS + LLM architecture)",
+    "company": "Not named in snippet — advertised via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/principal-solutions-architect/wGERQvgIWz",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-advertised-via-outside-ir35-tech-jobs-ai-product-developer",
+    "title": "AI Product Developer",
+    "company": "Not named in snippet — advertised via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/ai-product-developer/YiUtyhEZlu",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-global-organisation-via-outside-ir35-tech-jobs-ai-engineer-platform-engineering-scaling-ai-solutions",
+    "title": "AI Engineer (platform engineering, scaling AI solutions)",
+    "company": "Not named in snippet — global organisation, via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/ai-engineer/oDPBi1mHFY",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-advertised-via-outside-ir35-tech-jobs-artificial-intelligence-engineer-production-grade-ai-applications",
+    "title": "Artificial Intelligence Engineer (production-grade AI applications)",
+    "company": "Not named in snippet — advertised via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/artificial-intelligence-engineer/cdyo3n5Sdz",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-advertised-via-outside-ir35-tech-jobs-mlops-engineer-azure-ai-solutions",
+    "title": "MLOps Engineer (Azure AI solutions)",
+    "company": "Not named in snippet — advertised via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/mlops-engineer/A6ZE0InFOU",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-advertised-via-outside-ir35-tech-jobs-enterprise-data-ai-architect",
+    "title": "Enterprise Data / AI Architect",
+    "company": "Not named in snippet — advertised via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/enterprise-data-architect/L7koXHNd5P",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-snippet-advertised-via-outside-ir35-tech-jobs-technical-solutions-architect",
+    "title": "Technical Solutions Architect",
+    "company": "Not named in snippet — advertised via Outside IR35 Tech Jobs",
+    "url": "https://outsideir35.org.uk/jobs/technical-solutions-architect/b8zKFro2Q4",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "cresta-senior-forward-deployed-engineer-ai-agent-uk",
+    "title": "Senior Forward Deployed Engineer (AI Agent) - UK",
+    "company": "Cresta",
+    "url": "https://job-boards.greenhouse.io/cresta/jobs/5097513008",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "grafana-labs-staff-ai-engineer-2nd-horizon-uk-remote",
+    "title": "Staff AI Engineer - 2nd Horizon | UK | Remote",
+    "company": "Grafana Labs",
+    "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6117339004",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "undisclosed-client-via-outside-ir35-tech-jobs-board-artificial-intelligence-engineer",
+    "title": "Artificial Intelligence Engineer",
+    "company": "Undisclosed client via Outside IR35 Tech Jobs board",
+    "url": "https://outsideir35.org.uk/jobs/artificial-intelligence-engineer/43DGxJog55",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "opus-recruitment-solutions-agency-end-client-not-named-ai-engineer-agentic-workflows-llm-langgraph",
+    "title": "AI Engineer (Agentic Workflows, LLM, LangGraph)",
+    "company": "Opus Recruitment Solutions (agency; end client not named)",
+    "url": "https://jaabz.com/jobs/216074-artificial-intelligence-engineer",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "ey-ernst-young-ireland-ai-data-agentic-ai-engineer-senior-consultant",
+    "title": "AI & Data - Agentic AI Engineer - Senior Consultant",
+    "company": "EY (Ernst & Young) Ireland",
+    "url": "https://careers.ey.com/ey/job/Dublin-2-AI-&-Data-Agentic-AI-Engineer-Senior-Consultant/1253993401/",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "nearform-vp-revenue-perm-uk-remote",
+    "title": "VP Revenue (Perm, UK, Remote)",
+    "company": "Nearform",
+    "url": "https://job-boards.greenhouse.io/nearform/jobs/6678346003",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "cohere-vp-sales-emea",
+    "title": "VP Sales, EMEA",
+    "company": "Cohere",
+    "url": "https://jobs.ashbyhq.com/cohere/277827a9-02b7-49ca-8590-458e93cab0e6",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "greyparrot-ai-vp-sales",
+    "title": "VP Sales",
+    "company": "Greyparrot AI",
+    "url": "https://www.welcometothejungle.com/en/companies/greyparrot-ai/jobs/vp-sales_london_kby6ko7j",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "axelera-ai-director-of-sales-united-kingdom",
+    "title": "Director of Sales — United Kingdom",
+    "company": "Axelera AI",
+    "url": "https://jobs.ashbyhq.com/axelera/b84704bd-51e9-4127-915a-051d80533f46",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "mistral-ai-account-executive-enterprise-uk",
+    "title": "Account Executive, Enterprise, UK",
+    "company": "Mistral AI",
+    "url": "https://jobs.lever.co/mistral/52808932-3aaa-419f-a08d-1fb2a0aed781",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "telli-founding-gtm-lead-uk-market",
+    "title": "Founding GTM Lead — UK Market",
+    "company": "telli",
+    "url": "https://jobs.ashbyhq.com/telli/4c91a83c-a156-4bb7-b1a8-04b6e931c2b0",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "stilta-founding-gtm-lead",
+    "title": "Founding GTM Lead",
+    "company": "Stilta",
+    "url": "https://jobs.ashbyhq.com/stilta/ae660590-972a-4de4-86e2-f86942104780",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "anthropic-global-head-of-start-ups",
+    "title": "Global Head of Start Ups",
+    "company": "Anthropic",
+    "url": "https://app.welcometothejungle.com/jobs/QRbMNxNv",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "phoenix-ecommerce-technologies-chief-revenue-officer",
+    "title": "Chief Revenue Officer",
+    "company": "Phoenix Ecommerce Technologies",
+    "url": "https://jobs.lever.co/phoenixtechnologies/4c8ffe46-2375-4e26-b6ae-463363fecae9",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "parloa-partner-sales-manager-technology",
+    "title": "Partner Sales Manager — Technology",
+    "company": "Parloa",
+    "url": "https://job-boards.greenhouse.io/parloa/jobs/4958366101",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "global-corporation-private-employer-name-not-disclosed-in-listing-vice-president-sales-ai-digital-transformation-and-it-services",
+    "title": "Vice President Sales — AI, Digital Transformation and IT Services",
+    "company": "Global Corporation (private employer, name not disclosed in listing)",
+    "url": "https://www.gulftalent.com/uae/jobs/vice-president-sales-ai-digital-transformation-and-it-service-575098",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "not-named-in-listing-recruiter-posted-on-cv-library-interim-head-of-ai-outside-ir35-6-month-contract",
+    "title": "Interim Head of AI (Outside IR35, 6-month contract)",
+    "company": "Not named in listing — recruiter-posted on CV-Library",
+    "url": "https://www.cv-library.co.uk/job/221108467/Interim-Head-of-AI-Outside-IR35-Contract-6-Month-Contract",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "global-investment-bank-recruiting-via-ciphertek-recruitment-artificial-intelligence-consultant-director-architect-tech-lead-level-llm-rag",
+    "title": "Artificial Intelligence Consultant (Director / Architect / Tech Lead level, LLM & RAG)",
+    "company": "Global investment bank, recruiting via CipherTek Recruitment",
+    "url": "https://contracts.outsidespy.co.uk/job/341484/artificial-intelligence-consultant-at-ciphertek-recruitment-london-800-1-300-per-day/",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "pharmaceutical-organisation-recruiting-via-la-fosse-ai-adoption-consultant-pharma",
+    "title": "AI Adoption Consultant (Pharma)",
+    "company": "Pharmaceutical organisation, recruiting via La Fosse",
+    "url": "https://contracts.outsidespy.co.uk/job/347563/ai-adoption-consultant-at-la-fosse-england-800-per-day/",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "ai-powered-decision-intelligence-platform-startup-recruiting-via-spectrum-it-recruitment-contract-ai-systems-architect",
+    "title": "Contract AI Systems Architect",
+    "company": "AI-powered decision intelligence platform startup, recruiting via Spectrum IT Recruitment",
+    "url": "https://contracts.outsidespy.co.uk/job/339467/contract-ai-systems-architect-at-spectrum-it-recruitment-reading-contract-rate/",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "lumora-solutions-ai-solution-architect",
+    "title": "AI Solution Architect",
+    "company": "Lumora Solutions",
+    "url": "https://contracts.outsidespy.co.uk/job/352102/ai-solution-architect-at-lumora-solutions-london-area-600-700-per-day/",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "prolific-head-of-data-science-applied-ai",
+    "title": "Head of Data Science & Applied AI",
+    "company": "Prolific",
+    "url": "https://job-boards.eu.greenhouse.io/prolific/jobs/4577339101",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "client-of-investigo-client-not-named-in-listing-ai-agent-engineer-machine-learning-engineer",
+    "title": "AI Agent Engineer / Machine Learning Engineer",
+    "company": "Client of Investigo (client not named in listing)",
+    "url": "https://www.weareinvestigo.com/jobs/ai-agent-engineer-machine-learning-engineer-685/",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
+  },
+  {
+    "id": "limelight-health-lead-ai-engineer",
+    "title": "Lead AI Engineer",
+    "company": "Limelight Health",
+    "url": "https://www.jobleads.com/gb/job/lead-ai-engineer--belfast--e31ff04b83c81ba4cde3ed51ddfeba06c",
+    "firstSeen": "2026-08-24",
+    "lastSeen": "2026-08-24",
+    "status": "open"
   }
 ]
