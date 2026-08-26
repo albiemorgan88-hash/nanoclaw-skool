@@ -35,7 +35,8 @@ turns them back on (a `note:` line in jobs/feedback.md re-enables them).
 
 - **No public sector, anywhere, ever.** Doubt about an employer's ownership = do not
   submit; hand back with what was found.
-- **Pay floor:** £80k+ permanent (local equivalents: ~AED 30k+/month, ~$110k+);
+- **Pay floor (raised by Phil in session, 2026-08-26: "id want the right money, 100k plus"):**
+  £100k+ base permanent (local equivalents: ~AED 37k+/month, ~$135k+);
   £500+/day contract; ~€12,000+/month gross on FTC salary-expectation fields.
 - **Screening answers:** factual yes/no within the CV; salary expectations at or above
   the floor; start date 2–6 weeks out; visa sponsorship: No (UK right to work);

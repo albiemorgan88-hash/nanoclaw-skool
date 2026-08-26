@@ -3010,5 +3010,41 @@
     "firstSeen": "2026-08-24",
     "lastSeen": "2026-08-24",
     "status": "open"
+  },
+  {
+    "id": "vanrath-machine-learning-architect",
+    "title": "Machine Learning Architect (AI/ML)",
+    "company": "VANRATH (global software company client)",
+    "url": "https://www.vanrath.com/job/machine-learning-architect-3",
+    "firstSeen": "2026-08-26",
+    "lastSeen": "2026-08-26",
+    "status": "applied"
+  },
+  {
+    "id": "vanrath-machine-learning-manager",
+    "title": "Machine Learning Manager (AI/ML)",
+    "company": "VANRATH (global software company client)",
+    "url": "https://www.vanrath.com/job/machine-learning-manager-3",
+    "firstSeen": "2026-08-26",
+    "lastSeen": "2026-08-26",
+    "status": "applied"
+  },
+  {
+    "id": "mcs-group-ai-consultant",
+    "title": "AI Consultant",
+    "company": "MCS Group (Belfast client)",
+    "url": "https://www.mcsgroup.jobs/job/ai-consultant-6556/",
+    "firstSeen": "2026-08-26",
+    "lastSeen": "2026-08-26",
+    "status": "applied"
+  },
+  {
+    "id": "nigel-frank-contract-ai-engineer-gcp",
+    "title": "Contract AI Engineer - GCP",
+    "company": "Nigel Frank International",
+    "url": "https://www.nigelfrank.com/job/a0MaA0000011UZl.1_1752758598/contract-ai-engineer-gcp-gbp485-day-outside-ir35",
+    "firstSeen": "2026-08-26",
+    "lastSeen": "2026-08-26",
+    "status": "skipped: below floor"
   }
 ]
