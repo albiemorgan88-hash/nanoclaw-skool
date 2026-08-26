@@ -1,8 +1,11 @@
 # Auto-apply brief — standing orders for the local apply leg
 
 This file is the handoff contract between the **cloud scout** (twice-weekly cron, branch
-`job-scout-reports`) and the **local apply leg** (Phil's local Albie instance, which holds
-his Chrome sessions and CV v2 PDF).
+`job-scout-reports`) and the **local apply leg** — whichever local agent instance holds
+Phil's Chrome sessions and logins. Today that is **Albie (OpenClaw, being retired)**; as
+the NanoClaw instance takes over his sessions, it inherits this brief unchanged — the
+contract is with the role, not the instance. The canonical CV is now in the repo at
+`jobs/cv/phil-patterson-cv.pdf` (2-page, May 2026) — both legs use that file.
 
 The cloud scout refreshes the CURRENT QUEUE section every run (Mon/Thu ~07:00 UTC) and
 reads back the DONE section and `jobs/applications/<id>/submitted.md`. The local leg works

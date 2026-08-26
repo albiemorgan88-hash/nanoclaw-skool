@@ -1,6 +1,7 @@
 # CV drop point
 
-Put the current CV PDF here (e.g. `phil-patterson-cv-v2.pdf`). 
+Current CV: `phil-patterson-cv.pdf` (2-page, May 2026, uploaded by Phil 2026-08-26).
+Replace the file to update it — same name, one file only.
 
 - The **cloud scout** attaches whatever PDF it finds in this folder to email applications
   (step 8 of the routine). Until a PDF is here, email applications say "CV available on
