@@ -89,6 +89,16 @@ points on the live page before submitting.**
 - Data Intellect — AI Engineer (Agentic Systems), Belfast (SmartRecruiters; the "what I'd change" free-text is Phil's to write — handed-back unless he supplies it)
 - Harnham — AI Transformation Lead, Dublin (LinkedIn Easy Apply; 3-month-old ad — verify liveness first)
 
+## STANDING TASK — LinkedIn recruiter campaign (added on Phil's instruction, 2026-08-26: "are you able to do linkedin as well? contact a bunch of recruiters, based anywhere, share my cv")
+
+For the LOCAL leg only (holds Phil's LinkedIn session; the cloud cannot log in):
+
+- Target: recruiters and talent partners placing senior AI / data / tech leadership roles — UK, Ireland, Dubai/UAE, remote-first firms. Anywhere.
+- Motion: connection request with a short note, then on accept a message with the pitch (agentic-AI founder, Wall Group +17% net profit, 18 yrs commercial leadership; targets Head of AI / AI consultant / FDE / fractional CAIO; £100k+ base perm or £500+/day contract; NI-based, remote preferred, open to Dubai) and the CV PDF attached (jobs/cv/phil-patterson-cv.pdf).
+- PACE IT: max ~15 connection requests/day, spread through the day — a restricted LinkedIn account kills the whole pipeline. Never use automation patterns that look like scraping.
+- Log every contact to jobs/applications/linkedin-outreach.md (name, firm, date, stage: requested/connected/messaged/replied). Never message the same recruiter twice without a reply.
+- Recruiter replies are the highest-value event: surface them to Phil immediately.
+
 ## DONE (written by the local leg; cloud scout reads and clears)
 
 _(empty — local leg has not yet run under this brief)_
