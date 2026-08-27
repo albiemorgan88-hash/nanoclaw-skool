@@ -56,38 +56,61 @@ turns them back on (a `note:` line in jobs/feedback.md re-enables them).
 
 ---
 
-## CURRENT QUEUE (refreshed by the cloud scout — last update 2026-08-25, from the 2026-08-24 run)
+## CURRENT QUEUE (refreshed by the cloud scout — last update 2026-08-27, from the 2026-08-27 run)
 
-Cover notes for all five are in `jobs/reports/2026-08-24.md` (also on the dashboard).
-Every detail below came from search snippets, not the live page — **verify the listed
-points on the live page before submitting.**
+Cover notes for all five are in `jobs/reports/2026-08-27.md` (also on the dashboard).
+Every detail below came from **search snippets, not the live page** — verify the listed points
+before submitting. The cloud session sent **zero emails** this run (no listing printed a
+qualifying address), so this queue is the whole of this run's submission activity.
 
-1. **AI Engineer (agentic architectures / multi-agent workflows)** — via Outside IR35 Tech Jobs
-   - https://outsideir35.org.uk/jobs/ai-engineer/tYunWnFPB8
-   - £112/hour (~£840/day), England remote, contract. Confidence: Medium.
-   - Verify before submitting: employer name; that the rate is day-rate-equivalent as read; posting still live.
-2. **Interim Head of AI (Outside IR35, 6-month contract)** — recruiter-posted, CV-Library
-   - https://www.cv-library.co.uk/job/221108467/Interim-Head-of-AI-Outside-IR35-Contract-6-Month-Contract
-   - £800/day, remote UK. Confidence: Medium.
-   - Verify: employer name (unnamed); stack is Azure/Databricks-flavoured — cover note already positions agent-native experience as the complement, keep that framing.
-3. **Fractional Head of AI — marketing agency engagement** — Head of AI (headofai.ai)
-   - https://talents.studysmarter.co.uk/companies/head-of-ai/belfast/fractional-head-of-ai-full-service-marketing-agency-29028017/
-   - Belfast, remote-first, £250k+ OTE pro-rated. Confidence: Medium.
-   - Verify: aggregator URL — find the engagement on headofai.ai's own site first; note the partner-model overlap with Blue Canvas (bounds: no exclusivity undertakings).
-4. **Senior Forward Deployed Engineer (AI Agent) — UK** — Cresta
-   - https://job-boards.greenhouse.io/cresta/jobs/5097513008
-   - UK remote, permanent, salary unstated (US band $185–235k). Confidence: High.
-   - Verify: req still open; UK band unstated — if the form asks expectations, floor applies (£80k+; sensible ask given the US anchor is well above it).
-5. **Artificial Intelligence Consultant (Director/Architect, LLM & RAG)** — global investment bank via CipherTek
+1. **Forward Deployed Engineer — AWS Bedrock (agentic builds in production)** — Blackstone&
+   - https://contracts.contractspy.co.uk/job/140356/forward-deployed-engineer-aws-bedrock-at-blackstone-london-remote-12-months-700-800-per-day-outside-ir35/
+   - £700–800/day Outside IR35, 12 months, London/Remote hybrid, contract. Confidence: High.
+   - Verify before submitting: the hybrid split (how many days on site, and whether Derry-based remote is workable); that the 12-month term and Outside IR35 determination are as advertised; posting still live.
+   - Note: the stack is AWS Bedrock specifically and the ad wants a strong data background. The cover note is honest about Claude Agent SDK being the demonstrated depth — keep that framing, do not overclaim Bedrock.
+
+2. **Artificial Intelligence Consultant (Director / Architect / Tech Lead, LLM / RAG / Agentic)** — global investment bank via CipherTek
    - https://contracts.outsidespy.co.uk/job/341484/artificial-intelligence-consultant-at-ciphertek-recruitment-london-800-1-300-per-day/
-   - £800–1,300/day Outside IR35, London hybrid 1–2 days/week. Confidence: Medium.
-   - Verify: end client sector (bank — fine), IR35 determination in writing; hybrid pattern is workable from Derry and the cover note says so.
+   - £800–1,300/day Outside IR35, London hybrid 1–2 days/week, contract. Confidence: High.
+   - Verify: IR35 determination in writing; the hybrid pattern (1–2 days/week is workable from Derry and the cover note says so); end client sector is a bank, which is fine.
+   - Carried over from the 2026-08-24 queue and still open — this one has now been queued twice without being actioned.
+
+3. **Head of AI** — BCD Travel (BCD Group)
+   - https://jobs.bcdtravel.com/job/Head-of-AI/1369556557/
+   - €160,000–200,000, **fully remote United Kingdom**, permanent. Confidence: Medium.
+   - Verify: posting dated 14 Aug — confirm the req is still open; confirm the salary band applies to the UK-remote posting and not just a mainland-Europe entity; confirm reporting line and team size.
+   - Best remote-permanent Head of AI found in several runs: stated pay well clear of the £100k floor, no relocation.
+
+4. **Head of EMEA Partnerships** — OpenAI
+   - https://openai.com/careers/head-of-emea-partnerships-london-uk/
+   - London, UK (EMEA remit), permanent, salary unstated. Confidence: High.
+   - Verify: whether the role requires London presence or tolerates UK-remote with travel; if a salary-expectation field appears, the £100k+ floor applies (OpenAI London partnership leadership will clear it comfortably).
+   - Commercial-AI hybrid: Phil's 18 years of BD leadership plus the fact that he personally ships agent systems is the differentiator here.
+
+5. **Applied AI, Startups (UK or Ireland)** — Anthropic
+   - https://job-boards.greenhouse.io/anthropic/jobs/4596796008
+   - UK or Ireland, permanent, salary unstated. Confidence: Medium.
+   - Verify: this is a distinct req from Anthropic's *Solutions Architect, Applied AI (Startups)* (greenhouse job 4968059008) — check both and apply to whichever matches seniority; do not submit twice for what is really one mandate.
+   - Strongest genuine fit in the whole sweep: Phil runs production infrastructure on the Claude Agent SDK daily.
 
 **Also standing from 2026-08-21 (packs complete in `jobs/applications/<id>/pack.md`):**
 - Distyl AI — AI Strategist, London (3 days/week onsite: only submit the "Yes" if Phil has confirmed it — otherwise handed-back)
 - Maze — Head of AI (£180–250k remote Europe; pack ready; note the transformer-from-first-principles bar)
 - Data Intellect — AI Engineer (Agentic Systems), Belfast (SmartRecruiters; the "what I'd change" free-text is Phil's to write — handed-back unless he supplies it)
-- Harnham — AI Transformation Lead, Dublin (LinkedIn Easy Apply; 3-month-old ad — verify liveness first)
+- Harnham — AI Transformation Lead, Dublin (LinkedIn Easy Apply; re-found live on 2026-08-27, so liveness is better than it looked — but the end client is unnamed and Harnham place into Irish semi-state bodies and universities, so **identify and clear the client before applying**)
+
+**Worth a look but deliberately NOT auto-queued — Phil's call:**
+- **Capitol AI (YC S24) — Forward Deployed Engineer, UK**, £100,000–150,000, London hybrid. High confidence, pay stated, strong fit — but Capitol AI's stated client base spans **central government departments** alongside City financial institutions. The employer is private, so it does not breach the letter of the exclusion, but the delivery work may be public-sector-facing. Not queued under a standing auto-submit authorisation. https://www.workatastartup.com/jobs/82521
+- **Director of Agentic AI — undisclosed consulting firm via Omnis Partners**, £160,000–220,000 + bonus, UK-wide flexible. Top-of-market pay and an agentic-specific title, but the employer is hidden behind a recruiter and UK consulting firms with agentic-AI practices frequently run government programmes. Confirm the firm and its client mix first. https://www.itjobswatch.co.uk/jv/Omnis-Partners/Director-of-Artificial-Intelligence-Job-London-UK-4xbttw
+- **Head of AI & Automation — global private capital investor via Charterhouse ME**, Dubai. Highest-confidence Dubai find, private sector, first dedicated AI hire and explicitly an individual-contributor seat. Salary unstated and it implies UAE presence. https://www.linkedin.com/jobs/view/4392507367/
+
+**Chase, do not re-apply — MCS Group.** Stuart Kennedy replied on 26 Aug and handed Phil's AI Consultant
+application to **Rachael Walker** (r.walker@mcsgroup.jobs, CC'd on the existing thread); Phil replied
+personally and stated the £100k+ expectation. She has not come back. MCS also has a separate live
+*Technology Consultant — Data/AI* mandate in Belfast with Walker as the named contact — but that one
+carries a **high public-sector risk** (NI consultancy Data/AI practices lean heavily on government,
+HSC and arms-length body programmes), so it is not queued. Any move here is a reply into the existing
+thread, and it is Phil's to make.
 
 ## STANDING TASK — LinkedIn recruiter campaign (added on Phil's instruction, 2026-08-26: "are you able to do linkedin as well? contact a bunch of recruiters, based anywhere, share my cv")
 
