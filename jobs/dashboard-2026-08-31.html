@@ -1,0 +1,609 @@
+<title>Job Scout</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+--ground:#EDF0F3; --surface:#FFFFFF; --sunk:#E3E8ED;
+--ink:#131C26; --body:#33414F; --muted:#5D6C7B; --line:#D5DDE4;
+--accent:#8A631F; --accent-soft:#F0E5CE;
+--sent:#1B6A4E; --queued:#24528F; --phil:#9E3627; --block:#5D4E93;
+--shadow:0 1px 2px rgba(19,28,38,.06),0 6px 18px rgba(19,28,38,.05);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+--ground:#11171E; --surface:#18212B; --sunk:#131B23;
+--ink:#EDF2F6; --body:#C3CFD9; --muted:#8798A6; --line:#28343F;
+--accent:#D9A441; --accent-soft:#33291596;
+--sent:#4FBE92; --queued:#7BA9E8; --phil:#E8836F; --block:#A292E0;
+--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 22px rgba(0,0,0,.28);
+}}
+:root[data-theme="dark"]{
+--ground:#11171E; --surface:#18212B; --sunk:#131B23;
+--ink:#EDF2F6; --body:#C3CFD9; --muted:#8798A6; --line:#28343F;
+--accent:#D9A441; --accent-soft:#33291596;
+--sent:#4FBE92; --queued:#7BA9E8; --phil:#E8836F; --block:#A292E0;
+--shadow:0 1px 2px rgba(0,0,0,.3),0 8px 22px rgba(0,0,0,.28);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--body);
+font:400 16px/1.6 "Source Sans 3",ui-sans-serif,system-ui,sans-serif;
+-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:28px 18px 72px}
+h1,h2,h3{font-family:Archivo,ui-sans-serif,system-ui,sans-serif;color:var(--ink);
+letter-spacing:-.02em;text-wrap:balance;margin:0}
+header.top{display:flex;flex-wrap:wrap;gap:14px;align-items:baseline;justify-content:space-between;
+padding-bottom:18px;border-bottom:2px solid var(--ink)}
+h1{font-size:clamp(1.9rem,5vw,2.6rem);font-weight:700}
+.date{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.8rem;color:var(--muted);
+text-transform:uppercase;letter-spacing:.1em}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(128px,1fr));gap:1px;
+background:var(--line);border:1px solid var(--line);margin:22px 0 0;border-radius:10px;overflow:hidden}
+.stat{background:var(--surface);padding:14px 16px;display:flex;flex-direction:column;gap:2px}
+.stat b{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:1.75rem;font-weight:500;
+color:var(--ink);font-variant-numeric:tabular-nums;line-height:1.1}
+.stat span{font-family:Archivo,sans-serif;font-weight:600;font-size:.9rem;color:var(--ink)}
+.stat i{font-style:normal;font-size:.78rem;color:var(--muted)}
+.caveat{margin:20px 0 0;padding:14px 16px;background:var(--accent-soft);
+border-left:3px solid var(--accent);border-radius:0 8px 8px 0;font-size:.92rem;color:var(--body)}
+.caveat b{color:var(--ink)}
+section{margin-top:44px}
+.shead{margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.shead h2{font-size:1.35rem;font-weight:600}
+.shead p{margin:4px 0 0;font-size:.9rem;color:var(--muted)}
+.grid{display:grid;gap:14px}
+@media(min-width:860px){.grid{grid-template-columns:repeat(2,1fr)}
+.grid:has(.q){grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;
+padding:18px;box-shadow:var(--shadow);display:flex;gap:16px;align-items:flex-start}
+.card.q{border-left:3px solid var(--accent)}
+.rank{flex:0 0 auto;width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--ground);
+font-family:"IBM Plex Mono",monospace;font-size:1rem;display:grid;place-items:center;font-variant-numeric:tabular-nums}
+.cmain{min-width:0;flex:1}
+.card h3{font-size:1.06rem;font-weight:600;line-height:1.3}
+.co{margin:3px 0 0;font-size:.9rem;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:11px 0}
+.chip{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.71rem;letter-spacing:.02em;
+padding:3px 8px;border-radius:5px;background:var(--sunk);color:var(--muted);border:1px solid transparent}
+.chip.pay{color:var(--ink);font-weight:500}
+.chip.pay.unset{color:var(--muted);font-style:italic}
+.chip.c-high{color:var(--sent)} .chip.c-medium{color:var(--queued)} .chip.c-low{color:var(--muted)}
+.chip.ret{color:var(--block);border-color:var(--block)}
+.chip.risk{color:var(--phil);border-color:var(--phil)}
+.chip.st.queued{background:var(--queued);color:var(--surface);border-color:var(--queued)}
+.fit{margin:0 0 8px;font-size:.93rem}
+.flag{margin:0 0 12px;font-size:.87rem;color:var(--muted);padding-left:11px;border-left:2px solid var(--line)}
+.flag span{display:block;font-family:"IBM Plex Mono",monospace;font-size:.68rem;text-transform:uppercase;
+letter-spacing:.09em;color:var(--phil);margin-bottom:2px}
+.open{font-family:Archivo,sans-serif;font-weight:600;font-size:.88rem;color:var(--accent);
+text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:1px}
+.open:hover{color:var(--ink)}
+.cover{margin-top:13px;border-top:1px solid var(--line);padding-top:11px}
+.cover summary{cursor:pointer;font-family:Archivo,sans-serif;font-weight:600;font-size:.85rem;color:var(--ink)}
+.cbody{margin-top:9px}
+.cbody p{margin:0 0 10px;font-size:.9rem;background:var(--sunk);padding:12px;border-radius:8px;white-space:pre-wrap}
+.copy{font-family:Archivo,sans-serif;font-weight:600;font-size:.82rem;cursor:pointer;
+background:var(--ink);color:var(--ground);border:0;border-radius:7px;padding:7px 13px}
+.copy:hover{background:var(--accent);color:#fff}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);font-size:.88rem;color:var(--muted)}
+footer h2{font-size:1rem;margin-bottom:8px}
+footer code{font-family:"IBM Plex Mono",monospace;font-size:.85em;background:var(--sunk);padding:1px 5px;border-radius:4px}
+footer p{margin:0 0 9px}
+
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.82rem;min-width:720px}
+th,td{text-align:left;padding:9px 12px;border-top:1px solid var(--line);vertical-align:top;color:var(--body)}
+th{font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.09em;text-transform:uppercase;
+color:var(--muted);border-top:0;background:var(--sunk)}
+td.num{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;font-size:.76rem;color:var(--muted)}
+td a{color:var(--accent)}
+.chip.st.sent{background:var(--sent);color:var(--surface);border-color:var(--sent)}
+.chip.st.phil{background:var(--phil);color:var(--surface);border-color:var(--phil)}
+.chip.st.mute{background:var(--sunk);color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+<header class="top"><h1>Job Scout</h1><span class="date">Run 2026-08-31 &middot; 11 lanes &middot; 171 searches</span></header>
+<div class="strip">
+<div class="stat"><b>83</b><span>New roles</span><i>first seen this run</i></div>
+<div class="stat"><b>52</b><span>Returning</span><i>still open</i></div>
+<div class="stat"><b>7</b><span>Submitted</span><i>local leg, 28 Aug</i></div>
+<div class="stat"><b>0</b><span>Emails sent</span><i>no printed addresses</i></div>
+<div class="stat"><b>5</b><span>Queued for local</span><i>apply-first queue</i></div>
+<div class="stat"><b>399</b><span>Tracker</span><i>14 applied &middot; 191 open</i></div>
+</div>
+<p class="caveat"><b>Verify before submitting.</b> Every figure here comes from a search-result snippet. Direct page fetches are egress-blocked for job boards in this environment, so no listing page was opened. Salaries, dates, remote policies and end-client identities must be confirmed on the live page. Each card says what to check.</p>
+<section><div class="shead"><h2>Needs Phil, not the pipeline</h2><p>Two open items that no leg of the automation can close on its own.</p></div>
+<div class="grid"><div class="card q"><div class="cmain"><h3>Aruba Exec asked for the CV &mdash; four days ago</h3><p class="co">Richard, Aruba Exec (Dubai &amp; UK tech C-suite) &middot; replied 28 Aug</p><div class="chips"><span class="chip st phil">action required</span><span class="chip">recruiter reply</span></div><p class="fit">&ldquo;We don&rsquo;t currently have a live search in those target areas of interest, but I would welcome a copy of your CV for when the situation changes.&rdquo; This session cannot attach it &mdash; the 1.9&nbsp;MB PDF is all embedded fonts and does not compress (recompression saved 1&nbsp;KB). It is now the top item on the local leg&rsquo;s queue.</p><p class="flag"><span>next step</span>Reply on the existing thread with <code>jobs/cv/phil-patterson-cv.pdf</code> attached.</p></div></div>
+<div class="card q"><div class="cmain"><h3>MCS Group &mdash; still silent, six days on</h3><p class="co">Rachael Walker, MCS Group &middot; handed over 26 Aug</p><div class="chips"><span class="chip st phil">chase, do not re-apply</span><span class="chip">live thread</span></div><p class="fit">Stuart Kennedy passed Phil&rsquo;s AI Consultant application to Rachael Walker within two minutes on 26 Aug and CC&rsquo;d her. Phil replied personally and set out the &pound;100k+ expectation. Walker has not come back.</p><p class="flag"><span>next step</span>A chase into the existing thread. Phil&rsquo;s to send &mdash; a second application would read as scattergun.</p></div></div></div></section>
+<section><div class="shead"><h2>Submitted since last run</h2><p>Seven LinkedIn Easy Apply submissions on 28 August, found in Gmail confirmations. None were logged by the local leg; all seven are now marked <code>applied</code> in the tracker. None of the five queued roles were touched.</p></div>
+<div class="tw"><table><thead><tr><th>Role</th><th>Company</th><th>Location</th><th>On brief</th><th></th></tr></thead><tbody>
+<tr><td>Senior Director, AI Solutions</td><td>Intellias</td><td>United Kingdom</td><td><span class="chip st sent">yes</span></td><td class="num"><a href="https://www.linkedin.com/jobs/view/4437811924/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Director of Artificial Intelligence (AI)</td><td>The Portfolio Group</td><td>Manchester</td><td><span class="chip st sent">yes</span></td><td class="num"><a href="https://www.linkedin.com/jobs/view/4454186856/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Head of Artificial Intelligence</td><td>Hays</td><td>Dubai, UAE</td><td><span class="chip st sent">yes</span></td><td class="num"><a href="https://www.linkedin.com/jobs/view/4428252282/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>VP of AI</td><td>Salt</td><td>Dubai, UAE</td><td><span class="chip st sent">yes</span></td><td class="num"><a href="https://www.linkedin.com/jobs/view/4453845448/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Director of Technology Delivery &amp; Transformation</td><td>TechHeads</td><td>not stated</td><td><span class="chip st mute">marginal</span></td><td class="num">&mdash;</td></tr>
+<tr><td>Chief Commercial Officer (Dublin12)</td><td>VANRATH</td><td>Dublin</td><td><span class="chip st mute">marginal</span></td><td class="num">&mdash;</td></tr>
+<tr><td>Head of Organic Growth (SEO &amp; AI Search)</td><td>British Supplements</td><td>Gilford, NI</td><td><span class="chip st phil">no</span></td><td class="num"><a href="https://www.linkedin.com/jobs/view/4456202762/" target="_blank" rel="noopener">open</a></td></tr>
+</tbody></table></div>
+<p class="caveat"><b>British Supplements &mdash; Head of Organic Growth (SEO &amp; AI Search), Gilford</b> is off-brief: SEO and growth marketing at a supplements retailer, not one of the four target role types, with no evidence of clearing the &pound;100k floor. Recorded in the brief so the shape is not repeated.</p>
+</section>
+<section><div class="shead"><h2>Apply-first queue</h2><p>Ranked on fit &times; pay &times; remote/fractional preference &times; confidence. All five are in <code>jobs/auto-apply-brief.md</code> for the local leg. None printed an email address, so none could be sent from the cloud session.</p></div>
+<div class="grid">
+<div class="card q">
+<div class="rank">1</div>
+<div class="cmain">
+<h3>Senior Software Engineer, Applied AI (United Kingdom)</h3><p class="co">Justworks</p>
+<div class="chips"><span class="chip">United Kingdom (remote UK role; company is U</span><span class="chip pay">GBP 132,000 - 170,000 base per year (stated in</span><span class="chip">permanent</span><span class="chip c-high">High confidence</span><span class="chip st queued">queued &middot; local leg</span></div>
+<p class="fit">The role is explicitly about building an agent platform that reads operational knowledge, reasons in context and executes tasks end-to-end, which is precisely what Phil built and runs with &#x27;Albie&#x27;, a 24/7 autonomous multi-channel operator on the Claude Agent SDK. His six live SME engagements mean he has shipped and operated production agent systems rather than demos, and the small autonomous cross-functional team framing suits a founder-operator.</p>
+<p class="flag"><span>verify before submitting</span>Verify on the live page: (1) that the GBP 132-170k band is current and applies to this requisition, not a US-converted figure; (2) whether the role is fully remote UK or requires London presence; (3) Northern Ireland eligibility and whether the UK entity employs directly or via an EOR; (4) seniority expectations, since &#x27;Senior&#x27; at a US payroll company may still screen for large-scale distributed-systems experience over agent-product experience.</p>
+<a class="open" href="https://job-boards.greenhouse.io/justworks/jobs/7797380" target="_blank" rel="noopener">Open listing &rarr;</a>
+<details class="cover"><summary>Cover note &middot; 138 words</summary><div class="cbody">
+<p class="cn">I have been putting autonomous agents into production for paying businesses since March 2025 — not pilots. &quot;Albie&quot;, built on the Anthropic Claude Agent SDK, is a 24/7 multi-channel operator across WhatsApp, Telegram, Slack and Discord: inbox, outbound campaigns, proposals, coding and scheduled tasks, all against persistent memory. My own consultancy runs on it daily.
+
+That same pattern — an agent that reads operational knowledge, reasons in context and executes end-to-end — is live across six client engagements in construction, equestrian, property, hospitality and ecommerce. It lands commercially: The Wall Group&#x27;s net profit rose 17% year-on-year on AI workflow integration, which funded their acquisition of a new site.
+
+Python, TypeScript, SQLite, REST APIs, RAG, eval design, agent orchestration. Eighteen years of commercial leadership before this means I scope with customers as readily as I ship.
+
+Remote from Derry, Northern Ireland; UK right to work.</p><button class="copy" type="button">Copy cover note</button>
+</div></details>
+</div></div>
+<div class="card q">
+<div class="rank">2</div>
+<div class="cmain">
+<h3>Artificial Intelligence Consultant</h3><p class="co">CipherTek Recruitment</p>
+<div class="chips"><span class="chip">London (hybrid, 1–2 days per week onsite) — </span><span class="chip pay">£800–£1,300 per day, Outside IR35</span><span class="chip">contract</span><span class="chip c-high">High confidence</span><span class="chip ret">returning</span><span class="chip st queued">queued &middot; local leg</span></div>
+<p class="fit">PREVIOUSLY QUEUED — reporting as still live, not new. Snippets now clarify it is an AI Platform Leadership brief (Director/Architect/Tech Lead for LLM/RAG/agentic systems) at a global investment bank, which maps to Phil&#x27;s production agent orchestration, RAG and eval-design experience. Rate band is the top of the lane.</p>
+<p class="flag"><span>verify before submitting</span>Already queued — do not double-apply through a second agency. Before submitting, verify the investment-bank end client will accept a candidate without prior regulated-financial-services delivery, confirm the 1–2 days onsite London cadence, and get the Outside IR35 SDS in writing (banks frequently reclassify inside).</p>
+<a class="open" href="https://contracts.outsidespy.co.uk/job/341484/artificial-intelligence-consultant-at-ciphertek-recruitment-london-800-1-300-per-day/" target="_blank" rel="noopener">Open listing &rarr;</a>
+<details class="cover"><summary>Cover note &middot; 148 words</summary><div class="cbody">
+<p class="cn">AI workflow integration I designed and shipped took The Wall Group&#x27;s net profit up 17% year-on-year — enough to fund their acquisition of a new site. That is the standard I hold agentic AI to.
+
+I run Blue Canvas AI, an agentic-AI consultancy with six live production engagements across construction, property, hospitality and ecommerce. I sell, scope, build and operate the systems — including Albie, a 24/7 autonomous multi-channel operator on the Anthropic Claude Agent SDK that runs my own company&#x27;s inbox, campaigns, proposals and scheduled work daily. Production infrastructure, not a pilot. Alongside that: LLM and RAG architecture, agent orchestration and rubric-graded, mutation-tested evaluation environments.
+
+Before this, 18 years commercial and deep-tech leadership — $1.2M raised at Tonomy Foundation, FarmVet&#x27;s GBP 5M exit as non-executive director, GBP 10M fund management at E-Synergy — so board-level conversations are familiar ground.
+
+One to two days a week onsite in London works from Derry.</p><button class="copy" type="button">Copy cover note</button>
+</div></details>
+</div></div>
+<div class="card q">
+<div class="rank">3</div>
+<div class="cmain">
+<h3>Senior AI Engineer (Freelance)</h3><p class="co">Elsewhen</p>
+<div class="chips"><span class="chip">Fully remote, UK candidates only</span><span class="chip pay">£500–£600 per day, Outside IR35, 6 months</span><span class="chip">contract</span><span class="chip c-high">High confidence</span><span class="chip st queued">queued &middot; local leg</span></div>
+<p class="fit">Fully remote, UK-only, outside IR35, building agentic solutions with LangGraph/ADK — this is the cleanest location fit in the lane for a Derry base and directly matches Phil&#x27;s production agent orchestration work on Albie. His Python and tool-use/RAG experience covers the stack, though his framework depth is Claude Agent SDK rather than LangGraph/ADK specifically.</p>
+<p class="flag"><span>verify before submitting</span>Verify how hard the LangGraph / Google ADK / LlamaIndex framework requirement is — Phil&#x27;s production depth is on the Claude Agent SDK, and a rigid framework screen is the likeliest rejection reason here. Also confirm the &#x27;UK candidates only&#x27; clause explicitly covers Northern Ireland, that the role is still open (ASAP start suggests it may have moved), and get the Outside IR35 SDS.</p>
+<a class="open" href="https://careers.elsewhen.com/jobs/8058175-senior-ai-engineer-freelance" target="_blank" rel="noopener">Open listing &rarr;</a>
+<details class="cover"><summary>Cover note &middot; 141 words</summary><div class="cbody">
+<p class="cn">I have been running production agent systems since March 2025. Albie is a 24/7 autonomous multi-channel operator I built on the Anthropic Claude Agent SDK, across WhatsApp, Telegram, Slack and Discord, handling inbox, Apollo and Zoho campaigns, proposals, coding and scheduled tasks against persistent memory. My own consultancy runs on it daily. It is production infrastructure, not a demo.
+
+The same work is live across six client engagements in construction, equestrian, property, hospitality and ecommerce, where I sell, scope, build and then operate the systems myself. At The Wall Group, AI workflow integration lifted net profit 17% year on year and funded their acquisition of a new site.
+
+Day to day that means Python and TypeScript, agent orchestration, tool use, RAG and eval design, most recently rubric-graded, mutation-tested evaluation tasks. Fully remote from Derry, UK right to work, no sponsorship needed.</p><button class="copy" type="button">Copy cover note</button>
+</div></details>
+</div></div>
+<div class="card q">
+<div class="rank">4</div>
+<div class="cmain">
+<h3>Senior AI Engineer (LLM / Agentic AI)</h3><p class="co">Edison Smart®</p>
+<div class="chips"><span class="chip">London — hybrid, 1 day per week onsite in Vi</span><span class="chip pay">£600–£700 per day, Outside IR35, 6 months</span><span class="chip">contract</span><span class="chip c-high">High confidence</span><span class="chip ret">returning</span><span class="chip st queued">queued &middot; local leg</span></div>
+<p class="fit">Designing, building and deploying AI agents and LLM-powered systems in production — with RAG and intelligent automation named explicitly — is precisely Phil&#x27;s Albie build and his six client agent deployments. One day per week onsite is the lightest London cadence found in this lane and is the most survivable from Derry.</p>
+<p class="flag"><span>verify before submitting</span>Confirm the single onsite day is genuinely weekly-optional or can be batched, and price the Derry–London travel into the rate. Verify the Outside IR35 SDS is issued, confirm the end client, and check whether they require prior enterprise-scale production deployments at a headcount Phil&#x27;s SME engagements may not match.</p>
+<a class="open" href="https://contracts.outsidespy.co.uk/job/348421/senior-ai-engineer-llm-agentic-ai-outside-ir35-at-edison-smart-london-area-600-700-per-day/" target="_blank" rel="noopener">Open listing &rarr;</a>
+<details class="cover"><summary>Cover note &middot; 132 words</summary><div class="cbody">
+<p class="cn">I build and run production agent systems, not pilots. Albie is a 24/7 autonomous multi-channel operator I built on the Anthropic Claude Agent SDK — WhatsApp, Telegram, Slack, Discord — handling inbox, Apollo and Zoho campaigns, proposals, coding and scheduled tasks against persistent memory. My own consultancy runs on it daily. Around it: agent orchestration, tool use, RAG and rubric-graded eval design, in Python and TypeScript.
+
+It lands commercially. Since March 2025 I have scoped, built and operated agent systems for six live SME clients across construction, equestrian, property, hospitality and ecommerce. The Wall Group&#x27;s net profit rose 17% year on year off AI workflow integration, which funded their acquisition of a new site. Eighteen years of commercial and deep-tech leadership sits behind that.
+
+One day a week onsite in Victoria works from Derry.</p><button class="copy" type="button">Copy cover note</button>
+</div></details>
+</div></div>
+<div class="card q">
+<div class="rank">5</div>
+<div class="cmain">
+<h3>Director of AI Strategy</h3><p class="co">Harnham (agency) — client is a global maritime &amp; logistics business</p>
+<div class="chips"><span class="chip">London (Goodge Street), hybrid 3 days onsite</span><span class="chip pay">£1,000–£1,500 per day, Outside IR35, initial 6</span><span class="chip">contract</span><span class="chip c-high">High confidence</span><span class="chip ret">returning</span><span class="chip st queued">queued &middot; local leg</span></div>
+<p class="fit">This is the single best rate/seniority match in the lane: it wants someone who can assess an AI/data landscape, find commercial value and build an adoption roadmap while operating credibly at C-suite — exactly what Phil does at Blue Canvas AI across six live SME engagements and did as Commercial Director at Tonomy and BD Director at Skipshift. His Wall Group result (net profit +17% YoY from AI workflow integration) is the commercial-value evidence this brief is asking for, and 18 years of board-level reporting covers the executive-influence half.</p>
+<p class="flag"><span>verify before submitting</span>Verify the 3-days-onsite-in-London requirement is genuinely non-negotiable — that is unworkable weekly from Derry without a London base or a renegotiated pattern. Confirm the £1,000–£1,500 band is the real budget and not a headline range, confirm the Outside IR35 determination has actually been issued (SDS), and confirm the end client is the private maritime/logistics business described and not a port authority or state-linked operator.</p>
+<a class="open" href="https://www.reed.co.uk/jobs/director-of-ai-strategy/57101940" target="_blank" rel="noopener">Open listing &rarr;</a>
+<details class="cover"><summary>Cover note &middot; 149 words</summary><div class="cbody">
+<p class="cn">The Wall Group&#x27;s net profit rose 17% year-on-year after I integrated AI into their workflows - enough to fund their acquisition of a new site. That is what an AI strategy is for.
+
+I run Blue Canvas AI, an agentic-AI consultancy with six live client engagements across construction, property, hospitality, equestrian and ecommerce. I sell, scope, build and then operate the systems, so the roadmaps I write get delivered rather than shelved. Before that, 18 years of commercial and deep-tech leadership: $1.2M raised as Commercial Director at Tonomy Foundation, a GBP 5M exit as a non-executive director at FarmVet, GBP 10M+ transacted as Senior Fund Manager at E-Synergy. Board-level reporting is native ground.
+
+I also still ship the code. My own company runs daily on an autonomous agent I built on the Claude Agent SDK. Landscape assessment, value map and adoption roadmap can be moving inside the first month.</p><button class="copy" type="button">Copy cover note</button>
+</div></details>
+</div></div>
+</div></section>
+<section><div class="shead"><h2>Remote &amp; contract</h2><p>Remote is the preferred mode and contract is preferred over permanent, so this is the deepest section.</p></div><div class="grid">
+<div class="card">
+<div class="cmain">
+<h3>AI Data Engineer — Agentic AI in Prod, Evals, Context Engineering, RAG, LLMs, AWS Bedrock</h3><p class="co">Blackstone&amp;</p>
+<div class="chips"><span class="chip">London</span><span class="chip pay unset">Negotiable rate (unstated), 12 months</span><span class="chip">contract</span><span class="chip c-medium">Medium confidence</span><span class="chip st mute">not queued</span></div>
+<p class="fit">Same agency and same AWS Bedrock/agentic stack as the already-queued Blackstone&amp; Forward Deployed Engineer role (contractspy 140356, £700–800/day) — treat this as the same client family, possibly a re-post or a sibling seat, not a fresh lead. The spec is an unusually exact match: agentic AI in production, evals, context engineering and RAG are literally what Phil built into Albie and into the HUD.ai rubric-graded eval proposal.</p>
+<p class="flag"><span>verify before submitting</span>CHECK FOR DUPLICATION against the already-queued Blackstone&amp; FDE role before applying — going in twice via the same agency is damaging. Rate is &#x27;negotiable&#x27; and unprinted, so establish it early; also confirm IR35 status (not stated in this listing, unlike the sibling role), whether the 12 months is London-onsite, and the actual end client.</p>
+<a class="open" href="https://contracts.outsidespy.co.uk/job/354164/ai-data-engineer-agentic-ai-in-prod-eval-s-context-engineering-rag-llm-s-aws-bedrock-at-blackstone-london-12-months-negotiable-rate/" target="_blank" rel="noopener">Open listing &rarr;</a>
+<details class="cover"><summary>Cover note &middot; 139 words</summary><div class="cbody">
+<p class="cn">I have been running agentic AI in production since March 2025. Albie, the 24/7 multi-channel operator I built on the Anthropic Claude Agent SDK, handles inbox, outbound campaigns, proposals, coding and scheduled tasks with persistent memory across WhatsApp, Telegram, Slack and Discord. My own consultancy runs on it daily: production infrastructure, not a pilot.
+
+Around that sit RAG, tool use, context and prompt engineering, and eval design, including rubric-graded, mutation-tested evaluation tasks I designed for an RL environment proposal to HUD.ai. Python, TypeScript, SQLite, REST APIs.
+
+It lands commercially, too. Across six live client engagements, The Wall Group&#x27;s net profit rose 17% year-on-year on the back of AI workflow integration, which funded their acquisition of a new site.
+
+My rate is GBP 500+ per day. Derry-based, UK right to work, and available for the London cadence this engagement needs.</p><button class="copy" type="button">Copy cover note</button>
+</div></details>
+</div></div>
+<div class="card">
+<div class="cmain">
+<h3>Senior Independent AI Engineer / Architect</h3><p class="co">A.Team</p>
+<div class="chips"><span class="chip">Remote - Americas, Europe and Israel (Europe</span><span class="chip pay">$120 - $170 per hour (self-set rate)</span><span class="chip">contract</span><span class="chip c-high">High confidence</span><span class="chip ret">returning</span><span class="chip st mute">not queued</span></div>
+<p class="fit">A.Team wants independent senior builders of production LLM systems - agent architectures and orchestration, retrieval, evaluation and reliability infrastructure - which is precisely what Phil does daily with Albie on the Claude Agent SDK and across six live Blue Canvas AI client engagements. The engagement model (missions of 12-18 months, part-time to full-time, working directly with founders and CTOs on both technical direction and execution) matches his stated preference for fractional/contract work and lets him keep running Blue Canvas alongside.</p>
+<p class="flag"><span>verify before submitting</span>Verify on the live page: (1) whether &#x27;Europe&#x27; includes the UK post-Brexit and whether A.Team can contract with a UK limited company - the network is invite-only, so applying is an admission process, not a job offer; (2) that the $120-170/hr band applies to Europe-based builders and is not US-only; (3) whether missions carry US-timezone overlap requirements; (4) how long vetting takes and whether there is genuine mission flow in Europe, since acceptance does not guarantee income. $120/hr is roughly GBP 700+/day, so the pay floor is clear if the rate holds.</p>
+<a class="open" href="https://weworkremotely.com/remote-jobs/a-team-senior-independent-ai-engineer-architect" target="_blank" rel="noopener">Open listing &rarr;</a>
+<details class="cover"><summary>Cover note &middot; 130 words</summary><div class="cbody">
+<p class="cn">I build and run &#x27;Albie&#x27;, a 24/7 autonomous multi-channel operator on the Anthropic Claude Agent SDK — inbox, Apollo and Zoho campaigns, proposals, coding, scheduled tasks and persistent memory across WhatsApp, Telegram, Slack and Discord. Production infrastructure, not a demo: my own consultancy runs on it daily.
+
+Since March 2025 I have shipped and operated agent systems across six live client engagements in construction, equestrian, property, hospitality and ecommerce — orchestration, tool use, RAG, and eval design including rubric-graded, mutation-tested evaluation environments. It lands commercially: AI workflow integration took The Wall Group&#x27;s net profit up 17% year-on-year, funding their acquisition of a new site.
+
+I sell, scope, build and run these systems myself — no handoff between the architect and whoever keeps it running. Based in Derry, Northern Ireland: UK right to work, remote-native, no sponsorship needed.</p><button class="copy" type="button">Copy cover note</button>
+</div></details>
+</div></div>
+<div class="card">
+<div class="cmain">
+<h3>Forward Deployed Engineer (AI-native platform)</h3><p class="co">We Source Talent (agency) — client is a VC-backed AI-native enterprise platform, London HQ</p>
+<div class="chips"><span class="chip">Fully remote, UK-based (surfaced under Belfa</span><span class="chip pay">Up to £145,000 plus equity</span><span class="chip">permanent</span><span class="chip c-medium">Medium confidence</span><span class="chip ret">returning</span><span class="chip st mute">not queued</span></div>
+<p class="fit">This is the single closest match in the lane to what Phil already does daily at Blue Canvas AI — scoping complex implementations with enterprise customers, then writing the production code and architecting the custom solution himself, which is exactly the sell-scope-build-run loop across his six live client engagements. The stack (Python, JavaScript/TypeScript, SQL, integrations) maps directly onto Albie&#x27;s production multi-channel infrastructure and his REST/SQLite/Shopify Admin API work.</p>
+<p class="flag"><span>verify before submitting</span>Verify on the live page: (a) whether the £145k is base or OTE and whether NI residence is acceptable for the &#x27;UK-based&#x27; requirement; (b) the &#x27;6-8+ years software engineering&#x27; bar — Phil&#x27;s hands-on engineering is recent (2025-present) even though his commercial career is 18 years, so the CV needs to lead with shipped production systems; (c) confirm the end client is a commercial SaaS platform and not a govtech vendor; (d) two near-duplicate LinkedIn posts exist — confirm which is live before applying.</p>
+<a class="open" href="https://uk.linkedin.com/jobs/view/%F0%9F%9A%80forward-deployed-engineer-remote-up-to-%C2%A3145k%F0%9F%94%A5-at-we-source-talent-4400825360" target="_blank" rel="noopener">Open listing &rarr;</a>
+<details class="cover"><summary>Cover note &middot; 147 words</summary><div class="cbody">
+<p class="cn">I build and operate production agent systems, not pilots. &#x27;Albie&#x27; is a 24/7 autonomous multi-channel operator I built on the Anthropic Claude Agent SDK — running across WhatsApp, Telegram, Slack and Discord, handling inbox, outbound campaigns, proposals, coding and scheduled tasks with persistent memory. Blue Canvas AI, my consultancy, runs on it daily.
+
+That same loop — scope with the customer, write the code, architect the integration, then own it in production — is what I do across six live client engagements in construction, equestrian, property, hospitality and ecommerce. The commercial proof: The Wall Group&#x27;s net profit rose 17% year-on-year from AI workflow integration, which funded their acquisition of a new site.
+
+Stack: Python, TypeScript, SQLite, REST APIs, RAG, eval design. Eighteen years of commercial leadership before this means I can hold the enterprise conversation as well as the build.
+
+Remote from Derry, UK right to work, no sponsorship required.</p><button class="copy" type="button">Copy cover note</button>
+</div></details>
+</div></div>
+<div class="card">
+<div class="cmain">
+<h3>Senior Forward Deployed AI Architect (GenAI, AWS) / FDE AI Solutions Architect (AI, Python/Data)</h3><p class="co">Provectus</p>
+<div class="chips"><span class="chip">Remote (work from home); geography not state</span><span class="chip pay">$150,000 - $180,000 OTE; B2B contract model or</span><span class="chip">contract</span><span class="chip c-medium">Medium confidence</span><span class="chip st mute">not queued</span></div>
+<p class="fit">Provectus describes itself as a Premier AWS partner and an Anthropic Strategic Partner helping enterprises turn Claude, agentic systems and their own data into measurable business outcomes - Phil already builds and operates production Claude Agent SDK systems and can point to a hard commercial outcome (The Wall Group net profit +17% YoY). The forward-deployed model of mapping client workflows, building the AI solution and transferring it to the client is exactly the sell-scope-build-run loop he runs at Blue Canvas AI, and the B2B contract option suits his preference for contracting over employment.</p>
+<p class="flag"><span>verify before submitting</span>Verify on the live page before applying: (1) whether the role accepts UK-based candidates and what timezone overlap is required (Provectus is US-headquartered and the OTE is quoted in USD, which often signals a US or LATAM hiring footprint); (2) whether $150-180k is base plus bonus or heavily commission-weighted &#x27;OTE&#x27;; (3) the B2B contract day-rate equivalent; (4) travel expectations to client sites; (5) how deep the AWS/Bedrock certification requirement runs versus Phil&#x27;s Claude-SDK-centric stack. A sibling posting &#x27;FDE AI/Solutions Architect (AI, Python/Data)&#x27; also exists - check which is currently open.</p>
+<a class="open" href="https://himalayas.app/companies/provectus/jobs/senior-forward-deployed-ai-architect-genai-aws-6392170658" target="_blank" rel="noopener">Open listing &rarr;</a>
+<details class="cover"><summary>Cover note &middot; 145 words</summary><div class="cbody">
+<p class="cn">I build and run Albie, a 24/7 autonomous multi-channel operator on the Anthropic Claude Agent SDK: inbox, Apollo and Zoho campaigns, proposals, scheduled tasks, persistent memory across WhatsApp, Telegram, Slack and Discord. Production infrastructure, not a pilot; my own consultancy runs on it daily.
+
+That same sell-scope-build-run loop drives six live Blue Canvas AI engagements across construction, equestrian, property, hospitality and ecommerce. The Wall Group&#x27;s net profit rose 17% year-on-year on AI workflow integration I designed and deployed, and it funded their acquisition of a new site. I also design RL evaluation environments, rubric-graded and mutation-tested, so what I hand a client is measurable rather than anecdotal.
+
+Eighteen years of commercial and deep-tech leadership before that means I can frame the problem with a client&#x27;s executives and then write the Python myself.
+
+Remote from Derry, UK right to work, happy to travel to client sites.</p><button class="copy" type="button">Copy cover note</button>
+</div></details>
+</div></div>
+<div class="card">
+<div class="cmain">
+<h3>Head of AI</h3><p class="co">BCD Travel (BCD Group)</p>
+<div class="chips"><span class="chip">UK / Virtual / Europe — remote, global scope</span><span class="chip pay unset">unstated</span><span class="chip">permanent</span><span class="chip c-medium">Medium confidence</span><span class="chip ret">returning</span><span class="chip st mute">not queued</span></div>
+<p class="fit">The brief — define enterprise AI strategy, stand up an AI Centre of Excellence, set governance and architecture, and embed AI into operational workflows — is Phil&#x27;s priority-one role type and matches what he has done at SME scale, where AI workflow integration drove The Wall Group&#x27;s net profit up 17% YoY. His 18 years of commercial and board-facing experience (Commercial Director at Tonomy, BD Director at Skipshift and MOF Technologies, NED at FarmVet) is the part most hands-on AI engineers lack and this role explicitly requires.</p>
+<p class="flag"><span>verify before submitting</span>Verify on the live page: (1) base salary — completely unstated, and a global travel-management corporate may band this below £100k for a non-London remote hire; (2) whether &#x27;UK, Virtual&#x27; genuinely permits Northern Ireland residence; (3) that this is a build-and-run role rather than a governance/committee role, since the CoE framing can mean policy rather than production; (4) the posting date — it is ~17 days old, so confirm it is still live.</p>
+<a class="open" href="https://jobs.bcdtravel.com/job/Head-of-AI/1369556557/" target="_blank" rel="noopener">Open listing &rarr;</a>
+<details class="cover"><summary>Cover note &middot; 139 words</summary><div class="cbody">
+<p class="cn">AI workflow integration I designed and shipped lifted The Wall Group&#x27;s net profit 17% year-on-year, which funded their acquisition of a new site. That is the standard I hold enterprise AI strategy to: P&amp;L movement, not pilots or committees.
+
+I run Blue Canvas AI, an agentic-AI consultancy with six live engagements across construction, property, hospitality, equestrian and ecommerce. I sell, scope, build and then operate the systems. Before that, 18 years of commercial leadership: $1.2M raised as Commercial Director at Tonomy Foundation, a GBP 5M exit as NED at FarmVet, GBP 10M+ transacted as a senior fund manager, board-level reporting throughout.
+
+I also still ship. My own company runs on Albie, a 24/7 autonomous multi-channel operator I built on the Claude Agent SDK. Production infrastructure, running daily.
+
+Expectation is GBP 100,000+ base. Remote from Derry, UK right to work.</p><button class="copy" type="button">Copy cover note</button>
+</div></details>
+</div></div>
+<div class="card">
+<div class="cmain">
+<h3>Manager, Applied AI (Startups), EMEA</h3><p class="co">Anthropic</p>
+<div class="chips"><span class="chip">London, UK - leads Applied AI Architects/Eng</span><span class="chip pay unset">unstated</span><span class="chip">permanent</span><span class="chip c-medium">Medium confidence</span><span class="chip st mute">not queued</span></div>
+<p class="fit">Priority-1 leadership shape: running a hands-on, customer-facing applied-AI team, which maps to Phil&#x27;s Commercial Director / BD Director track (Tonomy, Skipshift team of 8, MOF) combined with his current hands-on Claude Agent SDK delivery. The &#x27;Startups&#x27; segment focus plays directly to his founder-led sales background and his own SME agent deployments.</p>
+<p class="flag"><span>verify before submitting</span>Snippet states 7+ years as FDE/Customer Engineer/Sales Engineer/Applied AI Architect PLUS 5+ years managing technical customer-facing teams - Phil&#x27;s people-management is commercial (team of 8 at Skipshift), not FDE-team management, so verify how strictly the 5+ years is applied. Also confirm on the live page: London office attendance requirement, salary band, and that the req is still open.</p>
+<a class="open" href="https://job-boards.greenhouse.io/anthropic/jobs/5142110008" target="_blank" rel="noopener">Open listing &rarr;</a>
+<details class="cover"><summary>Cover note &middot; 147 words</summary><div class="cbody">
+<p class="cn">The Wall Group&#x27;s net profit rose 17% year-on-year after I integrated AI into their workflows, funding their acquisition of a new site. That is the pattern across eighteen years: $1.2M raised as Commercial Director at Tonomy, a global team of eight built at Skipshift taking daily volume from $0 to $5K in 90 days, a GBP 5M exit as NED at FarmVet, GBP 10M+ transacted running a VC fund.
+
+Since March 2025 I have run Blue Canvas AI across six live client engagements, and I still ship the systems myself. My company operates on Albie, a 24/7 autonomous multi-channel operator on the Claude Agent SDK handling inbox, campaigns, proposals, scheduled tasks and persistent memory in production daily. Founder-led sales into small businesses, then building and running the systems, is my week.
+
+Expectation is GBP 100,000+ base. Derry-based, UK right to work, in London as the role requires.</p><button class="copy" type="button">Copy cover note</button>
+</div></details>
+</div></div>
+<div class="card">
+<div class="cmain">
+<h3>Head of Agentic AI Consultancy</h3><p class="co">TaskUs</p>
+<div class="chips"><span class="chip">United Kingdom. Remote policy not stated in </span><span class="chip pay unset">unstated</span><span class="chip">unknown</span><span class="chip c-low">Low confidence</span><span class="chip st mute">not queued</span></div>
+<p class="fit">Leading an agentic-AI consultancy practice is the exact job Phil has been doing for himself since March 2025 — scoping, selling, building and then operating production agent systems for paying clients, across six concurrent engagements. Uniquely among the roles in this lane it rewards both halves of his profile at once: the hands-on Claude Agent SDK and eval-design work, and the founder-led sales and commercial-director track record needed to build a consultancy practice&#x27;s pipeline.</p>
+<p class="flag"><span>verify before submitting</span>Verify before submitting: (1) the posting is still open — the job ID pattern points to an older listing that may be closed or evergreen; (2) base salary clears GBP 100k, unstated; (3) whether the role is genuinely UK-based and remote-eligible, or requires relocation or heavy travel — TaskUs is a global operation with major delivery centres outside the UK; (4) seniority and whether it carries a large existing P&amp;L and headcount, which is a different job from building a practice; (5) whether client work includes government or public-sector accounts.</p>
+<a class="open" href="https://www.linkedin.com/jobs/view/head-of-agentic-ai-consultancy-at-taskus-4287159502" target="_blank" rel="noopener">Open listing &rarr;</a>
+<details class="cover"><summary>Cover note &middot; 135 words</summary><div class="cbody">
+<p class="cn">I run an agentic-AI consultancy that already does this job: sell, scope, build and then operate production agent systems. Six live client engagements across construction, equestrian, property, hospitality and ecommerce. At The Wall Group, AI workflow integration lifted net profit 17% year-on-year and funded their acquisition of a new site.
+
+Before founding Blue Canvas AI I spent 18 years on the commercial side — $1.2M raised as Commercial Director at Tonomy Foundation, a GBP 5M exit as NED at FarmVet, GBP 10M+ transactions as a Senior Fund Manager at E-Synergy — so pipeline, pricing and board-level reporting are familiar ground.
+
+I also ship the systems. Blue Canvas runs daily on &#x27;Albie&#x27;, a 24/7 multi-channel operator I built on the Anthropic Claude Agent SDK.
+
+My expectation is GBP 100,000+ base. Remote from Northern Ireland, UK right to work.</p><button class="copy" type="button">Copy cover note</button>
+</div></details>
+</div></div>
+</div></section>
+<section><div class="shead"><h2>Belfast &amp; Derry</h2><p>Local roles that cleared the filters. Universities and every public body are excluded outright.</p></div><div class="grid">
+<div class="card">
+<div class="cmain">
+<h3>Engineering Manager — AI Adoption in Test Engineering</h3><p class="co">Not named in snippet — described as a global technology organisation investing in AI-augmented engineering (advertised via nijobs.com)</p>
+<div class="chips"><span class="chip">Belfast, County Antrim — fully remote workin</span><span class="chip pay">£100,000 - £110,000 per annum, up to £110k plu</span><span class="chip">permanent</span><span class="chip c-medium">Medium confidence</span><span class="chip st mute">not queued</span></div>
+<p class="fit">The mandate is explicitly to drive AI adoption across an engineering function and redefine how work is done through automation and intelligent tooling, which is AI transformation leadership rather than QA management, and that is Phil&#x27;s priority-one role type. It clears the pay floor, is fully remote for UK/ROI, and his eval-design work (rubric-graded, mutation-tested eval tasks for HUD.ai) maps unusually well onto AI-driven test strategy.</p>
+<p class="flag"><span>verify before submitting</span>Direct listing URL was not captured — a human must locate the exact requisition in the nijobs Belfast AI listing before applying, and identify the employer. Verify: (a) the employer&#x27;s name and sector; (b) whether a QA/test engineering management background is a hard prerequisite, since Phil&#x27;s leadership is commercial and founder-led rather than QA; (c) that &#x27;fully remote UK/ROI&#x27; genuinely includes Northern Ireland with no Belfast office minimum; (d) the £110k ceiling is base and not inclusive of bonus.</p>
+<a class="open" href="https://www.nijobs.com/jobs/artificial-intelligence/in-belfast" target="_blank" rel="noopener">Open listing &rarr;</a>
+<details class="cover"><summary>Cover note &middot; 141 words</summary><div class="cbody">
+<p class="cn">The Wall Group&#x27;s net profit rose 17% year-on-year after I rebuilt their operations around AI agents, and it funded their acquisition of a new site. That is the bar I hold AI adoption to: measured output, not pilots.
+
+Before founding Blue Canvas AI I spent 18 years in commercial and deep-tech leadership: $1.2M raised at Tonomy Foundation, a GBP 5M exit at FarmVet, a GBP 10M VC fund at E-Synergy, board-level reporting throughout. Moving a whole function is the job I have actually done.
+
+I also ship the systems. Blue Canvas AI runs six live client engagements, and my own company operates daily on Albie, a 24/7 autonomous multi-channel operator built on the Claude Agent SDK. I design RL evaluation environments with rubric-graded, mutation-tested tasks, which is the same discipline AI-driven test strategy needs.
+
+Remote from Derry/Londonderry, UK right to work.</p><button class="copy" type="button">Copy cover note</button>
+</div></details>
+</div></div>
+<div class="card">
+<div class="cmain">
+<h3>Principal AI Engineer — AI Centre of Excellence</h3><p class="co">Rapid7</p>
+<div class="chips"><span class="chip">Belfast, Northern Ireland</span><span class="chip pay unset">unstated (Glassdoor comparator for Rapid7 Prin</span><span class="chip">permanent</span><span class="chip c-low">Low confidence</span><span class="chip ret">returning</span><span class="chip st mute">not queued</span></div>
+<p class="fit">The brief explicitly covers generative and agentic AI systems delivered to customers, which is where Phil operates — production agent orchestration, tool use and RAG on the Claude Agent SDK rather than research. A named private cybersecurity product company in Belfast is one of the few NI employers with zero public-sector delivery exposure for this kind of seat.</p>
+<p class="flag"><span>verify before submitting</span>Pay is the main risk: Rapid7&#x27;s Belfast principal-level comparator sits near £78k, well under the £100k floor, so the band must be confirmed with the recruiter before investing time. Also verify (a) how much of the role is conventional ML and deep-learning neural networks versus generative/agentic — the posting lists all three and the first two are Phil&#x27;s stated poor-fit territory; (b) whether a degree in ML/CS or equivalent research depth is a hard filter against his Economics &amp; Management background; (c) Belfast office-attendance expectations versus a Derry base.</p>
+<a class="open" href="https://careers.rapid7.com/jobs/principal-ai-engineer-belfast-united-kingdom-0277bd5b-fb81-457d-b680-f879a278a85f" target="_blank" rel="noopener">Open listing &rarr;</a>
+<details class="cover"><summary>Cover note &middot; 143 words</summary><div class="cbody">
+<p class="cn">Since March 2025 I have built and run production agent systems on the Anthropic Claude Agent SDK, not pilots. Albie, the autonomous multi-channel operator I built, runs my own consultancy 24/7 across WhatsApp, Telegram, Slack and Discord: inbox, Apollo and Zoho campaigns, proposals, coding, scheduled tasks, persistent memory. Six live client engagements run on that stack, across construction, equestrian, property, hospitality and ecommerce.
+
+It lands commercially. AI workflow integration took The Wall Group&#x27;s net profit up 17% year-on-year, funding their acquisition of a new site. I also design RL evaluation environments, rubric-graded and mutation-tested, so agent quality is measured rather than assumed.
+
+Behind that sit 18 years of commercial and deep-tech leadership: $1.2M raised at Tonomy Foundation, a GBP 5M exit at FarmVet.
+
+Salary expectation is GBP 100,000+ base. Belfast is an easy run from Derry for whatever onsite cadence the team keeps.</p><button class="copy" type="button">Copy cover note</button>
+</div></details>
+</div></div>
+<div class="card">
+<div class="cmain">
+<h3>Lead AI Engineer (Workday Practice)</h3><p class="co">Limelight Health</p>
+<div class="chips"><span class="chip">Belfast, Northern Ireland</span><span class="chip pay unset">unstated</span><span class="chip">unknown</span><span class="chip c-low">Low confidence</span><span class="chip ret">returning</span><span class="chip st mute">not queued</span></div>
+<p class="fit">A lead-level seat integrating AI and machine learning into a live enterprise product practice, which suits Phil&#x27;s pattern of embedding agent workflows into existing business systems rather than greenfield research. His Python plus REST/API integration work and his record of shipping into operating businesses are the transferable core.</p>
+<p class="flag"><span>verify before submitting</span>Weakest-evidenced entry in this lane: employer identity, salary, contract type and posting date are all unconfirmed and the listing was found only on an aggregator, so verify the role still exists on the employer&#x27;s own careers site first. Confirm the £100k floor, whether Java/AWS depth is a hard requirement (Phil&#x27;s stack is Python/TypeScript and Claude Agent SDK), whether Workday-ecosystem experience is mandatory, and remote/hybrid policy from Derry.</p>
+<a class="open" href="https://www.jobleads.com/gb/job/lead-ai-engineer--belfast--e31ff04b83c81ba4cde3ed51ddfeba06c" target="_blank" rel="noopener">Open listing &rarr;</a>
+<details class="cover"><summary>Cover note &middot; 140 words</summary><div class="cbody">
+<p class="cn">Since March 2025 I have run production agent systems for paying SMEs, not pilots. I build and operate Albie, a 24/7 autonomous multi-channel operator on the Anthropic Claude Agent SDK: inbox, Apollo and Zoho campaigns, proposals, coding, scheduled tasks, persistent memory. My own consultancy runs on it daily.
+
+That work sits inside live businesses, six engagements across construction, property, hospitality and ecommerce. The Wall Group&#x27;s net profit rose 17% year-on-year on AI workflow integration, funding their acquisition of a new site. Day to day I am in Python and TypeScript against REST APIs, SQLite and browser automation, and I have designed rubric-graded, mutation-tested evaluation environments.
+
+Eighteen years of commercial and deep-tech leadership before that, including $1.2M raised at Tonomy Foundation and a GBP 5M exit at FarmVet.
+
+Base expectation is GBP 100,000+. I am in Derry, so Belfast onsite works.</p><button class="copy" type="button">Copy cover note</button>
+</div></details>
+</div></div>
+</div></section>
+<section><div class="shead"><h2>Dubai &amp; international</h2><p>Gulf roles carry an ownership check: government-linked and majority-state-owned entities are excluded, and doubt counts as exclusion.</p></div><div class="grid">
+<div class="card">
+<div class="cmain">
+<h3>Head of AI &amp; Automation</h3><p class="co">Global private capital investor (name withheld) — via Charterhouse Middle East</p>
+<div class="chips"><span class="chip">Dubai, UAE (firm has UK, USA, UAE and other </span><span class="chip pay unset">unstated</span><span class="chip">permanent</span><span class="chip c-medium">Medium confidence</span><span class="chip risk">public-sector risk: medium</span><span class="chip st mute">not queued</span></div>
+<p class="fit">This is the single closest match in the Gulf lane: an explicitly non-research, first-dedicated-AI-hire role focused on choosing the right tools, setting them up properly and driving effective adoption — which is precisely what Phil does commercially at Blue Canvas AI across six live SME engagements. His The Wall Group result (+17% net profit YoY from AI workflow integration) plus his Senior Fund Manager stint at the GBP 10M E-Synergy fund and NED work gives him the rare combination of hands-on agent delivery and native fluency in a private-capital operating environment.</p>
+<p class="flag"><span>verify before submitting</span>STILL-OPEN CHECK REQUIRED — this role was already surfaced in an earlier sweep, so confirm on the live page it has not been filled or withdrawn. Verify: (a) the client&#x27;s actual identity and that it is a genuine private capital firm, not a sovereign wealth fund or state-backed investor (a UAE-based &#x27;global private capital investor&#x27; can be state-linked — if it turns out to be Mubadala/ADIA/PIF-affiliated, this must be dropped); (b) base salary against the AED 37k/month floor; (c) whether the role requires UAE relocation or can be run from Derry/remote; (d) it is described as an Individual Contributor role — check the seniority and budget authority actually attached.</p>
+<a class="open" href="https://www.bayt.com/en/uae/jobs/head-of-ai-automation-74347382/" target="_blank" rel="noopener">Open listing &rarr;</a>
+<details class="cover"><summary>Cover note &middot; 130 words</summary><div class="cbody">
+<p class="cn">The Wall Group&#x27;s net profit rose 17% year-on-year on AI workflow integration I delivered — enough to fund their acquisition of a new site. That is what I do at Blue Canvas AI, the agentic-AI consultancy I founded in March 2025: six live production engagements across construction, property, hospitality, equestrian and ecommerce, sold, scoped, built and operated.
+
+Before that, 18 years of commercial and deep-tech leadership — $1.2M raised at Tonomy Foundation, a GBP 5M exit as non-executive director at FarmVet, and Senior Fund Manager on a GBP 10M VC fund — so private capital is native ground, not a learning curve.
+
+I ship the systems personally. Albie, my autonomous multi-channel operator on the Anthropic Claude Agent SDK, runs Blue Canvas AI&#x27;s own inbox, campaigns and proposals daily.
+
+Expectation: AED 37,000+ per month.</p><button class="copy" type="button">Copy cover note</button>
+</div></details>
+</div></div>
+<div class="card">
+<div class="cmain">
+<h3>Head of Agentic AI</h3><p class="co">Confidential client via Michael Page</p>
+<div class="chips"><span class="chip">UAE (Dubai/Abu Dhabi not disambiguated in sn</span><span class="chip pay unset">unstated</span><span class="chip">permanent</span><span class="chip c-medium">Medium confidence</span><span class="chip ret">returning</span><span class="chip risk">public-sector risk: medium</span><span class="chip st mute">not queued</span></div>
+<p class="fit">The description is almost a restatement of Phil&#x27;s day job: leading an AI literacy and adoption programme, being the business-facing translator of needs into initiatives, and directing AI agents and specialist vendors while owning delivery and business value. He runs &#x27;Albie&#x27;, a 24/7 autonomous multi-channel operator on the Claude Agent SDK, and sells/scopes/builds/operates agent systems for six clients — so &#x27;recent hands-on experience with AI tools, automation technologies and AI-powered agents&#x27; is literal rather than aspirational for him.</p>
+<p class="flag"><span>verify before submitting</span>Verify on the live page: (a) the client&#x27;s identity and ownership — the mention of &#x27;portfolio companies&#x27; suggests an investment holding group, and in the UAE those are often sovereign-linked (Mubadala, Dubai Holding, ADQ); confirm private ownership before applying; (b) base salary versus AED 37k/month; (c) whether it is Dubai or Abu Dhabi and whether relocation is mandatory; (d) years-of-experience bar — Michael Page UAE leadership roles often specify 12-15 years in tech specifically, which Phil does not have in a pure-technology track.</p>
+<a class="open" href="https://www.gulftalent.com/uae/jobs/head-of-agentic-ai-617734" target="_blank" rel="noopener">Open listing &rarr;</a>
+<details class="cover"><summary>Cover note &middot; 136 words</summary><div class="cbody">
+<p class="cn">The Wall Group&#x27;s net profit rose 17% year-on-year after I integrated AI workflows into their operations — enough to fund their acquisition of a new site. That is the bar I hold agentic AI to: P&amp;L movement, not pilots.
+
+I founded Blue Canvas AI in March 2025 and now run six live production agent deployments across construction, equestrian, property, hospitality and ecommerce, selling, scoping, building and operating every one. My own consultancy runs on Albie, a 24/7 autonomous multi-channel operator I built on the Anthropic Claude Agent SDK: inbox, outbound campaigns, proposals, code, scheduled tasks, persistent memory.
+
+Before that, 18 years of commercial leadership: $1.2M raised at Tonomy Foundation, a board seat through FarmVet&#x27;s GBP 5M exit, GBP 10M under management at E-Synergy.
+
+Salary expectation is AED 37,000+ per month. Based in Northern Ireland, ready to relocate.</p><button class="copy" type="button">Copy cover note</button>
+</div></details>
+</div></div>
+<div class="card">
+<div class="cmain">
+<h3>Forward Deployed AI Engineer, United Arab Emirates — BCG X</h3><p class="co">BCG X (Boston Consulting Group)</p>
+<div class="chips"><span class="chip">Dubai, UAE — on-site/client-embedded, heavy </span><span class="chip pay unset">unstated</span><span class="chip">permanent</span><span class="chip c-medium">Medium confidence</span><span class="chip ret">returning</span><span class="chip st mute">not queued</span></div>
+<p class="fit">Forward-deployed delivery is exactly Phil&#x27;s operating model — he embeds with SME clients, frames the business problem, builds the agent system and then runs it in production, which maps onto BCG X&#x27;s &#x27;own the full analytics value-chain end to end&#x27; framing. His 18 years of commercial and deep-tech leadership (Commercial Director at Tonomy, BD Director at Skipshift and MOF Technologies) means he can hold the client-facing consulting side that trips up most engineers applying to BCG X.</p>
+<p class="flag"><span>verify before submitting</span>Verify on the live page: (a) that this is the ENGINEER req (55953) and not the adjacent AI SCIENTIST req (55952), which is research-flavoured — papers, scientific communities, novel algorithms — and is a poor fit and should be avoided; (b) whether BCG X requires a top-tier CS/quant degree or PhD-adjacent background (Phil&#x27;s degree is B.Sc. Economics &amp; Management); (c) grade/level offered — BCG X FDE reqs span junior to senior and the junior bands will not clear GBP 100k; (d) UAE relocation and visa terms, since this is not a remote role; (e) the client base — BCG&#x27;s UAE practice does substantial government work, so confirm the engagement mix.</p>
+<a class="open" href="https://careers.bcg.com/global/en/job/55953/Forward-Deployed-AI-Engineer-United-Arab-Emirates-BCG-X" target="_blank" rel="noopener">Open listing &rarr;</a>
+<details class="cover"><summary>Cover note &middot; 147 words</summary><div class="cbody">
+<p class="cn">I build production agent systems on the Anthropic Claude Agent SDK and then run them. Albie, my own 24/7 autonomous operator, works across WhatsApp, Telegram, Slack and Discord — handling inbox, Apollo and Zoho campaigns, proposals, coding, scheduled tasks and persistent memory. My consultancy runs on it daily; it is infrastructure, not a demo. Since March 2025 I have shipped six live client engagements across construction, equestrian, property, hospitality and ecommerce, embedding with each business to frame the problem, build the system and operate it. The Wall Group&#x27;s net profit rose 17% year-on-year on that work, funding a new site acquisition. Before Blue Canvas AI: 18 years of commercial leadership — $1.2M raised at Tonomy Foundation, a GBP 5M exit at FarmVet — so I hold the client-facing side as well as the build. Expectation is AED 37,000+ per month. Relocating to Dubai for a client-embedded role works for me.</p><button class="copy" type="button">Copy cover note</button>
+</div></details>
+</div></div>
+</div></section>
+<section><div class="shead"><h2>Everything else that passed the filters</h2><p>Full write-ups and cover notes are reserved for the 18 cards above. These are tracked and available on request &mdash; ask for any of them by name in <code>jobs/feedback.md</code>.</p></div>
+<h3 style="font-family:Archivo,sans-serif;font-size:1rem;margin:20px 0 8px">Remote &amp; contract &middot; 106</h3>
+<div class="tw"><table><thead><tr><th>Role</th><th>Company</th><th>Pay</th><th>Type</th><th>Conf.</th><th>New</th><th></th></tr></thead><tbody>
+<tr><td>AI Python Developer — LLM — Remote — Outside IR35</td><td>Morson Edge</td><td>£600–£650 per day, Outside IR35</td><td>contract</td><td>High</td><td>yes</td><td class="num"><a href="https://contracts.outsidespy.co.uk/job/355489/ai-python-developer-llm-remote-outside-ir35-at-morson-edge-the-borough-london-600-650-per-day/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer (EMEA)</td><td>AI Fund</td><td>unstated in snippet</td><td>unknown</td><td>Low</td><td>yes</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/forward-deployed-engineer-emea-at-ai-fund-4205161377" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Enterprise AI Value Strategist - Consultant</td><td>Accenture UK &amp; Ireland</td><td>unstated in snippet</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/enterprise-ai-value-strategist-consultant-at-accenture-uk-ireland-4441101805" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Staff Software Engineer - Reference Data - AI/ML (UK)</td><td>Addepar</td><td>unstated (Staff-level UK band typicall</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://job-boards.greenhouse.io/addepar1/jobs/8540248002" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Freelance AI Adoption Lead, AI Champion Program</td><td>Airlock (governance for MCP, skills, age</td><td>unstated in snippet</td><td>fractional</td><td>Low</td><td>yes</td><td class="num"><a href="https://be.linkedin.com/jobs/view/freelance-ai-adoption-lead-ai-champion-program-at-airlock-governance-for-mcp-skills-agents-4438621676" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Engineer — Marketing Demand Generation</td><td>Algo Software Group</td><td>unstated (advertised as &#x27;Contract Rate</td><td>contract</td><td>Low</td><td>yes</td><td class="num"><a href="https://contracts.contractspy.co.uk/job/140455/ai-engineer-marketing-demand-generation-at-algo-software-group-remote-6-months-contract-rate-outside-ir35/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Consultant</td><td>Amach</td><td>unstated in snippet</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://ie.linkedin.com/jobs/view/ai-consultant-at-amach-4229200990" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Forward Deployed Engineer</td><td>Amdaris</td><td>unstated (UK market average for this t</td><td>unknown</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://himalayas.app/companies/amdaris/jobs/ai-forward-deployed-engineer" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Engineer</td><td>Anaplan</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://job-boards.greenhouse.io/anaplan/jobs/8579822002" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer, Applied AI</td><td>Anthropic</td><td>unstated</td><td>permanent</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://job-boards.greenhouse.io/anthropic/jobs/5012991008" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer</td><td>Anthropic</td><td>unstated in snippet</td><td>permanent</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/forward-deployed-engineer-at-anthropic-4325510115" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Applied AI Engineer, Beneficial Deployments</td><td>Anthropic</td><td>unstated in snippet</td><td>permanent</td><td>Medium</td><td>yes</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/applied-ai-engineer-beneficial-deployments-at-anthropic-4439967196" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Software Engineer, Agent SDK (Claude Code)</td><td>Anthropic</td><td>unstated in snippet</td><td>permanent</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://job-boards.greenhouse.io/anthropic/jobs/5126691008" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Head of AI</td><td>Artisan</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://himalayas.app/companies/artisan/jobs/head-of-ai" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Data &amp; AI Transformation Lead</td><td>Billigence</td><td>Contractor rate unstated, Outside IR35</td><td>contract</td><td>Low</td><td>yes</td><td class="num"><a href="https://contracts.contractspy.co.uk/job/136512/data-ai-transformation-lead-at-billigence-london-remote-contractor-rate-outside-ir35/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Staff AI Engineer</td><td>Bluefish AI</td><td>unstated (Staff-level London AI roles </td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://job-boards.greenhouse.io/bluefishai/jobs/5286829008" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Agentic AI Engineer</td><td>Braintrust</td><td>unstated</td><td>contract</td><td>Low</td><td>yes</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/agentic-ai-engineer-at-braintrust-4265609873" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Generative AI Adoption Lead</td><td>CLOUDMIGRATE</td><td>Up to £650 per day, Outside IR35, init</td><td>contract</td><td>Medium</td><td>yes</td><td class="num"><a href="https://contracts.outsidespy.co.uk/job/347589/generative-ai-adoption-lead-outside-ir35-at-cloudmigrate-greater-london-650-per-day/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Solutions Architect - AI Infrastructure</td><td>Carbon3.ai</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://builtin.com/job/solutions-architect-ai-infrastructure/10622607" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Adoption Lead - Asset Manager</td><td>Client Server (recruiter) - end client i</td><td>unstated in snippet</td><td>permanent</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/ai-adoption-lead-asset-manager-at-client-server-4416635001" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed AI Engineer</td><td>Client of Gravitas Recruitment Group (en</td><td>GBP 60,000 - 110,000 plus equity</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://www.gravitasgroup.co.uk/jobs/forward-deployed-ai-engineer-170994" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed AI Engineer</td><td>Cloudera</td><td>unstated in snippet</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://www.linkedin.com/jobs/view/forward-deployed-ai-engineer-at-cloudera-4445718524" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>GTM Engineer</td><td>Cognition (applied AI lab, maker of Devi</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://builtin.com/job/gtm-engineer-uk/7208423" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer, Agentic Platform (UK/Europe)</td><td>Cohere</td><td>unstated in snippet</td><td>permanent</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://www.linkedin.com/jobs/view/forward-deployed-engineer-agentic-platform-uk-europe-at-cohere-4413844238" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Applied AI Engineer - Agentic Workflows</td><td>Cohere</td><td>unstated in snippet</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/applied-ai-engineer-%E2%80%93-agentic-workflows-at-cohere-4330436628" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Engineer, LLM Systems &amp; Agentic Workflows</td><td>CommandLink</td><td>unstated (Himalayas company data shows</td><td>permanent</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://remotive.com/remote/jobs/artificial-intelligence/ai-engineer-llm-systems-agentic-workflows-4514829" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Deployment Engineer</td><td>Company name not printed in snippet (adv</td><td>GBP 100,000 - 125,000 plus benefits</td><td>permanent</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://www.engineeringjobs.co.uk/forward-deployed-ai-engineer-jobs" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Engineering Lead</td><td>Confidential client via Michael Page</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://www.bayt.com/en/oman/jobs/ai-engineering-lead-5453655/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Artificial Intelligence Engineer</td><td>Conquer AI</td><td>unstated (advertised as &#x27;Contract Rate</td><td>contract</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://contracts.outsidespy.co.uk/job/345664/artificial-intelligence-engineer-at-conquer-ai-united-kingdom-contract-rate/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Senior Forward Deployed Engineer (AI Agent) - UK</td><td>Cresta</td><td>unstated for UK (equivalent US requisi</td><td>permanent</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://job-boards.greenhouse.io/cresta/jobs/5097513008" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Generative AI Engineer</td><td>Dataiku</td><td>unstated (UK market median for remote </td><td>permanent</td><td>Medium</td><td>yes</td><td class="num"><a href="https://job-boards.greenhouse.io/dataiku/jobs/5978968004" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Solutions Architect</td><td>Deepgram</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://builtin.com/jobs/remote/dev-engineering/search/solutions-architect" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Head of AI</td><td>Dex</td><td>unstated</td><td>unknown</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/head-of-ai-at-dex-4458580602" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Platform Engineer (EU/UK Based - Remote)</td><td>Duvo Inc</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://jobs.ashbyhq.com/duvo/a1e5cdbc-6159-4895-8dae-cf71196550fa" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Applied AI Engineer</td><td>Dwelly</td><td>unstated</td><td>permanent</td><td>Medium</td><td>yes</td><td class="num"><a href="https://job-boards.greenhouse.io/dwelly/jobs/4954106101" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Enterprise Solutions Engineer</td><td>ElevenLabs</td><td>unstated</td><td>permanent</td><td>Medium</td><td>yes</td><td class="num"><a href="https://elevenlabs.io/careers/275f43d0-b62d-401d-830c-7c1ac0e688aa/enterprise-solutions-engineer" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Engineering - Internal AI Transformation</td><td>ElevenLabs</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://elevenlabs.io/careers/a3097257-a07a-4a7e-b9fe-b8555c1a0fa7/engineering-internal-ai-transformation" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Sales Enablement / Partnerships Lead (partner enablement framework)</td><td>ElevenLabs</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://www.remoterocketship.com/company/elevenlabs-io/jobs/sales-enablement-systems-lead-united-kingdom-remote/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer, London</td><td>Encord (Y Combinator-backed, ~$60M Serie</td><td>unstated</td><td>permanent</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://www.workatastartup.com/jobs/92688" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Engineer — Agentic AI, Python, LLM</td><td>Experis</td><td>unstated (advertised as &#x27;Contract Rate</td><td>contract</td><td>Low</td><td>yes</td><td class="num"><a href="https://contracts.outsidespy.co.uk/job/339276/ai-engineer-agentic-ai-python-pycharm-llm-agentic-at-experis-london-contract-rate/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Head of AI</td><td>FIRY</td><td>unstated</td><td>unknown</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://remotive.com/remote/jobs/artificial-intelligence/head-of-ai-5076476" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Staff Forward Deployed Engineer</td><td>Fin</td><td>unstated in snippet</td><td>permanent</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/staff-forward-deployed-engineer-at-fin-4343078751" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Project Manager - AI Implementation (6-month contract)</td><td>Financial institution client of Davies T</td><td>GBP 600 - 650 per day</td><td>contract</td><td>Low</td><td>yes</td><td class="num"><a href="https://www.itjobswatch.co.uk/jv/Davies-Talent-Solutions/Project-Manager-AI-Implementation-6-Month-Contract-Job-City-of-London-London-England-UK-4rxxwt" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Applied AI Engineer</td><td>Fuse Energy</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://www.welcometothejungle.com/en/companies/fuse-energy/jobs/applied-ai-engineer_london_ut24uick" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Lead / Principal Forward Deployed Engineer</td><td>GWI (Global Web Index)</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://job-boards.greenhouse.io/globalwebindex/jobs/8551838002" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer - EMEA</td><td>GitLab</td><td>unstated (GitLab publishes location-ad</td><td>permanent</td><td>Medium</td><td>yes</td><td class="num"><a href="https://job-boards.greenhouse.io/gitlab/jobs/8522408002" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Founding Software Engineer - Agentic AI (Remote)</td><td>Glacis</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://wellfound.com/jobs/4053494-founding-software-engineer-agentic-ai-remote" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer, Applied AI, Google Cloud</td><td>Google (Google Cloud)</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://www.jobilize.com/job/gb-england-london-forward-deployed-engineer-applied-ai-google-cloud-pzuvmi" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>GTM Engineer</td><td>Hamming AI</td><td>unstated</td><td>permanent</td><td>Medium</td><td>yes</td><td class="num"><a href="https://remotive.com/remote/jobs/sales/gtm-engineer-5220419" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer</td><td>HatchWorks AI</td><td>unstated in snippet</td><td>unknown</td><td>Low</td><td>yes</td><td class="num"><a href="https://www.linkedin.com/jobs/view/forward-deployed-engineer-at-hatchworks-ai-4436729986" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Fractional Chief AI Officer / Head of AI (HubSpot CRM experience requi</td><td>Head of AI (fractional CAIO network/prac</td><td>unstated</td><td>fractional</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/fractional-chief-ai-officer-head-of-ai-hubspot-crm-experience-required-at-head-of-ai-4378805892" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Head of AI — Global Marketing</td><td>Heathrow (via CWJobs advertiser)</td><td>Up to £630 per day, INSIDE IR35, 12-mo</td><td>contract</td><td>Low</td><td>yes</td><td class="num"><a href="https://www.cwjobs.co.uk/jobs/contract/artificial-intelligence" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer (Remote)</td><td>Hired (marketplace listing - actual empl</td><td>unstated in snippet</td><td>unknown</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/forward-deployed-engineer-remote-at-hired-4447760911" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Head of AI</td><td>Hodge</td><td>unstated</td><td>unknown</td><td>Low</td><td>yes</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/head-of-ai-at-hodge-4436029671" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Fractional CTO / AI Strategy (Contractor)</td><td>Human Intelligence</td><td>unstated</td><td>fractional</td><td>Low</td><td>yes</td><td class="num"><a href="https://startup.jobs/fractional-cto-ai-strategy-remote-contractor-human-intelligence-7848480" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer</td><td>Humanoid</td><td>unstated in snippet</td><td>unknown</td><td>Low</td><td>yes</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/forward-deployed-engineer-at-humanoid-4336208486" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer</td><td>INFINIT</td><td>unstated in snippet</td><td>unknown</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/forward-deployed-engineer-at-infinit-4340942062" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Enterprise Architect</td><td>Intelance</td><td>£700–£950 per day, Outside IR35, via o</td><td>contract</td><td>Medium</td><td>yes</td><td class="num"><a href="https://contracts.contractspy.co.uk/job/139457/ai-enterprise-architect-at-intelance-london-remote-700-950-per-day/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed AI Engineer</td><td>Investigo</td><td>unstated</td><td>contract</td><td>Low</td><td>yes</td><td class="num"><a href="https://www.weareinvestigo.com/jobs/forward-deployed-ai-engineer-560/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Engineer (LLM / Generative AI)</td><td>Khonsu Tech Solutions</td><td>unstated (advertised as &#x27;Contract Rate</td><td>contract</td><td>Low</td><td>yes</td><td class="num"><a href="https://contracts.outsidespy.co.uk/job/355985/ai-engineer-llm-generative-ai-contract-6-months-outside-ir35-at-khonsu-tech-solutions-united-kingdom-contract-rate/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Adoption Consultant</td><td>La Fosse (agency)</td><td>£800 per day, Outside IR35, 6 months</td><td>contract</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://contracts.outsidespy.co.uk/job/347563/ai-adoption-consultant-at-la-fosse-england-800-per-day/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Senior AI Engineer / Architect</td><td>Lemon.io</td><td>unstated</td><td>contract</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://weworkremotely.com/remote-jobs/lemon-io-senior-ai-engineer-architect" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer (EU)</td><td>Luma / Dream Lab</td><td>unstated in snippet</td><td>unknown</td><td>Low</td><td>yes</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/forward-deployed-engineer-eu-at-luma-dream-lab-4431529729" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Solution Architect</td><td>Lumora Solutions (client is a global Dat</td><td>£600–£700 per day, Outside IR35, initi</td><td>contract</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://contracts.outsidespy.co.uk/job/352102/ai-solution-architect-at-lumora-solutions-london-area-600-700-per-day/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward-Deployed Engineer (Technology Programmes)</td><td>M-1 Intelligence</td><td>unstated</td><td>unknown</td><td>Low</td><td>yes</td><td class="num"><a href="https://wellfound.com/jobs/4639800-forward-deployed-engineer-technology-programmes" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Consultant (Principal AI Engineer)</td><td>Mastercard</td><td>unstated in snippet</td><td>permanent</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/ai-consultant-principal-ai-engineer-at-mastercard-4375563979" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Integration Engineer (Forward Deployed)</td><td>Mission.dev</td><td>unstated in snippet</td><td>unknown</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://www.linkedin.com/jobs/view/ai-integration-engineer-forward-deployed-at-mission-dev-4449844093" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer, AI</td><td>MongoDB</td><td>unstated in snippet</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://ie.linkedin.com/jobs/view/forward-deployed-engineer-ai-at-mongodb-4278574918" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Consultant — Strategy &amp; Roadmapping</td><td>Morela</td><td>£500–£600 per day, Outside IR35, initi</td><td>contract</td><td>Medium</td><td>yes</td><td class="num"><a href="https://www.itjobswatch.co.uk/jv/Morela/AI-Consultant-Strategy-Roadmapping-Job-Surrey-England-UK-4t3gqs?jr=ha8-0-0" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer (Perm, UK, Remote + Travel)</td><td>Nearform</td><td>unstated</td><td>permanent</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://job-boards.greenhouse.io/nearform/jobs/7619129003" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer</td><td>Not named in snippet (advertised via Con</td><td>£550 per day</td><td>contract</td><td>Medium</td><td>yes</td><td class="num"><a href="https://www.contractoruk.com/job/429197-forward_deployed_engineer" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI &amp; Software Solutions Architect (Remote, Contract)</td><td>Not named in snippet (posted via EU Remo</td><td>unstated - &#x27;competitive salary tailore</td><td>contract</td><td>Low</td><td>yes</td><td class="num"><a href="https://euremotejobs.com/job/ai-software-solutions-architect-remote-contract-2/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Enterprise AI Architect (contract)</td><td>Not named in snippet — advertised via UK</td><td>£850 per day</td><td>contract</td><td>Low</td><td>yes</td><td class="num"><a href="https://www.jobsite.co.uk/jobs/ai-solutions-architect/in-london" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Software Engineer</td><td>OpenAI</td><td>unstated</td><td>permanent</td><td>Medium</td><td>yes</td><td class="num"><a href="https://openai.com/careers/forward-deployed-software-engineer-london-london-uk/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer</td><td>OpenAI</td><td>unstated</td><td>permanent</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://openai.com/careers/forward-deployed-engineer-dublin-dublin-ireland/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Manager, Forward Deployed Engineering</td><td>OpenAI</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://builtin.com/job/manager-forward-deployed-engineering-london/6351177" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer - Dublin</td><td>OpenAI</td><td>unstated in snippet</td><td>permanent</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://ie.linkedin.com/jobs/view/forward-deployed-engineer-dublin-at-openai-4134066297" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Solutions Architect, London</td><td>OpenAI</td><td>unstated in snippet</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/solutions-architect-london-at-openai-3646628544" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer - London</td><td>OpenAI</td><td>unstated (OpenAI London engineering co</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://jobs.ashbyhq.com/openai/cf83e70e-6949-480f-ad97-df0f22cd0283" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Interim Head of AI</td><td>Opus Recruitment Solutions</td><td>unstated in snippet — advertised as Ou</td><td>contract</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://www.opusrecruitmentsolutions.com/search-jobs/35029877-interim-head-of-ai-outside-ir35-contract-6-month-contract-job-united-kingdom-london" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Agentic AI Engineer</td><td>Opus Recruitment Solutions</td><td>£500–£600 per day, Outside IR35, 12 mo</td><td>contract</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://contracts.outsidespy.co.uk/job/350403/agentic-ai-engineer-at-opus-recruitment-solutions-greater-london-500-to-600-per-day/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer</td><td>Orbital Industries</td><td>unstated in snippet</td><td>unknown</td><td>Low</td><td>yes</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/forward-deployed-engineer-at-orbital-industries-4457602400" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Senior Forward Deployed AI Engineer (Must be in UK)</td><td>PolyAI</td><td>unstated in snippet</td><td>permanent</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/senior-forward-deployed-ai-engineer-must-be-in-uk-at-polyai-4204357525" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Solutions Architect</td><td>QAD</td><td>unstated in snippet</td><td>permanent</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/ai-solutions-architect-at-qad-4447219998" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Head of AI - Agentic AI (Payments / Banking)</td><td>Rothstein Recruitment (recruiter — end c</td><td>unstated</td><td>unknown</td><td>Low</td><td>yes</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/head-of-ai-agentic-ai-payments-banking-at-rothstein-recruitment-4404322205" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer (EMEA)</td><td>RunPod</td><td>unstated in snippet</td><td>unknown</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://ie.linkedin.com/jobs/view/forward-deployed-engineer-emea-at-runpod-4369176281" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Applied AI Engineer (Enterprise)</td><td>Scale AI</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://www.welcometothejungle.com/en/companies/scale-ai/jobs/applied-ai-engineer_london_yeusvt2k" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>VP of Sales — Europe (AI-powered adtech)</td><td>Smartly (per search snippet; company att</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://builtin.com/job/vp-sales-europe/3700450" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Agent Engineer [IC4]</td><td>Sourcegraph</td><td>unstated in snippet (Sourcegraph publi</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://job-boards.greenhouse.io/sourcegraph91/jobs/6103567004" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Head of AI Solutions</td><td>Stability AI</td><td>unstated</td><td>permanent</td><td>Medium</td><td>yes</td><td class="num"><a href="https://app.welcometothejungle.com/jobs/KEc6hE8R" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Architect / Engineer (Agentic AI &amp; LLM Architecture)</td><td>Talan</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://agentic-engineering-jobs.com/jobs/talan-ai-architect-engineer-agentic-ai-and-llm-architecture-KOuAz4" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Principal AI Data Engineer (GenAI/Agentic AI) - Contract Opportunity</td><td>Templeton Partners (recruiter)</td><td>unstated in snippet</td><td>contract</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://uk.linkedin.com/jobs/view/principal-ai-data-engineer-genai-agentic-ai-contract-opportunity-at-templeton-partners-innovative-inclusive-hiring-solutions-4455710347" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Solutions Architect</td><td>Together AI</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://app.welcometothejungle.com/companies/Together-AI" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed AI Engineer (B2B Contract)</td><td>Toloka</td><td>unstated in snippet</td><td>contract</td><td>Low</td><td>yes</td><td class="num"><a href="https://www.linkedin.com/jobs/view/forward-deployed-ai-engineer-b2b-contract-at-toloka-4449603427" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Engineer - AWS Bedrock AgentCore &amp; Production Agentic Systems (LATA</td><td>Toptal</td><td>unstated</td><td>contract</td><td>Low</td><td>yes</td><td class="num"><a href="https://weworkremotely.com/remote-jobs/toptal-ai-engineer-aws-bedrock-agentcore-production-agentic-systems-latam-europe" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer</td><td>Twilio</td><td>unstated</td><td>permanent</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://job-boards.greenhouse.io/twilio/jobs/8060160" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer (AI)</td><td>Understanding Recruitment (recruiter)</td><td>unstated in this snippet; a related li</td><td>permanent</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://www.linkedin.com/jobs/view/forward-deployed-engineer-ai-at-understanding-recruitment-4359829975" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Artificial Intelligence Engineer (contract)</td><td>Undisclosed client via Outside IR35 Tech</td><td>GBP 550-600 per day, outside IR35</td><td>contract</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://outsideir35.org.uk/jobs/artificial-intelligence-engineer/MbX1QT3hSv" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Engineer (contract)</td><td>Undisclosed client via Outside IR35 Tech</td><td>GBP 600 per day, outside IR35</td><td>contract</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://outsideir35.org.uk/jobs/ai-engineer/95UQ0Wo7HG" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>VP Sales — Europe</td><td>Wisor.AI</td><td>unstated</td><td>permanent</td><td>Medium</td><td>yes</td><td class="num"><a href="https://himalayas.app/companies/wisor-ai/jobs/vp-sales-europe-5478755680" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Agent Consultant (FDE) - Remote</td><td>Yochana</td><td>unstated in snippet</td><td>contract</td><td>Low</td><td>yes</td><td class="num"><a href="https://www.linkedin.com/jobs/view/ai-agent-consultant-fde-remote-at-yochana-4451918051" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Chief Commercial Officer &amp; General Manager, EMEA</td><td>intive</td><td>unstated</td><td>permanent</td><td>Medium</td><td>yes</td><td class="num"><a href="https://bebee.com/gb/jobs/were-hiring-emea-chief-commercial-growth-leader-intive--talent-633057936426608600" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Sr AI Engineer (Remote - Europe)</td><td>n8n</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://jobs.ashbyhq.com/n8n/d195a389-6af5-4b95-82e5-2258953c7297" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Founding GTM Lead — UK Market</td><td>telli</td><td>unstated</td><td>permanent</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://jobs.ashbyhq.com/telli/4c91a83c-a156-4bb7-b1a8-04b6e931c2b0" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Artificial Intelligence Engineer (GenAI)</td><td>trg. / trg.recruitment</td><td>£550–£600 per day, Outside IR35, 6 mon</td><td>contract</td><td>Medium</td><td>yes</td><td class="num"><a href="https://contracts.outsidespy.co.uk/job/349571/artificial-intelligence-engineer-at-trg-united-kingdom-550-600-per-day/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer</td><td>zaimler.ai</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://wellfound.com/jobs/4589318-forward-deployed-engineer" target="_blank" rel="noopener">open</a></td></tr>
+</tbody></table></div>
+<h3 style="font-family:Archivo,sans-serif;font-size:1rem;margin:20px 0 8px">Belfast &amp; Derry &middot; 6</h3>
+<div class="tw"><table><thead><tr><th>Role</th><th>Company</th><th>Pay</th><th>Type</th><th>Conf.</th><th>New</th><th></th></tr></thead><tbody>
+<tr><td>Machine Learning Architect (Software Engineering Architect - AI/ML)</td><td>VANRATH (agency) — client not named</td><td>£130,000 - £200,000 per annum plus bon</td><td>permanent</td><td>High</td><td>&mdash;</td><td class="num"><a href="https://www.vanrath.com/job/machine-learning-architect-3" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Machine Learning Manager (Software Engineering Manager - AI/ML)</td><td>VANRATH (agency) — client not named</td><td>£120,000 - £130,000 per annum plus bon</td><td>permanent</td><td>High</td><td>&mdash;</td><td class="num"><a href="https://www.vanrath.com/job/machine-learning-manager-3" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Data &amp; AI Consultant — Associate Director</td><td>Grant Thornton (Ireland)</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://ie.indeed.com/q-head-of-ai-l-county-dublin-jobs.html" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Consultant</td><td>MCS Group (agency) — &#x27;long standing clie</td><td>Competitive salary and benefits packag</td><td>permanent</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://www.mcsgroup.jobs/job/ai-consultant-6556/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Innovation Consultant</td><td>Not named in snippet (advertised on Sync</td><td>unstated</td><td>unknown</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://syncni.com/job/15228/ai-innovation-consultant-belfast-northern-ireland" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Sales Director (selling cloud storage into AI/ML companies; lead ge</td><td>Wasabi Technologies</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://builtinbelfast.uk/jobs/sales/search/sales" target="_blank" rel="noopener">open</a></td></tr>
+</tbody></table></div>
+<h3 style="font-family:Archivo,sans-serif;font-size:1rem;margin:20px 0 8px">Dubai &amp; international &middot; 5</h3>
+<div class="tw"><table><thead><tr><th>Role</th><th>Company</th><th>Pay</th><th>Type</th><th>Conf.</th><th>New</th><th></th></tr></thead><tbody>
+<tr><td>VP, AI &amp; Technology</td><td>Confidential client via Michael Page</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://www.gulftalent.com/uae/jobs/vp-ai-technology-562575" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Head of AI Engineering</td><td>Confidential client via Michael Page (la</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://www.bayt.com/en/uae/jobs/head-of-ai-engineering-5441289/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer — UAE</td><td>OpenAI</td><td>unstated for the UAE req (published Op</td><td>permanent</td><td>Medium</td><td>&mdash;</td><td class="num"><a href="https://openai.com/careers/forward-deployed-engineer-uae-abu-dhabi-uae/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Team Lead / Sales Director (AI footprint growth)</td><td>Sterling Systematic AI FZE LLC</td><td>unstated</td><td>permanent</td><td>Low</td><td>yes</td><td class="num"><a href="https://ae.indeed.com/q-ai-sales-l-dubai-jobs.html" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Vice President — Sales (AI, Digital Transformation and IT Services)</td><td>Undisclosed via GulfTalent — described a</td><td>unstated</td><td>permanent</td><td>Low</td><td>&mdash;</td><td class="num"><a href="https://www.gulftalent.com/uae/jobs/vice-president-sales-ai-digital-transformation-and-it-service-575098" target="_blank" rel="noopener">open</a></td></tr>
+</tbody></table></div>
+</section>
+<section><div class="shead"><h2>Applications in flight</h2><p>Every application this pipeline has made, plus roles deliberately held back from the drop rule. A role is dropped only after <b>two consecutive misses</b>, and never while its source lane was blocked.</p></div>
+<div class="tw"><table><thead><tr><th>Role</th><th>Employer</th><th>Status</th><th>Channel</th><th>Note</th><th></th></tr></thead><tbody>
+<tr><td>Applied AI Architect</td><td>Forgd</td><td><span class="chip st applied">applied</span></td><td>local &middot; web form</td><td></td><td class="num"><a href="https://jobs.ashbyhq.com/forgd-ai/87814487-e6a5-4e15-b6fa-b8490e80cd55" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI &amp; Agentic Transformation Lead (Outside IR35)</td><td>Opus Recruitment Solutions</td><td><span class="chip st applied">applied</span></td><td>local &middot; web form</td><td>End client never named &mdash; chase Opus</td><td class="num"><a href="https://contracts.outsidespy.co.uk/job/354603/ai-agentic-transformation-lead-at-opus-recruitment-solutions-greater-london-800-to-900-per-day/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Solutions Architect</td><td>QAD</td><td><span class="chip st applied">applied</span></td><td>local &middot; web form</td><td></td><td class="num"><a href="https://jobs.smartrecruiters.com/QADInc/744000140775359-ai-solutions-architect" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Head of AI Enablement (4&ndash;5 month FTC)</td><td>WA.Technology</td><td><span class="chip st applied">applied</span></td><td>local &middot; web form</td><td>Max 2 applications per 90 days at this employer</td><td class="num"><a href="https://jobs.ashbyhq.com/WA.Technology/3df55a67-4575-44c9-ac2b-08de0d821e44" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Machine Learning Architect + Manager</td><td>VANRATH</td><td><span class="chip st applied">applied</span></td><td>email &middot; cloud</td><td>One email covers both mandates</td><td class="num"><a href="https://www.vanrath.com/job/machine-learning-architect-3" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Consultant</td><td>MCS Group</td><td><span class="chip st applied">applied</span></td><td>email &middot; cloud</td><td><b>Recruiter replied</b> &mdash; handed to Rachael Walker, still awaiting her</td><td class="num"><a href="https://www.mcsgroup.jobs/job/ai-consultant-6556/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Senior Director, AI Solutions</td><td>Intellias</td><td><span class="chip st applied">applied</span></td><td>local &middot; LinkedIn</td><td>Submitted 28 Aug, recovered from Gmail</td><td class="num"><a href="https://www.linkedin.com/jobs/view/4437811924/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Director of Artificial Intelligence (AI)</td><td>The Portfolio Group</td><td><span class="chip st applied">applied</span></td><td>local &middot; LinkedIn</td><td>Submitted 28 Aug, recovered from Gmail</td><td class="num"><a href="https://www.linkedin.com/jobs/view/4454186856/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Head of Artificial Intelligence</td><td>Hays (Dubai)</td><td><span class="chip st applied">applied</span></td><td>local &middot; LinkedIn</td><td><b>Application viewed 31 Aug</b></td><td class="num"><a href="https://www.linkedin.com/jobs/view/4428252282/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>VP of AI</td><td>Salt (Dubai)</td><td><span class="chip st applied">applied</span></td><td>local &middot; LinkedIn</td><td>Submitted 28 Aug, recovered from Gmail</td><td class="num"><a href="https://www.linkedin.com/jobs/view/4453845448/" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Strategist (Lead) &mdash; first London hire</td><td>Distyl AI</td><td><span class="chip st phil">needs Phil</span></td><td>&mdash;</td><td>Needs Phil &mdash; 3 days/week onsite London is his call</td><td class="num"><a href="https://builtinlondon.uk/job/ai-strategist/9537795" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Engineer (Agentic Systems)</td><td>Data Intellect</td><td><span class="chip st phil">needs Phil</span></td><td>&mdash;</td><td>Needs Phil &mdash; the &ldquo;what I&rsquo;d change&rdquo; free-text is his to write</td><td class="num"><a href="https://www.nijobs.com/job/engineer-systems/data-intellect-job107814278" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Head of AI</td><td>Maze</td><td><span class="chip st mute">open</span></td><td>queued</td><td>Pack ready; note the transformer-from-first-principles bar</td><td class="num"><a href="https://wellfound.com/jobs/4452741-head-of-ai" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI Transformation Lead</td><td>Harnham (recruiter)</td><td><span class="chip st mute">open</span></td><td>queued</td><td>Identify and clear the end client before applying</td><td class="num"><a href="https://ie.linkedin.com/jobs/view/ai-transformation-lead-at-harnham-4407411855" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>AI &amp; Data Director (Middle East)</td><td>Deloitte &amp; Touche</td><td><span class="chip st mute">open</span></td><td>&mdash;</td><td>Drop-exempt: Dubai lane partly unswept again</td><td class="num"><a href="https://www.gulftalent.com/uae/jobs/ai-data-director-405821" target="_blank" rel="noopener">open</a></td></tr>
+<tr><td>Forward Deployed Engineer (Dubai)</td><td>Kore.ai</td><td><span class="chip st mute">open</span></td><td>&mdash;</td><td>Drop-exempt: Dubai lane partly unswept again</td><td class="num"><a href="https://www.remotedxb.com/job/forward-deployed-engineer-koreai--149991" target="_blank" rel="noopener">open</a></td></tr>
+</tbody></table></div></section>
+<footer>
+<h2>How this pipeline works</h2>
+<p>A cloud agent sweeps eleven lanes twice weekly (Mon/Thu ~07:00 UTC), ranks what it finds against the &pound;100k+ / &pound;500-a-day floor, and writes the report to <code>jobs/reports/</code> on branch <code>job-scout-reports</code>. It <b>sends email applications itself</b>, but only to addresses printed in the listing &mdash; never guessed, never enriched, capped at five a run. It has now found zero printed addresses three runs running, because search returns paraphrased summaries rather than advert contact blocks and page fetching is blocked.</p>
+<p>Web forms are executed by Phil&rsquo;s <b>local agent instance</b>, which holds his browser sessions, working from the queue in <code>jobs/auto-apply-brief.md</code> and logging each result to <code>jobs/applications/&lt;id&gt;/submitted.md</code>. <b>That logging did not happen this cycle</b> &mdash; seven submissions were recovered from Gmail instead.</p>
+<p><b>Gaps to hit first next run:</b> Naukrigulf, Mindfield, BAC Middle East and Hays UAE, none of which were reached; Saudi and Qatar, entirely unsearched; Hacker News &ldquo;Who is hiring?&rdquo; and Work at a Startup, both lost to budget in the agent-engineering lane; YunoJuno and Freelance UK, still never reached; and <code>recruitni.com</code> and <code>jobs.theirishnews.com</code>, which returned nothing at all.</p>
+<p><b>To steer it:</b> edit the INBOX section of <code>jobs/feedback.md</code> &mdash; <code>applied:</code>, <code>skip:</code>, <code>more like:</code>, <code>note:</code>. It was empty this run. Upwork and PeoplePerHour remain off; no public sector, anywhere.</p>
+</footer></div>
+<script>
+document.querySelectorAll(".copy").forEach(function(btn){
+  btn.addEventListener("click", function(){
+    var p = btn.parentElement.querySelector(".cn");
+    if(!p) return;
+    var text = p.textContent;
+    var done = function(){ var o = btn.textContent; btn.textContent = "Copied"; setTimeout(function(){ btn.textContent = o; }, 1400); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, function(){ fallback(text, done); });
+    } else { fallback(text, done); }
+  });
+});
+function fallback(text, done){
+  var ta = document.createElement("textarea");
+  ta.value = text; ta.setAttribute("readonly", "");
+  ta.style.position = "fixed"; ta.style.top = "-1000px";
+  document.body.appendChild(ta); ta.select();
+  try { document.execCommand("copy"); done(); } catch(e) {}
+  document.body.removeChild(ta);
+}
+</script>
